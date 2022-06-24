@@ -4,146 +4,148 @@ interface
 
 
 
-{$IFDEF FPC}
-{$PACKRECORDS C}
-{$ENDIF}
-
-
-  {/////////////////////////////////////////////////////////////////////// }
-  {/@system 新一代交易所系统 }
-  {/@company 上海期货信息技术有限公司 }
-  {/@file ThostFtdcUserApiDataType.h }
-  {/@brief 定义了客户端接口使用的业务数据类型 }
-  {/@history  }
-  {/20060106	赵鸿昊		创建该文件 }
-  {/////////////////////////////////////////////////////////////////////// }
-{$ifndef THOST_FTDCDATATYPE_H}
-{$define THOST_FTDCDATATYPE_H}  
-
   type
-    THOST_TE_RESUME_TYPE = (THOST_TERT_RESTART := 0,THOST_TERT_RESUME,
+    THOST_TE_RESUME_TYPE = (THOST_TERT_RESTART = 0,THOST_TERT_RESUME,
       THOST_TERT_QUICK,THOST_TERT_NONE);
 
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTraderIDType是一个交易所交易员代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcTraderIDType = array[0..20] of char;
+    PTThostFtdcTraderIDType = ^TThostFtdcTraderIDType;
+    TThostFtdcTraderIDType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcInvestorIDType是一个投资者代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcInvestorIDType = array[0..12] of char;
+    PTThostFtdcInvestorIDType = ^TThostFtdcInvestorIDType;
+    TThostFtdcInvestorIDType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBrokerIDType是一个经纪公司代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBrokerIDType = array[0..10] of char;
+    PTThostFtdcBrokerIDType = ^TThostFtdcBrokerIDType;
+    TThostFtdcBrokerIDType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBrokerAbbrType是一个经纪公司简称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBrokerAbbrType = array[0..8] of char;
+    PTThostFtdcBrokerAbbrType = ^TThostFtdcBrokerAbbrType;
+    TThostFtdcBrokerAbbrType = array[0..8] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBrokerNameType是一个经纪公司名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBrokerNameType = array[0..80] of char;
+    PTThostFtdcBrokerNameType = ^TThostFtdcBrokerNameType;
+    TThostFtdcBrokerNameType = array[0..80] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOldExchangeInstIDType是一个合约在交易所的代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcOldExchangeInstIDType = array[0..30] of char;
+    PTThostFtdcOldExchangeInstIDType = ^TThostFtdcOldExchangeInstIDType;
+    TThostFtdcOldExchangeInstIDType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcExchangeInstIDType是一个合约在交易所的代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcExchangeInstIDType = array[0..80] of char;
+    PTThostFtdcExchangeInstIDType = ^TThostFtdcExchangeInstIDType;
+    TThostFtdcExchangeInstIDType = array[0..80] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOrderRefType是一个报单引用类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcOrderRefType = array[0..12] of char;
+    PTThostFtdcOrderRefType = ^TThostFtdcOrderRefType;
+    TThostFtdcOrderRefType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcParticipantIDType是一个会员代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcParticipantIDType = array[0..10] of char;
+    PTThostFtdcParticipantIDType = ^TThostFtdcParticipantIDType;
+    TThostFtdcParticipantIDType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcUserIDType是一个用户代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcUserIDType = array[0..15] of char;
+    PTThostFtdcUserIDType = ^TThostFtdcUserIDType;
+    TThostFtdcUserIDType = array[0..15] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcPasswordType是一个密码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcPasswordType = array[0..40] of char;
+    PTThostFtdcPasswordType = ^TThostFtdcPasswordType;
+    TThostFtdcPasswordType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcClientIDType是一个交易编码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcClientIDType = array[0..10] of char;
+    PTThostFtdcClientIDType = ^TThostFtdcClientIDType;
+    TThostFtdcClientIDType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcInstrumentIDType是一个合约代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcInstrumentIDType = array[0..80] of char;
+    PTThostFtdcInstrumentIDType = ^TThostFtdcInstrumentIDType;
+    TThostFtdcInstrumentIDType = array[0..80] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOldInstrumentIDType是一个合约代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcOldInstrumentIDType = array[0..30] of char;
+    PTThostFtdcOldInstrumentIDType = ^TThostFtdcOldInstrumentIDType;
+    TThostFtdcOldInstrumentIDType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcInstrumentCodeType是一个合约标识码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcInstrumentCodeType = array[0..30] of char;
+    PTThostFtdcInstrumentCodeType = ^TThostFtdcInstrumentCodeType;
+    TThostFtdcInstrumentCodeType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcMarketIDType是一个市场代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcMarketIDType = array[0..30] of char;
+    PTThostFtdcMarketIDType = ^TThostFtdcMarketIDType;
+    TThostFtdcMarketIDType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcProductNameType是一个产品名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcProductNameType = array[0..20] of char;
+    PTThostFtdcProductNameType = ^TThostFtdcProductNameType;
+    TThostFtdcProductNameType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcExchangeIDType是一个交易所代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcExchangeIDType = array[0..8] of char;
+    PTThostFtdcExchangeIDType = ^TThostFtdcExchangeIDType;
+    TThostFtdcExchangeIDType = array[0..8] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcExchangeNameType是一个交易所名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcExchangeNameType = array[0..60] of char;
+    PTThostFtdcExchangeNameType = ^TThostFtdcExchangeNameType;
+    TThostFtdcExchangeNameType = array[0..60] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcExchangeAbbrType是一个交易所简称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcExchangeAbbrType = array[0..8] of char;
+    PTThostFtdcExchangeAbbrType = ^TThostFtdcExchangeAbbrType;
+    TThostFtdcExchangeAbbrType = array[0..8] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcExchangeFlagType是一个交易所标志类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcExchangeFlagType = array[0..1] of char;
+    PTThostFtdcExchangeFlagType = ^TThostFtdcExchangeFlagType;
+    TThostFtdcExchangeFlagType = array[0..1] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcMacAddressType是一个Mac地址类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcMacAddressType = array[0..20] of char;
+    PTThostFtdcMacAddressType = ^TThostFtdcMacAddressType;
+    TThostFtdcMacAddressType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSystemIDType是一个系统编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcSystemIDType = array[0..20] of char;
-  {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcClientLoginRemarkType是一个客户登录备注2类型 }
-  {/////////////////////////////////////////////////////////////////////// }
-
-    TThostFtdcClientLoginRemarkType = array[0..150] of char;
+    PTThostFtdcSystemIDType = ^TThostFtdcSystemIDType;
+    TThostFtdcSystemIDType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcExchangePropertyType是一个交易所属性类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -155,87 +157,104 @@ interface
     THOST_FTDC_EXP_GenOrderByTrade = '1';    
 
   type
-    TThostFtdcExchangePropertyType = char;
+    PTThostFtdcExchangePropertyType = ^TThostFtdcExchangePropertyType;
+    TThostFtdcExchangePropertyType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcDateType是一个日期类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcDateType = array[0..8] of char;
+    PTThostFtdcDateType = ^TThostFtdcDateType;
+    TThostFtdcDateType = array[0..8] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTimeType是一个时间类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcTimeType = array[0..8] of char;
+    PTThostFtdcTimeType = ^TThostFtdcTimeType;
+    TThostFtdcTimeType = array[0..8] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcLongTimeType是一个长时间类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcLongTimeType = array[0..12] of char;
+    PTThostFtdcLongTimeType = ^TThostFtdcLongTimeType;
+    TThostFtdcLongTimeType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcInstrumentNameType是一个合约名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcInstrumentNameType = array[0..20] of char;
+    PTThostFtdcInstrumentNameType = ^TThostFtdcInstrumentNameType;
+    TThostFtdcInstrumentNameType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSettlementGroupIDType是一个结算组代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcSettlementGroupIDType = array[0..8] of char;
+    PTThostFtdcSettlementGroupIDType = ^TThostFtdcSettlementGroupIDType;
+    TThostFtdcSettlementGroupIDType = array[0..8] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOrderSysIDType是一个报单编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcOrderSysIDType = array[0..20] of char;
+    PTThostFtdcOrderSysIDType = ^TThostFtdcOrderSysIDType;
+    TThostFtdcOrderSysIDType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTradeIDType是一个成交编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcTradeIDType = array[0..20] of char;
+    PTThostFtdcTradeIDType = ^TThostFtdcTradeIDType;
+    TThostFtdcTradeIDType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCommandTypeType是一个DB命令类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCommandTypeType = array[0..64] of char;
+    PTThostFtdcCommandTypeType = ^TThostFtdcCommandTypeType;
+    TThostFtdcCommandTypeType = array[0..64] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOldIPAddressType是一个IP地址类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcOldIPAddressType = array[0..15] of char;
+    PTThostFtdcOldIPAddressType = ^TThostFtdcOldIPAddressType;
+    TThostFtdcOldIPAddressType = array[0..15] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcIPAddressType是一个IP地址类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcIPAddressType = array[0..32] of char;
+    PTThostFtdcIPAddressType = ^TThostFtdcIPAddressType;
+    TThostFtdcIPAddressType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcIPPortType是一个IP端口类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcIPPortType = ^TThostFtdcIPPortType;
     TThostFtdcIPPortType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcProductInfoType是一个产品信息类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcProductInfoType = array[0..10] of char;
+    PTThostFtdcProductInfoType = ^TThostFtdcProductInfoType;
+    TThostFtdcProductInfoType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcProtocolInfoType是一个协议信息类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcProtocolInfoType = array[0..10] of char;
+    PTThostFtdcProtocolInfoType = ^TThostFtdcProtocolInfoType;
+    TThostFtdcProtocolInfoType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBusinessUnitType是一个业务单元类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBusinessUnitType = array[0..20] of char;
+    PTThostFtdcBusinessUnitType = ^TThostFtdcBusinessUnitType;
+    TThostFtdcBusinessUnitType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcDepositSeqNoType是一个出入金流水号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcDepositSeqNoType = array[0..14] of char;
+    PTThostFtdcDepositSeqNoType = ^TThostFtdcDepositSeqNoType;
+    TThostFtdcDepositSeqNoType = array[0..14] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcIdentifiedCardNoType是一个证件号码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcIdentifiedCardNoType = array[0..50] of char;
+    PTThostFtdcIdentifiedCardNoType = ^TThostFtdcIdentifiedCardNoType;
+    TThostFtdcIdentifiedCardNoType = array[0..50] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcIdCardTypeType是一个证件类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -283,8 +302,6 @@ interface
     THOST_FTDC_ICT_FrgPrmtRdCard = 'K';    
   {/资管产品备案函 }
     THOST_FTDC_ICT_CptMngPrdLetter = 'L';    
-  {/港澳台居民居住证 }
-    THOST_FTDC_ICT_HKMCTwResidencePermit = 'M';    
   {/统一社会信用代码 }
     THOST_FTDC_ICT_UniformSocialCreditCode = 'N';    
   {/机构成立证明文件 }
@@ -293,47 +310,56 @@ interface
     THOST_FTDC_ICT_OtherCard = 'x';    
 
   type
-    TThostFtdcIdCardTypeType = char;
+    PTThostFtdcIdCardTypeType = ^TThostFtdcIdCardTypeType;
+    TThostFtdcIdCardTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOrderLocalIDType是一个本地报单编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcOrderLocalIDType = array[0..12] of char;
+    PTThostFtdcOrderLocalIDType = ^TThostFtdcOrderLocalIDType;
+    TThostFtdcOrderLocalIDType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcUserNameType是一个用户名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcUserNameType = array[0..80] of char;
+    PTThostFtdcUserNameType = ^TThostFtdcUserNameType;
+    TThostFtdcUserNameType = array[0..80] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcPartyNameType是一个参与人名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcPartyNameType = array[0..80] of char;
+    PTThostFtdcPartyNameType = ^TThostFtdcPartyNameType;
+    TThostFtdcPartyNameType = array[0..80] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcErrorMsgType是一个错误信息类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcErrorMsgType = array[0..80] of char;
+    PTThostFtdcErrorMsgType = ^TThostFtdcErrorMsgType;
+    TThostFtdcErrorMsgType = array[0..80] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFieldNameType是一个字段名类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFieldNameType = array[0..2048] of char;
+    PTThostFtdcFieldNameType = ^TThostFtdcFieldNameType;
+    TThostFtdcFieldNameType = array[0..2048] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFieldContentType是一个字段内容类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFieldContentType = array[0..2048] of char;
+    PTThostFtdcFieldContentType = ^TThostFtdcFieldContentType;
+    TThostFtdcFieldContentType = array[0..2048] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSystemNameType是一个系统名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcSystemNameType = array[0..40] of char;
+    PTThostFtdcSystemNameType = ^TThostFtdcSystemNameType;
+    TThostFtdcSystemNameType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcContentType是一个消息正文类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcContentType = array[0..500] of char;
+    PTThostFtdcContentType = ^TThostFtdcContentType;
+    TThostFtdcContentType = array[0..500] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcInvestorRangeType是一个投资者范围类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -347,7 +373,8 @@ interface
     THOST_FTDC_IR_Single = '3';    
 
   type
-    TThostFtdcInvestorRangeType = char;
+    PTThostFtdcInvestorRangeType = ^TThostFtdcInvestorRangeType;
+    TThostFtdcInvestorRangeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcDepartmentRangeType是一个投资者范围类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -361,7 +388,8 @@ interface
     THOST_FTDC_DR_Single = '3';    
 
   type
-    TThostFtdcDepartmentRangeType = char;
+    PTThostFtdcDepartmentRangeType = ^TThostFtdcDepartmentRangeType;
+    TThostFtdcDepartmentRangeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcDataSyncStatusType是一个数据同步状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -375,7 +403,8 @@ interface
     THOST_FTDC_DS_Synchronized = '3';    
 
   type
-    TThostFtdcDataSyncStatusType = char;
+    PTThostFtdcDataSyncStatusType = ^TThostFtdcDataSyncStatusType;
+    TThostFtdcDataSyncStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBrokerDataSyncStatusType是一个经纪公司数据同步状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -387,7 +416,8 @@ interface
     THOST_FTDC_BDS_Synchronizing = '2';    
 
   type
-    TThostFtdcBrokerDataSyncStatusType = char;
+    PTThostFtdcBrokerDataSyncStatusType = ^TThostFtdcBrokerDataSyncStatusType;
+    TThostFtdcBrokerDataSyncStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcExchangeConnectStatusType是一个交易所连接状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -401,7 +431,8 @@ interface
     THOST_FTDC_ECS_GotInformation = '9';    
 
   type
-    TThostFtdcExchangeConnectStatusType = char;
+    PTThostFtdcExchangeConnectStatusType = ^TThostFtdcExchangeConnectStatusType;
+    TThostFtdcExchangeConnectStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTraderConnectStatusType是一个交易所交易员连接状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -417,7 +448,8 @@ interface
     THOST_FTDC_TCS_SubPrivateFlow = '4';    
 
   type
-    TThostFtdcTraderConnectStatusType = char;
+    PTThostFtdcTraderConnectStatusType = ^TThostFtdcTraderConnectStatusType;
+    TThostFtdcTraderConnectStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFunctionCodeType是一个功能代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -455,7 +487,8 @@ interface
     THOST_FTDC_FC_DeleteOrder = 'F';    
 
   type
-    TThostFtdcFunctionCodeType = char;
+    PTThostFtdcFunctionCodeType = ^TThostFtdcFunctionCodeType;
+    TThostFtdcFunctionCodeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBrokerFunctionCodeType是一个经纪公司功能代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -573,7 +606,8 @@ interface
     THOST_FTDC_BFC_FBAccount = 'X';    
 
   type
-    TThostFtdcBrokerFunctionCodeType = char;
+    PTThostFtdcBrokerFunctionCodeType = ^TThostFtdcBrokerFunctionCodeType;
+    TThostFtdcBrokerFunctionCodeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOrderActionStatusType是一个报单操作状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -587,7 +621,8 @@ interface
     THOST_FTDC_OAS_Rejected = 'c';    
 
   type
-    TThostFtdcOrderActionStatusType = char;
+    PTThostFtdcOrderActionStatusType = ^TThostFtdcOrderActionStatusType;
+    TThostFtdcOrderActionStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOrderStatusType是一个报单状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -613,7 +648,8 @@ interface
     THOST_FTDC_OST_Touched = 'c';    
 
   type
-    TThostFtdcOrderStatusType = char;
+    PTThostFtdcOrderStatusType = ^TThostFtdcOrderStatusType;
+    TThostFtdcOrderStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOrderSubmitStatusType是一个报单提交状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -635,7 +671,8 @@ interface
     THOST_FTDC_OSS_ModifyRejected = '6';    
 
   type
-    TThostFtdcOrderSubmitStatusType = char;
+    PTThostFtdcOrderSubmitStatusType = ^TThostFtdcOrderSubmitStatusType;
+    TThostFtdcOrderSubmitStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcPositionDateType是一个持仓日期类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -647,7 +684,8 @@ interface
     THOST_FTDC_PSD_History = '2';    
 
   type
-    TThostFtdcPositionDateType = char;
+    PTThostFtdcPositionDateType = ^TThostFtdcPositionDateType;
+    TThostFtdcPositionDateType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcPositionDateTypeType是一个持仓日期类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -659,7 +697,8 @@ interface
     THOST_FTDC_PDT_NoUseHistory = '2';    
 
   type
-    TThostFtdcPositionDateTypeType = char;
+    PTThostFtdcPositionDateTypeType = ^TThostFtdcPositionDateTypeType;
+    TThostFtdcPositionDateTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTradingRoleType是一个交易角色类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -673,7 +712,8 @@ interface
     THOST_FTDC_ER_Maker = '3';    
 
   type
-    TThostFtdcTradingRoleType = char;
+    PTThostFtdcTradingRoleType = ^TThostFtdcTradingRoleType;
+    TThostFtdcTradingRoleType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcProductClassType是一个产品类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -697,7 +737,8 @@ interface
     THOST_FTDC_PC_MI = 'I';    
 
   type
-    TThostFtdcProductClassType = char;
+    PTThostFtdcProductClassType = ^TThostFtdcProductClassType;
+    TThostFtdcProductClassType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAPIProductClassType是一个产品类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -721,7 +762,8 @@ interface
     THOST_FTDC_APC_All = '8';    
 
   type
-    TThostFtdcAPIProductClassType = char;
+    PTThostFtdcAPIProductClassType = ^TThostFtdcAPIProductClassType;
+    TThostFtdcAPIProductClassType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcInstLifePhaseType是一个合约生命周期状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -737,7 +779,8 @@ interface
     THOST_FTDC_IP_Expired = '3';    
 
   type
-    TThostFtdcInstLifePhaseType = char;
+    PTThostFtdcInstLifePhaseType = ^TThostFtdcInstLifePhaseType;
+    TThostFtdcInstLifePhaseType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcDirectionType是一个买卖方向类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -749,7 +792,8 @@ interface
     THOST_FTDC_D_Sell = '1';    
 
   type
-    TThostFtdcDirectionType = char;
+    PTThostFtdcDirectionType = ^TThostFtdcDirectionType;
+    TThostFtdcDirectionType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcPositionTypeType是一个持仓类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -761,7 +805,8 @@ interface
     THOST_FTDC_PT_Gross = '2';    
 
   type
-    TThostFtdcPositionTypeType = char;
+    PTThostFtdcPositionTypeType = ^TThostFtdcPositionTypeType;
+    TThostFtdcPositionTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcPosiDirectionType是一个持仓多空方向类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -775,7 +820,8 @@ interface
     THOST_FTDC_PD_Short = '3';    
 
   type
-    TThostFtdcPosiDirectionType = char;
+    PTThostFtdcPosiDirectionType = ^TThostFtdcPosiDirectionType;
+    TThostFtdcPosiDirectionType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSysSettlementStatusType是一个系统结算状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -793,7 +839,8 @@ interface
     THOST_FTDC_SS_SettlementFinished = '5';    
 
   type
-    TThostFtdcSysSettlementStatusType = char;
+    PTThostFtdcSysSettlementStatusType = ^TThostFtdcSysSettlementStatusType;
+    TThostFtdcSysSettlementStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcRatioAttrType是一个费率属性类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -805,7 +852,8 @@ interface
     THOST_FTDC_RA_Settlement = '1';    
 
   type
-    TThostFtdcRatioAttrType = char;
+    PTThostFtdcRatioAttrType = ^TThostFtdcRatioAttrType;
+    TThostFtdcRatioAttrType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcHedgeFlagType是一个投机套保标志类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -825,7 +873,8 @@ interface
     THOST_FTDC_HF_HedgeSpec = '7';    
 
   type
-    TThostFtdcHedgeFlagType = char;
+    PTThostFtdcHedgeFlagType = ^TThostFtdcHedgeFlagType;
+    TThostFtdcHedgeFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBillHedgeFlagType是一个投机套保标志类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -839,7 +888,8 @@ interface
     THOST_FTDC_BHF_Hedge = '3';    
 
   type
-    TThostFtdcBillHedgeFlagType = char;
+    PTThostFtdcBillHedgeFlagType = ^TThostFtdcBillHedgeFlagType;
+    TThostFtdcBillHedgeFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcClientIDTypeType是一个交易编码类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -855,7 +905,8 @@ interface
     THOST_FTDC_CIDT_MarketMaker = '5';    
 
   type
-    TThostFtdcClientIDTypeType = char;
+    PTThostFtdcClientIDTypeType = ^TThostFtdcClientIDTypeType;
+    TThostFtdcClientIDTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOrderPriceTypeType是一个报单价格条件类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -895,7 +946,8 @@ interface
     THOST_FTDC_OPT_FiveLevelPrice = 'G';    
 
   type
-    TThostFtdcOrderPriceTypeType = char;
+    PTThostFtdcOrderPriceTypeType = ^TThostFtdcOrderPriceTypeType;
+    TThostFtdcOrderPriceTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOffsetFlagType是一个开平标志类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -917,7 +969,8 @@ interface
     THOST_FTDC_OF_LocalForceClose = '6';    
 
   type
-    TThostFtdcOffsetFlagType = char;
+    PTThostFtdcOffsetFlagType = ^TThostFtdcOffsetFlagType;
+    TThostFtdcOffsetFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcForceCloseReasonType是一个强平原因类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -939,11 +992,10 @@ interface
     THOST_FTDC_FCC_Other = '6';    
   {/自然人临近交割 }
     THOST_FTDC_FCC_PersonDeliv = '7';    
-  {/风控强平不验证资金 }
-    THOST_FTDC_FCC_Notverifycapital = '8';    
 
   type
-    TThostFtdcForceCloseReasonType = char;
+    PTThostFtdcForceCloseReasonType = ^TThostFtdcForceCloseReasonType;
+    TThostFtdcForceCloseReasonType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOrderTypeType是一个报单类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -967,7 +1019,8 @@ interface
     THOST_FTDC_ORDT_DeriveFromEFPTrade = '7';    
 
   type
-    TThostFtdcOrderTypeType = char;
+    PTThostFtdcOrderTypeType = ^TThostFtdcOrderTypeType;
+    TThostFtdcOrderTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTimeConditionType是一个有效期类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -987,7 +1040,8 @@ interface
     THOST_FTDC_TC_GFA = '6';    
 
   type
-    TThostFtdcTimeConditionType = char;
+    PTThostFtdcTimeConditionType = ^TThostFtdcTimeConditionType;
+    TThostFtdcTimeConditionType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcVolumeConditionType是一个成交量类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -1001,7 +1055,8 @@ interface
     THOST_FTDC_VC_CV = '3';    
 
   type
-    TThostFtdcVolumeConditionType = char;
+    PTThostFtdcVolumeConditionType = ^TThostFtdcVolumeConditionType;
+    TThostFtdcVolumeConditionType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcContingentConditionType是一个触发条件类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -1041,7 +1096,8 @@ interface
     THOST_FTDC_CC_BidPriceLesserEqualStopPrice = 'H';    
 
   type
-    TThostFtdcContingentConditionType = char;
+    PTThostFtdcContingentConditionType = ^TThostFtdcContingentConditionType;
+    TThostFtdcContingentConditionType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcActionFlagType是一个操作标志类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -1053,7 +1109,8 @@ interface
     THOST_FTDC_AF_Modify = '3';    
 
   type
-    TThostFtdcActionFlagType = char;
+    PTThostFtdcActionFlagType = ^TThostFtdcActionFlagType;
+    TThostFtdcActionFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTradingRightType是一个交易权限类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -1067,7 +1124,8 @@ interface
     THOST_FTDC_TR_Forbidden = '2';    
 
   type
-    TThostFtdcTradingRightType = char;
+    PTThostFtdcTradingRightType = ^TThostFtdcTradingRightType;
+    TThostFtdcTradingRightType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOrderSourceType是一个报单来源类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -1079,7 +1137,8 @@ interface
     THOST_FTDC_OSRC_Administrator = '1';    
 
   type
-    TThostFtdcOrderSourceType = char;
+    PTThostFtdcOrderSourceType = ^TThostFtdcOrderSourceType;
+    TThostFtdcOrderSourceType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTradeTypeType是一个成交类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -1101,7 +1160,8 @@ interface
     THOST_FTDC_TRDT_BlockTrade = '5';    
 
   type
-    TThostFtdcTradeTypeType = char;
+    PTThostFtdcTradeTypeType = ^TThostFtdcTradeTypeType;
+    TThostFtdcTradeTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSpecPosiTypeType是一个特殊持仓明细标识类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -1113,7 +1173,8 @@ interface
     THOST_FTDC_SPOST_Tas = '0';    
 
   type
-    TThostFtdcSpecPosiTypeType = char;
+    PTThostFtdcSpecPosiTypeType = ^TThostFtdcSpecPosiTypeType;
+    TThostFtdcSpecPosiTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcPriceSourceType是一个成交价来源类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -1129,7 +1190,8 @@ interface
     THOST_FTDC_PSRC_OTC = '3';    
 
   type
-    TThostFtdcPriceSourceType = char;
+    PTThostFtdcPriceSourceType = ^TThostFtdcPriceSourceType;
+    TThostFtdcPriceSourceType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcInstrumentStatusType是一个合约交易状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -1151,7 +1213,8 @@ interface
     THOST_FTDC_IS_Closed = '6';    
 
   type
-    TThostFtdcInstrumentStatusType = char;
+    PTThostFtdcInstrumentStatusType = ^TThostFtdcInstrumentStatusType;
+    TThostFtdcInstrumentStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcInstStatusEnterReasonType是一个品种进入交易状态原因类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -1165,222 +1228,266 @@ interface
     THOST_FTDC_IER_Fuse = '3';    
 
   type
-    TThostFtdcInstStatusEnterReasonType = char;
+    PTThostFtdcInstStatusEnterReasonType = ^TThostFtdcInstStatusEnterReasonType;
+    TThostFtdcInstStatusEnterReasonType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOrderActionRefType是一个报单操作引用类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcOrderActionRefType = ^TThostFtdcOrderActionRefType;
     TThostFtdcOrderActionRefType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcInstallCountType是一个安装数量类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcInstallCountType = ^TThostFtdcInstallCountType;
     TThostFtdcInstallCountType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcInstallIDType是一个安装编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcInstallIDType = ^TThostFtdcInstallIDType;
     TThostFtdcInstallIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcErrorIDType是一个错误代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcErrorIDType = ^TThostFtdcErrorIDType;
     TThostFtdcErrorIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSettlementIDType是一个结算编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcSettlementIDType = ^TThostFtdcSettlementIDType;
     TThostFtdcSettlementIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcVolumeType是一个数量类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcVolumeType = ^TThostFtdcVolumeType;
     TThostFtdcVolumeType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFrontIDType是一个前置编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcFrontIDType = ^TThostFtdcFrontIDType;
     TThostFtdcFrontIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSessionIDType是一个会话编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcSessionIDType = ^TThostFtdcSessionIDType;
     TThostFtdcSessionIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSequenceNoType是一个序号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcSequenceNoType = ^TThostFtdcSequenceNoType;
     TThostFtdcSequenceNoType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCommandNoType是一个DB命令序号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcCommandNoType = ^TThostFtdcCommandNoType;
     TThostFtdcCommandNoType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcMillisecType是一个时间（毫秒）类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcMillisecType = ^TThostFtdcMillisecType;
     TThostFtdcMillisecType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSecType是一个时间（秒）类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcSecType = ^TThostFtdcSecType;
     TThostFtdcSecType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcVolumeMultipleType是一个合约数量乘数类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcVolumeMultipleType = ^TThostFtdcVolumeMultipleType;
     TThostFtdcVolumeMultipleType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTradingSegmentSNType是一个交易阶段编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcTradingSegmentSNType = ^TThostFtdcTradingSegmentSNType;
     TThostFtdcTradingSegmentSNType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcRequestIDType是一个请求编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcRequestIDType = ^TThostFtdcRequestIDType;
     TThostFtdcRequestIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcYearType是一个年份类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcYearType = ^TThostFtdcYearType;
     TThostFtdcYearType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcMonthType是一个月份类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcMonthType = ^TThostFtdcMonthType;
     TThostFtdcMonthType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBoolType是一个布尔型类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcBoolType = ^TThostFtdcBoolType;
     TThostFtdcBoolType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcPriceType是一个价格类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcPriceType = ^TThostFtdcPriceType;
     TThostFtdcPriceType = double;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCombOffsetFlagType是一个组合开平标志类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCombOffsetFlagType = array[0..4] of char;
+    PTThostFtdcCombOffsetFlagType = ^TThostFtdcCombOffsetFlagType;
+    TThostFtdcCombOffsetFlagType = array[0..4] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCombHedgeFlagType是一个组合投机套保标志类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCombHedgeFlagType = array[0..4] of char;
+    PTThostFtdcCombHedgeFlagType = ^TThostFtdcCombHedgeFlagType;
+    TThostFtdcCombHedgeFlagType = array[0..4] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcRatioType是一个比率类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcRatioType = ^TThostFtdcRatioType;
     TThostFtdcRatioType = double;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcMoneyType是一个资金类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcMoneyType = ^TThostFtdcMoneyType;
     TThostFtdcMoneyType = double;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcLargeVolumeType是一个大额数量类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcLargeVolumeType = ^TThostFtdcLargeVolumeType;
     TThostFtdcLargeVolumeType = double;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSequenceSeriesType是一个序列系列号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcSequenceSeriesType = ^TThostFtdcSequenceSeriesType;
     TThostFtdcSequenceSeriesType = smallint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCommPhaseNoType是一个通讯时段编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcCommPhaseNoType = ^TThostFtdcCommPhaseNoType;
     TThostFtdcCommPhaseNoType = smallint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSequenceLabelType是一个序列编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcSequenceLabelType = array[0..1] of char;
+    PTThostFtdcSequenceLabelType = ^TThostFtdcSequenceLabelType;
+    TThostFtdcSequenceLabelType = array[0..1] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcUnderlyingMultipleType是一个基础商品乘数类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcUnderlyingMultipleType = ^TThostFtdcUnderlyingMultipleType;
     TThostFtdcUnderlyingMultipleType = double;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcPriorityType是一个优先级类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcPriorityType = ^TThostFtdcPriorityType;
     TThostFtdcPriorityType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcContractCodeType是一个合同编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcContractCodeType = array[0..40] of char;
+    PTThostFtdcContractCodeType = ^TThostFtdcContractCodeType;
+    TThostFtdcContractCodeType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCityType是一个市类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCityType = array[0..50] of char;
+    PTThostFtdcCityType = ^TThostFtdcCityType;
+    TThostFtdcCityType = array[0..50] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcIsStockType是一个是否股民类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcIsStockType = array[0..10] of char;
+    PTThostFtdcIsStockType = ^TThostFtdcIsStockType;
+    TThostFtdcIsStockType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcChannelType是一个渠道类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcChannelType = array[0..50] of char;
+    PTThostFtdcChannelType = ^TThostFtdcChannelType;
+    TThostFtdcChannelType = array[0..50] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAddressType是一个通讯地址类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAddressType = array[0..100] of char;
+    PTThostFtdcAddressType = ^TThostFtdcAddressType;
+    TThostFtdcAddressType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcZipCodeType是一个邮政编码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcZipCodeType = array[0..6] of char;
+    PTThostFtdcZipCodeType = ^TThostFtdcZipCodeType;
+    TThostFtdcZipCodeType = array[0..6] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTelephoneType是一个联系电话类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcTelephoneType = array[0..40] of char;
+    PTThostFtdcTelephoneType = ^TThostFtdcTelephoneType;
+    TThostFtdcTelephoneType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFaxType是一个传真类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFaxType = array[0..40] of char;
+    PTThostFtdcFaxType = ^TThostFtdcFaxType;
+    TThostFtdcFaxType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcMobileType是一个手机类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcMobileType = array[0..40] of char;
+    PTThostFtdcMobileType = ^TThostFtdcMobileType;
+    TThostFtdcMobileType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcEMailType是一个电子邮件类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcEMailType = array[0..40] of char;
+    PTThostFtdcEMailType = ^TThostFtdcEMailType;
+    TThostFtdcEMailType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcMemoType是一个备注类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcMemoType = array[0..160] of char;
+    PTThostFtdcMemoType = ^TThostFtdcMemoType;
+    TThostFtdcMemoType = array[0..160] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCompanyCodeType是一个企业代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCompanyCodeType = array[0..50] of char;
+    PTThostFtdcCompanyCodeType = ^TThostFtdcCompanyCodeType;
+    TThostFtdcCompanyCodeType = array[0..50] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcWebsiteType是一个网站地址类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcWebsiteType = array[0..50] of char;
+    PTThostFtdcWebsiteType = ^TThostFtdcWebsiteType;
+    TThostFtdcWebsiteType = array[0..50] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTaxNoType是一个税务登记号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcTaxNoType = array[0..30] of char;
+    PTThostFtdcTaxNoType = ^TThostFtdcTaxNoType;
+    TThostFtdcTaxNoType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBatchStatusType是一个处理状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -1394,42 +1501,50 @@ interface
     THOST_FTDC_BS_Failed = '3';    
 
   type
-    TThostFtdcBatchStatusType = char;
+    PTThostFtdcBatchStatusType = ^TThostFtdcBatchStatusType;
+    TThostFtdcBatchStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcPropertyIDType是一个属性代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcPropertyIDType = array[0..32] of char;
+    PTThostFtdcPropertyIDType = ^TThostFtdcPropertyIDType;
+    TThostFtdcPropertyIDType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcPropertyNameType是一个属性名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcPropertyNameType = array[0..64] of char;
+    PTThostFtdcPropertyNameType = ^TThostFtdcPropertyNameType;
+    TThostFtdcPropertyNameType = array[0..64] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcLicenseNoType是一个营业执照号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcLicenseNoType = array[0..50] of char;
+    PTThostFtdcLicenseNoType = ^TThostFtdcLicenseNoType;
+    TThostFtdcLicenseNoType = array[0..50] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAgentIDType是一个经纪人代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAgentIDType = array[0..12] of char;
+    PTThostFtdcAgentIDType = ^TThostFtdcAgentIDType;
+    TThostFtdcAgentIDType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAgentNameType是一个经纪人名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAgentNameType = array[0..40] of char;
+    PTThostFtdcAgentNameType = ^TThostFtdcAgentNameType;
+    TThostFtdcAgentNameType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAgentGroupIDType是一个经纪人组代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAgentGroupIDType = array[0..12] of char;
+    PTThostFtdcAgentGroupIDType = ^TThostFtdcAgentGroupIDType;
+    TThostFtdcAgentGroupIDType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAgentGroupNameType是一个经纪人组名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAgentGroupNameType = array[0..40] of char;
+    PTThostFtdcAgentGroupNameType = ^TThostFtdcAgentGroupNameType;
+    TThostFtdcAgentGroupNameType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcReturnStyleType是一个按品种返还方式类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -1441,7 +1556,8 @@ interface
     THOST_FTDC_RS_ByProduct = '2';    
 
   type
-    TThostFtdcReturnStyleType = char;
+    PTThostFtdcReturnStyleType = ^TThostFtdcReturnStyleType;
+    TThostFtdcReturnStyleType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcReturnPatternType是一个返还模式类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -1453,7 +1569,8 @@ interface
     THOST_FTDC_RP_ByFeeOnHand = '2';    
 
   type
-    TThostFtdcReturnPatternType = char;
+    PTThostFtdcReturnPatternType = ^TThostFtdcReturnPatternType;
+    TThostFtdcReturnPatternType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcReturnLevelType是一个返还级别类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -1479,7 +1596,8 @@ interface
     THOST_FTDC_RL_Level9 = '9';    
 
   type
-    TThostFtdcReturnLevelType = char;
+    PTThostFtdcReturnLevelType = ^TThostFtdcReturnLevelType;
+    TThostFtdcReturnLevelType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcReturnStandardType是一个返还标准类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -1491,7 +1609,8 @@ interface
     THOST_FTDC_RSD_ByStandard = '2';    
 
   type
-    TThostFtdcReturnStandardType = char;
+    PTThostFtdcReturnStandardType = ^TThostFtdcReturnStandardType;
+    TThostFtdcReturnStandardType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcMortgageTypeType是一个质押类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -1503,7 +1622,8 @@ interface
     THOST_FTDC_MT_In = '1';    
 
   type
-    TThostFtdcMortgageTypeType = char;
+    PTThostFtdcMortgageTypeType = ^TThostFtdcMortgageTypeType;
+    TThostFtdcMortgageTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcInvestorSettlementParamIDType是一个投资者结算参数代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -1517,7 +1637,8 @@ interface
     THOST_FTDC_ISPI_BillDeposit = '9';    
 
   type
-    TThostFtdcInvestorSettlementParamIDType = char;
+    PTThostFtdcInvestorSettlementParamIDType = ^TThostFtdcInvestorSettlementParamIDType;
+    TThostFtdcInvestorSettlementParamIDType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcExchangeSettlementParamIDType是一个交易所结算参数代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -1547,7 +1668,8 @@ interface
     THOST_FTDC_ESPI_OptMiniGuarantee = 'b';    
 
   type
-    TThostFtdcExchangeSettlementParamIDType = char;
+    PTThostFtdcExchangeSettlementParamIDType = ^TThostFtdcExchangeSettlementParamIDType;
+    TThostFtdcExchangeSettlementParamIDType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSystemParamIDType是一个系统参数代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -1601,7 +1723,8 @@ interface
     THOST_FTDC_SPI_CZCENormalProductHedge = 'B';    
 
   type
-    TThostFtdcSystemParamIDType = char;
+    PTThostFtdcSystemParamIDType = ^TThostFtdcSystemParamIDType;
+    TThostFtdcSystemParamIDType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTradeParamIDType是一个交易系统参数代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -1651,66 +1774,79 @@ interface
     THOST_FTDC_TPID_PasswordPeriod = 'V';    
 
   type
-    TThostFtdcTradeParamIDType = char;
+    PTThostFtdcTradeParamIDType = ^TThostFtdcTradeParamIDType;
+    TThostFtdcTradeParamIDType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSettlementParamValueType是一个参数代码值类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcSettlementParamValueType = array[0..255] of char;
+    PTThostFtdcSettlementParamValueType = ^TThostFtdcSettlementParamValueType;
+    TThostFtdcSettlementParamValueType = array[0..255] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCounterIDType是一个计数器代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCounterIDType = array[0..32] of char;
+    PTThostFtdcCounterIDType = ^TThostFtdcCounterIDType;
+    TThostFtdcCounterIDType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcInvestorGroupNameType是一个投资者分组名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcInvestorGroupNameType = array[0..40] of char;
+    PTThostFtdcInvestorGroupNameType = ^TThostFtdcInvestorGroupNameType;
+    TThostFtdcInvestorGroupNameType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBrandCodeType是一个牌号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBrandCodeType = array[0..256] of char;
+    PTThostFtdcBrandCodeType = ^TThostFtdcBrandCodeType;
+    TThostFtdcBrandCodeType = array[0..256] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcWarehouseType是一个仓库类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcWarehouseType = array[0..256] of char;
+    PTThostFtdcWarehouseType = ^TThostFtdcWarehouseType;
+    TThostFtdcWarehouseType = array[0..256] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcProductDateType是一个产期类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcProductDateType = array[0..40] of char;
+    PTThostFtdcProductDateType = ^TThostFtdcProductDateType;
+    TThostFtdcProductDateType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcGradeType是一个等级类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcGradeType = array[0..40] of char;
+    PTThostFtdcGradeType = ^TThostFtdcGradeType;
+    TThostFtdcGradeType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcClassifyType是一个类别类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcClassifyType = array[0..40] of char;
+    PTThostFtdcClassifyType = ^TThostFtdcClassifyType;
+    TThostFtdcClassifyType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcPositionType是一个货位类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcPositionType = array[0..40] of char;
+    PTThostFtdcPositionType = ^TThostFtdcPositionType;
+    TThostFtdcPositionType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcYieldlyType是一个产地类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcYieldlyType = array[0..40] of char;
+    PTThostFtdcYieldlyType = ^TThostFtdcYieldlyType;
+    TThostFtdcYieldlyType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcWeightType是一个公定重量类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcWeightType = array[0..40] of char;
+    PTThostFtdcWeightType = ^TThostFtdcWeightType;
+    TThostFtdcWeightType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSubEntryFundNoType是一个分项资金流水号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcSubEntryFundNoType = ^TThostFtdcSubEntryFundNoType;
     TThostFtdcSubEntryFundNoType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFileIDType是一个文件标识类型 }
@@ -1743,12 +1879,14 @@ interface
     THOST_FTDC_FI_NonTradePosChange = 'B';    
 
   type
-    TThostFtdcFileIDType = char;
+    PTThostFtdcFileIDType = ^TThostFtdcFileIDType;
+    TThostFtdcFileIDType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFileNameType是一个文件名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFileNameType = array[0..256] of char;
+    PTThostFtdcFileNameType = ^TThostFtdcFileNameType;
+    TThostFtdcFileNameType = array[0..256] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFileTypeType是一个文件上传类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -1760,7 +1898,8 @@ interface
     THOST_FTDC_FUT_Check = '1';    
 
   type
-    TThostFtdcFileTypeType = char;
+    PTThostFtdcFileTypeType = ^TThostFtdcFileTypeType;
+    TThostFtdcFileTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFileFormatType是一个文件格式类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -1774,7 +1913,8 @@ interface
     THOST_FTDC_FFT_DBF = '2';    
 
   type
-    TThostFtdcFileFormatType = char;
+    PTThostFtdcFileFormatType = ^TThostFtdcFileFormatType;
+    TThostFtdcFileFormatType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFileUploadStatusType是一个文件状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -1792,7 +1932,8 @@ interface
     THOST_FTDC_FUS_FailedLoad = '5';    
 
   type
-    TThostFtdcFileUploadStatusType = char;
+    PTThostFtdcFileUploadStatusType = ^TThostFtdcFileUploadStatusType;
+    TThostFtdcFileUploadStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTransferDirectionType是一个移仓方向类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -1804,77 +1945,92 @@ interface
     THOST_FTDC_TD_In = '1';    
 
   type
-    TThostFtdcTransferDirectionType = char;
+    PTThostFtdcTransferDirectionType = ^TThostFtdcTransferDirectionType;
+    TThostFtdcTransferDirectionType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcUploadModeType是一个上传文件类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcUploadModeType = array[0..20] of char;
+    PTThostFtdcUploadModeType = ^TThostFtdcUploadModeType;
+    TThostFtdcUploadModeType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAccountIDType是一个投资者帐号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAccountIDType = array[0..12] of char;
+    PTThostFtdcAccountIDType = ^TThostFtdcAccountIDType;
+    TThostFtdcAccountIDType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBankFlagType是一个银行统一标识类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBankFlagType = array[0..3] of char;
+    PTThostFtdcBankFlagType = ^TThostFtdcBankFlagType;
+    TThostFtdcBankFlagType = array[0..3] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBankAccountType是一个银行账户类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBankAccountType = array[0..40] of char;
+    PTThostFtdcBankAccountType = ^TThostFtdcBankAccountType;
+    TThostFtdcBankAccountType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOpenNameType是一个银行账户的开户人名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcOpenNameType = array[0..60] of char;
+    PTThostFtdcOpenNameType = ^TThostFtdcOpenNameType;
+    TThostFtdcOpenNameType = array[0..60] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOpenBankType是一个银行账户的开户行类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcOpenBankType = array[0..100] of char;
+    PTThostFtdcOpenBankType = ^TThostFtdcOpenBankType;
+    TThostFtdcOpenBankType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBankNameType是一个银行名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBankNameType = array[0..100] of char;
+    PTThostFtdcBankNameType = ^TThostFtdcBankNameType;
+    TThostFtdcBankNameType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcPublishPathType是一个发布路径类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcPublishPathType = array[0..256] of char;
+    PTThostFtdcPublishPathType = ^TThostFtdcPublishPathType;
+    TThostFtdcPublishPathType = array[0..256] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOperatorIDType是一个操作员代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcOperatorIDType = array[0..64] of char;
+    PTThostFtdcOperatorIDType = ^TThostFtdcOperatorIDType;
+    TThostFtdcOperatorIDType = array[0..64] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcMonthCountType是一个月份数量类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcMonthCountType = ^TThostFtdcMonthCountType;
     TThostFtdcMonthCountType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAdvanceMonthArrayType是一个月份提前数组类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAdvanceMonthArrayType = array[0..12] of char;
+    PTThostFtdcAdvanceMonthArrayType = ^TThostFtdcAdvanceMonthArrayType;
+    TThostFtdcAdvanceMonthArrayType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcDateExprType是一个日期表达式类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcDateExprType = array[0..1024] of char;
+    PTThostFtdcDateExprType = ^TThostFtdcDateExprType;
+    TThostFtdcDateExprType = array[0..1024] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcInstrumentIDExprType是一个合约代码表达式类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcInstrumentIDExprType = array[0..40] of char;
+    PTThostFtdcInstrumentIDExprType = ^TThostFtdcInstrumentIDExprType;
+    TThostFtdcInstrumentIDExprType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcInstrumentNameExprType是一个合约名称表达式类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcInstrumentNameExprType = array[0..40] of char;
+    PTThostFtdcInstrumentNameExprType = ^TThostFtdcInstrumentNameExprType;
+    TThostFtdcInstrumentNameExprType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSpecialCreateRuleType是一个特殊的创建规则类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -1886,7 +2042,8 @@ interface
     THOST_FTDC_SC_NoSpringFestival = '1';    
 
   type
-    TThostFtdcSpecialCreateRuleType = char;
+    PTThostFtdcSpecialCreateRuleType = ^TThostFtdcSpecialCreateRuleType;
+    TThostFtdcSpecialCreateRuleType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBasisPriceTypeType是一个挂牌基准价类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -1898,7 +2055,8 @@ interface
     THOST_FTDC_IPT_LaseClose = '2';    
 
   type
-    TThostFtdcBasisPriceTypeType = char;
+    PTThostFtdcBasisPriceTypeType = ^TThostFtdcBasisPriceTypeType;
+    TThostFtdcBasisPriceTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcProductLifePhaseType是一个产品生命周期状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -1912,7 +2070,8 @@ interface
     THOST_FTDC_PLP_Canceled = '3';    
 
   type
-    TThostFtdcProductLifePhaseType = char;
+    PTThostFtdcProductLifePhaseType = ^TThostFtdcProductLifePhaseType;
+    TThostFtdcProductLifePhaseType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcDeliveryModeType是一个交割方式类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -1924,22 +2083,26 @@ interface
     THOST_FTDC_DM_CommodityDeliv = '2';    
 
   type
-    TThostFtdcDeliveryModeType = char;
+    PTThostFtdcDeliveryModeType = ^TThostFtdcDeliveryModeType;
+    TThostFtdcDeliveryModeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcLogLevelType是一个日志级别类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcLogLevelType = array[0..32] of char;
+    PTThostFtdcLogLevelType = ^TThostFtdcLogLevelType;
+    TThostFtdcLogLevelType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcProcessNameType是一个存储过程名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcProcessNameType = array[0..256] of char;
+    PTThostFtdcProcessNameType = ^TThostFtdcProcessNameType;
+    TThostFtdcProcessNameType = array[0..256] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOperationMemoType是一个操作摘要类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcOperationMemoType = array[0..1024] of char;
+    PTThostFtdcOperationMemoType = ^TThostFtdcOperationMemoType;
+    TThostFtdcOperationMemoType = array[0..1024] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFundIOTypeType是一个出入金类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -1953,7 +2116,8 @@ interface
     THOST_FTDC_FIOT_SwapCurrency = '3';    
 
   type
-    TThostFtdcFundIOTypeType = char;
+    PTThostFtdcFundIOTypeType = ^TThostFtdcFundIOTypeType;
+    TThostFtdcFundIOTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFundTypeType是一个资金类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -1969,7 +2133,8 @@ interface
     THOST_FTDC_FT_InnerTransfer = '4';    
 
   type
-    TThostFtdcFundTypeType = char;
+    PTThostFtdcFundTypeType = ^TThostFtdcFundTypeType;
+    TThostFtdcFundTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFundDirectionType是一个出入金方向类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -1981,7 +2146,8 @@ interface
     THOST_FTDC_FD_Out = '2';    
 
   type
-    TThostFtdcFundDirectionType = char;
+    PTThostFtdcFundDirectionType = ^TThostFtdcFundDirectionType;
+    TThostFtdcFundDirectionType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFundStatusType是一个资金状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -1992,20 +2158,23 @@ interface
   {/已复核 }
     THOST_FTDC_FS_Check = '2';    
   {/已冲销 }
-    THOST_FTDC_FS_Charge = '3';    
+    THOST_FTDC_FS_AnsiCharge = '3';
 
   type
-    TThostFtdcFundStatusType = char;
+    PTThostFtdcFundStatusType = ^TThostFtdcFundStatusType;
+    TThostFtdcFundStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBillNoType是一个票据号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBillNoType = array[0..14] of char;
+    PTThostFtdcBillNoType = ^TThostFtdcBillNoType;
+    TThostFtdcBillNoType = array[0..14] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBillNameType是一个票据名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBillNameType = array[0..32] of char;
+    PTThostFtdcBillNameType = ^TThostFtdcBillNameType;
+    TThostFtdcBillNameType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcPublishStatusType是一个发布状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2019,27 +2188,32 @@ interface
     THOST_FTDC_PS_Published = '3';    
 
   type
-    TThostFtdcPublishStatusType = char;
+    PTThostFtdcPublishStatusType = ^TThostFtdcPublishStatusType;
+    TThostFtdcPublishStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcEnumValueIDType是一个枚举值代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcEnumValueIDType = array[0..64] of char;
+    PTThostFtdcEnumValueIDType = ^TThostFtdcEnumValueIDType;
+    TThostFtdcEnumValueIDType = array[0..64] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcEnumValueTypeType是一个枚举值类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcEnumValueTypeType = array[0..32] of char;
+    PTThostFtdcEnumValueTypeType = ^TThostFtdcEnumValueTypeType;
+    TThostFtdcEnumValueTypeType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcEnumValueLabelType是一个枚举值名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcEnumValueLabelType = array[0..64] of char;
+    PTThostFtdcEnumValueLabelType = ^TThostFtdcEnumValueLabelType;
+    TThostFtdcEnumValueLabelType = array[0..64] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcEnumValueResultType是一个枚举值结果类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcEnumValueResultType = array[0..32] of char;
+    PTThostFtdcEnumValueResultType = ^TThostFtdcEnumValueResultType;
+    TThostFtdcEnumValueResultType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSystemStatusType是一个系统状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2061,7 +2235,8 @@ interface
     THOST_FTDC_ES_Settlement = '7';    
 
   type
-    TThostFtdcSystemStatusType = char;
+    PTThostFtdcSystemStatusType = ^TThostFtdcSystemStatusType;
+    TThostFtdcSystemStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSettlementStatusType是一个结算状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2077,62 +2252,74 @@ interface
     THOST_FTDC_STS_Finished = '3';    
 
   type
-    TThostFtdcSettlementStatusType = char;
+    PTThostFtdcSettlementStatusType = ^TThostFtdcSettlementStatusType;
+    TThostFtdcSettlementStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcRangeIntTypeType是一个限定值类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcRangeIntTypeType = array[0..32] of char;
+    PTThostFtdcRangeIntTypeType = ^TThostFtdcRangeIntTypeType;
+    TThostFtdcRangeIntTypeType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcRangeIntFromType是一个限定值下限类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcRangeIntFromType = array[0..32] of char;
+    PTThostFtdcRangeIntFromType = ^TThostFtdcRangeIntFromType;
+    TThostFtdcRangeIntFromType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcRangeIntToType是一个限定值上限类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcRangeIntToType = array[0..32] of char;
+    PTThostFtdcRangeIntToType = ^TThostFtdcRangeIntToType;
+    TThostFtdcRangeIntToType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFunctionIDType是一个功能代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFunctionIDType = array[0..24] of char;
+    PTThostFtdcFunctionIDType = ^TThostFtdcFunctionIDType;
+    TThostFtdcFunctionIDType = array[0..24] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFunctionValueCodeType是一个功能编码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFunctionValueCodeType = array[0..256] of char;
+    PTThostFtdcFunctionValueCodeType = ^TThostFtdcFunctionValueCodeType;
+    TThostFtdcFunctionValueCodeType = array[0..256] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFunctionNameType是一个功能名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFunctionNameType = array[0..64] of char;
+    PTThostFtdcFunctionNameType = ^TThostFtdcFunctionNameType;
+    TThostFtdcFunctionNameType = array[0..64] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcRoleIDType是一个角色编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcRoleIDType = array[0..10] of char;
+    PTThostFtdcRoleIDType = ^TThostFtdcRoleIDType;
+    TThostFtdcRoleIDType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcRoleNameType是一个角色名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcRoleNameType = array[0..40] of char;
+    PTThostFtdcRoleNameType = ^TThostFtdcRoleNameType;
+    TThostFtdcRoleNameType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcDescriptionType是一个描述类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcDescriptionType = array[0..400] of char;
+    PTThostFtdcDescriptionType = ^TThostFtdcDescriptionType;
+    TThostFtdcDescriptionType = array[0..400] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCombineIDType是一个组合编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCombineIDType = array[0..24] of char;
+    PTThostFtdcCombineIDType = ^TThostFtdcCombineIDType;
+    TThostFtdcCombineIDType = array[0..24] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCombineTypeType是一个组合类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCombineTypeType = array[0..24] of char;
+    PTThostFtdcCombineTypeType = ^TThostFtdcCombineTypeType;
+    TThostFtdcCombineTypeType = array[0..24] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcInvestorTypeType是一个投资者类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2150,7 +2337,8 @@ interface
     THOST_FTDC_CT_Asset = '4';    
 
   type
-    TThostFtdcInvestorTypeType = char;
+    PTThostFtdcInvestorTypeType = ^TThostFtdcInvestorTypeType;
+    TThostFtdcInvestorTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBrokerTypeType是一个经纪公司类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2162,7 +2350,8 @@ interface
     THOST_FTDC_BT_TradeSettle = '1';    
 
   type
-    TThostFtdcBrokerTypeType = char;
+    PTThostFtdcBrokerTypeType = ^TThostFtdcBrokerTypeType;
+    TThostFtdcBrokerTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcRiskLevelType是一个风险等级类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2178,7 +2367,8 @@ interface
     THOST_FTDC_FAS_Risk = '4';    
 
   type
-    TThostFtdcRiskLevelType = char;
+    PTThostFtdcRiskLevelType = ^TThostFtdcRiskLevelType;
+    TThostFtdcRiskLevelType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFeeAcceptStyleType是一个手续费收取方式类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2194,7 +2384,8 @@ interface
     THOST_FTDC_FAS_FixFee = '4';    
 
   type
-    TThostFtdcFeeAcceptStyleType = char;
+    PTThostFtdcFeeAcceptStyleType = ^TThostFtdcFeeAcceptStyleType;
+    TThostFtdcFeeAcceptStyleType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcPasswordTypeType是一个密码类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2206,7 +2397,8 @@ interface
     THOST_FTDC_PWDT_Account = '2';    
 
   type
-    TThostFtdcPasswordTypeType = char;
+    PTThostFtdcPasswordTypeType = ^TThostFtdcPasswordTypeType;
+    TThostFtdcPasswordTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAlgorithmType是一个盈亏算法类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2222,7 +2414,8 @@ interface
     THOST_FTDC_AG_None = '4';    
 
   type
-    TThostFtdcAlgorithmType = char;
+    PTThostFtdcAlgorithmType = ^TThostFtdcAlgorithmType;
+    TThostFtdcAlgorithmType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcIncludeCloseProfitType是一个是否包含平仓盈利类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2234,7 +2427,8 @@ interface
     THOST_FTDC_ICP_NotInclude = '2';    
 
   type
-    TThostFtdcIncludeCloseProfitType = char;
+    PTThostFtdcIncludeCloseProfitType = ^TThostFtdcIncludeCloseProfitType;
+    TThostFtdcIncludeCloseProfitType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAllWithoutTradeType是一个是否受可提比例限制类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2248,82 +2442,98 @@ interface
     THOST_FTDC_AWT_NoHoldEnable = '3';    
 
   type
-    TThostFtdcAllWithoutTradeType = char;
+    PTThostFtdcAllWithoutTradeType = ^TThostFtdcAllWithoutTradeType;
+    TThostFtdcAllWithoutTradeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCommentType是一个盈亏算法说明类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCommentType = array[0..30] of char;
+    PTThostFtdcCommentType = ^TThostFtdcCommentType;
+    TThostFtdcCommentType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcVersionType是一个版本号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcVersionType = array[0..3] of char;
+    PTThostFtdcVersionType = ^TThostFtdcVersionType;
+    TThostFtdcVersionType = array[0..3] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTradeCodeType是一个交易代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcTradeCodeType = array[0..6] of char;
+    PTThostFtdcTradeCodeType = ^TThostFtdcTradeCodeType;
+    TThostFtdcTradeCodeType = array[0..6] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTradeDateType是一个交易日期类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcTradeDateType = array[0..8] of char;
+    PTThostFtdcTradeDateType = ^TThostFtdcTradeDateType;
+    TThostFtdcTradeDateType = array[0..8] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTradeTimeType是一个交易时间类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcTradeTimeType = array[0..8] of char;
+    PTThostFtdcTradeTimeType = ^TThostFtdcTradeTimeType;
+    TThostFtdcTradeTimeType = array[0..8] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTradeSerialType是一个发起方流水号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcTradeSerialType = array[0..8] of char;
+    PTThostFtdcTradeSerialType = ^TThostFtdcTradeSerialType;
+    TThostFtdcTradeSerialType = array[0..8] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTradeSerialNoType是一个发起方流水号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcTradeSerialNoType = ^TThostFtdcTradeSerialNoType;
     TThostFtdcTradeSerialNoType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFutureIDType是一个期货公司代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFutureIDType = array[0..10] of char;
+    PTThostFtdcFutureIDType = ^TThostFtdcFutureIDType;
+    TThostFtdcFutureIDType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBankIDType是一个银行代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBankIDType = array[0..3] of char;
+    PTThostFtdcBankIDType = ^TThostFtdcBankIDType;
+    TThostFtdcBankIDType = array[0..3] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBankBrchIDType是一个银行分中心代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBankBrchIDType = array[0..4] of char;
+    PTThostFtdcBankBrchIDType = ^TThostFtdcBankBrchIDType;
+    TThostFtdcBankBrchIDType = array[0..4] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBankBranchIDType是一个分中心代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBankBranchIDType = array[0..10] of char;
+    PTThostFtdcBankBranchIDType = ^TThostFtdcBankBranchIDType;
+    TThostFtdcBankBranchIDType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOperNoType是一个交易柜员类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcOperNoType = array[0..16] of char;
+    PTThostFtdcOperNoType = ^TThostFtdcOperNoType;
+    TThostFtdcOperNoType = array[0..16] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcDeviceIDType是一个渠道标志类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcDeviceIDType = array[0..2] of char;
+    PTThostFtdcDeviceIDType = ^TThostFtdcDeviceIDType;
+    TThostFtdcDeviceIDType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcRecordNumType是一个记录数类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcRecordNumType = array[0..6] of char;
+    PTThostFtdcRecordNumType = ^TThostFtdcRecordNumType;
+    TThostFtdcRecordNumType = array[0..6] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFutureAccountType是一个期货资金账号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFutureAccountType = array[0..21] of char;
+    PTThostFtdcFutureAccountType = ^TThostFtdcFutureAccountType;
+    TThostFtdcFutureAccountType = array[0..21] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFuturePwdFlagType是一个资金密码核对标志类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2335,7 +2545,8 @@ interface
     THOST_FTDC_FPWD_Check = '1';    
 
   type
-    TThostFtdcFuturePwdFlagType = char;
+    PTThostFtdcFuturePwdFlagType = ^TThostFtdcFuturePwdFlagType;
+    TThostFtdcFuturePwdFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTransferTypeType是一个银期转账类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2347,42 +2558,50 @@ interface
     THOST_FTDC_TT_FutureToBank = '1';    
 
   type
-    TThostFtdcTransferTypeType = char;
+    PTThostFtdcTransferTypeType = ^TThostFtdcTransferTypeType;
+    TThostFtdcTransferTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFutureAccPwdType是一个期货资金密码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFutureAccPwdType = array[0..16] of char;
+    PTThostFtdcFutureAccPwdType = ^TThostFtdcFutureAccPwdType;
+    TThostFtdcFutureAccPwdType = array[0..16] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCurrencyCodeType是一个币种类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCurrencyCodeType = array[0..3] of char;
+    PTThostFtdcCurrencyCodeType = ^TThostFtdcCurrencyCodeType;
+    TThostFtdcCurrencyCodeType = array[0..3] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcRetCodeType是一个响应代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcRetCodeType = array[0..4] of char;
+    PTThostFtdcRetCodeType = ^TThostFtdcRetCodeType;
+    TThostFtdcRetCodeType = array[0..4] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcRetInfoType是一个响应信息类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcRetInfoType = array[0..128] of char;
+    PTThostFtdcRetInfoType = ^TThostFtdcRetInfoType;
+    TThostFtdcRetInfoType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTradeAmtType是一个银行总余额类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcTradeAmtType = array[0..19] of char;
+    PTThostFtdcTradeAmtType = ^TThostFtdcTradeAmtType;
+    TThostFtdcTradeAmtType = array[0..19] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcUseAmtType是一个银行可用余额类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcUseAmtType = array[0..19] of char;
+    PTThostFtdcUseAmtType = ^TThostFtdcUseAmtType;
+    TThostFtdcUseAmtType = array[0..19] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFetchAmtType是一个银行可取余额类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFetchAmtType = array[0..19] of char;
+    PTThostFtdcFetchAmtType = ^TThostFtdcFetchAmtType;
+    TThostFtdcFetchAmtType = array[0..19] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTransferValidFlagType是一个转账有效标志类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2396,12 +2615,14 @@ interface
     THOST_FTDC_TVF_Reverse = '2';    
 
   type
-    TThostFtdcTransferValidFlagType = char;
+    PTThostFtdcTransferValidFlagType = ^TThostFtdcTransferValidFlagType;
+    TThostFtdcTransferValidFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCertCodeType是一个证件号码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCertCodeType = array[0..20] of char;
+    PTThostFtdcCertCodeType = ^TThostFtdcCertCodeType;
+    TThostFtdcCertCodeType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcReasonType是一个事由类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2415,12 +2636,14 @@ interface
     THOST_FTDC_RN_QT = '2';    
 
   type
-    TThostFtdcReasonType = char;
+    PTThostFtdcReasonType = ^TThostFtdcReasonType;
+    TThostFtdcReasonType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFundProjectIDType是一个资金项目编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFundProjectIDType = array[0..4] of char;
+    PTThostFtdcFundProjectIDType = ^TThostFtdcFundProjectIDType;
+    TThostFtdcFundProjectIDType = array[0..4] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSexType是一个性别类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2434,52 +2657,62 @@ interface
     THOST_FTDC_SEX_Woman = '2';    
 
   type
-    TThostFtdcSexType = char;
+    PTThostFtdcSexType = ^TThostFtdcSexType;
+    TThostFtdcSexType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcProfessionType是一个职业类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcProfessionType = array[0..100] of char;
+    PTThostFtdcProfessionType = ^TThostFtdcProfessionType;
+    TThostFtdcProfessionType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcNationalType是一个国籍类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcNationalType = array[0..30] of char;
+    PTThostFtdcNationalType = ^TThostFtdcNationalType;
+    TThostFtdcNationalType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcProvinceType是一个省类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcProvinceType = array[0..50] of char;
+    PTThostFtdcProvinceType = ^TThostFtdcProvinceType;
+    TThostFtdcProvinceType = array[0..50] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcRegionType是一个区类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcRegionType = array[0..15] of char;
+    PTThostFtdcRegionType = ^TThostFtdcRegionType;
+    TThostFtdcRegionType = array[0..15] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCountryType是一个国家类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCountryType = array[0..15] of char;
+    PTThostFtdcCountryType = ^TThostFtdcCountryType;
+    TThostFtdcCountryType = array[0..15] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcLicenseNOType是一个营业执照类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcLicenseNOType = array[0..32] of char;
+    //PTThostFtdcLicenseNOType = ^TThostFtdcLicenseNOType;
+   // TThostFtdcLicenseNOType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCompanyTypeType是一个企业性质类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCompanyTypeType = array[0..15] of char;
+    PTThostFtdcCompanyTypeType = ^TThostFtdcCompanyTypeType;
+    TThostFtdcCompanyTypeType = array[0..15] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBusinessScopeType是一个经营范围类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBusinessScopeType = array[0..1000] of char;
+    PTThostFtdcBusinessScopeType = ^TThostFtdcBusinessScopeType;
+    TThostFtdcBusinessScopeType = array[0..1000] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCapitalCurrencyType是一个注册资本币种类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCapitalCurrencyType = array[0..3] of char;
+    PTThostFtdcCapitalCurrencyType = ^TThostFtdcCapitalCurrencyType;
+    TThostFtdcCapitalCurrencyType = array[0..3] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcUserTypeType是一个用户类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2493,12 +2726,14 @@ interface
     THOST_FTDC_UT_SuperUser = '2';    
 
   type
-    TThostFtdcUserTypeType = char;
+    PTThostFtdcUserTypeType = ^TThostFtdcUserTypeType;
+    TThostFtdcUserTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBranchIDType是一个营业部编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBranchIDType = array[0..8] of char;
+    PTThostFtdcBranchIDType = ^TThostFtdcBranchIDType;
+    TThostFtdcBranchIDType = array[0..8] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcRateTypeType是一个费率类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2508,7 +2743,8 @@ interface
     THOST_FTDC_RATETYPE_MarginRate = '2';    
 
   type
-    TThostFtdcRateTypeType = char;
+    PTThostFtdcRateTypeType = ^TThostFtdcRateTypeType;
+    TThostFtdcRateTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcNoteTypeType是一个通知类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2528,7 +2764,8 @@ interface
     THOST_FTDC_NOTETYPE_DelivNotes = '6';    
 
   type
-    TThostFtdcNoteTypeType = char;
+    PTThostFtdcNoteTypeType = ^TThostFtdcNoteTypeType;
+    TThostFtdcNoteTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSettlementStyleType是一个结算单方式类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2540,17 +2777,20 @@ interface
     THOST_FTDC_SBS_Volume = '2';    
 
   type
-    TThostFtdcSettlementStyleType = char;
+    PTThostFtdcSettlementStyleType = ^TThostFtdcSettlementStyleType;
+    TThostFtdcSettlementStyleType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBrokerDNSType是一个域名类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBrokerDNSType = array[0..255] of char;
+    PTThostFtdcBrokerDNSType = ^TThostFtdcBrokerDNSType;
+    TThostFtdcBrokerDNSType = array[0..255] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSentenceType是一个语句类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcSentenceType = array[0..500] of char;
+    PTThostFtdcSentenceType = ^TThostFtdcSentenceType;
+    TThostFtdcSentenceType = array[0..500] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSettlementBillTypeType是一个结算单类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2562,7 +2802,8 @@ interface
     THOST_FTDC_ST_Month = '1';    
 
   type
-    TThostFtdcSettlementBillTypeType = char;
+    PTThostFtdcSettlementBillTypeType = ^TThostFtdcSettlementBillTypeType;
+    TThostFtdcSettlementBillTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcUserRightTypeType是一个客户权限类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2580,7 +2821,8 @@ interface
     THOST_FTDC_URT_ConditionOrder = '5';    
 
   type
-    TThostFtdcUserRightTypeType = char;
+    PTThostFtdcUserRightTypeType = ^TThostFtdcUserRightTypeType;
+    TThostFtdcUserRightTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcMarginPriceTypeType是一个保证金价格类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2596,7 +2838,8 @@ interface
     THOST_FTDC_MPT_OpenPrice = '4';    
 
   type
-    TThostFtdcMarginPriceTypeType = char;
+    PTThostFtdcMarginPriceTypeType = ^TThostFtdcMarginPriceTypeType;
+    TThostFtdcMarginPriceTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBillGenStatusType是一个结算单生成状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2610,7 +2853,8 @@ interface
     THOST_FTDC_BGS_Generated = '2';    
 
   type
-    TThostFtdcBillGenStatusType = char;
+    PTThostFtdcBillGenStatusType = ^TThostFtdcBillGenStatusType;
+    TThostFtdcBillGenStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAlgoTypeType是一个算法类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2622,7 +2866,8 @@ interface
     THOST_FTDC_AT_FindMarginRateAlgo = '2';    
 
   type
-    TThostFtdcAlgoTypeType = char;
+    PTThostFtdcAlgoTypeType = ^TThostFtdcAlgoTypeType;
+    TThostFtdcAlgoTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcHandlePositionAlgoIDType是一个持仓处理算法编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2636,7 +2881,8 @@ interface
     THOST_FTDC_HPA_CZCE = '3';    
 
   type
-    TThostFtdcHandlePositionAlgoIDType = char;
+    PTThostFtdcHandlePositionAlgoIDType = ^TThostFtdcHandlePositionAlgoIDType;
+    TThostFtdcHandlePositionAlgoIDType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFindMarginRateAlgoIDType是一个寻找保证金率算法编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2650,7 +2896,8 @@ interface
     THOST_FTDC_FMRA_CZCE = '3';    
 
   type
-    TThostFtdcFindMarginRateAlgoIDType = char;
+    PTThostFtdcFindMarginRateAlgoIDType = ^TThostFtdcFindMarginRateAlgoIDType;
+    TThostFtdcFindMarginRateAlgoIDType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcHandleTradingAccountAlgoIDType是一个资金处理算法编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2664,7 +2911,8 @@ interface
     THOST_FTDC_HTAA_CZCE = '3';    
 
   type
-    TThostFtdcHandleTradingAccountAlgoIDType = char;
+    PTThostFtdcHandleTradingAccountAlgoIDType = ^TThostFtdcHandleTradingAccountAlgoIDType;
+    TThostFtdcHandleTradingAccountAlgoIDType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcPersonTypeType是一个联系人类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2700,7 +2948,8 @@ interface
     THOST_FTDC_PST_CorporationRefer = 'E';    
 
   type
-    TThostFtdcPersonTypeType = char;
+    PTThostFtdcPersonTypeType = ^TThostFtdcPersonTypeType;
+    TThostFtdcPersonTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcQueryInvestorRangeType是一个查询范围类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2714,7 +2963,8 @@ interface
     THOST_FTDC_QIR_Single = '3';    
 
   type
-    TThostFtdcQueryInvestorRangeType = char;
+    PTThostFtdcQueryInvestorRangeType = ^TThostFtdcQueryInvestorRangeType;
+    TThostFtdcQueryInvestorRangeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcInvestorRiskStatusType是一个投资者风险状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2732,37 +2982,44 @@ interface
     THOST_FTDC_IRS_Exception = '5';    
 
   type
-    TThostFtdcInvestorRiskStatusType = char;
+    PTThostFtdcInvestorRiskStatusType = ^TThostFtdcInvestorRiskStatusType;
+    TThostFtdcInvestorRiskStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcLegIDType是一个单腿编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcLegIDType = ^TThostFtdcLegIDType;
     TThostFtdcLegIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcLegMultipleType是一个单腿乘数类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcLegMultipleType = ^TThostFtdcLegMultipleType;
     TThostFtdcLegMultipleType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcImplyLevelType是一个派生层数类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcImplyLevelType = ^TThostFtdcImplyLevelType;
     TThostFtdcImplyLevelType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcClearAccountType是一个结算账户类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcClearAccountType = array[0..32] of char;
+    PTThostFtdcClearAccountType = ^TThostFtdcClearAccountType;
+    TThostFtdcClearAccountType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOrganNOType是一个结算账户类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcOrganNOType = array[0..5] of char;
+    PTThostFtdcOrganNOType = ^TThostFtdcOrganNOType;
+    TThostFtdcOrganNOType = array[0..5] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcClearbarchIDType是一个结算账户联行号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcClearbarchIDType = array[0..5] of char;
+    PTThostFtdcClearbarchIDType = ^TThostFtdcClearbarchIDType;
+    TThostFtdcClearbarchIDType = array[0..5] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcUserEventTypeType是一个用户事件类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2788,12 +3045,14 @@ interface
     THOST_FTDC_UET_Other = '9';    
 
   type
-    TThostFtdcUserEventTypeType = char;
+    PTThostFtdcUserEventTypeType = ^TThostFtdcUserEventTypeType;
+    TThostFtdcUserEventTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcUserEventInfoType是一个用户事件信息类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcUserEventInfoType = array[0..1024] of char;
+    PTThostFtdcUserEventInfoType = ^TThostFtdcUserEventInfoType;
+    TThostFtdcUserEventInfoType = array[0..1024] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCloseStyleType是一个平仓方式类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2805,7 +3064,8 @@ interface
     THOST_FTDC_ICS_CloseToday = '1';    
 
   type
-    TThostFtdcCloseStyleType = char;
+    PTThostFtdcCloseStyleType = ^TThostFtdcCloseStyleType;
+    TThostFtdcCloseStyleType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcStatModeType是一个统计方式类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2821,7 +3081,8 @@ interface
     THOST_FTDC_SM_Investor = '3';    
 
   type
-    TThostFtdcStatModeType = char;
+    PTThostFtdcStatModeType = ^TThostFtdcStatModeType;
+    TThostFtdcStatModeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcParkedOrderStatusType是一个预埋单状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2835,17 +3096,20 @@ interface
     THOST_FTDC_PAOS_Deleted = '3';    
 
   type
-    TThostFtdcParkedOrderStatusType = char;
+    PTThostFtdcParkedOrderStatusType = ^TThostFtdcParkedOrderStatusType;
+    TThostFtdcParkedOrderStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcParkedOrderIDType是一个预埋报单编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcParkedOrderIDType = array[0..12] of char;
+    PTThostFtdcParkedOrderIDType = ^TThostFtdcParkedOrderIDType;
+    TThostFtdcParkedOrderIDType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcParkedOrderActionIDType是一个预埋撤单编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcParkedOrderActionIDType = array[0..12] of char;
+    PTThostFtdcParkedOrderActionIDType = ^TThostFtdcParkedOrderActionIDType;
+    TThostFtdcParkedOrderActionIDType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcVirDealStatusType是一个处理状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2857,7 +3121,8 @@ interface
     THOST_FTDC_VDS_DeaclSucceed = '2';    
 
   type
-    TThostFtdcVirDealStatusType = char;
+    PTThostFtdcVirDealStatusType = ^TThostFtdcVirDealStatusType;
+    TThostFtdcVirDealStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOrgSystemIDType是一个原有系统代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2871,7 +3136,8 @@ interface
     THOST_FTDC_ORGS_KingStarV6 = '2';    
 
   type
-    TThostFtdcOrgSystemIDType = char;
+    PTThostFtdcOrgSystemIDType = ^TThostFtdcOrgSystemIDType;
+    TThostFtdcOrgSystemIDType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcVirTradeStatusType是一个交易状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2893,7 +3159,8 @@ interface
     THOST_FTDC_VTS_SysException = '6';    
 
   type
-    TThostFtdcVirTradeStatusType = char;
+    PTThostFtdcVirTradeStatusType = ^TThostFtdcVirTradeStatusType;
+    TThostFtdcVirTradeStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcVirBankAccTypeType是一个银行帐户类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2907,7 +3174,8 @@ interface
     THOST_FTDC_VBAT_CreditCard = '3';    
 
   type
-    TThostFtdcVirBankAccTypeType = char;
+    PTThostFtdcVirBankAccTypeType = ^TThostFtdcVirBankAccTypeType;
+    TThostFtdcVirBankAccTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcVirementStatusType是一个银行帐户类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2919,7 +3187,8 @@ interface
     THOST_FTDC_VMS_Canceled = '9';    
 
   type
-    TThostFtdcVirementStatusType = char;
+    PTThostFtdcVirementStatusType = ^TThostFtdcVirementStatusType;
+    TThostFtdcVirementStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcVirementAvailAbilityType是一个有效标志类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2933,7 +3202,8 @@ interface
     THOST_FTDC_VAA_Repeal = '2';    
 
   type
-    TThostFtdcVirementAvailAbilityType = char;
+    PTThostFtdcVirementAvailAbilityType = ^TThostFtdcVirementAvailAbilityType;
+    TThostFtdcVirementAvailAbilityType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcVirementTradeCodeType是一个交易代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -2949,142 +3219,170 @@ interface
     THOST_FTDC_VTC_FutureFutureToBank = '202002';    
 
   type
-    TThostFtdcVirementTradeCodeType = char;
+    PTThostFtdcVirementTradeCodeType = ^TThostFtdcVirementTradeCodeType;
+    TThostFtdcVirementTradeCodeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcPhotoTypeNameType是一个影像类型名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcPhotoTypeNameType = array[0..40] of char;
+    PTThostFtdcPhotoTypeNameType = ^TThostFtdcPhotoTypeNameType;
+    TThostFtdcPhotoTypeNameType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcPhotoTypeIDType是一个影像类型代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcPhotoTypeIDType = array[0..4] of char;
+    PTThostFtdcPhotoTypeIDType = ^TThostFtdcPhotoTypeIDType;
+    TThostFtdcPhotoTypeIDType = array[0..4] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcPhotoNameType是一个影像名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcPhotoNameType = array[0..160] of char;
+    PTThostFtdcPhotoNameType = ^TThostFtdcPhotoNameType;
+    TThostFtdcPhotoNameType = array[0..160] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTopicIDType是一个主题代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcTopicIDType = ^TThostFtdcTopicIDType;
     TThostFtdcTopicIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcReportTypeIDType是一个交易报告类型标识类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcReportTypeIDType = array[0..2] of char;
+    PTThostFtdcReportTypeIDType = ^TThostFtdcReportTypeIDType;
+    TThostFtdcReportTypeIDType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCharacterIDType是一个交易特征代码类型 }
+  {/TFtdcAnsiCharacterIDType是一个交易特征代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCharacterIDType = array[0..4] of char;
+    PTThostFtdcAnsiCharacterIDType = ^TThostFtdcAnsiCharacterIDType;
+    TThostFtdcAnsiCharacterIDType = array[0..4] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAMLParamIDType是一个参数代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAMLParamIDType = array[0..20] of char;
+    PTThostFtdcAMLParamIDType = ^TThostFtdcAMLParamIDType;
+    TThostFtdcAMLParamIDType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAMLInvestorTypeType是一个投资者类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAMLInvestorTypeType = array[0..2] of char;
+    PTThostFtdcAMLInvestorTypeType = ^TThostFtdcAMLInvestorTypeType;
+    TThostFtdcAMLInvestorTypeType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAMLIdCardTypeType是一个证件类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAMLIdCardTypeType = array[0..2] of char;
+    PTThostFtdcAMLIdCardTypeType = ^TThostFtdcAMLIdCardTypeType;
+    TThostFtdcAMLIdCardTypeType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAMLTradeDirectType是一个资金进出方向类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAMLTradeDirectType = array[0..2] of char;
+    PTThostFtdcAMLTradeDirectType = ^TThostFtdcAMLTradeDirectType;
+    TThostFtdcAMLTradeDirectType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAMLTradeModelType是一个资金进出方式类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAMLTradeModelType = array[0..2] of char;
+    PTThostFtdcAMLTradeModelType = ^TThostFtdcAMLTradeModelType;
+    TThostFtdcAMLTradeModelType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAMLOpParamValueType是一个业务参数代码值类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcAMLOpParamValueType = ^TThostFtdcAMLOpParamValueType;
     TThostFtdcAMLOpParamValueType = double;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAMLCustomerCardTypeType是一个客户身份证件/证明文件类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAMLCustomerCardTypeType = array[0..80] of char;
+    PTThostFtdcAMLCustomerCardTypeType = ^TThostFtdcAMLCustomerCardTypeType;
+    TThostFtdcAMLCustomerCardTypeType = array[0..80] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAMLInstitutionNameType是一个金融机构网点名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAMLInstitutionNameType = array[0..64] of char;
+    PTThostFtdcAMLInstitutionNameType = ^TThostFtdcAMLInstitutionNameType;
+    TThostFtdcAMLInstitutionNameType = array[0..64] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAMLDistrictIDType是一个金融机构网点所在地区行政区划代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAMLDistrictIDType = array[0..6] of char;
+    PTThostFtdcAMLDistrictIDType = ^TThostFtdcAMLDistrictIDType;
+    TThostFtdcAMLDistrictIDType = array[0..6] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAMLRelationShipType是一个金融机构网点与大额交易的关系类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAMLRelationShipType = array[0..2] of char;
+    PTThostFtdcAMLRelationShipType = ^TThostFtdcAMLRelationShipType;
+    TThostFtdcAMLRelationShipType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAMLInstitutionTypeType是一个金融机构网点代码类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAMLInstitutionTypeType = array[0..2] of char;
+    PTThostFtdcAMLInstitutionTypeType = ^TThostFtdcAMLInstitutionTypeType;
+    TThostFtdcAMLInstitutionTypeType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAMLInstitutionIDType是一个金融机构网点代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAMLInstitutionIDType = array[0..12] of char;
+    PTThostFtdcAMLInstitutionIDType = ^TThostFtdcAMLInstitutionIDType;
+    TThostFtdcAMLInstitutionIDType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAMLAccountTypeType是一个账户类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAMLAccountTypeType = array[0..4] of char;
+    PTThostFtdcAMLAccountTypeType = ^TThostFtdcAMLAccountTypeType;
+    TThostFtdcAMLAccountTypeType = array[0..4] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAMLTradingTypeType是一个交易方式类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAMLTradingTypeType = array[0..6] of char;
+    PTThostFtdcAMLTradingTypeType = ^TThostFtdcAMLTradingTypeType;
+    TThostFtdcAMLTradingTypeType = array[0..6] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAMLTransactClassType是一个涉外收支交易分类与代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAMLTransactClassType = array[0..6] of char;
+    PTThostFtdcAMLTransactClassType = ^TThostFtdcAMLTransactClassType;
+    TThostFtdcAMLTransactClassType = array[0..6] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAMLCapitalIOType是一个资金收付标识类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAMLCapitalIOType = array[0..2] of char;
+    PTThostFtdcAMLCapitalIOType = ^TThostFtdcAMLCapitalIOType;
+    TThostFtdcAMLCapitalIOType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAMLSiteType是一个交易地点类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAMLSiteType = array[0..9] of char;
+    PTThostFtdcAMLSiteType = ^TThostFtdcAMLSiteType;
+    TThostFtdcAMLSiteType = array[0..9] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAMLCapitalPurposeType是一个资金用途类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAMLCapitalPurposeType = array[0..128] of char;
+    PTThostFtdcAMLCapitalPurposeType = ^TThostFtdcAMLCapitalPurposeType;
+    TThostFtdcAMLCapitalPurposeType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAMLReportTypeType是一个报文类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAMLReportTypeType = array[0..1] of char;
+    PTThostFtdcAMLReportTypeType = ^TThostFtdcAMLReportTypeType;
+    TThostFtdcAMLReportTypeType = array[0..1] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAMLSerialNoType是一个编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAMLSerialNoType = array[0..4] of char;
+    PTThostFtdcAMLSerialNoType = ^TThostFtdcAMLSerialNoType;
+    TThostFtdcAMLSerialNoType = array[0..4] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAMLStatusType是一个状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAMLStatusType = array[0..1] of char;
+    PTThostFtdcAMLStatusType = ^TThostFtdcAMLStatusType;
+    TThostFtdcAMLStatusType = array[0..1] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAMLGenStatusType是一个Aml生成方式类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3096,37 +3394,44 @@ interface
     THOST_FTDC_GEN_HandWork = '1';    
 
   type
-    TThostFtdcAMLGenStatusType = char;
+    PTThostFtdcAMLGenStatusType = ^TThostFtdcAMLGenStatusType;
+    TThostFtdcAMLGenStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAMLSeqCodeType是一个业务标识号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAMLSeqCodeType = array[0..64] of char;
+    PTThostFtdcAMLSeqCodeType = ^TThostFtdcAMLSeqCodeType;
+    TThostFtdcAMLSeqCodeType = array[0..64] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAMLFileNameType是一个AML文件名类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAMLFileNameType = array[0..256] of char;
+    PTThostFtdcAMLFileNameType = ^TThostFtdcAMLFileNameType;
+    TThostFtdcAMLFileNameType = array[0..256] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAMLMoneyType是一个反洗钱资金类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcAMLMoneyType = ^TThostFtdcAMLMoneyType;
     TThostFtdcAMLMoneyType = double;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAMLFileAmountType是一个反洗钱资金类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcAMLFileAmountType = ^TThostFtdcAMLFileAmountType;
     TThostFtdcAMLFileAmountType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCFMMCKeyType是一个密钥类型(保证金监管)类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCFMMCKeyType = array[0..20] of char;
+    PTThostFtdcCFMMCKeyType = ^TThostFtdcCFMMCKeyType;
+    TThostFtdcCFMMCKeyType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCFMMCTokenType是一个令牌类型(保证金监管)类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCFMMCTokenType = array[0..20] of char;
+    PTThostFtdcCFMMCTokenType = ^TThostFtdcCFMMCTokenType;
+    TThostFtdcCFMMCTokenType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCFMMCKeyKindType是一个动态密钥类别(保证金监管)类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3140,311 +3445,373 @@ interface
     THOST_FTDC_CFMMCKK_MANUAL = 'M';    
 
   type
-    TThostFtdcCFMMCKeyKindType = char;
+    PTThostFtdcCFMMCKeyKindType = ^TThostFtdcCFMMCKeyKindType;
+    TThostFtdcCFMMCKeyKindType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAMLReportNameType是一个报文名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAMLReportNameType = array[0..80] of char;
+    PTThostFtdcAMLReportNameType = ^TThostFtdcAMLReportNameType;
+    TThostFtdcAMLReportNameType = array[0..80] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcIndividualNameType是一个个人姓名类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcIndividualNameType = array[0..50] of char;
+    PTThostFtdcIndividualNameType = ^TThostFtdcIndividualNameType;
+    TThostFtdcIndividualNameType = array[0..50] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCurrencyIDType是一个币种代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCurrencyIDType = array[0..3] of char;
+    PTThostFtdcCurrencyIDType = ^TThostFtdcCurrencyIDType;
+    TThostFtdcCurrencyIDType = array[0..3] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCustNumberType是一个客户编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCustNumberType = array[0..35] of char;
+    PTThostFtdcCustNumberType = ^TThostFtdcCustNumberType;
+    TThostFtdcCustNumberType = array[0..35] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOrganCodeType是一个机构编码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcOrganCodeType = array[0..35] of char;
+    PTThostFtdcOrganCodeType = ^TThostFtdcOrganCodeType;
+    TThostFtdcOrganCodeType = array[0..35] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOrganNameType是一个机构名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcOrganNameType = array[0..70] of char;
+    PTThostFtdcOrganNameType = ^TThostFtdcOrganNameType;
+    TThostFtdcOrganNameType = array[0..70] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSuperOrganCodeType是一个上级机构编码,即期货公司总部、银行总行类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcSuperOrganCodeType = array[0..11] of char;
+    PTThostFtdcSuperOrganCodeType = ^TThostFtdcSuperOrganCodeType;
+    TThostFtdcSuperOrganCodeType = array[0..11] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSubBranchIDType是一个分支机构类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcSubBranchIDType = array[0..30] of char;
+    PTThostFtdcSubBranchIDType = ^TThostFtdcSubBranchIDType;
+    TThostFtdcSubBranchIDType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSubBranchNameType是一个分支机构名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcSubBranchNameType = array[0..70] of char;
+    PTThostFtdcSubBranchNameType = ^TThostFtdcSubBranchNameType;
+    TThostFtdcSubBranchNameType = array[0..70] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBranchNetCodeType是一个机构网点号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBranchNetCodeType = array[0..30] of char;
+    PTThostFtdcBranchNetCodeType = ^TThostFtdcBranchNetCodeType;
+    TThostFtdcBranchNetCodeType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBranchNetNameType是一个机构网点名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBranchNetNameType = array[0..70] of char;
+    PTThostFtdcBranchNetNameType = ^TThostFtdcBranchNetNameType;
+    TThostFtdcBranchNetNameType = array[0..70] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOrganFlagType是一个机构标识类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcOrganFlagType = array[0..1] of char;
+    PTThostFtdcOrganFlagType = ^TThostFtdcOrganFlagType;
+    TThostFtdcOrganFlagType = array[0..1] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBankCodingForFutureType是一个银行对期货公司的编码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBankCodingForFutureType = array[0..32] of char;
+    PTThostFtdcBankCodingForFutureType = ^TThostFtdcBankCodingForFutureType;
+    TThostFtdcBankCodingForFutureType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBankReturnCodeType是一个银行对返回码的定义类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBankReturnCodeType = array[0..6] of char;
+    PTThostFtdcBankReturnCodeType = ^TThostFtdcBankReturnCodeType;
+    TThostFtdcBankReturnCodeType = array[0..6] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcPlateReturnCodeType是一个银期转帐平台对返回码的定义类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcPlateReturnCodeType = array[0..4] of char;
+    PTThostFtdcPlateReturnCodeType = ^TThostFtdcPlateReturnCodeType;
+    TThostFtdcPlateReturnCodeType = array[0..4] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBankSubBranchIDType是一个银行分支机构编码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBankSubBranchIDType = array[0..30] of char;
+    PTThostFtdcBankSubBranchIDType = ^TThostFtdcBankSubBranchIDType;
+    TThostFtdcBankSubBranchIDType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFutureBranchIDType是一个期货分支机构编码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFutureBranchIDType = array[0..30] of char;
+    PTThostFtdcFutureBranchIDType = ^TThostFtdcFutureBranchIDType;
+    TThostFtdcFutureBranchIDType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcReturnCodeType是一个返回代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcReturnCodeType = array[0..6] of char;
+    PTThostFtdcReturnCodeType = ^TThostFtdcReturnCodeType;
+    TThostFtdcReturnCodeType = array[0..6] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOperatorCodeType是一个操作员类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcOperatorCodeType = array[0..16] of char;
+    PTThostFtdcOperatorCodeType = ^TThostFtdcOperatorCodeType;
+    TThostFtdcOperatorCodeType = array[0..16] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcClearDepIDType是一个机构结算帐户机构号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcClearDepIDType = array[0..5] of char;
+    PTThostFtdcClearDepIDType = ^TThostFtdcClearDepIDType;
+    TThostFtdcClearDepIDType = array[0..5] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcClearBrchIDType是一个机构结算帐户联行号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcClearBrchIDType = array[0..5] of char;
+    PTThostFtdcClearBrchIDType = ^TThostFtdcClearBrchIDType;
+    TThostFtdcClearBrchIDType = array[0..5] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcClearNameType是一个机构结算帐户名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcClearNameType = array[0..70] of char;
+    PTThostFtdcClearNameType = ^TThostFtdcClearNameType;
+    TThostFtdcClearNameType = array[0..70] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBankAccountNameType是一个银行帐户名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBankAccountNameType = array[0..70] of char;
+    PTThostFtdcBankAccountNameType = ^TThostFtdcBankAccountNameType;
+    TThostFtdcBankAccountNameType = array[0..70] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcInvDepIDType是一个机构投资人账号机构号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcInvDepIDType = array[0..5] of char;
+    PTThostFtdcInvDepIDType = ^TThostFtdcInvDepIDType;
+    TThostFtdcInvDepIDType = array[0..5] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcInvBrchIDType是一个机构投资人联行号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcInvBrchIDType = array[0..5] of char;
+    PTThostFtdcInvBrchIDType = ^TThostFtdcInvBrchIDType;
+    TThostFtdcInvBrchIDType = array[0..5] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcMessageFormatVersionType是一个信息格式版本类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcMessageFormatVersionType = array[0..35] of char;
+    PTThostFtdcMessageFormatVersionType = ^TThostFtdcMessageFormatVersionType;
+    TThostFtdcMessageFormatVersionType = array[0..35] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcDigestType是一个摘要类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcDigestType = array[0..35] of char;
+    PTThostFtdcDigestType = ^TThostFtdcDigestType;
+    TThostFtdcDigestType = array[0..35] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAuthenticDataType是一个认证数据类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAuthenticDataType = array[0..128] of char;
+    PTThostFtdcAuthenticDataType = ^TThostFtdcAuthenticDataType;
+    TThostFtdcAuthenticDataType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcPasswordKeyType是一个密钥类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcPasswordKeyType = array[0..128] of char;
+    PTThostFtdcPasswordKeyType = ^TThostFtdcPasswordKeyType;
+    TThostFtdcPasswordKeyType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFutureAccountNameType是一个期货帐户名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFutureAccountNameType = array[0..128] of char;
+    PTThostFtdcFutureAccountNameType = ^TThostFtdcFutureAccountNameType;
+    TThostFtdcFutureAccountNameType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcMobilePhoneType是一个手机类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcMobilePhoneType = array[0..20] of char;
+    PTThostFtdcMobilePhoneType = ^TThostFtdcMobilePhoneType;
+    TThostFtdcMobilePhoneType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFutureMainKeyType是一个期货公司主密钥类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFutureMainKeyType = array[0..128] of char;
+    PTThostFtdcFutureMainKeyType = ^TThostFtdcFutureMainKeyType;
+    TThostFtdcFutureMainKeyType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFutureWorkKeyType是一个期货公司工作密钥类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFutureWorkKeyType = array[0..128] of char;
+    PTThostFtdcFutureWorkKeyType = ^TThostFtdcFutureWorkKeyType;
+    TThostFtdcFutureWorkKeyType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFutureTransKeyType是一个期货公司传输密钥类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFutureTransKeyType = array[0..128] of char;
+    PTThostFtdcFutureTransKeyType = ^TThostFtdcFutureTransKeyType;
+    TThostFtdcFutureTransKeyType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBankMainKeyType是一个银行主密钥类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBankMainKeyType = array[0..128] of char;
+    PTThostFtdcBankMainKeyType = ^TThostFtdcBankMainKeyType;
+    TThostFtdcBankMainKeyType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBankWorkKeyType是一个银行工作密钥类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBankWorkKeyType = array[0..128] of char;
+    PTThostFtdcBankWorkKeyType = ^TThostFtdcBankWorkKeyType;
+    TThostFtdcBankWorkKeyType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBankTransKeyType是一个银行传输密钥类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBankTransKeyType = array[0..128] of char;
+    PTThostFtdcBankTransKeyType = ^TThostFtdcBankTransKeyType;
+    TThostFtdcBankTransKeyType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBankServerDescriptionType是一个银行服务器描述信息类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBankServerDescriptionType = array[0..128] of char;
+    PTThostFtdcBankServerDescriptionType = ^TThostFtdcBankServerDescriptionType;
+    TThostFtdcBankServerDescriptionType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAddInfoType是一个附加信息类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAddInfoType = array[0..128] of char;
+    PTThostFtdcAddInfoType = ^TThostFtdcAddInfoType;
+    TThostFtdcAddInfoType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcDescrInfoForReturnCodeType是一个返回码描述类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcDescrInfoForReturnCodeType = array[0..128] of char;
+    PTThostFtdcDescrInfoForReturnCodeType = ^TThostFtdcDescrInfoForReturnCodeType;
+    TThostFtdcDescrInfoForReturnCodeType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCountryCodeType是一个国家代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCountryCodeType = array[0..20] of char;
+    PTThostFtdcCountryCodeType = ^TThostFtdcCountryCodeType;
+    TThostFtdcCountryCodeType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSerialType是一个流水号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcSerialType = ^TThostFtdcSerialType;
     TThostFtdcSerialType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcPlateSerialType是一个平台流水号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcPlateSerialType = ^TThostFtdcPlateSerialType;
     TThostFtdcPlateSerialType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBankSerialType是一个银行流水号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBankSerialType = array[0..12] of char;
+    PTThostFtdcBankSerialType = ^TThostFtdcBankSerialType;
+    TThostFtdcBankSerialType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCorrectSerialType是一个被冲正交易流水号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcCorrectSerialType = ^TThostFtdcCorrectSerialType;
     TThostFtdcCorrectSerialType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFutureSerialType是一个期货公司流水号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcFutureSerialType = ^TThostFtdcFutureSerialType;
     TThostFtdcFutureSerialType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcApplicationIDType是一个应用标识类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcApplicationIDType = ^TThostFtdcApplicationIDType;
     TThostFtdcApplicationIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBankProxyIDType是一个银行代理标识类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcBankProxyIDType = ^TThostFtdcBankProxyIDType;
     TThostFtdcBankProxyIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFBTCoreIDType是一个银期转帐核心系统标识类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcFBTCoreIDType = ^TThostFtdcFBTCoreIDType;
     TThostFtdcFBTCoreIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcServerPortType是一个服务端口号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcServerPortType = ^TThostFtdcServerPortType;
     TThostFtdcServerPortType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcRepealedTimesType是一个已经冲正次数类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcRepealedTimesType = ^TThostFtdcRepealedTimesType;
     TThostFtdcRepealedTimesType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcRepealTimeIntervalType是一个冲正时间间隔类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcRepealTimeIntervalType = ^TThostFtdcRepealTimeIntervalType;
     TThostFtdcRepealTimeIntervalType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTotalTimesType是一个每日累计转帐次数类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcTotalTimesType = ^TThostFtdcTotalTimesType;
     TThostFtdcTotalTimesType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFBTRequestIDType是一个请求ID类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcFBTRequestIDType = ^TThostFtdcFBTRequestIDType;
     TThostFtdcFBTRequestIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTIDType是一个交易ID类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcTIDType = ^TThostFtdcTIDType;
     TThostFtdcTIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTradeAmountType是一个交易金额（元）类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcTradeAmountType = ^TThostFtdcTradeAmountType;
     TThostFtdcTradeAmountType = double;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCustFeeType是一个应收客户费用（元）类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcCustFeeType = ^TThostFtdcCustFeeType;
     TThostFtdcCustFeeType = double;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFutureFeeType是一个应收期货公司费用（元）类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcFutureFeeType = ^TThostFtdcFutureFeeType;
     TThostFtdcFutureFeeType = double;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSingleMaxAmtType是一个单笔最高限额类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcSingleMaxAmtType = ^TThostFtdcSingleMaxAmtType;
     TThostFtdcSingleMaxAmtType = double;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSingleMinAmtType是一个单笔最低限额类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcSingleMinAmtType = ^TThostFtdcSingleMinAmtType;
     TThostFtdcSingleMinAmtType = double;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTotalAmtType是一个每日累计转帐额度类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcTotalAmtType = ^TThostFtdcTotalAmtType;
     TThostFtdcTotalAmtType = double;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCertificationTypeType是一个证件类型类型 }
@@ -3477,7 +3844,8 @@ interface
     THOST_FTDC_CFT_SuperDepAgree = 'a';    
 
   type
-    TThostFtdcCertificationTypeType = char;
+    PTThostFtdcCertificationTypeType = ^TThostFtdcCertificationTypeType;
+    TThostFtdcCertificationTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFileBusinessCodeType是一个文件业务功能类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3517,7 +3885,8 @@ interface
     THOST_FTDC_FBC_BankMoneyMonitorData = 'f';    
 
   type
-    TThostFtdcFileBusinessCodeType = char;
+    PTThostFtdcFileBusinessCodeType = ^TThostFtdcFileBusinessCodeType;
+    TThostFtdcFileBusinessCodeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCashExchangeCodeType是一个汇钞标志类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3529,7 +3898,8 @@ interface
     THOST_FTDC_CEC_Cash = '2';    
 
   type
-    TThostFtdcCashExchangeCodeType = char;
+    PTThostFtdcCashExchangeCodeType = ^TThostFtdcCashExchangeCodeType;
+    TThostFtdcCashExchangeCodeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcYesNoIndicatorType是一个是或否标识类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3541,7 +3911,8 @@ interface
     THOST_FTDC_YNI_No = '1';    
 
   type
-    TThostFtdcYesNoIndicatorType = char;
+    PTThostFtdcYesNoIndicatorType = ^TThostFtdcYesNoIndicatorType;
+    TThostFtdcYesNoIndicatorType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBanlanceTypeType是一个余额类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3557,7 +3928,8 @@ interface
     THOST_FTDC_BLT_FreezeMoney = '3';    
 
   type
-    TThostFtdcBanlanceTypeType = char;
+    PTThostFtdcBanlanceTypeType = ^TThostFtdcBanlanceTypeType;
+    TThostFtdcBanlanceTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcGenderType是一个性别类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3571,7 +3943,8 @@ interface
     THOST_FTDC_GD_Female = '2';    
 
   type
-    TThostFtdcGenderType = char;
+    PTThostFtdcGenderType = ^TThostFtdcGenderType;
+    TThostFtdcGenderType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFeePayFlagType是一个费用支付标志类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3585,7 +3958,8 @@ interface
     THOST_FTDC_FPF_SHA = '2';    
 
   type
-    TThostFtdcFeePayFlagType = char;
+    PTThostFtdcFeePayFlagType = ^TThostFtdcFeePayFlagType;
+    TThostFtdcFeePayFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcPassWordKeyTypeType是一个密钥类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3601,7 +3975,8 @@ interface
     THOST_FTDC_PWKT_MessageKey = '3';    
 
   type
-    TThostFtdcPassWordKeyTypeType = char;
+    PTThostFtdcPassWordKeyTypeType = ^TThostFtdcPassWordKeyTypeType;
+    TThostFtdcPassWordKeyTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFBTPassWordTypeType是一个密码类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3617,7 +3992,8 @@ interface
     THOST_FTDC_PWT_Trade = '3';    
 
   type
-    TThostFtdcFBTPassWordTypeType = char;
+    PTThostFtdcFBTPassWordTypeType = ^TThostFtdcFBTPassWordTypeType;
+    TThostFtdcFBTPassWordTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFBTEncryModeType是一个加密方式类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3631,7 +4007,8 @@ interface
     THOST_FTDC_EM_3DES = '2';    
 
   type
-    TThostFtdcFBTEncryModeType = char;
+    PTThostFtdcFBTEncryModeType = ^TThostFtdcFBTEncryModeType;
+    TThostFtdcFBTEncryModeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBankRepealFlagType是一个银行冲正标志类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3645,7 +4022,8 @@ interface
     THOST_FTDC_BRF_BankBeenRepealed = '2';    
 
   type
-    TThostFtdcBankRepealFlagType = char;
+    PTThostFtdcBankRepealFlagType = ^TThostFtdcBankRepealFlagType;
+    TThostFtdcBankRepealFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBrokerRepealFlagType是一个期商冲正标志类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3659,7 +4037,8 @@ interface
     THOST_FTDC_BRORF_BrokerBeenRepealed = '2';    
 
   type
-    TThostFtdcBrokerRepealFlagType = char;
+    PTThostFtdcBrokerRepealFlagType = ^TThostFtdcBrokerRepealFlagType;
+    TThostFtdcBrokerRepealFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcInstitutionTypeType是一个机构类别类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3673,7 +4052,8 @@ interface
     THOST_FTDC_TS_Store = '2';    
 
   type
-    TThostFtdcInstitutionTypeType = char;
+    PTThostFtdcInstitutionTypeType = ^TThostFtdcInstitutionTypeType;
+    TThostFtdcInstitutionTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcLastFragmentType是一个最后分片标志类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3685,7 +4065,8 @@ interface
     THOST_FTDC_LF_No = '1';    
 
   type
-    TThostFtdcLastFragmentType = char;
+    PTThostFtdcLastFragmentType = ^TThostFtdcLastFragmentType;
+    TThostFtdcLastFragmentType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBankAccStatusType是一个银行账户状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3699,7 +4080,8 @@ interface
     THOST_FTDC_BAS_ReportLoss = '2';    
 
   type
-    TThostFtdcBankAccStatusType = char;
+    PTThostFtdcBankAccStatusType = ^TThostFtdcBankAccStatusType;
+    TThostFtdcBankAccStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcMoneyAccountStatusType是一个资金账户状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3711,7 +4093,8 @@ interface
     THOST_FTDC_MAS_Cancel = '1';    
 
   type
-    TThostFtdcMoneyAccountStatusType = char;
+    PTThostFtdcMoneyAccountStatusType = ^TThostFtdcMoneyAccountStatusType;
+    TThostFtdcMoneyAccountStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcManageStatusType是一个存管状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3725,7 +4108,8 @@ interface
     THOST_FTDC_MSS_CancelPoint = '2';    
 
   type
-    TThostFtdcManageStatusType = char;
+    PTThostFtdcManageStatusType = ^TThostFtdcManageStatusType;
+    TThostFtdcManageStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSystemTypeType是一个应用系统类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3739,7 +4123,8 @@ interface
     THOST_FTDC_SYT_TheThirdPartStore = '2';    
 
   type
-    TThostFtdcSystemTypeType = char;
+    PTThostFtdcSystemTypeType = ^TThostFtdcSystemTypeType;
+    TThostFtdcSystemTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTxnEndFlagType是一个银期转帐划转结果标志类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3761,7 +4146,8 @@ interface
     THOST_FTDC_TEF_SysErrorNeedManualProcess = '6';    
 
   type
-    TThostFtdcTxnEndFlagType = char;
+    PTThostFtdcTxnEndFlagType = ^TThostFtdcTxnEndFlagType;
+    TThostFtdcTxnEndFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcProcessStatusType是一个银期转帐服务处理状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3775,7 +4161,8 @@ interface
     THOST_FTDC_PSS_Finished = '2';    
 
   type
-    TThostFtdcProcessStatusType = char;
+    PTThostFtdcProcessStatusType = ^TThostFtdcProcessStatusType;
+    TThostFtdcProcessStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCustTypeType是一个客户类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3787,7 +4174,8 @@ interface
     THOST_FTDC_CUSTT_Institution = '1';    
 
   type
-    TThostFtdcCustTypeType = char;
+    PTThostFtdcCustTypeType = ^TThostFtdcCustTypeType;
+    TThostFtdcCustTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFBTTransferDirectionType是一个银期转帐方向类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3799,7 +4187,8 @@ interface
     THOST_FTDC_FBTTD_FromFutureToBank = '2';    
 
   type
-    TThostFtdcFBTTransferDirectionType = char;
+    PTThostFtdcFBTTransferDirectionType = ^TThostFtdcFBTTransferDirectionType;
+    TThostFtdcFBTTransferDirectionType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOpenOrDestroyType是一个开销户类别类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3811,7 +4200,8 @@ interface
     THOST_FTDC_OOD_Destroy = '0';    
 
   type
-    TThostFtdcOpenOrDestroyType = char;
+    PTThostFtdcOpenOrDestroyType = ^TThostFtdcOpenOrDestroyType;
+    TThostFtdcOpenOrDestroyType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAvailabilityFlagType是一个有效标志类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3825,7 +4215,8 @@ interface
     THOST_FTDC_AVAF_Repeal = '2';    
 
   type
-    TThostFtdcAvailabilityFlagType = char;
+    PTThostFtdcAvailabilityFlagType = ^TThostFtdcAvailabilityFlagType;
+    TThostFtdcAvailabilityFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOrganTypeType是一个机构类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3839,7 +4230,8 @@ interface
     THOST_FTDC_OT_PlateForm = '9';    
 
   type
-    TThostFtdcOrganTypeType = char;
+    PTThostFtdcOrganTypeType = ^TThostFtdcOrganTypeType;
+    TThostFtdcOrganTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOrganLevelType是一个机构级别类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3851,7 +4243,8 @@ interface
     THOST_FTDC_OL_Branch = '2';    
 
   type
-    TThostFtdcOrganLevelType = char;
+    PTThostFtdcOrganLevelType = ^TThostFtdcOrganLevelType;
+    TThostFtdcOrganLevelType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcProtocalIDType是一个协议类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3873,7 +4266,8 @@ interface
     THOST_FTDC_PID_FBTPlateFormProtocal = 'X';    
 
   type
-    TThostFtdcProtocalIDType = char;
+    PTThostFtdcProtocalIDType = ^TThostFtdcProtocalIDType;
+    TThostFtdcProtocalIDType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcConnectModeType是一个套接字连接方式类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3885,7 +4279,8 @@ interface
     THOST_FTDC_CM_LongConnect = '1';    
 
   type
-    TThostFtdcConnectModeType = char;
+    PTThostFtdcConnectModeType = ^TThostFtdcConnectModeType;
+    TThostFtdcConnectModeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSyncModeType是一个套接字通信方式类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3897,7 +4292,8 @@ interface
     THOST_FTDC_SRM_Sync = '1';    
 
   type
-    TThostFtdcSyncModeType = char;
+    PTThostFtdcSyncModeType = ^TThostFtdcSyncModeType;
+    TThostFtdcSyncModeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBankAccTypeType是一个银行帐号类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3911,7 +4307,8 @@ interface
     THOST_FTDC_BAT_CreditCard = '3';    
 
   type
-    TThostFtdcBankAccTypeType = char;
+    PTThostFtdcBankAccTypeType = ^TThostFtdcBankAccTypeType;
+    TThostFtdcBankAccTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFutureAccTypeType是一个期货公司帐号类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3925,7 +4322,8 @@ interface
     THOST_FTDC_FAT_CreditCard = '3';    
 
   type
-    TThostFtdcFutureAccTypeType = char;
+    PTThostFtdcFutureAccTypeType = ^TThostFtdcFutureAccTypeType;
+    TThostFtdcFutureAccTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOrganStatusType是一个接入机构状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3947,7 +4345,8 @@ interface
     THOST_FTDC_OS_Invalid = '9';    
 
   type
-    TThostFtdcOrganStatusType = char;
+    PTThostFtdcOrganStatusType = ^TThostFtdcOrganStatusType;
+    TThostFtdcOrganStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCCBFeeModeType是一个建行收费模式类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3959,7 +4358,8 @@ interface
     THOST_FTDC_CCBFM_ByMonth = '2';    
 
   type
-    TThostFtdcCCBFeeModeType = char;
+    PTThostFtdcCCBFeeModeType = ^TThostFtdcCCBFeeModeType;
+    TThostFtdcCCBFeeModeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCommApiTypeType是一个通讯API类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -3973,22 +4373,26 @@ interface
     THOST_FTDC_CAPIT_UserApi = '3';    
 
   type
-    TThostFtdcCommApiTypeType = char;
+    PTThostFtdcCommApiTypeType = ^TThostFtdcCommApiTypeType;
+    TThostFtdcCommApiTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcServiceIDType是一个服务编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcServiceIDType = ^TThostFtdcServiceIDType;
     TThostFtdcServiceIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcServiceLineNoType是一个服务线路编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcServiceLineNoType = ^TThostFtdcServiceLineNoType;
     TThostFtdcServiceLineNoType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcServiceNameType是一个服务名类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcServiceNameType = array[0..60] of char;
+    PTThostFtdcServiceNameType = ^TThostFtdcServiceNameType;
+    TThostFtdcServiceNameType = array[0..60] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcLinkStatusType是一个连接状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4000,11 +4404,13 @@ interface
     THOST_FTDC_LS_Disconnected = '2';    
 
   type
-    TThostFtdcLinkStatusType = char;
+    PTThostFtdcLinkStatusType = ^TThostFtdcLinkStatusType;
+    TThostFtdcLinkStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCommApiPointerType是一个通讯API指针类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcCommApiPointerType = ^TThostFtdcCommApiPointerType;
     TThostFtdcCommApiPointerType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcPwdFlagType是一个密码核对标志类型 }
@@ -4019,7 +4425,8 @@ interface
     THOST_FTDC_BPWDF_EncryptCheck = '2';    
 
   type
-    TThostFtdcPwdFlagType = char;
+    PTThostFtdcPwdFlagType = ^TThostFtdcPwdFlagType;
+    TThostFtdcPwdFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSecuAccTypeType是一个期货帐号类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4035,7 +4442,8 @@ interface
     THOST_FTDC_SAT_SZStockholderID = '4';    
 
   type
-    TThostFtdcSecuAccTypeType = char;
+    PTThostFtdcSecuAccTypeType = ^TThostFtdcSecuAccTypeType;
+    TThostFtdcSecuAccTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTransferStatusType是一个转账交易状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4047,7 +4455,8 @@ interface
     THOST_FTDC_TRFS_Repealed = '1';    
 
   type
-    TThostFtdcTransferStatusType = char;
+    PTThostFtdcTransferStatusType = ^TThostFtdcTransferStatusType;
+    TThostFtdcTransferStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSponsorTypeType是一个发起方类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4059,7 +4468,8 @@ interface
     THOST_FTDC_SPTYPE_Bank = '1';    
 
   type
-    TThostFtdcSponsorTypeType = char;
+    PTThostFtdcSponsorTypeType = ^TThostFtdcSponsorTypeType;
+    TThostFtdcSponsorTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcReqRspTypeType是一个请求响应类别类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4071,7 +4481,8 @@ interface
     THOST_FTDC_REQRSP_Response = '1';    
 
   type
-    TThostFtdcReqRspTypeType = char;
+    PTThostFtdcReqRspTypeType = ^TThostFtdcReqRspTypeType;
+    TThostFtdcReqRspTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFBTUserEventTypeType是一个银期转帐用户事件类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4111,42 +4522,50 @@ interface
     THOST_FTDC_FBTUET_Other = 'Z';    
 
   type
-    TThostFtdcFBTUserEventTypeType = char;
+    PTThostFtdcFBTUserEventTypeType = ^TThostFtdcFBTUserEventTypeType;
+    TThostFtdcFBTUserEventTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBankIDByBankType是一个银行自己的编码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBankIDByBankType = array[0..20] of char;
+    PTThostFtdcBankIDByBankType = ^TThostFtdcBankIDByBankType;
+    TThostFtdcBankIDByBankType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBankOperNoType是一个银行操作员号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBankOperNoType = array[0..3] of char;
+    PTThostFtdcBankOperNoType = ^TThostFtdcBankOperNoType;
+    TThostFtdcBankOperNoType = array[0..3] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBankCustNoType是一个银行客户号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBankCustNoType = array[0..20] of char;
+    PTThostFtdcBankCustNoType = ^TThostFtdcBankCustNoType;
+    TThostFtdcBankCustNoType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcDBOPSeqNoType是一个递增的序列号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcDBOPSeqNoType = ^TThostFtdcDBOPSeqNoType;
     TThostFtdcDBOPSeqNoType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTableNameType是一个FBT表名类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcTableNameType = array[0..60] of char;
+    PTThostFtdcTableNameType = ^TThostFtdcTableNameType;
+    TThostFtdcTableNameType = array[0..60] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcPKNameType是一个FBT表操作主键名类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcPKNameType = array[0..200] of char;
+    PTThostFtdcPKNameType = ^TThostFtdcPKNameType;
+    TThostFtdcPKNameType = array[0..200] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcPKValueType是一个FBT表操作主键值类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcPKValueType = array[0..500] of char;
+    PTThostFtdcPKValueType = ^TThostFtdcPKValueType;
+    TThostFtdcPKValueType = array[0..500] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcDBOperationType是一个记录操作类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4160,7 +4579,8 @@ interface
     THOST_FTDC_DBOP_Delete = '2';    
 
   type
-    TThostFtdcDBOperationType = char;
+    PTThostFtdcDBOperationType = ^TThostFtdcDBOperationType;
+    TThostFtdcDBOperationType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSyncFlagType是一个同步标记类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4172,12 +4592,14 @@ interface
     THOST_FTDC_SYNF_No = '1';    
 
   type
-    TThostFtdcSyncFlagType = char;
+    PTThostFtdcSyncFlagType = ^TThostFtdcSyncFlagType;
+    TThostFtdcSyncFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTargetIDType是一个同步目标编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcTargetIDType = array[0..3] of char;
+    PTThostFtdcTargetIDType = ^TThostFtdcTargetIDType;
+    TThostFtdcTargetIDType = array[0..3] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSyncTypeType是一个同步类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4191,22 +4613,26 @@ interface
     THOST_FTDC_SYNT_TimerFullSync = '2';    
 
   type
-    TThostFtdcSyncTypeType = char;
+    PTThostFtdcSyncTypeType = ^TThostFtdcSyncTypeType;
+    TThostFtdcSyncTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFBETimeType是一个各种换汇时间类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFBETimeType = array[0..6] of char;
+    PTThostFtdcFBETimeType = ^TThostFtdcFBETimeType;
+    TThostFtdcFBETimeType = array[0..6] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFBEBankNoType是一个换汇银行行号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFBEBankNoType = array[0..12] of char;
+    PTThostFtdcFBEBankNoType = ^TThostFtdcFBEBankNoType;
+    TThostFtdcFBEBankNoType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFBECertNoType是一个换汇凭证号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFBECertNoType = array[0..12] of char;
+    PTThostFtdcFBECertNoType = ^TThostFtdcFBECertNoType;
+    TThostFtdcFBECertNoType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcExDirectionType是一个换汇方向类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4218,41 +4644,49 @@ interface
     THOST_FTDC_FBEDIR_Sale = '1';    
 
   type
-    TThostFtdcExDirectionType = char;
+    PTThostFtdcExDirectionType = ^TThostFtdcExDirectionType;
+    TThostFtdcExDirectionType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFBEBankAccountType是一个换汇银行账户类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFBEBankAccountType = array[0..32] of char;
+    PTThostFtdcFBEBankAccountType = ^TThostFtdcFBEBankAccountType;
+    TThostFtdcFBEBankAccountType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFBEBankAccountNameType是一个换汇银行账户名类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFBEBankAccountNameType = array[0..60] of char;
+    PTThostFtdcFBEBankAccountNameType = ^TThostFtdcFBEBankAccountNameType;
+    TThostFtdcFBEBankAccountNameType = array[0..60] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFBEAmtType是一个各种换汇金额类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcFBEAmtType = ^TThostFtdcFBEAmtType;
     TThostFtdcFBEAmtType = double;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFBEBusinessTypeType是一个换汇业务类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFBEBusinessTypeType = array[0..2] of char;
+    PTThostFtdcFBEBusinessTypeType = ^TThostFtdcFBEBusinessTypeType;
+    TThostFtdcFBEBusinessTypeType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFBEPostScriptType是一个换汇附言类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFBEPostScriptType = array[0..60] of char;
+    PTThostFtdcFBEPostScriptType = ^TThostFtdcFBEPostScriptType;
+    TThostFtdcFBEPostScriptType = array[0..60] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFBERemarkType是一个换汇备注类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFBERemarkType = array[0..70] of char;
+    PTThostFtdcFBERemarkType = ^TThostFtdcFBERemarkType;
+    TThostFtdcFBERemarkType = array[0..70] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcExRateType是一个换汇汇率类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcExRateType = ^TThostFtdcExRateType;
     TThostFtdcExRateType = double;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFBEResultFlagType是一个换汇成功标志类型 }
@@ -4269,31 +4703,37 @@ interface
     THOST_FTDC_FBERES_Fail = 'x';    
 
   type
-    TThostFtdcFBEResultFlagType = char;
+    PTThostFtdcFBEResultFlagType = ^TThostFtdcFBEResultFlagType;
+    TThostFtdcFBEResultFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFBERtnMsgType是一个换汇返回信息类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFBERtnMsgType = array[0..60] of char;
+    PTThostFtdcFBERtnMsgType = ^TThostFtdcFBERtnMsgType;
+    TThostFtdcFBERtnMsgType = array[0..60] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFBEExtendMsgType是一个换汇扩展信息类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFBEExtendMsgType = array[0..60] of char;
+    PTThostFtdcFBEExtendMsgType = ^TThostFtdcFBEExtendMsgType;
+    TThostFtdcFBEExtendMsgType = array[0..60] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFBEBusinessSerialType是一个换汇记账流水号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFBEBusinessSerialType = array[0..30] of char;
+    PTThostFtdcFBEBusinessSerialType = ^TThostFtdcFBEBusinessSerialType;
+    TThostFtdcFBEBusinessSerialType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFBESystemSerialType是一个换汇流水号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFBESystemSerialType = array[0..20] of char;
+    PTThostFtdcFBESystemSerialType = ^TThostFtdcFBESystemSerialType;
+    TThostFtdcFBESystemSerialType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFBETotalExCntType是一个换汇交易总笔数类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcFBETotalExCntType = ^TThostFtdcFBETotalExCntType;
     TThostFtdcFBETotalExCntType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFBEExchStatusType是一个换汇交易状态类型 }
@@ -4306,7 +4746,8 @@ interface
     THOST_FTDC_FBEES_ReExchange = '1';    
 
   type
-    TThostFtdcFBEExchStatusType = char;
+    PTThostFtdcFBEExchStatusType = ^TThostFtdcFBEExchStatusType;
+    TThostFtdcFBEExchStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFBEFileFlagType是一个换汇文件标志类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4318,7 +4759,8 @@ interface
     THOST_FTDC_FBEFG_File = '1';    
 
   type
-    TThostFtdcFBEFileFlagType = char;
+    PTThostFtdcFBEFileFlagType = ^TThostFtdcFBEFileFlagType;
+    TThostFtdcFBEFileFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFBEAlreadyTradeType是一个换汇已交易标志类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4330,12 +4772,14 @@ interface
     THOST_FTDC_FBEAT_Trade = '1';    
 
   type
-    TThostFtdcFBEAlreadyTradeType = char;
+    PTThostFtdcFBEAlreadyTradeType = ^TThostFtdcFBEAlreadyTradeType;
+    TThostFtdcFBEAlreadyTradeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFBEOpenBankType是一个换汇账户开户行类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFBEOpenBankType = array[0..60] of char;
+    PTThostFtdcFBEOpenBankType = ^TThostFtdcFBEOpenBankType;
+    TThostFtdcFBEOpenBankType = array[0..60] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFBEUserEventTypeType是一个银期换汇用户事件类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4363,17 +4807,20 @@ interface
     THOST_FTDC_FBEUET_Other = 'Z';    
 
   type
-    TThostFtdcFBEUserEventTypeType = char;
+    PTThostFtdcFBEUserEventTypeType = ^TThostFtdcFBEUserEventTypeType;
+    TThostFtdcFBEUserEventTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFBEFileNameType是一个换汇相关文件名类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFBEFileNameType = array[0..20] of char;
+    PTThostFtdcFBEFileNameType = ^TThostFtdcFBEFileNameType;
+    TThostFtdcFBEFileNameType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFBEBatchSerialType是一个换汇批次号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFBEBatchSerialType = array[0..20] of char;
+    PTThostFtdcFBEBatchSerialType = ^TThostFtdcFBEBatchSerialType;
+    TThostFtdcFBEBatchSerialType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFBEReqFlagType是一个换汇发送标志类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4391,7 +4838,8 @@ interface
     THOST_FTDC_FBERF_WaitReSend = '4';    
 
   type
-    TThostFtdcFBEReqFlagType = char;
+    PTThostFtdcFBEReqFlagType = ^TThostFtdcFBEReqFlagType;
+    TThostFtdcFBEReqFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcNotifyClassType是一个风险通知类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4411,17 +4859,20 @@ interface
     THOST_FTDC_NC_Exception = '5';    
 
   type
-    TThostFtdcNotifyClassType = char;
+    PTThostFtdcNotifyClassType = ^TThostFtdcNotifyClassType;
+    TThostFtdcNotifyClassType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcRiskNofityInfoType是一个客户风险通知消息类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcRiskNofityInfoType = array[0..256] of char;
+    PTThostFtdcRiskNofityInfoType = ^TThostFtdcRiskNofityInfoType;
+    TThostFtdcRiskNofityInfoType = array[0..256] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcForceCloseSceneIdType是一个强平场景编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcForceCloseSceneIdType = array[0..23] of char;
+    PTThostFtdcForceCloseSceneIdType = ^TThostFtdcForceCloseSceneIdType;
+    TThostFtdcForceCloseSceneIdType = array[0..23] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcForceCloseTypeType是一个强平单类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4435,12 +4886,14 @@ interface
     THOST_FTDC_FCT_Group = '2';    
 
   type
-    TThostFtdcForceCloseTypeType = char;
+    PTThostFtdcForceCloseTypeType = ^TThostFtdcForceCloseTypeType;
+    TThostFtdcForceCloseTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcInstrumentIDsType是一个多个产品代码,用+分隔,如cu+zn类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcInstrumentIDsType = array[0..100] of char;
+    PTThostFtdcInstrumentIDsType = ^TThostFtdcInstrumentIDsType;
+    TThostFtdcInstrumentIDsType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcRiskNotifyMethodType是一个风险通知途径类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4456,7 +4909,8 @@ interface
     THOST_FTDC_RNM_Manual = '3';    
 
   type
-    TThostFtdcRiskNotifyMethodType = char;
+    PTThostFtdcRiskNotifyMethodType = ^TThostFtdcRiskNotifyMethodType;
+    TThostFtdcRiskNotifyMethodType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcRiskNotifyStatusType是一个风险通知状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4476,7 +4930,8 @@ interface
     THOST_FTDC_RNS_Confirmed = '5';    
 
   type
-    TThostFtdcRiskNotifyStatusType = char;
+    PTThostFtdcRiskNotifyStatusType = ^TThostFtdcRiskNotifyStatusType;
+    TThostFtdcRiskNotifyStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcRiskUserEventType是一个风控用户操作事件类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4486,22 +4941,26 @@ interface
     THOST_FTDC_RUE_ExportData = '0';    
 
   type
-    TThostFtdcRiskUserEventType = char;
+    PTThostFtdcRiskUserEventType = ^TThostFtdcRiskUserEventType;
+    TThostFtdcRiskUserEventType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcParamIDType是一个参数代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcParamIDType = ^TThostFtdcParamIDType;
     TThostFtdcParamIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcParamNameType是一个参数名类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcParamNameType = array[0..40] of char;
+    PTThostFtdcParamNameType = ^TThostFtdcParamNameType;
+    TThostFtdcParamNameType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcParamValueType是一个参数值类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcParamValueType = array[0..40] of char;
+    PTThostFtdcParamValueType = ^TThostFtdcParamValueType;
+    TThostFtdcParamValueType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcConditionalOrderSortTypeType是一个条件单索引条件类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4521,7 +4980,8 @@ interface
     THOST_FTDC_COST_BidPriceDesc = '5';    
 
   type
-    TThostFtdcConditionalOrderSortTypeType = char;
+    PTThostFtdcConditionalOrderSortTypeType = ^TThostFtdcConditionalOrderSortTypeType;
+    TThostFtdcConditionalOrderSortTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSendTypeType是一个报送状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4543,7 +5003,8 @@ interface
     THOST_FTDC_UOAST_Cancel = '6';    
 
   type
-    TThostFtdcSendTypeType = char;
+    PTThostFtdcSendTypeType = ^TThostFtdcSendTypeType;
+    TThostFtdcSendTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcClientIDStatusType是一个交易编码状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4563,32 +5024,38 @@ interface
     THOST_FTDC_UOACS_Cancel = '6';    
 
   type
-    TThostFtdcClientIDStatusType = char;
+    PTThostFtdcClientIDStatusType = ^TThostFtdcClientIDStatusType;
+    TThostFtdcClientIDStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcIndustryIDType是一个行业编码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcIndustryIDType = array[0..16] of char;
+    PTThostFtdcIndustryIDType = ^TThostFtdcIndustryIDType;
+    TThostFtdcIndustryIDType = array[0..16] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcQuestionIDType是一个特有信息编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcQuestionIDType = array[0..4] of char;
+    PTThostFtdcQuestionIDType = ^TThostFtdcQuestionIDType;
+    TThostFtdcQuestionIDType = array[0..4] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcQuestionContentType是一个特有信息说明类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcQuestionContentType = array[0..40] of char;
+    PTThostFtdcQuestionContentType = ^TThostFtdcQuestionContentType;
+    TThostFtdcQuestionContentType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOptionIDType是一个选项编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcOptionIDType = array[0..12] of char;
+    PTThostFtdcOptionIDType = ^TThostFtdcOptionIDType;
+    TThostFtdcOptionIDType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOptionContentType是一个选项说明类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcOptionContentType = array[0..60] of char;
+    PTThostFtdcOptionContentType = ^TThostFtdcOptionContentType;
+    TThostFtdcOptionContentType = array[0..60] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcQuestionTypeType是一个特有信息类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4602,27 +5069,32 @@ interface
     THOST_FTDC_QT_Blank = '3';    
 
   type
-    TThostFtdcQuestionTypeType = char;
+    PTThostFtdcQuestionTypeType = ^TThostFtdcQuestionTypeType;
+    TThostFtdcQuestionTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcProcessIDType是一个业务流水号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcProcessIDType = array[0..32] of char;
+    PTThostFtdcProcessIDType = ^TThostFtdcProcessIDType;
+    TThostFtdcProcessIDType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSeqNoType是一个流水号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcSeqNoType = ^TThostFtdcSeqNoType;
     TThostFtdcSeqNoType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcUOAProcessStatusType是一个流程状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcUOAProcessStatusType = array[0..2] of char;
+    PTThostFtdcUOAProcessStatusType = ^TThostFtdcUOAProcessStatusType;
+    TThostFtdcUOAProcessStatusType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcProcessTypeType是一个流程功能类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcProcessTypeType = array[0..2] of char;
+    PTThostFtdcProcessTypeType = ^TThostFtdcProcessTypeType;
+    TThostFtdcProcessTypeType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBusinessTypeType是一个业务类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4636,7 +5108,8 @@ interface
     THOST_FTDC_BT_Notice = '3';    
 
   type
-    TThostFtdcBusinessTypeType = char;
+    PTThostFtdcBusinessTypeType = ^TThostFtdcBusinessTypeType;
+    TThostFtdcBusinessTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCfmmcReturnCodeType是一个监控中心返回码类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4654,11 +5127,13 @@ interface
     THOST_FTDC_CRC_OtherFail = '4';    
 
   type
-    TThostFtdcCfmmcReturnCodeType = char;
+    PTThostFtdcCfmmcReturnCodeType = ^TThostFtdcCfmmcReturnCodeType;
+    TThostFtdcCfmmcReturnCodeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcExReturnCodeType是一个交易所返回码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcExReturnCodeType = ^TThostFtdcExReturnCodeType;
     TThostFtdcExReturnCodeType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcClientTypeType是一个客户类型类型 }
@@ -4679,7 +5154,8 @@ interface
     THOST_FTDC_CfMMCCT_Asset = '5';    
 
   type
-    TThostFtdcClientTypeType = char;
+    PTThostFtdcClientTypeType = ^TThostFtdcClientTypeType;
+    TThostFtdcClientTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcExchangeIDTypeType是一个交易所编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4697,7 +5173,8 @@ interface
     THOST_FTDC_EIDT_INE = 'N';    
 
   type
-    TThostFtdcExchangeIDTypeType = char;
+    PTThostFtdcExchangeIDTypeType = ^TThostFtdcExchangeIDTypeType;
+    TThostFtdcExchangeIDTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcExClientIDTypeType是一个交易编码类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4711,47 +5188,56 @@ interface
     THOST_FTDC_ECIDT_Speculation = '3';    
 
   type
-    TThostFtdcExClientIDTypeType = char;
+    PTThostFtdcExClientIDTypeType = ^TThostFtdcExClientIDTypeType;
+    TThostFtdcExClientIDTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcClientClassifyType是一个客户分类码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcClientClassifyType = array[0..10] of char;
+    PTThostFtdcClientClassifyType = ^TThostFtdcClientClassifyType;
+    TThostFtdcClientClassifyType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcUOAOrganTypeType是一个单位性质类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcUOAOrganTypeType = array[0..10] of char;
+    PTThostFtdcUOAOrganTypeType = ^TThostFtdcUOAOrganTypeType;
+    TThostFtdcUOAOrganTypeType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcUOACountryCodeType是一个国家代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcUOACountryCodeType = array[0..10] of char;
+    PTThostFtdcUOACountryCodeType = ^TThostFtdcUOACountryCodeType;
+    TThostFtdcUOACountryCodeType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAreaCodeType是一个区号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAreaCodeType = array[0..10] of char;
+    PTThostFtdcAreaCodeType = ^TThostFtdcAreaCodeType;
+    TThostFtdcAreaCodeType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFuturesIDType是一个监控中心为客户分配的代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFuturesIDType = array[0..20] of char;
+    PTThostFtdcFuturesIDType = ^TThostFtdcFuturesIDType;
+    TThostFtdcFuturesIDType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCffmcDateType是一个日期类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCffmcDateType = array[0..10] of char;
+    PTThostFtdcCffmcDateType = ^TThostFtdcCffmcDateType;
+    TThostFtdcCffmcDateType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCffmcTimeType是一个时间类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCffmcTimeType = array[0..10] of char;
+    PTThostFtdcCffmcTimeType = ^TThostFtdcCffmcTimeType;
+    TThostFtdcCffmcTimeType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcNocIDType是一个组织机构代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcNocIDType = array[0..20] of char;
+    PTThostFtdcNocIDType = ^TThostFtdcNocIDType;
+    TThostFtdcNocIDType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcUpdateFlagType是一个更新状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4771,7 +5257,8 @@ interface
     THOST_FTDC_UF_Cancel = '5';    
 
   type
-    TThostFtdcUpdateFlagType = char;
+    PTThostFtdcUpdateFlagType = ^TThostFtdcUpdateFlagType;
+    TThostFtdcUpdateFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcApplyOperateIDType是一个申请动作类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4795,7 +5282,8 @@ interface
     THOST_FTDC_AOID_ActiveFreezeAccount = '9';    
 
   type
-    TThostFtdcApplyOperateIDType = char;
+    PTThostFtdcApplyOperateIDType = ^TThostFtdcApplyOperateIDType;
+    TThostFtdcApplyOperateIDType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcApplyStatusIDType是一个申请状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4813,7 +5301,8 @@ interface
     THOST_FTDC_ASID_Deleted = '5';    
 
   type
-    TThostFtdcApplyStatusIDType = char;
+    PTThostFtdcApplyStatusIDType = ^TThostFtdcApplyStatusIDType;
+    TThostFtdcApplyStatusIDType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSendMethodType是一个发送方式类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4825,12 +5314,14 @@ interface
     THOST_FTDC_UOASM_ByFile = '2';    
 
   type
-    TThostFtdcSendMethodType = char;
+    PTThostFtdcSendMethodType = ^TThostFtdcSendMethodType;
+    TThostFtdcSendMethodType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcEventTypeType是一个业务操作类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcEventTypeType = array[0..32] of char;
+    PTThostFtdcEventTypeType = ^TThostFtdcEventTypeType;
+    TThostFtdcEventTypeType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcEventModeType是一个操作方法类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4852,7 +5343,8 @@ interface
     THOST_FTDC_EvM_Reverse = '7';    
 
   type
-    TThostFtdcEventModeType = char;
+    PTThostFtdcEventModeType = ^TThostFtdcEventModeType;
+    TThostFtdcEventModeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcUOAAutoSendType是一个统一开户申请自动发送类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4868,16 +5360,19 @@ interface
     THOST_FTDC_UOAA_NSR = '4';    
 
   type
-    TThostFtdcUOAAutoSendType = char;
+    PTThostFtdcUOAAutoSendType = ^TThostFtdcUOAAutoSendType;
+    TThostFtdcUOAAutoSendType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcQueryDepthType是一个查询深度类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcQueryDepthType = ^TThostFtdcQueryDepthType;
     TThostFtdcQueryDepthType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcDataCenterIDType是一个数据中心代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcDataCenterIDType = ^TThostFtdcDataCenterIDType;
     TThostFtdcDataCenterIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFlowIDType是一个流程ID类型 }
@@ -4892,7 +5387,8 @@ interface
     THOST_FTDC_EvM_InvestorCommRateModel = '3';    
 
   type
-    TThostFtdcFlowIDType = char;
+    PTThostFtdcFlowIDType = ^TThostFtdcFlowIDType;
+    TThostFtdcFlowIDType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCheckLevelType是一个复核级别类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4906,11 +5402,13 @@ interface
     THOST_FTDC_CL_Two = '2';    
 
   type
-    TThostFtdcCheckLevelType = char;
+    PTThostFtdcCheckLevelType = ^TThostFtdcCheckLevelType;
+    TThostFtdcCheckLevelType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCheckNoType是一个操作次数类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcCheckNoType = ^TThostFtdcCheckNoType;
     TThostFtdcCheckNoType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCheckStatusType是一个复核级别类型 }
@@ -4929,7 +5427,8 @@ interface
     THOST_FTDC_CHS_Cancel = '4';    
 
   type
-    TThostFtdcCheckStatusType = char;
+    PTThostFtdcCheckStatusType = ^TThostFtdcCheckStatusType;
+    TThostFtdcCheckStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcUsedStatusType是一个生效状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4943,17 +5442,20 @@ interface
     THOST_FTDC_CHU_Fail = '2';    
 
   type
-    TThostFtdcUsedStatusType = char;
+    PTThostFtdcUsedStatusType = ^TThostFtdcUsedStatusType;
+    TThostFtdcUsedStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcRateTemplateNameType是一个模型名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcRateTemplateNameType = array[0..60] of char;
+    PTThostFtdcRateTemplateNameType = ^TThostFtdcRateTemplateNameType;
+    TThostFtdcRateTemplateNameType = array[0..60] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcPropertyStringType是一个用于查询的投资属性字段类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcPropertyStringType = array[0..2048] of char;
+    PTThostFtdcPropertyStringType = ^TThostFtdcPropertyStringType;
+    TThostFtdcPropertyStringType = array[0..2048] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBankAcountOriginType是一个账户来源类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4965,7 +5467,8 @@ interface
     THOST_FTDC_BAO_ByFBTransfer = '1';    
 
   type
-    TThostFtdcBankAcountOriginType = char;
+    PTThostFtdcBankAcountOriginType = ^TThostFtdcBankAcountOriginType;
+    TThostFtdcBankAcountOriginType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcMonthBillTradeSumType是一个结算单月报成交汇总方式类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4979,7 +5482,8 @@ interface
     THOST_FTDC_MBTS_ByDayIns = '2';    
 
   type
-    TThostFtdcMonthBillTradeSumType = char;
+    PTThostFtdcMonthBillTradeSumType = ^TThostFtdcMonthBillTradeSumType;
+    TThostFtdcMonthBillTradeSumType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFBTTradeCodeEnumType是一个银期交易代码枚举类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -4995,52 +5499,62 @@ interface
     THOST_FTDC_FTC_BrokerLaunchBrokerToBank = '202002';    
 
   type
-    TThostFtdcFBTTradeCodeEnumType = char;
+    PTThostFtdcFBTTradeCodeEnumType = ^TThostFtdcFBTTradeCodeEnumType;
+    TThostFtdcFBTTradeCodeEnumType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcRateTemplateIDType是一个模型代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcRateTemplateIDType = array[0..8] of char;
+    PTThostFtdcRateTemplateIDType = ^TThostFtdcRateTemplateIDType;
+    TThostFtdcRateTemplateIDType = array[0..8] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcRiskRateType是一个风险度类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcRiskRateType = array[0..20] of char;
+    PTThostFtdcRiskRateType = ^TThostFtdcRiskRateType;
+    TThostFtdcRiskRateType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTimestampType是一个时间戳类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcTimestampType = ^TThostFtdcTimestampType;
     TThostFtdcTimestampType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcInvestorIDRuleNameType是一个号段规则名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcInvestorIDRuleNameType = array[0..60] of char;
+    PTThostFtdcInvestorIDRuleNameType = ^TThostFtdcInvestorIDRuleNameType;
+    TThostFtdcInvestorIDRuleNameType = array[0..60] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcInvestorIDRuleExprType是一个号段规则表达式类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcInvestorIDRuleExprType = array[0..512] of char;
+    PTThostFtdcInvestorIDRuleExprType = ^TThostFtdcInvestorIDRuleExprType;
+    TThostFtdcInvestorIDRuleExprType = array[0..512] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcLastDriftType是一个上次OTP漂移值类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcLastDriftType = ^TThostFtdcLastDriftType;
     TThostFtdcLastDriftType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcLastSuccessType是一个上次OTP成功值类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcLastSuccessType = ^TThostFtdcLastSuccessType;
     TThostFtdcLastSuccessType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAuthKeyType是一个令牌密钥类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAuthKeyType = array[0..40] of char;
+    PTThostFtdcAuthKeyType = ^TThostFtdcAuthKeyType;
+    TThostFtdcAuthKeyType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSerialNumberType是一个序列号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcSerialNumberType = array[0..16] of char;
+    PTThostFtdcSerialNumberType = ^TThostFtdcSerialNumberType;
+    TThostFtdcSerialNumberType = array[0..16] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOTPTypeType是一个动态令牌类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5052,17 +5566,20 @@ interface
     THOST_FTDC_OTP_TOTP = '1';    
 
   type
-    TThostFtdcOTPTypeType = char;
+    PTThostFtdcOTPTypeType = ^TThostFtdcOTPTypeType;
+    TThostFtdcOTPTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOTPVendorsIDType是一个动态令牌提供商类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcOTPVendorsIDType = array[0..1] of char;
+    PTThostFtdcOTPVendorsIDType = ^TThostFtdcOTPVendorsIDType;
+    TThostFtdcOTPVendorsIDType = array[0..1] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOTPVendorsNameType是一个动态令牌提供商名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcOTPVendorsNameType = array[0..60] of char;
+    PTThostFtdcOTPVendorsNameType = ^TThostFtdcOTPVendorsNameType;
+    TThostFtdcOTPVendorsNameType = array[0..60] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOTPStatusType是一个动态令牌状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5076,7 +5593,8 @@ interface
     THOST_FTDC_OTPS_Disuse = '2';    
 
   type
-    TThostFtdcOTPStatusType = char;
+    PTThostFtdcOTPStatusType = ^TThostFtdcOTPStatusType;
+    TThostFtdcOTPStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBrokerUserTypeType是一个经济公司用户类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5088,7 +5606,8 @@ interface
     THOST_FTDC_BUT_BrokerUser = '2';    
 
   type
-    TThostFtdcBrokerUserTypeType = char;
+    PTThostFtdcBrokerUserTypeType = ^TThostFtdcBrokerUserTypeType;
+    TThostFtdcBrokerUserTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFutureTypeType是一个期货类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5100,7 +5619,8 @@ interface
     THOST_FTDC_FUTT_Financial = '2';    
 
   type
-    TThostFtdcFutureTypeType = char;
+    PTThostFtdcFutureTypeType = ^TThostFtdcFutureTypeType;
+    TThostFtdcFutureTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFundEventTypeType是一个资金管理操作类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5126,7 +5646,8 @@ interface
     THOST_FTDC_FET_InvestorFundIO = '8';    
 
   type
-    TThostFtdcFundEventTypeType = char;
+    PTThostFtdcFundEventTypeType = ^TThostFtdcFundEventTypeType;
+    TThostFtdcFundEventTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAccountSourceTypeType是一个资金账户来源类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5138,7 +5659,8 @@ interface
     THOST_FTDC_AST_ManualEntry = '1';    
 
   type
-    TThostFtdcAccountSourceTypeType = char;
+    PTThostFtdcAccountSourceTypeType = ^TThostFtdcAccountSourceTypeType;
+    TThostFtdcAccountSourceTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCodeSourceTypeType是一个交易编码来源类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5150,7 +5672,8 @@ interface
     THOST_FTDC_CST_ManualEntry = '1';    
 
   type
-    TThostFtdcCodeSourceTypeType = char;
+    PTThostFtdcCodeSourceTypeType = ^TThostFtdcCodeSourceTypeType;
+    TThostFtdcCodeSourceTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcUserRangeType是一个操作员范围类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5162,17 +5685,20 @@ interface
     THOST_FTDC_UR_Single = '1';    
 
   type
-    TThostFtdcUserRangeType = char;
+    PTThostFtdcUserRangeType = ^TThostFtdcUserRangeType;
+    TThostFtdcUserRangeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTimeSpanType是一个时间跨度类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcTimeSpanType = array[0..8] of char;
+    PTThostFtdcTimeSpanType = ^TThostFtdcTimeSpanType;
+    TThostFtdcTimeSpanType = array[0..8] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcImportSequenceIDType是一个动态令牌导入批次编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcImportSequenceIDType = array[0..16] of char;
+    PTThostFtdcImportSequenceIDType = ^TThostFtdcImportSequenceIDType;
+    TThostFtdcImportSequenceIDType = array[0..16] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcByGroupType是一个交易统计表按客户统计方式类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5184,7 +5710,8 @@ interface
     THOST_FTDC_BG_Group = '1';    
 
   type
-    TThostFtdcByGroupType = char;
+    PTThostFtdcByGroupType = ^TThostFtdcByGroupType;
+    TThostFtdcByGroupType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTradeSumStatModeType是一个交易统计表按范围统计方式类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5198,152 +5725,182 @@ interface
     THOST_FTDC_TSSM_Exchange = '3';    
 
   type
-    TThostFtdcTradeSumStatModeType = char;
+    PTThostFtdcTradeSumStatModeType = ^TThostFtdcTradeSumStatModeType;
+    TThostFtdcTradeSumStatModeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcComTypeType是一个组合成交类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcComTypeType = ^TThostFtdcComTypeType;
     TThostFtdcComTypeType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcUserProductIDType是一个产品标识类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcUserProductIDType = array[0..32] of char;
+    PTThostFtdcUserProductIDType = ^TThostFtdcUserProductIDType;
+    TThostFtdcUserProductIDType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcUserProductNameType是一个产品名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcUserProductNameType = array[0..64] of char;
+    PTThostFtdcUserProductNameType = ^TThostFtdcUserProductNameType;
+    TThostFtdcUserProductNameType = array[0..64] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcUserProductMemoType是一个产品说明类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcUserProductMemoType = array[0..128] of char;
+    PTThostFtdcUserProductMemoType = ^TThostFtdcUserProductMemoType;
+    TThostFtdcUserProductMemoType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCSRCCancelFlagType是一个新增或变更标志类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCSRCCancelFlagType = array[0..1] of char;
+    PTThostFtdcCSRCCancelFlagType = ^TThostFtdcCSRCCancelFlagType;
+    TThostFtdcCSRCCancelFlagType = array[0..1] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCSRCDateType是一个日期类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCSRCDateType = array[0..10] of char;
+    PTThostFtdcCSRCDateType = ^TThostFtdcCSRCDateType;
+    TThostFtdcCSRCDateType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCSRCInvestorNameType是一个客户名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCSRCInvestorNameType = array[0..200] of char;
+    PTThostFtdcCSRCInvestorNameType = ^TThostFtdcCSRCInvestorNameType;
+    TThostFtdcCSRCInvestorNameType = array[0..200] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCSRCOpenInvestorNameType是一个客户名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCSRCOpenInvestorNameType = array[0..100] of char;
+    PTThostFtdcCSRCOpenInvestorNameType = ^TThostFtdcCSRCOpenInvestorNameType;
+    TThostFtdcCSRCOpenInvestorNameType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCSRCInvestorIDType是一个客户代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCSRCInvestorIDType = array[0..12] of char;
+    PTThostFtdcCSRCInvestorIDType = ^TThostFtdcCSRCInvestorIDType;
+    TThostFtdcCSRCInvestorIDType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCSRCIdentifiedCardNoType是一个证件号码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCSRCIdentifiedCardNoType = array[0..50] of char;
+    PTThostFtdcCSRCIdentifiedCardNoType = ^TThostFtdcCSRCIdentifiedCardNoType;
+    TThostFtdcCSRCIdentifiedCardNoType = array[0..50] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCSRCClientIDType是一个交易编码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCSRCClientIDType = array[0..10] of char;
+    PTThostFtdcCSRCClientIDType = ^TThostFtdcCSRCClientIDType;
+    TThostFtdcCSRCClientIDType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCSRCBankFlagType是一个银行标识类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCSRCBankFlagType = array[0..2] of char;
+    PTThostFtdcCSRCBankFlagType = ^TThostFtdcCSRCBankFlagType;
+    TThostFtdcCSRCBankFlagType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCSRCBankAccountType是一个银行账户类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCSRCBankAccountType = array[0..22] of char;
+    PTThostFtdcCSRCBankAccountType = ^TThostFtdcCSRCBankAccountType;
+    TThostFtdcCSRCBankAccountType = array[0..22] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCSRCOpenNameType是一个开户人类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCSRCOpenNameType = array[0..400] of char;
+    PTThostFtdcCSRCOpenNameType = ^TThostFtdcCSRCOpenNameType;
+    TThostFtdcCSRCOpenNameType = array[0..400] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCSRCMemoType是一个说明类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCSRCMemoType = array[0..100] of char;
+    PTThostFtdcCSRCMemoType = ^TThostFtdcCSRCMemoType;
+    TThostFtdcCSRCMemoType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCSRCTimeType是一个时间类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCSRCTimeType = array[0..10] of char;
+    PTThostFtdcCSRCTimeType = ^TThostFtdcCSRCTimeType;
+    TThostFtdcCSRCTimeType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCSRCTradeIDType是一个成交流水号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCSRCTradeIDType = array[0..20] of char;
+    PTThostFtdcCSRCTradeIDType = ^TThostFtdcCSRCTradeIDType;
+    TThostFtdcCSRCTradeIDType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCSRCExchangeInstIDType是一个合约代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCSRCExchangeInstIDType = array[0..30] of char;
+    PTThostFtdcCSRCExchangeInstIDType = ^TThostFtdcCSRCExchangeInstIDType;
+    TThostFtdcCSRCExchangeInstIDType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCSRCMortgageNameType是一个质押品名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCSRCMortgageNameType = array[0..6] of char;
+    PTThostFtdcCSRCMortgageNameType = ^TThostFtdcCSRCMortgageNameType;
+    TThostFtdcCSRCMortgageNameType = array[0..6] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCSRCReasonType是一个事由类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCSRCReasonType = array[0..2] of char;
+    PTThostFtdcCSRCReasonType = ^TThostFtdcCSRCReasonType;
+    TThostFtdcCSRCReasonType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcIsSettlementType是一个是否为非结算会员类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcIsSettlementType = array[0..1] of char;
+    PTThostFtdcIsSettlementType = ^TThostFtdcIsSettlementType;
+    TThostFtdcIsSettlementType = array[0..1] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCSRCMoneyType是一个资金类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcCSRCMoneyType = ^TThostFtdcCSRCMoneyType;
     TThostFtdcCSRCMoneyType = double;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCSRCPriceType是一个价格类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcCSRCPriceType = ^TThostFtdcCSRCPriceType;
     TThostFtdcCSRCPriceType = double;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCSRCOptionsTypeType是一个期权类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCSRCOptionsTypeType = array[0..1] of char;
+    PTThostFtdcCSRCOptionsTypeType = ^TThostFtdcCSRCOptionsTypeType;
+    TThostFtdcCSRCOptionsTypeType = array[0..1] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCSRCStrikePriceType是一个执行价类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcCSRCStrikePriceType = ^TThostFtdcCSRCStrikePriceType;
     TThostFtdcCSRCStrikePriceType = double;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCSRCTargetProductIDType是一个标的品种类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCSRCTargetProductIDType = array[0..2] of char;
+    PTThostFtdcCSRCTargetProductIDType = ^TThostFtdcCSRCTargetProductIDType;
+    TThostFtdcCSRCTargetProductIDType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCSRCTargetInstrIDType是一个标的合约类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCSRCTargetInstrIDType = array[0..30] of char;
+    PTThostFtdcCSRCTargetInstrIDType = ^TThostFtdcCSRCTargetInstrIDType;
+    TThostFtdcCSRCTargetInstrIDType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCommModelNameType是一个手续费率模板名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCommModelNameType = array[0..160] of char;
+    PTThostFtdcCommModelNameType = ^TThostFtdcCommModelNameType;
+    TThostFtdcCommModelNameType = array[0..160] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCommModelMemoType是一个手续费率模板备注类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCommModelMemoType = array[0..1024] of char;
+    PTThostFtdcCommModelMemoType = ^TThostFtdcCommModelMemoType;
+    TThostFtdcCommModelMemoType = array[0..1024] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcExprSetModeType是一个日期表达式设置类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5355,7 +5912,8 @@ interface
     THOST_FTDC_ESM_Typical = '2';    
 
   type
-    TThostFtdcExprSetModeType = char;
+    PTThostFtdcExprSetModeType = ^TThostFtdcExprSetModeType;
+    TThostFtdcExprSetModeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcRateInvestorRangeType是一个投资者范围类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5369,27 +5927,32 @@ interface
     THOST_FTDC_RIR_Single = '3';    
 
   type
-    TThostFtdcRateInvestorRangeType = char;
+    PTThostFtdcRateInvestorRangeType = ^TThostFtdcRateInvestorRangeType;
+    TThostFtdcRateInvestorRangeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAgentBrokerIDType是一个代理经纪公司代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAgentBrokerIDType = array[0..12] of char;
+    PTThostFtdcAgentBrokerIDType = ^TThostFtdcAgentBrokerIDType;
+    TThostFtdcAgentBrokerIDType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcDRIdentityIDType是一个交易中心代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcDRIdentityIDType = ^TThostFtdcDRIdentityIDType;
     TThostFtdcDRIdentityIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcDRIdentityNameType是一个交易中心名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcDRIdentityNameType = array[0..64] of char;
+    PTThostFtdcDRIdentityNameType = ^TThostFtdcDRIdentityNameType;
+    TThostFtdcDRIdentityNameType = array[0..64] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcDBLinkIDType是一个DBLink标识号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcDBLinkIDType = array[0..30] of char;
+    PTThostFtdcDBLinkIDType = ^TThostFtdcDBLinkIDType;
+    TThostFtdcDBLinkIDType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSyncDataStatusType是一个主次用系统数据同步状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5403,7 +5966,8 @@ interface
     THOST_FTDC_SDS_Settlemented = '2';    
 
   type
-    TThostFtdcSyncDataStatusType = char;
+    PTThostFtdcSyncDataStatusType = ^TThostFtdcSyncDataStatusType;
+    TThostFtdcSyncDataStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTradeSourceType是一个成交来源类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5415,7 +5979,8 @@ interface
     THOST_FTDC_TSRC_QUERY = '1';    
 
   type
-    TThostFtdcTradeSourceType = char;
+    PTThostFtdcTradeSourceType = ^TThostFtdcTradeSourceType;
+    TThostFtdcTradeSourceType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFlexStatModeType是一个产品合约统计方式类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5429,7 +5994,8 @@ interface
     THOST_FTDC_FSM_All = '3';    
 
   type
-    TThostFtdcFlexStatModeType = char;
+    PTThostFtdcFlexStatModeType = ^TThostFtdcFlexStatModeType;
+    TThostFtdcFlexStatModeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcByInvestorRangeType是一个投资者范围统计方式类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5441,16 +6007,19 @@ interface
     THOST_FTDC_BIR_All = '2';    
 
   type
-    TThostFtdcByInvestorRangeType = char;
+    PTThostFtdcByInvestorRangeType = ^TThostFtdcByInvestorRangeType;
+    TThostFtdcByInvestorRangeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSRiskRateType是一个风险度类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcSRiskRateType = array[0..20] of char;
+    PTThostFtdcSRiskRateType = ^TThostFtdcSRiskRateType;
+    TThostFtdcSRiskRateType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSequenceNo12Type是一个序号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcSequenceNo12Type = ^TThostFtdcSequenceNo12Type;
     TThostFtdcSequenceNo12Type = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcPropertyInvestorRangeType是一个投资者范围类型 }
@@ -5465,7 +6034,8 @@ interface
     THOST_FTDC_PIR_Single = '3';    
 
   type
-    TThostFtdcPropertyInvestorRangeType = char;
+    PTThostFtdcPropertyInvestorRangeType = ^TThostFtdcPropertyInvestorRangeType;
+    TThostFtdcPropertyInvestorRangeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFileStatusType是一个文件状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5479,7 +6049,8 @@ interface
     THOST_FTDC_FIS_Failed = '2';    
 
   type
-    TThostFtdcFileStatusType = char;
+    PTThostFtdcFileStatusType = ^TThostFtdcFileStatusType;
+    TThostFtdcFileStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFileGenStyleType是一个文件生成方式类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5491,7 +6062,8 @@ interface
     THOST_FTDC_FGS_FileGen = '1';    
 
   type
-    TThostFtdcFileGenStyleType = char;
+    PTThostFtdcFileGenStyleType = ^TThostFtdcFileGenStyleType;
+    TThostFtdcFileGenStyleType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSysOperModeType是一个系统日志操作方法类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5513,7 +6085,8 @@ interface
     THOST_FTDC_SoM_ReSet = '7';    
 
   type
-    TThostFtdcSysOperModeType = char;
+    PTThostFtdcSysOperModeType = ^TThostFtdcSysOperModeType;
+    TThostFtdcSysOperModeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSysOperTypeType是一个系统日志操作类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5553,7 +6126,8 @@ interface
     THOST_FTDC_SoT_InvestorPersonalityInfo = 'F';    
 
   type
-    TThostFtdcSysOperTypeType = char;
+    PTThostFtdcSysOperTypeType = ^TThostFtdcSysOperTypeType;
+    TThostFtdcSysOperTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCSRCDataQueyTypeType是一个上报数据查询类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5565,7 +6139,8 @@ interface
     THOST_FTDC_CSRCQ_History = '1';    
 
   type
-    TThostFtdcCSRCDataQueyTypeType = char;
+    PTThostFtdcCSRCDataQueyTypeType = ^TThostFtdcCSRCDataQueyTypeType;
+    TThostFtdcCSRCDataQueyTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFreezeStatusType是一个休眠状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5577,7 +6152,8 @@ interface
     THOST_FTDC_FRS_Freeze = '0';    
 
   type
-    TThostFtdcFreezeStatusType = char;
+    PTThostFtdcFreezeStatusType = ^TThostFtdcFreezeStatusType;
+    TThostFtdcFreezeStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcStandardStatusType是一个规范状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5589,12 +6165,14 @@ interface
     THOST_FTDC_STST_NonStandard = '1';    
 
   type
-    TThostFtdcStandardStatusType = char;
+    PTThostFtdcStandardStatusType = ^TThostFtdcStandardStatusType;
+    TThostFtdcStandardStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCSRCFreezeStatusType是一个休眠状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCSRCFreezeStatusType = array[0..1] of char;
+    PTThostFtdcCSRCFreezeStatusType = ^TThostFtdcCSRCFreezeStatusType;
+    TThostFtdcCSRCFreezeStatusType = array[0..1] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcRightParamTypeType是一个配置类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5610,17 +6188,20 @@ interface
     THOST_FTDC_RPT_RelieveOpenLimit = '4';    
 
   type
-    TThostFtdcRightParamTypeType = char;
+    PTThostFtdcRightParamTypeType = ^TThostFtdcRightParamTypeType;
+    TThostFtdcRightParamTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcRightTemplateIDType是一个模板代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcRightTemplateIDType = array[0..8] of char;
+    PTThostFtdcRightTemplateIDType = ^TThostFtdcRightTemplateIDType;
+    TThostFtdcRightTemplateIDType = array[0..8] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcRightTemplateNameType是一个模板名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcRightTemplateNameType = array[0..60] of char;
+    PTThostFtdcRightTemplateNameType = ^TThostFtdcRightTemplateNameType;
+    TThostFtdcRightTemplateNameType = array[0..60] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcDataStatusType是一个反洗钱审核表数据状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5632,7 +6213,8 @@ interface
     THOST_FTDC_AMLDS_Deleted = '1';    
 
   type
-    TThostFtdcDataStatusType = char;
+    PTThostFtdcDataStatusType = ^TThostFtdcDataStatusType;
+    TThostFtdcDataStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAMLCheckStatusType是一个审核状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5648,7 +6230,8 @@ interface
     THOST_FTDC_AMLCHS_RefuseReport = '3';    
 
   type
-    TThostFtdcAMLCheckStatusType = char;
+    PTThostFtdcAMLCheckStatusType = ^TThostFtdcAMLCheckStatusType;
+    TThostFtdcAMLCheckStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAmlDateTypeType是一个日期类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5660,7 +6243,8 @@ interface
     THOST_FTDC_AMLDT_TouchDay = '1';    
 
   type
-    TThostFtdcAmlDateTypeType = char;
+    PTThostFtdcAmlDateTypeType = ^TThostFtdcAmlDateTypeType;
+    TThostFtdcAmlDateTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAmlCheckLevelType是一个审核级别类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5676,17 +6260,20 @@ interface
     THOST_FTDC_AMLCL_CheckLevel3 = '3';    
 
   type
-    TThostFtdcAmlCheckLevelType = char;
+    PTThostFtdcAmlCheckLevelType = ^TThostFtdcAmlCheckLevelType;
+    TThostFtdcAmlCheckLevelType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAmlCheckFlowType是一个反洗钱数据抽取审核流程类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAmlCheckFlowType = array[0..1] of char;
+    PTThostFtdcAmlCheckFlowType = ^TThostFtdcAmlCheckFlowType;
+    TThostFtdcAmlCheckFlowType = array[0..1] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcDataTypeType是一个数据类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcDataTypeType = array[0..128] of char;
+    PTThostFtdcDataTypeType = ^TThostFtdcDataTypeType;
+    TThostFtdcDataTypeType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcExportFileTypeType是一个导出文件类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5700,7 +6287,8 @@ interface
     THOST_FTDC_EFT_DBF = '2';    
 
   type
-    TThostFtdcExportFileTypeType = char;
+    PTThostFtdcExportFileTypeType = ^TThostFtdcExportFileTypeType;
+    TThostFtdcExportFileTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSettleManagerTypeType是一个结算配置类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5716,17 +6304,20 @@ interface
     THOST_FTDC_SMT_Settlemented = '4';    
 
   type
-    TThostFtdcSettleManagerTypeType = char;
+    PTThostFtdcSettleManagerTypeType = ^TThostFtdcSettleManagerTypeType;
+    TThostFtdcSettleManagerTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSettleManagerIDType是一个结算配置代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcSettleManagerIDType = array[0..32] of char;
+    PTThostFtdcSettleManagerIDType = ^TThostFtdcSettleManagerIDType;
+    TThostFtdcSettleManagerIDType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSettleManagerNameType是一个结算配置名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcSettleManagerNameType = array[0..128] of char;
+    PTThostFtdcSettleManagerNameType = ^TThostFtdcSettleManagerNameType;
+    TThostFtdcSettleManagerNameType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSettleManagerLevelType是一个结算配置等级类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5742,7 +6333,8 @@ interface
     THOST_FTDC_SML_Ignore = '4';    
 
   type
-    TThostFtdcSettleManagerLevelType = char;
+    PTThostFtdcSettleManagerLevelType = ^TThostFtdcSettleManagerLevelType;
+    TThostFtdcSettleManagerLevelType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSettleManagerGroupType是一个模块分组类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5756,27 +6348,32 @@ interface
     THOST_FTDC_SMG_CSRC = '3';    
 
   type
-    TThostFtdcSettleManagerGroupType = char;
+    PTThostFtdcSettleManagerGroupType = ^TThostFtdcSettleManagerGroupType;
+    TThostFtdcSettleManagerGroupType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCheckResultMemoType是一个核对结果说明类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCheckResultMemoType = array[0..1024] of char;
+    PTThostFtdcCheckResultMemoType = ^TThostFtdcCheckResultMemoType;
+    TThostFtdcCheckResultMemoType = array[0..1024] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFunctionUrlType是一个功能链接类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcFunctionUrlType = array[0..1024] of char;
+    PTThostFtdcFunctionUrlType = ^TThostFtdcFunctionUrlType;
+    TThostFtdcFunctionUrlType = array[0..1024] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAuthInfoType是一个客户端认证信息类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAuthInfoType = array[0..128] of char;
+    PTThostFtdcAuthInfoType = ^TThostFtdcAuthInfoType;
+    TThostFtdcAuthInfoType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAuthCodeType是一个客户端认证码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAuthCodeType = array[0..16] of char;
+    PTThostFtdcAuthCodeType = ^TThostFtdcAuthCodeType;
+    TThostFtdcAuthCodeType = array[0..16] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcLimitUseTypeType是一个保值额度使用类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5788,7 +6385,8 @@ interface
     THOST_FTDC_LUT_Unrepeatable = '2';    
 
   type
-    TThostFtdcLimitUseTypeType = char;
+    PTThostFtdcLimitUseTypeType = ^TThostFtdcLimitUseTypeType;
+    TThostFtdcLimitUseTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcDataResourceType是一个数据来源类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5802,7 +6400,8 @@ interface
     THOST_FTDC_DAR_CSRC = '3';    
 
   type
-    TThostFtdcDataResourceType = char;
+    PTThostFtdcDataResourceType = ^TThostFtdcDataResourceType;
+    TThostFtdcDataResourceType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcMarginTypeType是一个保证金类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5816,7 +6415,8 @@ interface
     THOST_FTDC_MGT_InstrMarginRateTrade = '2';    
 
   type
-    TThostFtdcMarginTypeType = char;
+    PTThostFtdcMarginTypeType = ^TThostFtdcMarginTypeType;
+    TThostFtdcMarginTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcActiveTypeType是一个生效类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5828,7 +6428,8 @@ interface
     THOST_FTDC_ACT_Long = '2';    
 
   type
-    TThostFtdcActiveTypeType = char;
+    PTThostFtdcActiveTypeType = ^TThostFtdcActiveTypeType;
+    TThostFtdcActiveTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcMarginRateTypeType是一个冲突保证金率类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5842,7 +6443,8 @@ interface
     THOST_FTDC_MRT_InvestorTrade = '3';    
 
   type
-    TThostFtdcMarginRateTypeType = char;
+    PTThostFtdcMarginRateTypeType = ^TThostFtdcMarginRateTypeType;
+    TThostFtdcMarginRateTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBackUpStatusType是一个备份数据状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5858,7 +6460,8 @@ interface
     THOST_FTDC_BUS_BakFail = '3';    
 
   type
-    TThostFtdcBackUpStatusType = char;
+    PTThostFtdcBackUpStatusType = ^TThostFtdcBackUpStatusType;
+    TThostFtdcBackUpStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcInitSettlementType是一个结算初始化状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5872,7 +6475,8 @@ interface
     THOST_FTDC_SIS_Initialized = '2';    
 
   type
-    TThostFtdcInitSettlementType = char;
+    PTThostFtdcInitSettlementType = ^TThostFtdcInitSettlementType;
+    TThostFtdcInitSettlementType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcReportStatusType是一个报表数据生成状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5888,7 +6492,8 @@ interface
     THOST_FTDC_SRS_CreateFail = '3';    
 
   type
-    TThostFtdcReportStatusType = char;
+    PTThostFtdcReportStatusType = ^TThostFtdcReportStatusType;
+    TThostFtdcReportStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSaveStatusType是一个数据归档状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5900,7 +6505,8 @@ interface
     THOST_FTDC_SSS_SaveDatad = '1';    
 
   type
-    TThostFtdcSaveStatusType = char;
+    PTThostFtdcSaveStatusType = ^TThostFtdcSaveStatusType;
+    TThostFtdcSaveStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSettArchiveStatusType是一个结算确认数据归档状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5916,7 +6522,8 @@ interface
     THOST_FTDC_SAS_ArchiveFail = '3';    
 
   type
-    TThostFtdcSettArchiveStatusType = char;
+    PTThostFtdcSettArchiveStatusType = ^TThostFtdcSettArchiveStatusType;
+    TThostFtdcSettArchiveStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCTPTypeType是一个CTP交易系统类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5930,17 +6537,20 @@ interface
     THOST_FTDC_CTPT_BackUp = '2';    
 
   type
-    TThostFtdcCTPTypeType = char;
+    PTThostFtdcCTPTypeType = ^TThostFtdcCTPTypeType;
+    TThostFtdcCTPTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcToolIDType是一个工具代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcToolIDType = array[0..8] of char;
+    PTThostFtdcToolIDType = ^TThostFtdcToolIDType;
+    TThostFtdcToolIDType = array[0..8] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcToolNameType是一个工具名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcToolNameType = array[0..80] of char;
+    PTThostFtdcToolNameType = ^TThostFtdcToolNameType;
+    TThostFtdcToolNameType = array[0..80] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCloseDealTypeType是一个平仓处理类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5952,7 +6562,8 @@ interface
     THOST_FTDC_CDT_SpecFirst = '1';    
 
   type
-    TThostFtdcCloseDealTypeType = char;
+    PTThostFtdcCloseDealTypeType = ^TThostFtdcCloseDealTypeType;
+    TThostFtdcCloseDealTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcMortgageFundUseRangeType是一个货币质押资金可用范围类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -5968,16 +6579,19 @@ interface
     THOST_FTDC_MFUR_CNY3 = '3';    
 
   type
-    TThostFtdcMortgageFundUseRangeType = char;
+    PTThostFtdcMortgageFundUseRangeType = ^TThostFtdcMortgageFundUseRangeType;
+    TThostFtdcMortgageFundUseRangeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCurrencyUnitType是一个币种单位数量类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcCurrencyUnitType = ^TThostFtdcCurrencyUnitType;
     TThostFtdcCurrencyUnitType = double;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcExchangeRateType是一个汇率类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcExchangeRateType = ^TThostFtdcExchangeRateType;
     TThostFtdcExchangeRateType = double;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSpecProductTypeType是一个特殊产品类型类型 }
@@ -5992,7 +6606,8 @@ interface
     THOST_FTDC_SPT_DceOpenClose = '3';    
 
   type
-    TThostFtdcSpecProductTypeType = char;
+    PTThostFtdcSpecProductTypeType = ^TThostFtdcSpecProductTypeType;
+    TThostFtdcSpecProductTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFundMortgageTypeType是一个货币质押类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6004,7 +6619,8 @@ interface
     THOST_FTDC_FMT_Redemption = '2';    
 
   type
-    TThostFtdcFundMortgageTypeType = char;
+    PTThostFtdcFundMortgageTypeType = ^TThostFtdcFundMortgageTypeType;
+    TThostFtdcFundMortgageTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAccountSettlementParamIDType是一个投资者账户结算参数代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6016,17 +6632,20 @@ interface
     THOST_FTDC_ASPI_LowestInterest = '2';    
 
   type
-    TThostFtdcAccountSettlementParamIDType = char;
+    PTThostFtdcAccountSettlementParamIDType = ^TThostFtdcAccountSettlementParamIDType;
+    TThostFtdcAccountSettlementParamIDType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCurrencyNameType是一个币种名称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCurrencyNameType = array[0..30] of char;
+    PTThostFtdcCurrencyNameType = ^TThostFtdcCurrencyNameType;
+    TThostFtdcCurrencyNameType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCurrencySignType是一个币种符号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCurrencySignType = array[0..3] of char;
+    PTThostFtdcCurrencySignType = ^TThostFtdcCurrencySignType;
+    TThostFtdcCurrencySignType = array[0..3] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFundMortDirectionType是一个货币质押方向类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6038,7 +6657,8 @@ interface
     THOST_FTDC_FMD_Out = '2';    
 
   type
-    TThostFtdcFundMortDirectionType = char;
+    PTThostFtdcFundMortDirectionType = ^TThostFtdcFundMortDirectionType;
+    TThostFtdcFundMortDirectionType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBusinessClassType是一个换汇类别类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6052,7 +6672,8 @@ interface
     THOST_FTDC_BT_Other = 'Z';    
 
   type
-    TThostFtdcBusinessClassType = char;
+    PTThostFtdcBusinessClassType = ^TThostFtdcBusinessClassType;
+    TThostFtdcBusinessClassType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSwapSourceTypeType是一个换汇数据来源类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6064,7 +6685,8 @@ interface
     THOST_FTDC_SST_Automatic = '1';    
 
   type
-    TThostFtdcSwapSourceTypeType = char;
+    PTThostFtdcSwapSourceTypeType = ^TThostFtdcSwapSourceTypeType;
+    TThostFtdcSwapSourceTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCurrExDirectionType是一个换汇类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6076,7 +6698,8 @@ interface
     THOST_FTDC_CED_Sale = '1';    
 
   type
-    TThostFtdcCurrExDirectionType = char;
+    PTThostFtdcCurrExDirectionType = ^TThostFtdcCurrExDirectionType;
+    TThostFtdcCurrExDirectionType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCurrencySwapStatusType是一个申请状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6098,17 +6721,20 @@ interface
     THOST_FTDC_CSS_Failure = '7';    
 
   type
-    TThostFtdcCurrencySwapStatusType = char;
+    PTThostFtdcCurrencySwapStatusType = ^TThostFtdcCurrencySwapStatusType;
+    TThostFtdcCurrencySwapStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCurrExchCertNoType是一个凭证号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCurrExchCertNoType = array[0..12] of char;
+    PTThostFtdcCurrExchCertNoType = ^TThostFtdcCurrExchCertNoType;
+    TThostFtdcCurrExchCertNoType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBatchSerialNoType是一个批次号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBatchSerialNoType = array[0..20] of char;
+    PTThostFtdcBatchSerialNoType = ^TThostFtdcBatchSerialNoType;
+    TThostFtdcBatchSerialNoType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcReqFlagType是一个换汇发送标志类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6124,7 +6750,8 @@ interface
     THOST_FTDC_REQF_WaitReSend = '3';    
 
   type
-    TThostFtdcReqFlagType = char;
+    PTThostFtdcReqFlagType = ^TThostFtdcReqFlagType;
+    TThostFtdcReqFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcResFlagType是一个换汇返回成功标志类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6138,22 +6765,26 @@ interface
     THOST_FTDC_RESF_UnKnown = '8';    
 
   type
-    TThostFtdcResFlagType = char;
+    PTThostFtdcResFlagType = ^TThostFtdcResFlagType;
+    TThostFtdcResFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcPageControlType是一个换汇页面控制类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcPageControlType = array[0..1] of char;
+    PTThostFtdcPageControlType = ^TThostFtdcPageControlType;
+    TThostFtdcPageControlType = array[0..1] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcRecordCountType是一个记录数类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcRecordCountType = ^TThostFtdcRecordCountType;
     TThostFtdcRecordCountType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCurrencySwapMemoType是一个换汇需确认信息类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCurrencySwapMemoType = array[0..100] of char;
+    PTThostFtdcCurrencySwapMemoType = ^TThostFtdcCurrencySwapMemoType;
+    TThostFtdcCurrencySwapMemoType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcExStatusType是一个修改状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6165,7 +6796,8 @@ interface
     THOST_FTDC_EXS_After = '1';    
 
   type
-    TThostFtdcExStatusType = char;
+    PTThostFtdcExStatusType = ^TThostFtdcExStatusType;
+    TThostFtdcExStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcClientRegionType是一个开户客户地域类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6179,62 +6811,74 @@ interface
     THOST_FTDC_CR_Foreign = '3';    
 
   type
-    TThostFtdcClientRegionType = char;
+    PTThostFtdcClientRegionType = ^TThostFtdcClientRegionType;
+    TThostFtdcClientRegionType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcWorkPlaceType是一个工作单位类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcWorkPlaceType = array[0..100] of char;
+    PTThostFtdcWorkPlaceType = ^TThostFtdcWorkPlaceType;
+    TThostFtdcWorkPlaceType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBusinessPeriodType是一个经营期限类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBusinessPeriodType = array[0..20] of char;
+    PTThostFtdcBusinessPeriodType = ^TThostFtdcBusinessPeriodType;
+    TThostFtdcBusinessPeriodType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcWebSiteType是一个网址类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcWebSiteType = array[0..100] of char;
+   // PTThostFtdcWebSiteType = ^TThostFtdcWebSiteType;
+   // TThostFtdcWebSiteType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcUOAIdCardTypeType是一个统一开户证件类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcUOAIdCardTypeType = array[0..2] of char;
+    PTThostFtdcUOAIdCardTypeType = ^TThostFtdcUOAIdCardTypeType;
+    TThostFtdcUOAIdCardTypeType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcClientModeType是一个开户模式类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcClientModeType = array[0..2] of char;
+    PTThostFtdcClientModeType = ^TThostFtdcClientModeType;
+    TThostFtdcClientModeType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcInvestorFullNameType是一个投资者全称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcInvestorFullNameType = array[0..100] of char;
+    PTThostFtdcInvestorFullNameType = ^TThostFtdcInvestorFullNameType;
+    TThostFtdcInvestorFullNameType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcUOABrokerIDType是一个境外中介机构ID类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcUOABrokerIDType = array[0..10] of char;
+    PTThostFtdcUOABrokerIDType = ^TThostFtdcUOABrokerIDType;
+    TThostFtdcUOABrokerIDType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcUOAZipCodeType是一个邮政编码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcUOAZipCodeType = array[0..10] of char;
+    PTThostFtdcUOAZipCodeType = ^TThostFtdcUOAZipCodeType;
+    TThostFtdcUOAZipCodeType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcUOAEMailType是一个电子邮箱类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcUOAEMailType = array[0..100] of char;
+    PTThostFtdcUOAEMailType = ^TThostFtdcUOAEMailType;
+    TThostFtdcUOAEMailType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOldCityType是一个城市类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcOldCityType = array[0..40] of char;
+    PTThostFtdcOldCityType = ^TThostFtdcOldCityType;
+    TThostFtdcOldCityType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCorporateIdentifiedCardNoType是一个法人代表证件号码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCorporateIdentifiedCardNoType = array[0..100] of char;
+    PTThostFtdcCorporateIdentifiedCardNoType = ^TThostFtdcCorporateIdentifiedCardNoType;
+    TThostFtdcCorporateIdentifiedCardNoType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcHasBoardType是一个是否有董事会类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6246,7 +6890,8 @@ interface
     THOST_FTDC_HB_Yes = '1';    
 
   type
-    TThostFtdcHasBoardType = char;
+    PTThostFtdcHasBoardType = ^TThostFtdcHasBoardType;
+    TThostFtdcHasBoardType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcStartModeType是一个启动模式类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6260,7 +6905,8 @@ interface
     THOST_FTDC_SM_Restore = '3';    
 
   type
-    TThostFtdcStartModeType = char;
+    PTThostFtdcStartModeType = ^TThostFtdcStartModeType;
+    TThostFtdcStartModeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTemplateTypeType是一个模型类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6274,7 +6920,8 @@ interface
     THOST_FTDC_TPT_BackUp = '3';    
 
   type
-    TThostFtdcTemplateTypeType = char;
+    PTThostFtdcTemplateTypeType = ^TThostFtdcTemplateTypeType;
+    TThostFtdcTemplateTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcLoginModeType是一个登录模式类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6286,7 +6933,8 @@ interface
     THOST_FTDC_LM_Transfer = '1';    
 
   type
-    TThostFtdcLoginModeType = char;
+    PTThostFtdcLoginModeType = ^TThostFtdcLoginModeType;
+    TThostFtdcLoginModeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcPromptTypeType是一个日历提示类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6298,37 +6946,44 @@ interface
     THOST_FTDC_CPT_Margin = '2';    
 
   type
-    TThostFtdcPromptTypeType = char;
+    PTThostFtdcPromptTypeType = ^TThostFtdcPromptTypeType;
+    TThostFtdcPromptTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcLedgerManageIDType是一个分户管理资产编码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcLedgerManageIDType = array[0..50] of char;
+    PTThostFtdcLedgerManageIDType = ^TThostFtdcLedgerManageIDType;
+    TThostFtdcLedgerManageIDType = array[0..50] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcInvestVarietyType是一个投资品种类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcInvestVarietyType = array[0..100] of char;
+    PTThostFtdcInvestVarietyType = ^TThostFtdcInvestVarietyType;
+    TThostFtdcInvestVarietyType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBankAccountTypeType是一个账户类别类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBankAccountTypeType = array[0..1] of char;
+    PTThostFtdcBankAccountTypeType = ^TThostFtdcBankAccountTypeType;
+    TThostFtdcBankAccountTypeType = array[0..1] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcLedgerManageBankType是一个开户银行类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcLedgerManageBankType = array[0..100] of char;
+    PTThostFtdcLedgerManageBankType = ^TThostFtdcLedgerManageBankType;
+    TThostFtdcLedgerManageBankType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCffexDepartmentNameType是一个开户营业部类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCffexDepartmentNameType = array[0..100] of char;
+    PTThostFtdcCffexDepartmentNameType = ^TThostFtdcCffexDepartmentNameType;
+    TThostFtdcCffexDepartmentNameType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCffexDepartmentCodeType是一个营业部代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCffexDepartmentCodeType = array[0..8] of char;
+    PTThostFtdcCffexDepartmentCodeType = ^TThostFtdcCffexDepartmentCodeType;
+    TThostFtdcCffexDepartmentCodeType = array[0..8] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcHasTrusteeType是一个是否有托管人类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6340,27 +6995,32 @@ interface
     THOST_FTDC_HT_No = '0';    
 
   type
-    TThostFtdcHasTrusteeType = char;
+    PTThostFtdcHasTrusteeType = ^TThostFtdcHasTrusteeType;
+    TThostFtdcHasTrusteeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCSRCMemo1Type是一个说明类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCSRCMemo1Type = array[0..40] of char;
+    PTThostFtdcCSRCMemo1Type = ^TThostFtdcCSRCMemo1Type;
+    TThostFtdcCSRCMemo1Type = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAssetmgrCFullNameType是一个代理资产管理业务的期货公司全称类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAssetmgrCFullNameType = array[0..100] of char;
+    PTThostFtdcAssetmgrCFullNameType = ^TThostFtdcAssetmgrCFullNameType;
+    TThostFtdcAssetmgrCFullNameType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAssetmgrApprovalNOType是一个资产管理业务批文号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAssetmgrApprovalNOType = array[0..50] of char;
+    PTThostFtdcAssetmgrApprovalNOType = ^TThostFtdcAssetmgrApprovalNOType;
+    TThostFtdcAssetmgrApprovalNOType = array[0..50] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAssetmgrMgrNameType是一个资产管理业务负责人姓名类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAssetmgrMgrNameType = array[0..400] of char;
+    PTThostFtdcAssetmgrMgrNameType = ^TThostFtdcAssetmgrMgrNameType;
+    TThostFtdcAssetmgrMgrNameType = array[0..400] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAmTypeType是一个机构类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6380,12 +7040,14 @@ interface
     THOST_FTDC_AMT_Other = '9';    
 
   type
-    TThostFtdcAmTypeType = char;
+    PTThostFtdcAmTypeType = ^TThostFtdcAmTypeType;
+    TThostFtdcAmTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCSRCAmTypeType是一个机构类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCSRCAmTypeType = array[0..4] of char;
+    PTThostFtdcCSRCAmTypeType = ^TThostFtdcCSRCAmTypeType;
+    TThostFtdcCSRCAmTypeType = array[0..4] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCSRCFundIOTypeType是一个出入金类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6397,7 +7059,8 @@ interface
     THOST_FTDC_CFIOT_SwapCurrency = '1';    
 
   type
-    TThostFtdcCSRCFundIOTypeType = char;
+    PTThostFtdcCSRCFundIOTypeType = ^TThostFtdcCSRCFundIOTypeType;
+    TThostFtdcCSRCFundIOTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCusAccountTypeType是一个结算账户类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6413,17 +7076,20 @@ interface
     THOST_FTDC_CAT_AssetmgrTransfer = '4';    
 
   type
-    TThostFtdcCusAccountTypeType = char;
+    PTThostFtdcCusAccountTypeType = ^TThostFtdcCusAccountTypeType;
+    TThostFtdcCusAccountTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCSRCNationalType是一个国籍类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCSRCNationalType = array[0..3] of char;
+    PTThostFtdcCSRCNationalType = ^TThostFtdcCSRCNationalType;
+    TThostFtdcCSRCNationalType = array[0..3] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCSRCSecAgentIDType是一个二级代理ID类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCSRCSecAgentIDType = array[0..10] of char;
+    PTThostFtdcCSRCSecAgentIDType = ^TThostFtdcCSRCSecAgentIDType;
+    TThostFtdcCSRCSecAgentIDType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcLanguageTypeType是一个通知语言类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6435,12 +7101,14 @@ interface
     THOST_FTDC_LT_English = '2';    
 
   type
-    TThostFtdcLanguageTypeType = char;
+    PTThostFtdcLanguageTypeType = ^TThostFtdcLanguageTypeType;
+    TThostFtdcLanguageTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAmAccountType是一个投资账户类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAmAccountType = array[0..22] of char;
+    PTThostFtdcAmAccountType = ^TThostFtdcAmAccountType;
+    TThostFtdcAmAccountType = array[0..22] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAssetmgrClientTypeType是一个资产管理客户类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6454,7 +7122,8 @@ interface
     THOST_FTDC_AMCT_SpecialOrgan = '4';    
 
   type
-    TThostFtdcAssetmgrClientTypeType = char;
+    PTThostFtdcAssetmgrClientTypeType = ^TThostFtdcAssetmgrClientTypeType;
+    TThostFtdcAssetmgrClientTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAssetmgrTypeType是一个投资类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6466,32 +7135,38 @@ interface
     THOST_FTDC_ASST_SpecialOrgan = '4';    
 
   type
-    TThostFtdcAssetmgrTypeType = char;
+    PTThostFtdcAssetmgrTypeType = ^TThostFtdcAssetmgrTypeType;
+    TThostFtdcAssetmgrTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcUOMType是一个计量单位类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcUOMType = array[0..10] of char;
+    PTThostFtdcUOMType = ^TThostFtdcUOMType;
+    TThostFtdcUOMType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSHFEInstLifePhaseType是一个上期所合约生命周期状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcSHFEInstLifePhaseType = array[0..2] of char;
+    PTThostFtdcSHFEInstLifePhaseType = ^TThostFtdcSHFEInstLifePhaseType;
+    TThostFtdcSHFEInstLifePhaseType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSHFEProductClassType是一个产品类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcSHFEProductClassType = array[0..10] of char;
+    PTThostFtdcSHFEProductClassType = ^TThostFtdcSHFEProductClassType;
+    TThostFtdcSHFEProductClassType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcPriceDecimalType是一个价格小数位类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcPriceDecimalType = array[0..1] of char;
+    PTThostFtdcPriceDecimalType = ^TThostFtdcPriceDecimalType;
+    TThostFtdcPriceDecimalType = array[0..1] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcInTheMoneyFlagType是一个平值期权标志类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcInTheMoneyFlagType = array[0..1] of char;
+    PTThostFtdcInTheMoneyFlagType = ^TThostFtdcInTheMoneyFlagType;
+    TThostFtdcInTheMoneyFlagType = array[0..1] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCheckInstrTypeType是一个合约比较类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6505,7 +7180,8 @@ interface
     THOST_FTDC_CIT_HasDiff = '2';    
 
   type
-    TThostFtdcCheckInstrTypeType = char;
+    PTThostFtdcCheckInstrTypeType = ^TThostFtdcCheckInstrTypeType;
+    TThostFtdcCheckInstrTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcDeliveryTypeType是一个交割类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6517,11 +7193,13 @@ interface
     THOST_FTDC_DT_PersonDeliv = '2';    
 
   type
-    TThostFtdcDeliveryTypeType = char;
+    PTThostFtdcDeliveryTypeType = ^TThostFtdcDeliveryTypeType;
+    TThostFtdcDeliveryTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBigMoneyType是一个资金类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcBigMoneyType = ^TThostFtdcBigMoneyType;
     TThostFtdcBigMoneyType = double;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcMaxMarginSideAlgorithmType是一个大额单边保证金算法类型 }
@@ -6534,7 +7212,8 @@ interface
     THOST_FTDC_MMSA_YES = '1';    
 
   type
-    TThostFtdcMaxMarginSideAlgorithmType = char;
+    PTThostFtdcMaxMarginSideAlgorithmType = ^TThostFtdcMaxMarginSideAlgorithmType;
+    TThostFtdcMaxMarginSideAlgorithmType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcDAClientTypeType是一个资产管理客户类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6548,31 +7227,37 @@ interface
     THOST_FTDC_CACT_Other = '2';    
 
   type
-    TThostFtdcDAClientTypeType = char;
+    PTThostFtdcDAClientTypeType = ^TThostFtdcDAClientTypeType;
+    TThostFtdcDAClientTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCombinInstrIDType是一个套利合约代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCombinInstrIDType = array[0..60] of char;
+    PTThostFtdcCombinInstrIDType = ^TThostFtdcCombinInstrIDType;
+    TThostFtdcCombinInstrIDType = array[0..60] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCombinSettlePriceType是一个各腿结算价类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCombinSettlePriceType = array[0..60] of char;
+    PTThostFtdcCombinSettlePriceType = ^TThostFtdcCombinSettlePriceType;
+    TThostFtdcCombinSettlePriceType = array[0..60] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcDCEPriorityType是一个优先级类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcDCEPriorityType = ^TThostFtdcDCEPriorityType;
     TThostFtdcDCEPriorityType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTradeGroupIDType是一个成交组号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcTradeGroupIDType = ^TThostFtdcTradeGroupIDType;
     TThostFtdcTradeGroupIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcIsCheckPrepaType是一个是否校验开户可用资金类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcIsCheckPrepaType = ^TThostFtdcIsCheckPrepaType;
     TThostFtdcIsCheckPrepaType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcUOAAssetmgrTypeType是一个投资类型类型 }
@@ -6585,7 +7270,8 @@ interface
     THOST_FTDC_UOAAT_SpecialOrgan = '2';    
 
   type
-    TThostFtdcUOAAssetmgrTypeType = char;
+    PTThostFtdcUOAAssetmgrTypeType = ^TThostFtdcUOAAssetmgrTypeType;
+    TThostFtdcUOAAssetmgrTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcDirectionEnType是一个买卖方向类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6597,7 +7283,8 @@ interface
     THOST_FTDC_DEN_Sell = '1';    
 
   type
-    TThostFtdcDirectionEnType = char;
+    PTThostFtdcDirectionEnType = ^TThostFtdcDirectionEnType;
+    TThostFtdcDirectionEnType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOffsetFlagEnType是一个开平标志类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6619,7 +7306,8 @@ interface
     THOST_FTDC_OFEN_LocalForceClose = '6';    
 
   type
-    TThostFtdcOffsetFlagEnType = char;
+    PTThostFtdcOffsetFlagEnType = ^TThostFtdcOffsetFlagEnType;
+    TThostFtdcOffsetFlagEnType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcHedgeFlagEnType是一个投机套保标志类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6633,7 +7321,8 @@ interface
     THOST_FTDC_HFEN_Hedge = '3';    
 
   type
-    TThostFtdcHedgeFlagEnType = char;
+    PTThostFtdcHedgeFlagEnType = ^TThostFtdcHedgeFlagEnType;
+    TThostFtdcHedgeFlagEnType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFundIOTypeEnType是一个出入金类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6647,7 +7336,8 @@ interface
     THOST_FTDC_FIOTEN_SwapCurrency = '3';    
 
   type
-    TThostFtdcFundIOTypeEnType = char;
+    PTThostFtdcFundIOTypeEnType = ^TThostFtdcFundIOTypeEnType;
+    TThostFtdcFundIOTypeEnType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFundTypeEnType是一个资金类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6663,7 +7353,8 @@ interface
     THOST_FTDC_FTEN_InnerTransfer = '4';    
 
   type
-    TThostFtdcFundTypeEnType = char;
+    PTThostFtdcFundTypeEnType = ^TThostFtdcFundTypeEnType;
+    TThostFtdcFundTypeEnType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFundDirectionEnType是一个出入金方向类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6675,7 +7366,8 @@ interface
     THOST_FTDC_FDEN_Out = '2';    
 
   type
-    TThostFtdcFundDirectionEnType = char;
+    PTThostFtdcFundDirectionEnType = ^TThostFtdcFundDirectionEnType;
+    TThostFtdcFundDirectionEnType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcFundMortDirectionEnType是一个货币质押方向类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6687,12 +7379,14 @@ interface
     THOST_FTDC_FMDEN_Out = '2';    
 
   type
-    TThostFtdcFundMortDirectionEnType = char;
+    PTThostFtdcFundMortDirectionEnType = ^TThostFtdcFundMortDirectionEnType;
+    TThostFtdcFundMortDirectionEnType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSwapBusinessTypeType是一个换汇业务种类类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcSwapBusinessTypeType = array[0..2] of char;
+    PTThostFtdcSwapBusinessTypeType = ^TThostFtdcSwapBusinessTypeType;
+    TThostFtdcSwapBusinessTypeType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOptionsTypeType是一个期权类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6704,7 +7398,8 @@ interface
     THOST_FTDC_CP_PutOptions = '2';    
 
   type
-    TThostFtdcOptionsTypeType = char;
+    PTThostFtdcOptionsTypeType = ^TThostFtdcOptionsTypeType;
+    TThostFtdcOptionsTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcStrikeModeType是一个执行方式类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6718,7 +7413,8 @@ interface
     THOST_FTDC_STM_Bermuda = '2';    
 
   type
-    TThostFtdcStrikeModeType = char;
+    PTThostFtdcStrikeModeType = ^TThostFtdcStrikeModeType;
+    TThostFtdcStrikeModeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcStrikeTypeType是一个执行类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6730,7 +7426,8 @@ interface
     THOST_FTDC_STT_Match = '1';    
 
   type
-    TThostFtdcStrikeTypeType = char;
+    PTThostFtdcStrikeTypeType = ^TThostFtdcStrikeTypeType;
+    TThostFtdcStrikeTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcApplyTypeType是一个中金所期权放弃执行申请类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6740,7 +7437,8 @@ interface
     THOST_FTDC_APPT_NotStrikeNum = '4';    
 
   type
-    TThostFtdcApplyTypeType = char;
+    PTThostFtdcApplyTypeType = ^TThostFtdcApplyTypeType;
+    TThostFtdcApplyTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcGiveUpDataSourceType是一个放弃执行申请数据来源类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6752,12 +7450,14 @@ interface
     THOST_FTDC_GUDS_Hand = '1';    
 
   type
-    TThostFtdcGiveUpDataSourceType = char;
+    PTThostFtdcGiveUpDataSourceType = ^TThostFtdcGiveUpDataSourceType;
+    TThostFtdcGiveUpDataSourceType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcExecOrderSysIDType是一个执行宣告系统编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcExecOrderSysIDType = array[0..20] of char;
+    PTThostFtdcExecOrderSysIDType = ^TThostFtdcExecOrderSysIDType;
+    TThostFtdcExecOrderSysIDType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcExecResultType是一个执行结果类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6789,17 +7489,20 @@ interface
     THOST_FTDC_OER_Unknown = 'a';    
 
   type
-    TThostFtdcExecResultType = char;
+    PTThostFtdcExecResultType = ^TThostFtdcExecResultType;
+    TThostFtdcExecResultType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcStrikeSequenceType是一个执行序号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcStrikeSequenceType = ^TThostFtdcStrikeSequenceType;
     TThostFtdcStrikeSequenceType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcStrikeTimeType是一个执行时间类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcStrikeTimeType = array[0..12] of char;
+    PTThostFtdcStrikeTimeType = ^TThostFtdcStrikeTimeType;
+    TThostFtdcStrikeTimeType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCombinationTypeType是一个组合类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6829,7 +7532,8 @@ interface
     THOST_FTDC_COMBT_BES = 'a';    
 
   type
-    TThostFtdcCombinationTypeType = char;
+    PTThostFtdcCombinationTypeType = ^TThostFtdcCombinationTypeType;
+    TThostFtdcCombinationTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcDceCombinationTypeType是一个组合类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6859,7 +7563,8 @@ interface
     THOST_FTDC_DCECOMBT_SFO = 'a';    
 
   type
-    TThostFtdcDceCombinationTypeType = char;
+    PTThostFtdcDceCombinationTypeType = ^TThostFtdcDceCombinationTypeType;
+    TThostFtdcDceCombinationTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOptionRoyaltyPriceTypeType是一个期权权利金价格类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6873,7 +7578,8 @@ interface
     THOST_FTDC_ORPT_MaxPreSettlementPrice = '5';    
 
   type
-    TThostFtdcOptionRoyaltyPriceTypeType = char;
+    PTThostFtdcOptionRoyaltyPriceTypeType = ^TThostFtdcOptionRoyaltyPriceTypeType;
+    TThostFtdcOptionRoyaltyPriceTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBalanceAlgorithmType是一个权益算法类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6885,7 +7591,8 @@ interface
     THOST_FTDC_BLAG_IncludeOptValLost = '2';    
 
   type
-    TThostFtdcBalanceAlgorithmType = char;
+    PTThostFtdcBalanceAlgorithmType = ^TThostFtdcBalanceAlgorithmType;
+    TThostFtdcBalanceAlgorithmType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcActionTypeType是一个执行类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6897,7 +7604,8 @@ interface
     THOST_FTDC_ACTP_Abandon = '2';    
 
   type
-    TThostFtdcActionTypeType = char;
+    PTThostFtdcActionTypeType = ^TThostFtdcActionTypeType;
+    TThostFtdcActionTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcForQuoteStatusType是一个询价状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6911,7 +7619,8 @@ interface
     THOST_FTDC_FQST_Rejected = 'c';    
 
   type
-    TThostFtdcForQuoteStatusType = char;
+    PTThostFtdcForQuoteStatusType = ^TThostFtdcForQuoteStatusType;
+    TThostFtdcForQuoteStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcValueMethodType是一个取值方式类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6923,7 +7632,8 @@ interface
     THOST_FTDC_VM_Ratio = '1';    
 
   type
-    TThostFtdcValueMethodType = char;
+    PTThostFtdcValueMethodType = ^TThostFtdcValueMethodType;
+    TThostFtdcValueMethodType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcExecOrderPositionFlagType是一个期权行权后是否保留期货头寸的标记类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6935,7 +7645,8 @@ interface
     THOST_FTDC_EOPF_UnReserve = '1';    
 
   type
-    TThostFtdcExecOrderPositionFlagType = char;
+    PTThostFtdcExecOrderPositionFlagType = ^TThostFtdcExecOrderPositionFlagType;
+    TThostFtdcExecOrderPositionFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcExecOrderCloseFlagType是一个期权行权后生成的头寸是否自动平仓类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6947,7 +7658,8 @@ interface
     THOST_FTDC_EOCF_NotToClose = '1';    
 
   type
-    TThostFtdcExecOrderCloseFlagType = char;
+    PTThostFtdcExecOrderCloseFlagType = ^TThostFtdcExecOrderCloseFlagType;
+    TThostFtdcExecOrderCloseFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcProductTypeType是一个产品类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6959,7 +7671,8 @@ interface
     THOST_FTDC_PTE_Options = '2';    
 
   type
-    TThostFtdcProductTypeType = char;
+    PTThostFtdcProductTypeType = ^TThostFtdcProductTypeType;
+    TThostFtdcProductTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCZCEUploadFileNameType是一个郑商所结算文件名类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -6983,7 +7696,8 @@ interface
     THOST_FTDC_CUFN_CUFN_M = 'M';    
 
   type
-    TThostFtdcCZCEUploadFileNameType = char;
+    PTThostFtdcCZCEUploadFileNameType = ^TThostFtdcCZCEUploadFileNameType;
+    TThostFtdcCZCEUploadFileNameType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcDCEUploadFileNameType是一个大商所结算文件名类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -7007,7 +7721,8 @@ interface
     THOST_FTDC_DUFN_DUFN_S = 'S';    
 
   type
-    TThostFtdcDCEUploadFileNameType = char;
+    PTThostFtdcDCEUploadFileNameType = ^TThostFtdcDCEUploadFileNameType;
+    TThostFtdcDCEUploadFileNameType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSHFEUploadFileNameType是一个上期所结算文件名类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -7023,7 +7738,8 @@ interface
     THOST_FTDC_SUFN_SUFN_F = 'F';    
 
   type
-    TThostFtdcSHFEUploadFileNameType = char;
+    PTThostFtdcSHFEUploadFileNameType = ^TThostFtdcSHFEUploadFileNameType;
+    TThostFtdcSHFEUploadFileNameType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCFFEXUploadFileNameType是一个中金所结算文件名类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -7039,7 +7755,8 @@ interface
     THOST_FTDC_CFUFN_SUFN_S = 'S';    
 
   type
-    TThostFtdcCFFEXUploadFileNameType = char;
+    PTThostFtdcCFFEXUploadFileNameType = ^TThostFtdcCFFEXUploadFileNameType;
+    TThostFtdcCFFEXUploadFileNameType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCombDirectionType是一个组合指令方向类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -7053,7 +7770,8 @@ interface
     THOST_FTDC_CMDR_DelComb = '2';    
 
   type
-    TThostFtdcCombDirectionType = char;
+    PTThostFtdcCombDirectionType = ^TThostFtdcCombDirectionType;
+    TThostFtdcCombDirectionType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcStrikeOffsetTypeType是一个行权偏移类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -7069,7 +7787,8 @@ interface
     THOST_FTDC_STOV_ProfitRatio = '4';    
 
   type
-    TThostFtdcStrikeOffsetTypeType = char;
+    PTThostFtdcStrikeOffsetTypeType = ^TThostFtdcStrikeOffsetTypeType;
+    TThostFtdcStrikeOffsetTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcReserveOpenAccStasType是一个预约开户状态类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -7085,62 +7804,74 @@ interface
     THOST_FTDC_ROAST_Invalid = '3';    
 
   type
-    TThostFtdcReserveOpenAccStasType = char;
+    PTThostFtdcReserveOpenAccStasType = ^TThostFtdcReserveOpenAccStasType;
+    TThostFtdcReserveOpenAccStasType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcLoginRemarkType是一个登录备注类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcLoginRemarkType = array[0..35] of char;
+    PTThostFtdcLoginRemarkType = ^TThostFtdcLoginRemarkType;
+    TThostFtdcLoginRemarkType = array[0..35] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcInvestUnitIDType是一个投资单元代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcInvestUnitIDType = array[0..16] of char;
+    PTThostFtdcInvestUnitIDType = ^TThostFtdcInvestUnitIDType;
+    TThostFtdcInvestUnitIDType = array[0..16] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBulletinIDType是一个公告编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcBulletinIDType = ^TThostFtdcBulletinIDType;
     TThostFtdcBulletinIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcNewsTypeType是一个公告类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcNewsTypeType = array[0..2] of char;
+    PTThostFtdcNewsTypeType = ^TThostFtdcNewsTypeType;
+    TThostFtdcNewsTypeType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcNewsUrgencyType是一个紧急程度类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcNewsUrgencyType = char;
+    PTThostFtdcNewsUrgencyType = ^TThostFtdcNewsUrgencyType;
+    TThostFtdcNewsUrgencyType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAbstractType是一个消息摘要类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAbstractType = array[0..80] of char;
+    PTThostFtdcAbstractType = ^TThostFtdcAbstractType;
+    TThostFtdcAbstractType = array[0..80] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcComeFromType是一个消息来源类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcComeFromType = array[0..20] of char;
+    PTThostFtdcComeFromType = ^TThostFtdcComeFromType;
+    TThostFtdcComeFromType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcURLLinkType是一个WEB地址类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcURLLinkType = array[0..200] of char;
+    PTThostFtdcURLLinkType = ^TThostFtdcURLLinkType;
+    TThostFtdcURLLinkType = array[0..200] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcLongIndividualNameType是一个长个人姓名类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcLongIndividualNameType = array[0..160] of char;
+    PTThostFtdcLongIndividualNameType = ^TThostFtdcLongIndividualNameType;
+    TThostFtdcLongIndividualNameType = array[0..160] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcLongFBEBankAccountNameType是一个长换汇银行账户名类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcLongFBEBankAccountNameType = array[0..160] of char;
+    PTThostFtdcLongFBEBankAccountNameType = ^TThostFtdcLongFBEBankAccountNameType;
+    TThostFtdcLongFBEBankAccountNameType = array[0..160] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcDateTimeType是一个日期时间类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcDateTimeType = array[0..16] of char;
+    PTThostFtdcDateTimeType = ^TThostFtdcDateTimeType;
+    TThostFtdcDateTimeType = array[0..16] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcWeakPasswordSourceType是一个弱密码来源类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -7152,12 +7883,14 @@ interface
     THOST_FTDC_WPSR_Manual = '2';    
 
   type
-    TThostFtdcWeakPasswordSourceType = char;
+    PTThostFtdcWeakPasswordSourceType = ^TThostFtdcWeakPasswordSourceType;
+    TThostFtdcWeakPasswordSourceType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcRandomStringType是一个随机串类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcRandomStringType = array[0..16] of char;
+    PTThostFtdcRandomStringType = ^TThostFtdcRandomStringType;
+    TThostFtdcRandomStringType = array[0..16] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOptSelfCloseFlagType是一个期权行权的头寸是否自对冲类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -7173,7 +7906,8 @@ interface
     THOST_FTDC_OSCF_ReserveFuturePosition = '4';    
 
   type
-    TThostFtdcOptSelfCloseFlagType = char;
+    PTThostFtdcOptSelfCloseFlagType = ^TThostFtdcOptSelfCloseFlagType;
+    TThostFtdcOptSelfCloseFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBizTypeType是一个业务类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -7185,7 +7919,8 @@ interface
     THOST_FTDC_BZTP_Stock = '2';    
 
   type
-    TThostFtdcBizTypeType = char;
+    PTThostFtdcBizTypeType = ^TThostFtdcBizTypeType;
+    TThostFtdcBizTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAppTypeType是一个用户App类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -7201,96 +7936,115 @@ interface
     THOST_FTDC_APP_TYPE_UnKnown = '4';    
 
   type
-    TThostFtdcAppTypeType = char;
+    PTThostFtdcAppTypeType = ^TThostFtdcAppTypeType;
+    TThostFtdcAppTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAppIDType是一个App代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAppIDType = array[0..32] of char;
+    PTThostFtdcAppIDType = ^TThostFtdcAppIDType;
+    TThostFtdcAppIDType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSystemInfoLenType是一个系统信息长度类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcSystemInfoLenType = ^TThostFtdcSystemInfoLenType;
     TThostFtdcSystemInfoLenType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAdditionalInfoLenType是一个补充信息长度类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcAdditionalInfoLenType = ^TThostFtdcAdditionalInfoLenType;
     TThostFtdcAdditionalInfoLenType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcClientSystemInfoType是一个交易终端系统信息类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcClientSystemInfoType = array[0..272] of char;
+    PTThostFtdcClientSystemInfoType = ^TThostFtdcClientSystemInfoType;
+    TThostFtdcClientSystemInfoType = array[0..272] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAdditionalInfoType是一个系统外部信息类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcAdditionalInfoType = array[0..260] of char;
+    PTThostFtdcAdditionalInfoType = ^TThostFtdcAdditionalInfoType;
+    TThostFtdcAdditionalInfoType = array[0..260] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBase64ClientSystemInfoType是一个base64交易终端系统信息类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBase64ClientSystemInfoType = array[0..364] of char;
+    PTThostFtdcBase64ClientSystemInfoType = ^TThostFtdcBase64ClientSystemInfoType;
+    TThostFtdcBase64ClientSystemInfoType = array[0..364] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcBase64AdditionalInfoType是一个base64系统外部信息类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcBase64AdditionalInfoType = array[0..348] of char;
+    PTThostFtdcBase64AdditionalInfoType = ^TThostFtdcBase64AdditionalInfoType;
+    TThostFtdcBase64AdditionalInfoType = array[0..348] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCurrentAuthMethodType是一个当前可用的认证模式，0代表无需认证模式 A从低位开始最后一位代表图片验证码，倒数第二位代表动态口令，倒数第三位代表短信验证码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcCurrentAuthMethodType = ^TThostFtdcCurrentAuthMethodType;
     TThostFtdcCurrentAuthMethodType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCaptchaInfoLenType是一个图片验证信息长度类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcCaptchaInfoLenType = ^TThostFtdcCaptchaInfoLenType;
     TThostFtdcCaptchaInfoLenType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCaptchaInfoType是一个图片验证信息类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCaptchaInfoType = array[0..2560] of char;
+    PTThostFtdcCaptchaInfoType = ^TThostFtdcCaptchaInfoType;
+    TThostFtdcCaptchaInfoType = array[0..2560] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcUserTextSeqType是一个用户短信验证码的编号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcUserTextSeqType = ^TThostFtdcUserTextSeqType;
     TThostFtdcUserTextSeqType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcHandshakeDataType是一个握手数据内容类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcHandshakeDataType = array[0..300] of char;
+    PTThostFtdcHandshakeDataType = ^TThostFtdcHandshakeDataType;
+    TThostFtdcHandshakeDataType = array[0..300] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcHandshakeDataLenType是一个握手数据内容长度类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcHandshakeDataLenType = ^TThostFtdcHandshakeDataLenType;
     TThostFtdcHandshakeDataLenType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCryptoKeyVersionType是一个api与front通信密钥版本号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCryptoKeyVersionType = array[0..30] of char;
+    PTThostFtdcCryptoKeyVersionType = ^TThostFtdcCryptoKeyVersionType;
+    TThostFtdcCryptoKeyVersionType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcRsaKeyVersionType是一个公钥版本号类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcRsaKeyVersionType = ^TThostFtdcRsaKeyVersionType;
     TThostFtdcRsaKeyVersionType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcSoftwareProviderIDType是一个交易软件商ID类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcSoftwareProviderIDType = array[0..21] of char;
+    PTThostFtdcSoftwareProviderIDType = ^TThostFtdcSoftwareProviderIDType;
+    TThostFtdcSoftwareProviderIDType = array[0..21] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcCollectTimeType是一个信息采集时间类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcCollectTimeType = array[0..20] of char;
+    PTThostFtdcCollectTimeType = ^TThostFtdcCollectTimeType;
+    TThostFtdcCollectTimeType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcQueryFreqType是一个查询频率类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcQueryFreqType = ^TThostFtdcQueryFreqType;
     TThostFtdcQueryFreqType = longint;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcResponseValueType是一个应答类型类型 }
@@ -7303,7 +8057,8 @@ interface
     THOST_FTDC_RV_Refuse = '1';    
 
   type
-    TThostFtdcResponseValueType = char;
+    PTThostFtdcResponseValueType = ^TThostFtdcResponseValueType;
+    TThostFtdcResponseValueType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOTCTradeTypeType是一个OTC成交类型类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -7315,7 +8070,8 @@ interface
     THOST_FTDC_OTC_TRDT_EFP = '1';    
 
   type
-    TThostFtdcOTCTradeTypeType = char;
+    PTThostFtdcOTCTradeTypeType = ^TThostFtdcOTCTradeTypeType;
+    TThostFtdcOTCTradeTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcMatchTypeType是一个期现风险匹配方式类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -7327,26 +8083,31 @@ interface
     THOST_FTDC_OTC_MT_ParValue = '2';    
 
   type
-    TThostFtdcMatchTypeType = char;
+    PTThostFtdcMatchTypeType = ^TThostFtdcMatchTypeType;
+    TThostFtdcMatchTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcOTCTraderIDType是一个OTC交易员代码类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcOTCTraderIDType = array[0..30] of char;
+    PTThostFtdcOTCTraderIDType = ^TThostFtdcOTCTraderIDType;
+    TThostFtdcOTCTraderIDType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcRiskValueType是一个期货风险值类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcRiskValueType = ^TThostFtdcRiskValueType;
     TThostFtdcRiskValueType = double;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcIDBNameType是一个握手数据内容类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
-    TThostFtdcIDBNameType = array[0..99] of char;
+    PTThostFtdcIDBNameType = ^TThostFtdcIDBNameType;
+    TThostFtdcIDBNameType = array[0..99] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcDiscountRatioType是一个折扣率类型 }
   {/////////////////////////////////////////////////////////////////////// }
 
+    PTThostFtdcDiscountRatioType = ^TThostFtdcDiscountRatioType;
     TThostFtdcDiscountRatioType = double;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcAuthTypeType是一个用户终端认证方式类型 }
@@ -7359,7 +8120,8 @@ interface
     THOST_FTDC_AU_BLACK = '1';    
 
   type
-    TThostFtdcAuthTypeType = char;
+    PTThostFtdcAuthTypeType = ^TThostFtdcAuthTypeType;
+    TThostFtdcAuthTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcClassTypeType是一个合约分类方式类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -7375,7 +8137,8 @@ interface
     THOST_FTDC_INS_COMB = '3';    
 
   type
-    TThostFtdcClassTypeType = char;
+    PTThostFtdcClassTypeType = ^TThostFtdcClassTypeType;
+    TThostFtdcClassTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
   {/TFtdcTradingTypeType是一个合约交易状态分类方式类型 }
   {/////////////////////////////////////////////////////////////////////// }
@@ -7389,117 +8152,9 @@ interface
     THOST_FTDC_TD_UNTRADE = '2';    
 
   type
-    TThostFtdcTradingTypeType = char;
-  {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcProductStatusType是一个产品状态类型 }
-  {/////////////////////////////////////////////////////////////////////// }
-  {/可交易 }
+    PTThostFtdcTradingTypeType = ^TThostFtdcTradingTypeType;
+    TThostFtdcTradingTypeType = AnsiChar;
 
-  const
-    THOST_FTDC_PS_tradeable = '1';    
-  {/不可交易 }
-    THOST_FTDC_PS_untradeable = '2';    
-
-  type
-    TThostFtdcProductStatusType = char;
-  {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSyncDeltaStatusType是一个追平状态类型 }
-  {/////////////////////////////////////////////////////////////////////// }
-  {/交易可读 }
-
-  const
-    THOST_FTDC_SDS_Readable = '1';    
-  {/交易在读 }
-    THOST_FTDC_SDS_Reading = '2';    
-  {/交易读取完成 }
-    THOST_FTDC_SDS_Readend = '3';    
-  {/追平失败 交易本地状态结算不存在 }
-    THOST_FTDC_SDS_OptErr = 'e';    
-
-  type
-    TThostFtdcSyncDeltaStatusType = char;
-  {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcActionDirectionType是一个操作标志类型 }
-  {/////////////////////////////////////////////////////////////////////// }
-  {/增加 }
-
-  const
-    THOST_FTDC_ACD_Add = '1';    
-  {/删除 }
-    THOST_FTDC_ACD_Del = '2';    
-  {/更新 }
-    THOST_FTDC_ACD_Upd = '3';    
-
-  type
-    TThostFtdcActionDirectionType = char;
-  {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOrderCancelAlgType是一个撤单时选择席位算法类型 }
-  {/////////////////////////////////////////////////////////////////////// }
-  {/轮询席位撤单 }
-
-  const
-    THOST_FTDC_OAC_Balance = '1';    
-  {/优先原报单席位撤单 }
-    THOST_FTDC_OAC_OrigFirst = '2';    
-
-  type
-    TThostFtdcOrderCancelAlgType = char;
-  {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSyncDescriptionType是一个追平描述类型 }
-  {/////////////////////////////////////////////////////////////////////// }
-
-    TThostFtdcSyncDescriptionType = array[0..256] of char;
-  {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCommonIntType是一个通用int类型类型 }
-  {/////////////////////////////////////////////////////////////////////// }
-
-    TThostFtdcCommonIntType = longint;
-  {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSysVersionType是一个系统版本类型 }
-  {/////////////////////////////////////////////////////////////////////// }
-
-    TThostFtdcSysVersionType = array[0..40] of char;
-  {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOpenLimitControlLevelType是一个开仓量限制粒度类型 }
-  {/////////////////////////////////////////////////////////////////////// }
-  {/不控制 }
-
-  const
-    THOST_FTDC_PLCL_None = '0';    
-  {/产品级别 }
-    THOST_FTDC_PLCL_Product = '1';    
-  {/合约级别 }
-    THOST_FTDC_PLCL_Inst = '2';    
-
-  type
-    TThostFtdcOpenLimitControlLevelType = char;
-  {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOrderFreqControlLevelType是一个报单频率控制粒度类型 }
-  {/////////////////////////////////////////////////////////////////////// }
-  {/不控制 }
-
-  const
-    THOST_FTDC_OFCL_None = '0';    
-  {/产品级别 }
-    THOST_FTDC_OFCL_Product = '1';    
-  {/合约级别 }
-    THOST_FTDC_OFCL_Inst = '2';    
-
-  type
-    TThostFtdcOrderFreqControlLevelType = char;
-  {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcEnumBoolType是一个枚举bool类型类型 }
-  {/////////////////////////////////////////////////////////////////////// }
-  {/false }
-
-  const
-    THOST_FTDC_EBL_False = '0';    
-  {/true }
-    THOST_FTDC_EBL_True = '1';    
-
-  type
-    TThostFtdcEnumBoolType = char;
-{$endif}
 
 implementation
 
