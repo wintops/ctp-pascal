@@ -26,6 +26,10 @@ object frmMain: TfrmMain
     object TabSheet1: TTabSheet
       Caption = #25253#20215
       ImageIndex = 2
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object lv1: TListView
         Left = 0
         Top = 0
@@ -147,13 +151,15 @@ object frmMain: TfrmMain
         TabOrder = 0
         ViewStyle = vsReport
         OnCustomDrawSubItem = lv1CustomDrawSubItem
-        OnDblClick = lv1DblClick
-        OnMouseMove = lv1MouseMove
       end
     end
     object ts2: TTabSheet
       Caption = #20132#26131'API'
       ImageIndex = 1
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object lbl1: TLabel
         Left = 456
         Top = 18
@@ -205,7 +211,6 @@ object frmMain: TfrmMain
         Height = 25
         Caption = #30331#20986
         TabOrder = 1
-        OnClick = btnLogOutClick
       end
       object mmo1: TMemo
         Left = 0
@@ -241,7 +246,6 @@ object frmMain: TfrmMain
         Height = 25
         Caption = #35748#35777
         TabOrder = 5
-        OnClick = btn4Click
       end
       object lv2: TListView
         Left = 0
@@ -305,7 +309,6 @@ object frmMain: TfrmMain
         Height = 25
         Caption = #19979#21333
         TabOrder = 10
-        OnClick = btn7Click
       end
       object btn11: TButton
         Left = 456
@@ -314,7 +317,6 @@ object frmMain: TfrmMain
         Height = 25
         Caption = #26597#22996#25176
         TabOrder = 11
-        OnClick = btn11Click
       end
       object btn12: TButton
         Left = 624
@@ -323,7 +325,6 @@ object frmMain: TfrmMain
         Height = 25
         Caption = #25764#21333
         TabOrder = 12
-        OnClick = btn12Click
       end
       object rg1: TRadioGroup
         Left = 496
@@ -354,6 +355,10 @@ object frmMain: TfrmMain
     object ts1: TTabSheet
       Caption = #34892#24773'API'
       ImageIndex = 1
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object mmoPrice: TMemo
         Left = 8
         Top = 11
@@ -379,7 +384,7 @@ object frmMain: TfrmMain
         Height = 25
         Caption = #30331#24405
         TabOrder = 2
-        OnClick = login
+        OnClick = loginClick
       end
       object btn8: TButton
         Left = 174
@@ -388,7 +393,7 @@ object frmMain: TfrmMain
         Height = 25
         Caption = #35746#38405
         TabOrder = 3
-        OnClick = subMD
+        OnClick = btn8Click
       end
       object btn9: TButton
         Left = 174
@@ -397,7 +402,6 @@ object frmMain: TfrmMain
         Height = 25
         Caption = #36864#35746
         TabOrder = 4
-        OnClick = btn9Click
       end
       object btn5: TButton
         Left = 14
@@ -420,7 +424,6 @@ object frmMain: TfrmMain
     end
   end
   object Timer1: TTimer
-    Interval = 5000
     OnTimer = Timer1Timer
     Left = 100
     Top = 121
