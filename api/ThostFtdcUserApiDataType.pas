@@ -1,5 +1,10 @@
 
 unit ThostFtdcUserApiDataType;
+
+{$IFDEF FPC}
+  {$MODE Delphi}
+{$ENDIF}
+
 interface
 
 
@@ -9,2735 +14,2735 @@ interface
       THOST_TERT_QUICK,THOST_TERT_NONE);
 
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTraderIDTypeÊÇÒ»¸ö½»Ò×Ëù½»Ò×Ô±´úÂëÀàĞÍ }
+  {/TFtdcTraderIDTypeæ˜¯ä¸€ä¸ªäº¤æ˜“æ‰€äº¤æ˜“å‘˜ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcTraderIDType = ^TThostFtdcTraderIDType;
     TThostFtdcTraderIDType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcInvestorIDTypeÊÇÒ»¸öÍ¶×ÊÕß´úÂëÀàĞÍ }
+  {/TFtdcInvestorIDTypeæ˜¯ä¸€ä¸ªæŠ•èµ„è€…ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcInvestorIDType = ^TThostFtdcInvestorIDType;
     TThostFtdcInvestorIDType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBrokerIDTypeÊÇÒ»¸ö¾­¼Í¹«Ë¾´úÂëÀàĞÍ }
+  {/TFtdcBrokerIDTypeæ˜¯ä¸€ä¸ªç»çºªå…¬å¸ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBrokerIDType = ^TThostFtdcBrokerIDType;
     TThostFtdcBrokerIDType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBrokerAbbrTypeÊÇÒ»¸ö¾­¼Í¹«Ë¾¼ò³ÆÀàĞÍ }
+  {/TFtdcBrokerAbbrTypeæ˜¯ä¸€ä¸ªç»çºªå…¬å¸ç®€ç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBrokerAbbrType = ^TThostFtdcBrokerAbbrType;
     TThostFtdcBrokerAbbrType = array[0..8] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBrokerNameTypeÊÇÒ»¸ö¾­¼Í¹«Ë¾Ãû³ÆÀàĞÍ }
+  {/TFtdcBrokerNameTypeæ˜¯ä¸€ä¸ªç»çºªå…¬å¸åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBrokerNameType = ^TThostFtdcBrokerNameType;
     TThostFtdcBrokerNameType = array[0..80] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOldExchangeInstIDTypeÊÇÒ»¸öºÏÔ¼ÔÚ½»Ò×ËùµÄ´úÂëÀàĞÍ }
+  {/TFtdcOldExchangeInstIDTypeæ˜¯ä¸€ä¸ªåˆçº¦åœ¨äº¤æ˜“æ‰€çš„ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcOldExchangeInstIDType = ^TThostFtdcOldExchangeInstIDType;
     TThostFtdcOldExchangeInstIDType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcExchangeInstIDTypeÊÇÒ»¸öºÏÔ¼ÔÚ½»Ò×ËùµÄ´úÂëÀàĞÍ }
+  {/TFtdcExchangeInstIDTypeæ˜¯ä¸€ä¸ªåˆçº¦åœ¨äº¤æ˜“æ‰€çš„ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcExchangeInstIDType = ^TThostFtdcExchangeInstIDType;
     TThostFtdcExchangeInstIDType = array[0..80] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOrderRefTypeÊÇÒ»¸ö±¨µ¥ÒıÓÃÀàĞÍ }
+  {/TFtdcOrderRefTypeæ˜¯ä¸€ä¸ªæŠ¥å•å¼•ç”¨ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcOrderRefType = ^TThostFtdcOrderRefType;
     TThostFtdcOrderRefType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcParticipantIDTypeÊÇÒ»¸ö»áÔ±´úÂëÀàĞÍ }
+  {/TFtdcParticipantIDTypeæ˜¯ä¸€ä¸ªä¼šå‘˜ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcParticipantIDType = ^TThostFtdcParticipantIDType;
     TThostFtdcParticipantIDType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcUserIDTypeÊÇÒ»¸öÓÃ»§´úÂëÀàĞÍ }
+  {/TFtdcUserIDTypeæ˜¯ä¸€ä¸ªç”¨æˆ·ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcUserIDType = ^TThostFtdcUserIDType;
     TThostFtdcUserIDType = array[0..15] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcPasswordTypeÊÇÒ»¸öÃÜÂëÀàĞÍ }
+  {/TFtdcPasswordTypeæ˜¯ä¸€ä¸ªå¯†ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcPasswordType = ^TThostFtdcPasswordType;
     TThostFtdcPasswordType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcClientIDTypeÊÇÒ»¸ö½»Ò×±àÂëÀàĞÍ }
+  {/TFtdcClientIDTypeæ˜¯ä¸€ä¸ªäº¤æ˜“ç¼–ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcClientIDType = ^TThostFtdcClientIDType;
     TThostFtdcClientIDType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcInstrumentIDTypeÊÇÒ»¸öºÏÔ¼´úÂëÀàĞÍ }
+  {/TFtdcInstrumentIDTypeæ˜¯ä¸€ä¸ªåˆçº¦ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcInstrumentIDType = ^TThostFtdcInstrumentIDType;
     TThostFtdcInstrumentIDType = array[0..80] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOldInstrumentIDTypeÊÇÒ»¸öºÏÔ¼´úÂëÀàĞÍ }
+  {/TFtdcOldInstrumentIDTypeæ˜¯ä¸€ä¸ªåˆçº¦ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcOldInstrumentIDType = ^TThostFtdcOldInstrumentIDType;
     TThostFtdcOldInstrumentIDType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcInstrumentCodeTypeÊÇÒ»¸öºÏÔ¼±êÊ¶ÂëÀàĞÍ }
+  {/TFtdcInstrumentCodeTypeæ˜¯ä¸€ä¸ªåˆçº¦æ ‡è¯†ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcInstrumentCodeType = ^TThostFtdcInstrumentCodeType;
     TThostFtdcInstrumentCodeType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcMarketIDTypeÊÇÒ»¸öÊĞ³¡´úÂëÀàĞÍ }
+  {/TFtdcMarketIDTypeæ˜¯ä¸€ä¸ªå¸‚åœºä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcMarketIDType = ^TThostFtdcMarketIDType;
     TThostFtdcMarketIDType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcProductNameTypeÊÇÒ»¸ö²úÆ·Ãû³ÆÀàĞÍ }
+  {/TFtdcProductNameTypeæ˜¯ä¸€ä¸ªäº§å“åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcProductNameType = ^TThostFtdcProductNameType;
     TThostFtdcProductNameType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcExchangeIDTypeÊÇÒ»¸ö½»Ò×Ëù´úÂëÀàĞÍ }
+  {/TFtdcExchangeIDTypeæ˜¯ä¸€ä¸ªäº¤æ˜“æ‰€ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcExchangeIDType = ^TThostFtdcExchangeIDType;
     TThostFtdcExchangeIDType = array[0..8] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcExchangeNameTypeÊÇÒ»¸ö½»Ò×ËùÃû³ÆÀàĞÍ }
+  {/TFtdcExchangeNameTypeæ˜¯ä¸€ä¸ªäº¤æ˜“æ‰€åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcExchangeNameType = ^TThostFtdcExchangeNameType;
     TThostFtdcExchangeNameType = array[0..60] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcExchangeAbbrTypeÊÇÒ»¸ö½»Ò×Ëù¼ò³ÆÀàĞÍ }
+  {/TFtdcExchangeAbbrTypeæ˜¯ä¸€ä¸ªäº¤æ˜“æ‰€ç®€ç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcExchangeAbbrType = ^TThostFtdcExchangeAbbrType;
     TThostFtdcExchangeAbbrType = array[0..8] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcExchangeFlagTypeÊÇÒ»¸ö½»Ò×Ëù±êÖ¾ÀàĞÍ }
+  {/TFtdcExchangeFlagTypeæ˜¯ä¸€ä¸ªäº¤æ˜“æ‰€æ ‡å¿—ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcExchangeFlagType = ^TThostFtdcExchangeFlagType;
     TThostFtdcExchangeFlagType = array[0..1] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcMacAddressTypeÊÇÒ»¸öMacµØÖ·ÀàĞÍ }
+  {/TFtdcMacAddressTypeæ˜¯ä¸€ä¸ªMacåœ°å€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcMacAddressType = ^TThostFtdcMacAddressType;
     TThostFtdcMacAddressType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSystemIDTypeÊÇÒ»¸öÏµÍ³±àºÅÀàĞÍ }
+  {/TFtdcSystemIDTypeæ˜¯ä¸€ä¸ªç³»ç»Ÿç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcSystemIDType = ^TThostFtdcSystemIDType;
     TThostFtdcSystemIDType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcExchangePropertyTypeÊÇÒ»¸ö½»Ò×ËùÊôĞÔÀàĞÍ }
+  {/TFtdcExchangePropertyTypeæ˜¯ä¸€ä¸ªäº¤æ˜“æ‰€å±æ€§ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Õı³£ }
+  {/æ­£å¸¸ }
 
   const
     THOST_FTDC_EXP_Normal = '0';    
-  {/¸ù¾İ³É½»Éú³É±¨µ¥ }
+  {/æ ¹æ®æˆäº¤ç”ŸæˆæŠ¥å• }
     THOST_FTDC_EXP_GenOrderByTrade = '1';    
 
   type
     PTThostFtdcExchangePropertyType = ^TThostFtdcExchangePropertyType;
     TThostFtdcExchangePropertyType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcDateTypeÊÇÒ»¸öÈÕÆÚÀàĞÍ }
+  {/TFtdcDateTypeæ˜¯ä¸€ä¸ªæ—¥æœŸç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcDateType = ^TThostFtdcDateType;
     TThostFtdcDateType = array[0..8] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTimeTypeÊÇÒ»¸öÊ±¼äÀàĞÍ }
+  {/TFtdcTimeTypeæ˜¯ä¸€ä¸ªæ—¶é—´ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcTimeType = ^TThostFtdcTimeType;
     TThostFtdcTimeType = array[0..8] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcLongTimeTypeÊÇÒ»¸ö³¤Ê±¼äÀàĞÍ }
+  {/TFtdcLongTimeTypeæ˜¯ä¸€ä¸ªé•¿æ—¶é—´ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcLongTimeType = ^TThostFtdcLongTimeType;
     TThostFtdcLongTimeType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcInstrumentNameTypeÊÇÒ»¸öºÏÔ¼Ãû³ÆÀàĞÍ }
+  {/TFtdcInstrumentNameTypeæ˜¯ä¸€ä¸ªåˆçº¦åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcInstrumentNameType = ^TThostFtdcInstrumentNameType;
     TThostFtdcInstrumentNameType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSettlementGroupIDTypeÊÇÒ»¸ö½áËã×é´úÂëÀàĞÍ }
+  {/TFtdcSettlementGroupIDTypeæ˜¯ä¸€ä¸ªç»“ç®—ç»„ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcSettlementGroupIDType = ^TThostFtdcSettlementGroupIDType;
     TThostFtdcSettlementGroupIDType = array[0..8] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOrderSysIDTypeÊÇÒ»¸ö±¨µ¥±àºÅÀàĞÍ }
+  {/TFtdcOrderSysIDTypeæ˜¯ä¸€ä¸ªæŠ¥å•ç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcOrderSysIDType = ^TThostFtdcOrderSysIDType;
     TThostFtdcOrderSysIDType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTradeIDTypeÊÇÒ»¸ö³É½»±àºÅÀàĞÍ }
+  {/TFtdcTradeIDTypeæ˜¯ä¸€ä¸ªæˆäº¤ç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcTradeIDType = ^TThostFtdcTradeIDType;
     TThostFtdcTradeIDType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCommandTypeTypeÊÇÒ»¸öDBÃüÁîÀàĞÍÀàĞÍ }
+  {/TFtdcCommandTypeTypeæ˜¯ä¸€ä¸ªDBå‘½ä»¤ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCommandTypeType = ^TThostFtdcCommandTypeType;
     TThostFtdcCommandTypeType = array[0..64] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOldIPAddressTypeÊÇÒ»¸öIPµØÖ·ÀàĞÍ }
+  {/TFtdcOldIPAddressTypeæ˜¯ä¸€ä¸ªIPåœ°å€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcOldIPAddressType = ^TThostFtdcOldIPAddressType;
     TThostFtdcOldIPAddressType = array[0..15] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcIPAddressTypeÊÇÒ»¸öIPµØÖ·ÀàĞÍ }
+  {/TFtdcIPAddressTypeæ˜¯ä¸€ä¸ªIPåœ°å€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcIPAddressType = ^TThostFtdcIPAddressType;
     TThostFtdcIPAddressType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcIPPortTypeÊÇÒ»¸öIP¶Ë¿ÚÀàĞÍ }
+  {/TFtdcIPPortTypeæ˜¯ä¸€ä¸ªIPç«¯å£ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcIPPortType = ^TThostFtdcIPPortType;
     TThostFtdcIPPortType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcProductInfoTypeÊÇÒ»¸ö²úÆ·ĞÅÏ¢ÀàĞÍ }
+  {/TFtdcProductInfoTypeæ˜¯ä¸€ä¸ªäº§å“ä¿¡æ¯ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcProductInfoType = ^TThostFtdcProductInfoType;
     TThostFtdcProductInfoType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcProtocolInfoTypeÊÇÒ»¸öĞ­ÒéĞÅÏ¢ÀàĞÍ }
+  {/TFtdcProtocolInfoTypeæ˜¯ä¸€ä¸ªåè®®ä¿¡æ¯ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcProtocolInfoType = ^TThostFtdcProtocolInfoType;
     TThostFtdcProtocolInfoType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBusinessUnitTypeÊÇÒ»¸öÒµÎñµ¥ÔªÀàĞÍ }
+  {/TFtdcBusinessUnitTypeæ˜¯ä¸€ä¸ªä¸šåŠ¡å•å…ƒç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBusinessUnitType = ^TThostFtdcBusinessUnitType;
     TThostFtdcBusinessUnitType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcDepositSeqNoTypeÊÇÒ»¸ö³öÈë½ğÁ÷Ë®ºÅÀàĞÍ }
+  {/TFtdcDepositSeqNoTypeæ˜¯ä¸€ä¸ªå‡ºå…¥é‡‘æµæ°´å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcDepositSeqNoType = ^TThostFtdcDepositSeqNoType;
     TThostFtdcDepositSeqNoType = array[0..14] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcIdentifiedCardNoTypeÊÇÒ»¸öÖ¤¼şºÅÂëÀàĞÍ }
+  {/TFtdcIdentifiedCardNoTypeæ˜¯ä¸€ä¸ªè¯ä»¶å·ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcIdentifiedCardNoType = ^TThostFtdcIdentifiedCardNoType;
     TThostFtdcIdentifiedCardNoType = array[0..50] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcIdCardTypeTypeÊÇÒ»¸öÖ¤¼şÀàĞÍÀàĞÍ }
+  {/TFtdcIdCardTypeTypeæ˜¯ä¸€ä¸ªè¯ä»¶ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/×éÖ¯»ú¹¹´úÂë }
+  {/ç»„ç»‡æœºæ„ä»£ç  }
 
   const
     THOST_FTDC_ICT_EID = '0';    
-  {/ÖĞ¹ú¹«ÃñÉí·İÖ¤ }
+  {/ä¸­å›½å…¬æ°‘èº«ä»½è¯ }
     THOST_FTDC_ICT_IDCard = '1';    
-  {/¾ü¹ÙÖ¤ }
+  {/å†›å®˜è¯ }
     THOST_FTDC_ICT_OfficerIDCard = '2';    
-  {/¾¯¹ÙÖ¤ }
+  {/è­¦å®˜è¯ }
     THOST_FTDC_ICT_PoliceIDCard = '3';    
-  {/Ê¿±øÖ¤ }
+  {/å£«å…µè¯ }
     THOST_FTDC_ICT_SoldierIDCard = '4';    
-  {/»§¿Ú²¾ }
+  {/æˆ·å£ç°¿ }
     THOST_FTDC_ICT_HouseholdRegister = '5';    
-  {/»¤ÕÕ }
+  {/æŠ¤ç…§ }
     THOST_FTDC_ICT_Passport = '6';    
-  {/Ì¨°ûÖ¤ }
+  {/å°èƒè¯ }
     THOST_FTDC_ICT_TaiwanCompatriotIDCard = '7';    
-  {/»ØÏçÖ¤ }
+  {/å›ä¹¡è¯ }
     THOST_FTDC_ICT_HomeComingCard = '8';    
-  {/ÓªÒµÖ´ÕÕºÅ }
+  {/è¥ä¸šæ‰§ç…§å· }
     THOST_FTDC_ICT_LicenseNo = '9';    
-  {/Ë°ÎñµÇ¼ÇºÅ/µ±µØÄÉË°ID }
+  {/ç¨åŠ¡ç™»è®°å·/å½“åœ°çº³ç¨ID }
     THOST_FTDC_ICT_TaxNo = 'A';    
-  {/¸Û°Ä¾ÓÃñÀ´ÍùÄÚµØÍ¨ĞĞÖ¤ }
+  {/æ¸¯æ¾³å±…æ°‘æ¥å¾€å†…åœ°é€šè¡Œè¯ }
     THOST_FTDC_ICT_HMMainlandTravelPermit = 'B';    
-  {/Ì¨Íå¾ÓÃñÀ´Íù´óÂ½Í¨ĞĞÖ¤ }
+  {/å°æ¹¾å±…æ°‘æ¥å¾€å¤§é™†é€šè¡Œè¯ }
     THOST_FTDC_ICT_TwMainlandTravelPermit = 'C';    
-  {/¼İÕÕ }
+  {/é©¾ç…§ }
     THOST_FTDC_ICT_DrivingLicense = 'D';    
-  {/µ±µØÉç±£ID }
+  {/å½“åœ°ç¤¾ä¿ID }
     THOST_FTDC_ICT_SocialID = 'F';    
-  {/µ±µØÉí·İÖ¤ }
+  {/å½“åœ°èº«ä»½è¯ }
     THOST_FTDC_ICT_LocalID = 'G';    
-  {/ÉÌÒµµÇ¼ÇÖ¤ }
+  {/å•†ä¸šç™»è®°è¯ }
     THOST_FTDC_ICT_BusinessRegistration = 'H';    
-  {/¸Û°ÄÓÀ¾ÃĞÔ¾ÓÃñÉí·İÖ¤ }
+  {/æ¸¯æ¾³æ°¸ä¹…æ€§å±…æ°‘èº«ä»½è¯ }
     THOST_FTDC_ICT_HKMCIDCard = 'I';    
-  {/ÈËĞĞ¿ª»§Ğí¿ÉÖ¤ }
+  {/äººè¡Œå¼€æˆ·è®¸å¯è¯ }
     THOST_FTDC_ICT_AccountsPermits = 'J';    
-  {/Íâ¹úÈËÓÀ¾Ã¾ÓÁôÖ¤ }
+  {/å¤–å›½äººæ°¸ä¹…å±…ç•™è¯ }
     THOST_FTDC_ICT_FrgPrmtRdCard = 'K';    
-  {/×Ê¹Ü²úÆ·±¸°¸º¯ }
+  {/èµ„ç®¡äº§å“å¤‡æ¡ˆå‡½ }
     THOST_FTDC_ICT_CptMngPrdLetter = 'L';    
-  {/Í³Ò»Éç»áĞÅÓÃ´úÂë }
+  {/ç»Ÿä¸€ç¤¾ä¼šä¿¡ç”¨ä»£ç  }
     THOST_FTDC_ICT_UniformSocialCreditCode = 'N';    
-  {/»ú¹¹³ÉÁ¢Ö¤Ã÷ÎÄ¼ş }
+  {/æœºæ„æˆç«‹è¯æ˜æ–‡ä»¶ }
     THOST_FTDC_ICT_CorporationCertNo = 'O';    
-  {/ÆäËûÖ¤¼ş }
+  {/å…¶ä»–è¯ä»¶ }
     THOST_FTDC_ICT_OtherCard = 'x';    
 
   type
     PTThostFtdcIdCardTypeType = ^TThostFtdcIdCardTypeType;
     TThostFtdcIdCardTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOrderLocalIDTypeÊÇÒ»¸ö±¾µØ±¨µ¥±àºÅÀàĞÍ }
+  {/TFtdcOrderLocalIDTypeæ˜¯ä¸€ä¸ªæœ¬åœ°æŠ¥å•ç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcOrderLocalIDType = ^TThostFtdcOrderLocalIDType;
     TThostFtdcOrderLocalIDType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcUserNameTypeÊÇÒ»¸öÓÃ»§Ãû³ÆÀàĞÍ }
+  {/TFtdcUserNameTypeæ˜¯ä¸€ä¸ªç”¨æˆ·åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcUserNameType = ^TThostFtdcUserNameType;
     TThostFtdcUserNameType = array[0..80] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcPartyNameTypeÊÇÒ»¸ö²ÎÓëÈËÃû³ÆÀàĞÍ }
+  {/TFtdcPartyNameTypeæ˜¯ä¸€ä¸ªå‚ä¸äººåç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcPartyNameType = ^TThostFtdcPartyNameType;
     TThostFtdcPartyNameType = array[0..80] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcErrorMsgTypeÊÇÒ»¸ö´íÎóĞÅÏ¢ÀàĞÍ }
+  {/TFtdcErrorMsgTypeæ˜¯ä¸€ä¸ªé”™è¯¯ä¿¡æ¯ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcErrorMsgType = ^TThostFtdcErrorMsgType;
     TThostFtdcErrorMsgType = array[0..80] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFieldNameTypeÊÇÒ»¸ö×Ö¶ÎÃûÀàĞÍ }
+  {/TFtdcFieldNameTypeæ˜¯ä¸€ä¸ªå­—æ®µåç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFieldNameType = ^TThostFtdcFieldNameType;
     TThostFtdcFieldNameType = array[0..2048] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFieldContentTypeÊÇÒ»¸ö×Ö¶ÎÄÚÈİÀàĞÍ }
+  {/TFtdcFieldContentTypeæ˜¯ä¸€ä¸ªå­—æ®µå†…å®¹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFieldContentType = ^TThostFtdcFieldContentType;
     TThostFtdcFieldContentType = array[0..2048] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSystemNameTypeÊÇÒ»¸öÏµÍ³Ãû³ÆÀàĞÍ }
+  {/TFtdcSystemNameTypeæ˜¯ä¸€ä¸ªç³»ç»Ÿåç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcSystemNameType = ^TThostFtdcSystemNameType;
     TThostFtdcSystemNameType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcContentTypeÊÇÒ»¸öÏûÏ¢ÕıÎÄÀàĞÍ }
+  {/TFtdcContentTypeæ˜¯ä¸€ä¸ªæ¶ˆæ¯æ­£æ–‡ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcContentType = ^TThostFtdcContentType;
     TThostFtdcContentType = array[0..500] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcInvestorRangeTypeÊÇÒ»¸öÍ¶×ÊÕß·¶Î§ÀàĞÍ }
+  {/TFtdcInvestorRangeTypeæ˜¯ä¸€ä¸ªæŠ•èµ„è€…èŒƒå›´ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ËùÓĞ }
+  {/æ‰€æœ‰ }
 
   const
     THOST_FTDC_IR_All = '1';    
-  {/Í¶×ÊÕß×é }
+  {/æŠ•èµ„è€…ç»„ }
     THOST_FTDC_IR_Group = '2';    
-  {/µ¥Ò»Í¶×ÊÕß }
+  {/å•ä¸€æŠ•èµ„è€… }
     THOST_FTDC_IR_Single = '3';    
 
   type
     PTThostFtdcInvestorRangeType = ^TThostFtdcInvestorRangeType;
     TThostFtdcInvestorRangeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcDepartmentRangeTypeÊÇÒ»¸öÍ¶×ÊÕß·¶Î§ÀàĞÍ }
+  {/TFtdcDepartmentRangeTypeæ˜¯ä¸€ä¸ªæŠ•èµ„è€…èŒƒå›´ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ËùÓĞ }
+  {/æ‰€æœ‰ }
 
   const
     THOST_FTDC_DR_All = '1';    
-  {/×éÖ¯¼Ü¹¹ }
+  {/ç»„ç»‡æ¶æ„ }
     THOST_FTDC_DR_Group = '2';    
-  {/µ¥Ò»Í¶×ÊÕß }
+  {/å•ä¸€æŠ•èµ„è€… }
     THOST_FTDC_DR_Single = '3';    
 
   type
     PTThostFtdcDepartmentRangeType = ^TThostFtdcDepartmentRangeType;
     TThostFtdcDepartmentRangeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcDataSyncStatusTypeÊÇÒ»¸öÊı¾İÍ¬²½×´Ì¬ÀàĞÍ }
+  {/TFtdcDataSyncStatusTypeæ˜¯ä¸€ä¸ªæ•°æ®åŒæ­¥çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Î´Í¬²½ }
+  {/æœªåŒæ­¥ }
 
   const
     THOST_FTDC_DS_Asynchronous = '1';    
-  {/Í¬²½ÖĞ }
+  {/åŒæ­¥ä¸­ }
     THOST_FTDC_DS_Synchronizing = '2';    
-  {/ÒÑÍ¬²½ }
+  {/å·²åŒæ­¥ }
     THOST_FTDC_DS_Synchronized = '3';    
 
   type
     PTThostFtdcDataSyncStatusType = ^TThostFtdcDataSyncStatusType;
     TThostFtdcDataSyncStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBrokerDataSyncStatusTypeÊÇÒ»¸ö¾­¼Í¹«Ë¾Êı¾İÍ¬²½×´Ì¬ÀàĞÍ }
+  {/TFtdcBrokerDataSyncStatusTypeæ˜¯ä¸€ä¸ªç»çºªå…¬å¸æ•°æ®åŒæ­¥çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÒÑÍ¬²½ }
+  {/å·²åŒæ­¥ }
 
   const
     THOST_FTDC_BDS_Synchronized = '1';    
-  {/Í¬²½ÖĞ }
+  {/åŒæ­¥ä¸­ }
     THOST_FTDC_BDS_Synchronizing = '2';    
 
   type
     PTThostFtdcBrokerDataSyncStatusType = ^TThostFtdcBrokerDataSyncStatusType;
     TThostFtdcBrokerDataSyncStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcExchangeConnectStatusTypeÊÇÒ»¸ö½»Ò×ËùÁ¬½Ó×´Ì¬ÀàĞÍ }
+  {/TFtdcExchangeConnectStatusTypeæ˜¯ä¸€ä¸ªäº¤æ˜“æ‰€è¿æ¥çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Ã»ÓĞÈÎºÎÁ¬½Ó }
+  {/æ²¡æœ‰ä»»ä½•è¿æ¥ }
 
   const
     THOST_FTDC_ECS_NoConnection = '1';    
-  {/ÒÑ¾­·¢³öºÏÔ¼²éÑ¯ÇëÇó }
+  {/å·²ç»å‘å‡ºåˆçº¦æŸ¥è¯¢è¯·æ±‚ }
     THOST_FTDC_ECS_QryInstrumentSent = '2';    
-  {/ÒÑ¾­»ñÈ¡ĞÅÏ¢ }
+  {/å·²ç»è·å–ä¿¡æ¯ }
     THOST_FTDC_ECS_GotInformation = '9';    
 
   type
     PTThostFtdcExchangeConnectStatusType = ^TThostFtdcExchangeConnectStatusType;
     TThostFtdcExchangeConnectStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTraderConnectStatusTypeÊÇÒ»¸ö½»Ò×Ëù½»Ò×Ô±Á¬½Ó×´Ì¬ÀàĞÍ }
+  {/TFtdcTraderConnectStatusTypeæ˜¯ä¸€ä¸ªäº¤æ˜“æ‰€äº¤æ˜“å‘˜è¿æ¥çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Ã»ÓĞÈÎºÎÁ¬½Ó }
+  {/æ²¡æœ‰ä»»ä½•è¿æ¥ }
 
   const
     THOST_FTDC_TCS_NotConnected = '1';    
-  {/ÒÑ¾­Á¬½Ó }
+  {/å·²ç»è¿æ¥ }
     THOST_FTDC_TCS_Connected = '2';    
-  {/ÒÑ¾­·¢³öºÏÔ¼²éÑ¯ÇëÇó }
+  {/å·²ç»å‘å‡ºåˆçº¦æŸ¥è¯¢è¯·æ±‚ }
     THOST_FTDC_TCS_QryInstrumentSent = '3';    
-  {/¶©ÔÄË½ÓĞÁ÷ }
+  {/è®¢é˜…ç§æœ‰æµ }
     THOST_FTDC_TCS_SubPrivateFlow = '4';    
 
   type
     PTThostFtdcTraderConnectStatusType = ^TThostFtdcTraderConnectStatusType;
     TThostFtdcTraderConnectStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFunctionCodeTypeÊÇÒ»¸ö¹¦ÄÜ´úÂëÀàĞÍ }
+  {/TFtdcFunctionCodeTypeæ˜¯ä¸€ä¸ªåŠŸèƒ½ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Êı¾İÒì²½»¯ }
+  {/æ•°æ®å¼‚æ­¥åŒ– }
 
   const
     THOST_FTDC_FC_DataAsync = '1';    
-  {/Ç¿ÖÆÓÃ»§µÇ³ö }
+  {/å¼ºåˆ¶ç”¨æˆ·ç™»å‡º }
     THOST_FTDC_FC_ForceUserLogout = '2';    
-  {/±ä¸ü¹ÜÀíÓÃ»§¿ÚÁî }
+  {/å˜æ›´ç®¡ç†ç”¨æˆ·å£ä»¤ }
     THOST_FTDC_FC_UserPasswordUpdate = '3';    
-  {/±ä¸ü¾­¼Í¹«Ë¾¿ÚÁî }
+  {/å˜æ›´ç»çºªå…¬å¸å£ä»¤ }
     THOST_FTDC_FC_BrokerPasswordUpdate = '4';    
-  {/±ä¸üÍ¶×ÊÕß¿ÚÁî }
+  {/å˜æ›´æŠ•èµ„è€…å£ä»¤ }
     THOST_FTDC_FC_InvestorPasswordUpdate = '5';    
-  {/±¨µ¥²åÈë }
+  {/æŠ¥å•æ’å…¥ }
     THOST_FTDC_FC_OrderInsert = '6';    
-  {/±¨µ¥²Ù×÷ }
+  {/æŠ¥å•æ“ä½œ }
     THOST_FTDC_FC_OrderAction = '7';    
-  {/Í¬²½ÏµÍ³Êı¾İ }
+  {/åŒæ­¥ç³»ç»Ÿæ•°æ® }
     THOST_FTDC_FC_SyncSystemData = '8';    
-  {/Í¬²½¾­¼Í¹«Ë¾Êı¾İ }
+  {/åŒæ­¥ç»çºªå…¬å¸æ•°æ® }
     THOST_FTDC_FC_SyncBrokerData = '9';    
-  {/ÅúÁ¿Í¬²½¾­¼Í¹«Ë¾Êı¾İ }
+  {/æ‰¹é‡åŒæ­¥ç»çºªå…¬å¸æ•°æ® }
     THOST_FTDC_FC_BachSyncBrokerData = 'A';    
-  {/³¬¼¶²éÑ¯ }
+  {/è¶…çº§æŸ¥è¯¢ }
     THOST_FTDC_FC_SuperQuery = 'B';    
-  {/Ô¤Âñ±¨µ¥²åÈë }
+  {/é¢„åŸ‹æŠ¥å•æ’å…¥ }
     THOST_FTDC_FC_ParkedOrderInsert = 'C';    
-  {/Ô¤Âñ±¨µ¥²Ù×÷ }
+  {/é¢„åŸ‹æŠ¥å•æ“ä½œ }
     THOST_FTDC_FC_ParkedOrderAction = 'D';    
-  {/Í¬²½¶¯Ì¬ÁîÅÆ }
+  {/åŒæ­¥åŠ¨æ€ä»¤ç‰Œ }
     THOST_FTDC_FC_SyncOTP = 'E';    
-  {/É¾³ıÎ´Öªµ¥ }
+  {/åˆ é™¤æœªçŸ¥å• }
     THOST_FTDC_FC_DeleteOrder = 'F';    
 
   type
     PTThostFtdcFunctionCodeType = ^TThostFtdcFunctionCodeType;
     TThostFtdcFunctionCodeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBrokerFunctionCodeTypeÊÇÒ»¸ö¾­¼Í¹«Ë¾¹¦ÄÜ´úÂëÀàĞÍ }
+  {/TFtdcBrokerFunctionCodeTypeæ˜¯ä¸€ä¸ªç»çºªå…¬å¸åŠŸèƒ½ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Ç¿ÖÆÓÃ»§µÇ³ö }
+  {/å¼ºåˆ¶ç”¨æˆ·ç™»å‡º }
 
   const
     THOST_FTDC_BFC_ForceUserLogout = '1';    
-  {/±ä¸üÓÃ»§¿ÚÁî }
+  {/å˜æ›´ç”¨æˆ·å£ä»¤ }
     THOST_FTDC_BFC_UserPasswordUpdate = '2';    
-  {/Í¬²½¾­¼Í¹«Ë¾Êı¾İ }
+  {/åŒæ­¥ç»çºªå…¬å¸æ•°æ® }
     THOST_FTDC_BFC_SyncBrokerData = '3';    
-  {/ÅúÁ¿Í¬²½¾­¼Í¹«Ë¾Êı¾İ }
+  {/æ‰¹é‡åŒæ­¥ç»çºªå…¬å¸æ•°æ® }
     THOST_FTDC_BFC_BachSyncBrokerData = '4';    
-  {/±¨µ¥²åÈë }
+  {/æŠ¥å•æ’å…¥ }
     THOST_FTDC_BFC_OrderInsert = '5';    
-  {/±¨µ¥²Ù×÷ }
+  {/æŠ¥å•æ“ä½œ }
     THOST_FTDC_BFC_OrderAction = '6';    
-  {/È«²¿²éÑ¯ }
+  {/å…¨éƒ¨æŸ¥è¯¢ }
     THOST_FTDC_BFC_AllQuery = '7';    
-  {/ÏµÍ³¹¦ÄÜ£ºµÇÈë/µÇ³ö/ĞŞ¸ÄÃÜÂëµÈ }
+  {/ç³»ç»ŸåŠŸèƒ½ï¼šç™»å…¥/ç™»å‡º/ä¿®æ”¹å¯†ç ç­‰ }
     THOST_FTDC_BFC_log = 'a';    
-  {/»ù±¾²éÑ¯£º²éÑ¯»ù´¡Êı¾İ£¬ÈçºÏÔ¼£¬½»Ò×ËùµÈ³£Á¿ }
+  {/åŸºæœ¬æŸ¥è¯¢ï¼šæŸ¥è¯¢åŸºç¡€æ•°æ®ï¼Œå¦‚åˆçº¦ï¼Œäº¤æ˜“æ‰€ç­‰å¸¸é‡ }
     THOST_FTDC_BFC_BaseQry = 'b';    
-  {/½»Ò×²éÑ¯£ºÈç²é³É½»£¬Î¯ÍĞ }
+  {/äº¤æ˜“æŸ¥è¯¢ï¼šå¦‚æŸ¥æˆäº¤ï¼Œå§”æ‰˜ }
     THOST_FTDC_BFC_TradeQry = 'c';    
-  {/½»Ò×¹¦ÄÜ£º±¨µ¥£¬³·µ¥ }
+  {/äº¤æ˜“åŠŸèƒ½ï¼šæŠ¥å•ï¼Œæ’¤å• }
     THOST_FTDC_BFC_Trade = 'd';    
-  {/ÒøÆÚ×ªÕË }
+  {/é“¶æœŸè½¬è´¦ }
     THOST_FTDC_BFC_Virement = 'e';    
-  {/·çÏÕ¼à¿Ø }
+  {/é£é™©ç›‘æ§ }
     THOST_FTDC_BFC_Risk = 'f';    
-  {/²éÑ¯/¹ÜÀí£º²éÑ¯»á»°£¬ÌßÈËµÈ }
+  {/æŸ¥è¯¢/ç®¡ç†ï¼šæŸ¥è¯¢ä¼šè¯ï¼Œè¸¢äººç­‰ }
     THOST_FTDC_BFC_Session = 'g';    
-  {/·ç¿ØÍ¨Öª¿ØÖÆ }
+  {/é£æ§é€šçŸ¥æ§åˆ¶ }
     THOST_FTDC_BFC_RiskNoticeCtl = 'h';    
-  {/·ç¿ØÍ¨Öª·¢ËÍ }
+  {/é£æ§é€šçŸ¥å‘é€ }
     THOST_FTDC_BFC_RiskNotice = 'i';    
-  {/²ì¿´¾­¼Í¹«Ë¾×Ê½ğÈ¨ÏŞ }
+  {/å¯Ÿçœ‹ç»çºªå…¬å¸èµ„é‡‘æƒé™ }
     THOST_FTDC_BFC_BrokerDeposit = 'j';    
-  {/×Ê½ğ²éÑ¯ }
+  {/èµ„é‡‘æŸ¥è¯¢ }
     THOST_FTDC_BFC_QueryFund = 'k';    
-  {/±¨µ¥²éÑ¯ }
+  {/æŠ¥å•æŸ¥è¯¢ }
     THOST_FTDC_BFC_QueryOrder = 'l';    
-  {/³É½»²éÑ¯ }
+  {/æˆäº¤æŸ¥è¯¢ }
     THOST_FTDC_BFC_QueryTrade = 'm';    
-  {/³Ö²Ö²éÑ¯ }
+  {/æŒä»“æŸ¥è¯¢ }
     THOST_FTDC_BFC_QueryPosition = 'n';    
-  {/ĞĞÇé²éÑ¯ }
+  {/è¡Œæƒ…æŸ¥è¯¢ }
     THOST_FTDC_BFC_QueryMarketData = 'o';    
-  {/ÓÃ»§ÊÂ¼ş²éÑ¯ }
+  {/ç”¨æˆ·äº‹ä»¶æŸ¥è¯¢ }
     THOST_FTDC_BFC_QueryUserEvent = 'p';    
-  {/·çÏÕÍ¨Öª²éÑ¯ }
+  {/é£é™©é€šçŸ¥æŸ¥è¯¢ }
     THOST_FTDC_BFC_QueryRiskNotify = 'q';    
-  {/³öÈë½ğ²éÑ¯ }
+  {/å‡ºå…¥é‡‘æŸ¥è¯¢ }
     THOST_FTDC_BFC_QueryFundChange = 'r';    
-  {/Í¶×ÊÕßĞÅÏ¢²éÑ¯ }
+  {/æŠ•èµ„è€…ä¿¡æ¯æŸ¥è¯¢ }
     THOST_FTDC_BFC_QueryInvestor = 's';    
-  {/½»Ò×±àÂë²éÑ¯ }
+  {/äº¤æ˜“ç¼–ç æŸ¥è¯¢ }
     THOST_FTDC_BFC_QueryTradingCode = 't';    
-  {/Ç¿Æ½ }
+  {/å¼ºå¹³ }
     THOST_FTDC_BFC_ForceClose = 'u';    
-  {/Ñ¹Á¦²âÊÔ }
+  {/å‹åŠ›æµ‹è¯• }
     THOST_FTDC_BFC_PressTest = 'v';    
-  {/È¨Òæ·´Ëã }
+  {/æƒç›Šåç®— }
     THOST_FTDC_BFC_RemainCalc = 'w';    
-  {/¾»³Ö²Ö±£Ö¤½ğÖ¸±ê }
+  {/å‡€æŒä»“ä¿è¯é‡‘æŒ‡æ ‡ }
     THOST_FTDC_BFC_NetPositionInd = 'x';    
-  {/·çÏÕÔ¤Ëã }
+  {/é£é™©é¢„ç®— }
     THOST_FTDC_BFC_RiskPredict = 'y';    
-  {/Êı¾İµ¼³ö }
+  {/æ•°æ®å¯¼å‡º }
     THOST_FTDC_BFC_DataExport = 'z';    
-  {/·ç¿ØÖ¸±êÉèÖÃ }
+  {/é£æ§æŒ‡æ ‡è®¾ç½® }
     THOST_FTDC_BFC_RiskTargetSetup = 'A';    
-  {/ĞĞÇéÔ¤¾¯ }
+  {/è¡Œæƒ…é¢„è­¦ }
     THOST_FTDC_BFC_MarketDataWarn = 'B';    
-  {/ÒµÎñÍ¨Öª²éÑ¯ }
+  {/ä¸šåŠ¡é€šçŸ¥æŸ¥è¯¢ }
     THOST_FTDC_BFC_QryBizNotice = 'C';    
-  {/ÒµÎñÍ¨ÖªÄ£°åÉèÖÃ }
+  {/ä¸šåŠ¡é€šçŸ¥æ¨¡æ¿è®¾ç½® }
     THOST_FTDC_BFC_CfgBizNotice = 'D';    
-  {/Í¬²½¶¯Ì¬ÁîÅÆ }
+  {/åŒæ­¥åŠ¨æ€ä»¤ç‰Œ }
     THOST_FTDC_BFC_SyncOTP = 'E';    
-  {/·¢ËÍÒµÎñÍ¨Öª }
+  {/å‘é€ä¸šåŠ¡é€šçŸ¥ }
     THOST_FTDC_BFC_SendBizNotice = 'F';    
-  {/·çÏÕ¼¶±ğ±ê×¼ÉèÖÃ }
+  {/é£é™©çº§åˆ«æ ‡å‡†è®¾ç½® }
     THOST_FTDC_BFC_CfgRiskLevelStd = 'G';    
-  {/½»Ò×ÖÕ¶ËÓ¦¼±¹¦ÄÜ }
+  {/äº¤æ˜“ç»ˆç«¯åº”æ€¥åŠŸèƒ½ }
     THOST_FTDC_BFC_TbCommand = 'H';    
-  {/É¾³ıÎ´Öªµ¥ }
+  {/åˆ é™¤æœªçŸ¥å• }
     THOST_FTDC_BFC_DeleteOrder = 'J';    
-  {/Ô¤Âñ±¨µ¥²åÈë }
+  {/é¢„åŸ‹æŠ¥å•æ’å…¥ }
     THOST_FTDC_BFC_ParkedOrderInsert = 'K';    
-  {/Ô¤Âñ±¨µ¥²Ù×÷ }
+  {/é¢„åŸ‹æŠ¥å•æ“ä½œ }
     THOST_FTDC_BFC_ParkedOrderAction = 'L';    
-  {/×Ê½ğ²»¹»ÈÔÔÊĞíĞĞÈ¨ }
+  {/èµ„é‡‘ä¸å¤Ÿä»å…è®¸è¡Œæƒ }
     THOST_FTDC_BFC_ExecOrderNoCheck = 'M';    
-  {/Ö¸¶¨ }
+  {/æŒ‡å®š }
     THOST_FTDC_BFC_Designate = 'N';    
-  {/Ö¤È¯´¦ÖÃ }
+  {/è¯åˆ¸å¤„ç½® }
     THOST_FTDC_BFC_StockDisposal = 'O';    
-  {/Ï¯Î»×Ê½ğÔ¤¾¯ }
+  {/å¸­ä½èµ„é‡‘é¢„è­¦ }
     THOST_FTDC_BFC_BrokerDepositWarn = 'Q';    
-  {/±¸¶Ò²»×ãÔ¤¾¯ }
+  {/å¤‡å…‘ä¸è¶³é¢„è­¦ }
     THOST_FTDC_BFC_CoverWarn = 'S';    
-  {/ĞĞÈ¨ÊÔËã }
+  {/è¡Œæƒè¯•ç®— }
     THOST_FTDC_BFC_PreExecOrder = 'T';    
-  {/ĞĞÈ¨½»ÊÕ·çÏÕ }
+  {/è¡Œæƒäº¤æ”¶é£é™© }
     THOST_FTDC_BFC_ExecOrderRisk = 'P';    
-  {/³Ö²ÖÏŞ¶îÔ¤¾¯ }
+  {/æŒä»“é™é¢é¢„è­¦ }
     THOST_FTDC_BFC_PosiLimitWarn = 'U';    
-  {/³Ö²ÖÏŞ¶î²éÑ¯ }
+  {/æŒä»“é™é¢æŸ¥è¯¢ }
     THOST_FTDC_BFC_QryPosiLimit = 'V';    
-  {/ÒøÆÚÇ©µ½Ç©ÍË }
+  {/é“¶æœŸç­¾åˆ°ç­¾é€€ }
     THOST_FTDC_BFC_FBSign = 'W';    
-  {/ÒøÆÚÇ©Ô¼½âÔ¼ }
+  {/é“¶æœŸç­¾çº¦è§£çº¦ }
     THOST_FTDC_BFC_FBAccount = 'X';    
 
   type
     PTThostFtdcBrokerFunctionCodeType = ^TThostFtdcBrokerFunctionCodeType;
     TThostFtdcBrokerFunctionCodeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOrderActionStatusTypeÊÇÒ»¸ö±¨µ¥²Ù×÷×´Ì¬ÀàĞÍ }
+  {/TFtdcOrderActionStatusTypeæ˜¯ä¸€ä¸ªæŠ¥å•æ“ä½œçŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÒÑ¾­Ìá½» }
+  {/å·²ç»æäº¤ }
 
   const
     THOST_FTDC_OAS_Submitted = 'a';    
-  {/ÒÑ¾­½ÓÊÜ }
+  {/å·²ç»æ¥å— }
     THOST_FTDC_OAS_Accepted = 'b';    
-  {/ÒÑ¾­±»¾Ü¾ø }
+  {/å·²ç»è¢«æ‹’ç» }
     THOST_FTDC_OAS_Rejected = 'c';    
 
   type
     PTThostFtdcOrderActionStatusType = ^TThostFtdcOrderActionStatusType;
     TThostFtdcOrderActionStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOrderStatusTypeÊÇÒ»¸ö±¨µ¥×´Ì¬ÀàĞÍ }
+  {/TFtdcOrderStatusTypeæ˜¯ä¸€ä¸ªæŠ¥å•çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/È«²¿³É½» }
+  {/å…¨éƒ¨æˆäº¤ }
 
   const
     THOST_FTDC_OST_AllTraded = '0';    
-  {/²¿·Ö³É½»»¹ÔÚ¶ÓÁĞÖĞ }
+  {/éƒ¨åˆ†æˆäº¤è¿˜åœ¨é˜Ÿåˆ—ä¸­ }
     THOST_FTDC_OST_PartTradedQueueing = '1';    
-  {/²¿·Ö³É½»²»ÔÚ¶ÓÁĞÖĞ }
+  {/éƒ¨åˆ†æˆäº¤ä¸åœ¨é˜Ÿåˆ—ä¸­ }
     THOST_FTDC_OST_PartTradedNotQueueing = '2';    
-  {/Î´³É½»»¹ÔÚ¶ÓÁĞÖĞ }
+  {/æœªæˆäº¤è¿˜åœ¨é˜Ÿåˆ—ä¸­ }
     THOST_FTDC_OST_NoTradeQueueing = '3';    
-  {/Î´³É½»²»ÔÚ¶ÓÁĞÖĞ }
+  {/æœªæˆäº¤ä¸åœ¨é˜Ÿåˆ—ä¸­ }
     THOST_FTDC_OST_NoTradeNotQueueing = '4';    
-  {/³·µ¥ }
+  {/æ’¤å• }
     THOST_FTDC_OST_Canceled = '5';    
-  {/Î´Öª }
+  {/æœªçŸ¥ }
     THOST_FTDC_OST_Unknown = 'a';    
-  {/ÉĞÎ´´¥·¢ }
+  {/å°šæœªè§¦å‘ }
     THOST_FTDC_OST_NotTouched = 'b';    
-  {/ÒÑ´¥·¢ }
+  {/å·²è§¦å‘ }
     THOST_FTDC_OST_Touched = 'c';    
 
   type
     PTThostFtdcOrderStatusType = ^TThostFtdcOrderStatusType;
     TThostFtdcOrderStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOrderSubmitStatusTypeÊÇÒ»¸ö±¨µ¥Ìá½»×´Ì¬ÀàĞÍ }
+  {/TFtdcOrderSubmitStatusTypeæ˜¯ä¸€ä¸ªæŠ¥å•æäº¤çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÒÑ¾­Ìá½» }
+  {/å·²ç»æäº¤ }
 
   const
     THOST_FTDC_OSS_InsertSubmitted = '0';    
-  {/³·µ¥ÒÑ¾­Ìá½» }
+  {/æ’¤å•å·²ç»æäº¤ }
     THOST_FTDC_OSS_CancelSubmitted = '1';    
-  {/ĞŞ¸ÄÒÑ¾­Ìá½» }
+  {/ä¿®æ”¹å·²ç»æäº¤ }
     THOST_FTDC_OSS_ModifySubmitted = '2';    
-  {/ÒÑ¾­½ÓÊÜ }
+  {/å·²ç»æ¥å— }
     THOST_FTDC_OSS_Accepted = '3';    
-  {/±¨µ¥ÒÑ¾­±»¾Ü¾ø }
+  {/æŠ¥å•å·²ç»è¢«æ‹’ç» }
     THOST_FTDC_OSS_InsertRejected = '4';    
-  {/³·µ¥ÒÑ¾­±»¾Ü¾ø }
+  {/æ’¤å•å·²ç»è¢«æ‹’ç» }
     THOST_FTDC_OSS_CancelRejected = '5';    
-  {/¸Äµ¥ÒÑ¾­±»¾Ü¾ø }
+  {/æ”¹å•å·²ç»è¢«æ‹’ç» }
     THOST_FTDC_OSS_ModifyRejected = '6';    
 
   type
     PTThostFtdcOrderSubmitStatusType = ^TThostFtdcOrderSubmitStatusType;
     TThostFtdcOrderSubmitStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcPositionDateTypeÊÇÒ»¸ö³Ö²ÖÈÕÆÚÀàĞÍ }
+  {/TFtdcPositionDateTypeæ˜¯ä¸€ä¸ªæŒä»“æ—¥æœŸç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/½ñÈÕ³Ö²Ö }
+  {/ä»Šæ—¥æŒä»“ }
 
   const
     THOST_FTDC_PSD_Today = '1';    
-  {/ÀúÊ·³Ö²Ö }
+  {/å†å²æŒä»“ }
     THOST_FTDC_PSD_History = '2';    
 
   type
     PTThostFtdcPositionDateType = ^TThostFtdcPositionDateType;
     TThostFtdcPositionDateType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcPositionDateTypeTypeÊÇÒ»¸ö³Ö²ÖÈÕÆÚÀàĞÍÀàĞÍ }
+  {/TFtdcPositionDateTypeTypeæ˜¯ä¸€ä¸ªæŒä»“æ—¥æœŸç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Ê¹ÓÃÀúÊ·³Ö²Ö }
+  {/ä½¿ç”¨å†å²æŒä»“ }
 
   const
     THOST_FTDC_PDT_UseHistory = '1';    
-  {/²»Ê¹ÓÃÀúÊ·³Ö²Ö }
+  {/ä¸ä½¿ç”¨å†å²æŒä»“ }
     THOST_FTDC_PDT_NoUseHistory = '2';    
 
   type
     PTThostFtdcPositionDateTypeType = ^TThostFtdcPositionDateTypeType;
     TThostFtdcPositionDateTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTradingRoleTypeÊÇÒ»¸ö½»Ò×½ÇÉ«ÀàĞÍ }
+  {/TFtdcTradingRoleTypeæ˜¯ä¸€ä¸ªäº¤æ˜“è§’è‰²ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/´úÀí }
+  {/ä»£ç† }
 
   const
     THOST_FTDC_ER_Broker = '1';    
-  {/×ÔÓª }
+  {/è‡ªè¥ }
     THOST_FTDC_ER_Host = '2';    
-  {/×öÊĞÉÌ }
+  {/åšå¸‚å•† }
     THOST_FTDC_ER_Maker = '3';    
 
   type
     PTThostFtdcTradingRoleType = ^TThostFtdcTradingRoleType;
     TThostFtdcTradingRoleType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcProductClassTypeÊÇÒ»¸ö²úÆ·ÀàĞÍÀàĞÍ }
+  {/TFtdcProductClassTypeæ˜¯ä¸€ä¸ªäº§å“ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÆÚ»õ }
+  {/æœŸè´§ }
 
   const
     THOST_FTDC_PC_Futures = '1';    
-  {/ÆÚ»õÆÚÈ¨ }
+  {/æœŸè´§æœŸæƒ }
     THOST_FTDC_PC_Options = '2';    
-  {/×éºÏ }
+  {/ç»„åˆ }
     THOST_FTDC_PC_Combination = '3';    
-  {/¼´ÆÚ }
+  {/å³æœŸ }
     THOST_FTDC_PC_Spot = '4';    
-  {/ÆÚ×ªÏÖ }
+  {/æœŸè½¬ç° }
     THOST_FTDC_PC_EFP = '5';    
-  {/ÏÖ»õÆÚÈ¨ }
+  {/ç°è´§æœŸæƒ }
     THOST_FTDC_PC_SpotOption = '6';    
-  {/TASºÏÔ¼ }
+  {/TASåˆçº¦ }
     THOST_FTDC_PC_TAS = '7';    
-  {/½ğÊôÖ¸Êı }
+  {/é‡‘å±æŒ‡æ•° }
     THOST_FTDC_PC_MI = 'I';    
 
   type
     PTThostFtdcProductClassType = ^TThostFtdcProductClassType;
     TThostFtdcProductClassType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAPIProductClassTypeÊÇÒ»¸ö²úÆ·ÀàĞÍÀàĞÍ }
+  {/TFtdcAPIProductClassTypeæ˜¯ä¸€ä¸ªäº§å“ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÆÚ»õµ¥Ò»ºÏÔ¼ }
+  {/æœŸè´§å•ä¸€åˆçº¦ }
 
   const
     THOST_FTDC_APC_FutureSingle = '1';    
-  {/ÆÚÈ¨µ¥Ò»ºÏÔ¼ }
+  {/æœŸæƒå•ä¸€åˆçº¦ }
     THOST_FTDC_APC_OptionSingle = '2';    
-  {/¿É½»Ò×ÆÚ»õ(º¬ÆÚ»õ×éºÏºÍÆÚ»õµ¥Ò»ºÏÔ¼) }
+  {/å¯äº¤æ˜“æœŸè´§(å«æœŸè´§ç»„åˆå’ŒæœŸè´§å•ä¸€åˆçº¦) }
     THOST_FTDC_APC_Futures = '3';    
-  {/¿É½»Ò×ÆÚÈ¨(º¬ÆÚÈ¨×éºÏºÍÆÚÈ¨µ¥Ò»ºÏÔ¼) }
+  {/å¯äº¤æ˜“æœŸæƒ(å«æœŸæƒç»„åˆå’ŒæœŸæƒå•ä¸€åˆçº¦) }
     THOST_FTDC_APC_Options = '4';    
-  {/¿ÉÏÂµ¥×éºÏ£¨Ä¿Ç°°üº¬DCEºÍZCEµÄÆÚ»õ×éºÏ£© }
+  {/å¯ä¸‹å•ç»„åˆï¼ˆç›®å‰åŒ…å«DCEå’ŒZCEçš„æœŸè´§ç»„åˆï¼‰ }
     THOST_FTDC_APC_TradingComb = '5';    
-  {/¿ÉÉêÇëµÄ×éºÏ£¨dce¿ÉÒÔÉêÇëµÄ×éºÏºÏÔ¼ °üº¬dce¿ÉÒÔ½»Ò×µÄºÏÔ¼£© }
+  {/å¯ç”³è¯·çš„ç»„åˆï¼ˆdceå¯ä»¥ç”³è¯·çš„ç»„åˆåˆçº¦ åŒ…å«dceå¯ä»¥äº¤æ˜“çš„åˆçº¦ï¼‰ }
     THOST_FTDC_APC_UnTradingComb = '6';    
-  {/ËùÓĞ¿ÉÒÔ½»Ò×ºÏÔ¼ }
+  {/æ‰€æœ‰å¯ä»¥äº¤æ˜“åˆçº¦ }
     THOST_FTDC_APC_AllTrading = '7';    
-  {/ËùÓĞºÏÔ¼£¨°üº¬²»ÄÜ½»Ò×ºÏÔ¼ É÷ÓÃ£© }
+  {/æ‰€æœ‰åˆçº¦ï¼ˆåŒ…å«ä¸èƒ½äº¤æ˜“åˆçº¦ æ…ç”¨ï¼‰ }
     THOST_FTDC_APC_All = '8';    
 
   type
     PTThostFtdcAPIProductClassType = ^TThostFtdcAPIProductClassType;
     TThostFtdcAPIProductClassType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcInstLifePhaseTypeÊÇÒ»¸öºÏÔ¼ÉúÃüÖÜÆÚ×´Ì¬ÀàĞÍ }
+  {/TFtdcInstLifePhaseTypeæ˜¯ä¸€ä¸ªåˆçº¦ç”Ÿå‘½å‘¨æœŸçŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Î´ÉÏÊĞ }
+  {/æœªä¸Šå¸‚ }
 
   const
     THOST_FTDC_IP_NotStart = '0';    
-  {/ÉÏÊĞ }
+  {/ä¸Šå¸‚ }
     THOST_FTDC_IP_Started = '1';    
-  {/Í£ÅÆ }
+  {/åœç‰Œ }
     THOST_FTDC_IP_Pause = '2';    
-  {/µ½ÆÚ }
+  {/åˆ°æœŸ }
     THOST_FTDC_IP_Expired = '3';    
 
   type
     PTThostFtdcInstLifePhaseType = ^TThostFtdcInstLifePhaseType;
     TThostFtdcInstLifePhaseType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcDirectionTypeÊÇÒ»¸öÂòÂô·½ÏòÀàĞÍ }
+  {/TFtdcDirectionTypeæ˜¯ä¸€ä¸ªä¹°å–æ–¹å‘ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Âò }
+  {/ä¹° }
 
   const
     THOST_FTDC_D_Buy = '0';    
-  {/Âô }
+  {/å– }
     THOST_FTDC_D_Sell = '1';    
 
   type
     PTThostFtdcDirectionType = ^TThostFtdcDirectionType;
     TThostFtdcDirectionType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcPositionTypeTypeÊÇÒ»¸ö³Ö²ÖÀàĞÍÀàĞÍ }
+  {/TFtdcPositionTypeTypeæ˜¯ä¸€ä¸ªæŒä»“ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/¾»³Ö²Ö }
+  {/å‡€æŒä»“ }
 
   const
     THOST_FTDC_PT_Net = '1';    
-  {/×ÛºÏ³Ö²Ö }
+  {/ç»¼åˆæŒä»“ }
     THOST_FTDC_PT_Gross = '2';    
 
   type
     PTThostFtdcPositionTypeType = ^TThostFtdcPositionTypeType;
     TThostFtdcPositionTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcPosiDirectionTypeÊÇÒ»¸ö³Ö²Ö¶à¿Õ·½ÏòÀàĞÍ }
+  {/TFtdcPosiDirectionTypeæ˜¯ä¸€ä¸ªæŒä»“å¤šç©ºæ–¹å‘ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/¾» }
+  {/å‡€ }
 
   const
     THOST_FTDC_PD_Net = '1';    
-  {/¶àÍ· }
+  {/å¤šå¤´ }
     THOST_FTDC_PD_Long = '2';    
-  {/¿ÕÍ· }
+  {/ç©ºå¤´ }
     THOST_FTDC_PD_Short = '3';    
 
   type
     PTThostFtdcPosiDirectionType = ^TThostFtdcPosiDirectionType;
     TThostFtdcPosiDirectionType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSysSettlementStatusTypeÊÇÒ»¸öÏµÍ³½áËã×´Ì¬ÀàĞÍ }
+  {/TFtdcSysSettlementStatusTypeæ˜¯ä¸€ä¸ªç³»ç»Ÿç»“ç®—çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/²»»îÔ¾ }
+  {/ä¸æ´»è·ƒ }
 
   const
     THOST_FTDC_SS_NonActive = '1';    
-  {/Æô¶¯ }
+  {/å¯åŠ¨ }
     THOST_FTDC_SS_Startup = '2';    
-  {/²Ù×÷ }
+  {/æ“ä½œ }
     THOST_FTDC_SS_Operating = '3';    
-  {/½áËã }
+  {/ç»“ç®— }
     THOST_FTDC_SS_Settlement = '4';    
-  {/½áËãÍê³É }
+  {/ç»“ç®—å®Œæˆ }
     THOST_FTDC_SS_SettlementFinished = '5';    
 
   type
     PTThostFtdcSysSettlementStatusType = ^TThostFtdcSysSettlementStatusType;
     TThostFtdcSysSettlementStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcRatioAttrTypeÊÇÒ»¸ö·ÑÂÊÊôĞÔÀàĞÍ }
+  {/TFtdcRatioAttrTypeæ˜¯ä¸€ä¸ªè´¹ç‡å±æ€§ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/½»Ò×·ÑÂÊ }
+  {/äº¤æ˜“è´¹ç‡ }
 
   const
     THOST_FTDC_RA_Trade = '0';    
-  {/½áËã·ÑÂÊ }
+  {/ç»“ç®—è´¹ç‡ }
     THOST_FTDC_RA_Settlement = '1';    
 
   type
     PTThostFtdcRatioAttrType = ^TThostFtdcRatioAttrType;
     TThostFtdcRatioAttrType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcHedgeFlagTypeÊÇÒ»¸öÍ¶»úÌ×±£±êÖ¾ÀàĞÍ }
+  {/TFtdcHedgeFlagTypeæ˜¯ä¸€ä¸ªæŠ•æœºå¥—ä¿æ ‡å¿—ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Í¶»ú }
+  {/æŠ•æœº }
 
   const
     THOST_FTDC_HF_Speculation = '1';    
-  {/Ì×Àû }
+  {/å¥—åˆ© }
     THOST_FTDC_HF_Arbitrage = '2';    
-  {/Ì×±£ }
+  {/å¥—ä¿ }
     THOST_FTDC_HF_Hedge = '3';    
-  {/×öÊĞÉÌ }
+  {/åšå¸‚å•† }
     THOST_FTDC_HF_MarketMaker = '5';    
-  {/µÚÒ»ÍÈÍ¶»úµÚ¶şÍÈÌ×±£ ´óÉÌËù×¨ÓÃ }
+  {/ç¬¬ä¸€è…¿æŠ•æœºç¬¬äºŒè…¿å¥—ä¿ å¤§å•†æ‰€ä¸“ç”¨ }
     THOST_FTDC_HF_SpecHedge = '6';    
-  {/µÚÒ»ÍÈÌ×±£µÚ¶şÍÈÍ¶»ú  ´óÉÌËù×¨ÓÃ }
+  {/ç¬¬ä¸€è…¿å¥—ä¿ç¬¬äºŒè…¿æŠ•æœº  å¤§å•†æ‰€ä¸“ç”¨ }
     THOST_FTDC_HF_HedgeSpec = '7';    
 
   type
     PTThostFtdcHedgeFlagType = ^TThostFtdcHedgeFlagType;
     TThostFtdcHedgeFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBillHedgeFlagTypeÊÇÒ»¸öÍ¶»úÌ×±£±êÖ¾ÀàĞÍ }
+  {/TFtdcBillHedgeFlagTypeæ˜¯ä¸€ä¸ªæŠ•æœºå¥—ä¿æ ‡å¿—ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Í¶»ú }
+  {/æŠ•æœº }
 
   const
     THOST_FTDC_BHF_Speculation = '1';    
-  {/Ì×Àû }
+  {/å¥—åˆ© }
     THOST_FTDC_BHF_Arbitrage = '2';    
-  {/Ì×±£ }
+  {/å¥—ä¿ }
     THOST_FTDC_BHF_Hedge = '3';    
 
   type
     PTThostFtdcBillHedgeFlagType = ^TThostFtdcBillHedgeFlagType;
     TThostFtdcBillHedgeFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcClientIDTypeTypeÊÇÒ»¸ö½»Ò×±àÂëÀàĞÍÀàĞÍ }
+  {/TFtdcClientIDTypeTypeæ˜¯ä¸€ä¸ªäº¤æ˜“ç¼–ç ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Í¶»ú }
+  {/æŠ•æœº }
 
   const
     THOST_FTDC_CIDT_Speculation = '1';    
-  {/Ì×Àû }
+  {/å¥—åˆ© }
     THOST_FTDC_CIDT_Arbitrage = '2';    
-  {/Ì×±£ }
+  {/å¥—ä¿ }
     THOST_FTDC_CIDT_Hedge = '3';    
-  {/×öÊĞÉÌ }
+  {/åšå¸‚å•† }
     THOST_FTDC_CIDT_MarketMaker = '5';    
 
   type
     PTThostFtdcClientIDTypeType = ^TThostFtdcClientIDTypeType;
     TThostFtdcClientIDTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOrderPriceTypeTypeÊÇÒ»¸ö±¨µ¥¼Û¸ñÌõ¼şÀàĞÍ }
+  {/TFtdcOrderPriceTypeTypeæ˜¯ä¸€ä¸ªæŠ¥å•ä»·æ ¼æ¡ä»¶ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÈÎÒâ¼Û }
+  {/ä»»æ„ä»· }
 
   const
     THOST_FTDC_OPT_AnyPrice = '1';    
-  {/ÏŞ¼Û }
+  {/é™ä»· }
     THOST_FTDC_OPT_LimitPrice = '2';    
-  {/×îÓÅ¼Û }
+  {/æœ€ä¼˜ä»· }
     THOST_FTDC_OPT_BestPrice = '3';    
-  {/×îĞÂ¼Û }
+  {/æœ€æ–°ä»· }
     THOST_FTDC_OPT_LastPrice = '4';    
-  {/×îĞÂ¼Û¸¡¶¯ÉÏ¸¡1¸öticks }
+  {/æœ€æ–°ä»·æµ®åŠ¨ä¸Šæµ®1ä¸ªticks }
     THOST_FTDC_OPT_LastPricePlusOneTicks = '5';    
-  {/×îĞÂ¼Û¸¡¶¯ÉÏ¸¡2¸öticks }
+  {/æœ€æ–°ä»·æµ®åŠ¨ä¸Šæµ®2ä¸ªticks }
     THOST_FTDC_OPT_LastPricePlusTwoTicks = '6';    
-  {/×îĞÂ¼Û¸¡¶¯ÉÏ¸¡3¸öticks }
+  {/æœ€æ–°ä»·æµ®åŠ¨ä¸Šæµ®3ä¸ªticks }
     THOST_FTDC_OPT_LastPricePlusThreeTicks = '7';    
-  {/ÂôÒ»¼Û }
+  {/å–ä¸€ä»· }
     THOST_FTDC_OPT_AskPrice1 = '8';    
-  {/ÂôÒ»¼Û¸¡¶¯ÉÏ¸¡1¸öticks }
+  {/å–ä¸€ä»·æµ®åŠ¨ä¸Šæµ®1ä¸ªticks }
     THOST_FTDC_OPT_AskPrice1PlusOneTicks = '9';    
-  {/ÂôÒ»¼Û¸¡¶¯ÉÏ¸¡2¸öticks }
+  {/å–ä¸€ä»·æµ®åŠ¨ä¸Šæµ®2ä¸ªticks }
     THOST_FTDC_OPT_AskPrice1PlusTwoTicks = 'A';    
-  {/ÂôÒ»¼Û¸¡¶¯ÉÏ¸¡3¸öticks }
+  {/å–ä¸€ä»·æµ®åŠ¨ä¸Šæµ®3ä¸ªticks }
     THOST_FTDC_OPT_AskPrice1PlusThreeTicks = 'B';    
-  {/ÂòÒ»¼Û }
+  {/ä¹°ä¸€ä»· }
     THOST_FTDC_OPT_BidPrice1 = 'C';    
-  {/ÂòÒ»¼Û¸¡¶¯ÉÏ¸¡1¸öticks }
+  {/ä¹°ä¸€ä»·æµ®åŠ¨ä¸Šæµ®1ä¸ªticks }
     THOST_FTDC_OPT_BidPrice1PlusOneTicks = 'D';    
-  {/ÂòÒ»¼Û¸¡¶¯ÉÏ¸¡2¸öticks }
+  {/ä¹°ä¸€ä»·æµ®åŠ¨ä¸Šæµ®2ä¸ªticks }
     THOST_FTDC_OPT_BidPrice1PlusTwoTicks = 'E';    
-  {/ÂòÒ»¼Û¸¡¶¯ÉÏ¸¡3¸öticks }
+  {/ä¹°ä¸€ä»·æµ®åŠ¨ä¸Šæµ®3ä¸ªticks }
     THOST_FTDC_OPT_BidPrice1PlusThreeTicks = 'F';    
-  {/Îåµµ¼Û }
+  {/äº”æ¡£ä»· }
     THOST_FTDC_OPT_FiveLevelPrice = 'G';    
 
   type
     PTThostFtdcOrderPriceTypeType = ^TThostFtdcOrderPriceTypeType;
     TThostFtdcOrderPriceTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOffsetFlagTypeÊÇÒ»¸ö¿ªÆ½±êÖ¾ÀàĞÍ }
+  {/TFtdcOffsetFlagTypeæ˜¯ä¸€ä¸ªå¼€å¹³æ ‡å¿—ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/¿ª²Ö }
+  {/å¼€ä»“ }
 
   const
     THOST_FTDC_OF_Open = '0';    
-  {/Æ½²Ö }
+  {/å¹³ä»“ }
     THOST_FTDC_OF_Close = '1';    
-  {/Ç¿Æ½ }
+  {/å¼ºå¹³ }
     THOST_FTDC_OF_ForceClose = '2';    
-  {/Æ½½ñ }
+  {/å¹³ä»Š }
     THOST_FTDC_OF_CloseToday = '3';    
-  {/Æ½×ò }
+  {/å¹³æ˜¨ }
     THOST_FTDC_OF_CloseYesterday = '4';    
-  {/Ç¿¼õ }
+  {/å¼ºå‡ }
     THOST_FTDC_OF_ForceOff = '5';    
-  {/±¾µØÇ¿Æ½ }
+  {/æœ¬åœ°å¼ºå¹³ }
     THOST_FTDC_OF_LocalForceClose = '6';    
 
   type
     PTThostFtdcOffsetFlagType = ^TThostFtdcOffsetFlagType;
     TThostFtdcOffsetFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcForceCloseReasonTypeÊÇÒ»¸öÇ¿Æ½Ô­ÒòÀàĞÍ }
+  {/TFtdcForceCloseReasonTypeæ˜¯ä¸€ä¸ªå¼ºå¹³åŸå› ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/·ÇÇ¿Æ½ }
+  {/éå¼ºå¹³ }
 
   const
     THOST_FTDC_FCC_NotForceClose = '0';    
-  {/×Ê½ğ²»×ã }
+  {/èµ„é‡‘ä¸è¶³ }
     THOST_FTDC_FCC_LackDeposit = '1';    
-  {/¿Í»§³¬²Ö }
+  {/å®¢æˆ·è¶…ä»“ }
     THOST_FTDC_FCC_ClientOverPositionLimit = '2';    
-  {/»áÔ±³¬²Ö }
+  {/ä¼šå‘˜è¶…ä»“ }
     THOST_FTDC_FCC_MemberOverPositionLimit = '3';    
-  {/³Ö²Ö·ÇÕûÊı±¶ }
+  {/æŒä»“éæ•´æ•°å€ }
     THOST_FTDC_FCC_NotMultiple = '4';    
-  {/Î¥¹æ }
+  {/è¿è§„ }
     THOST_FTDC_FCC_Violation = '5';    
-  {/ÆäËü }
+  {/å…¶å®ƒ }
     THOST_FTDC_FCC_Other = '6';    
-  {/×ÔÈ»ÈËÁÙ½ü½»¸î }
+  {/è‡ªç„¶äººä¸´è¿‘äº¤å‰² }
     THOST_FTDC_FCC_PersonDeliv = '7';    
 
   type
     PTThostFtdcForceCloseReasonType = ^TThostFtdcForceCloseReasonType;
     TThostFtdcForceCloseReasonType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOrderTypeTypeÊÇÒ»¸ö±¨µ¥ÀàĞÍÀàĞÍ }
+  {/TFtdcOrderTypeTypeæ˜¯ä¸€ä¸ªæŠ¥å•ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Õı³£ }
+  {/æ­£å¸¸ }
 
   const
     THOST_FTDC_ORDT_Normal = '0';    
-  {/±¨¼ÛÑÜÉú }
+  {/æŠ¥ä»·è¡ç”Ÿ }
     THOST_FTDC_ORDT_DeriveFromQuote = '1';    
-  {/×éºÏÑÜÉú }
+  {/ç»„åˆè¡ç”Ÿ }
     THOST_FTDC_ORDT_DeriveFromCombination = '2';    
-  {/×éºÏ±¨µ¥ }
+  {/ç»„åˆæŠ¥å• }
     THOST_FTDC_ORDT_Combination = '3';    
-  {/Ìõ¼şµ¥ }
+  {/æ¡ä»¶å• }
     THOST_FTDC_ORDT_ConditionalOrder = '4';    
-  {/»¥»»µ¥ }
+  {/äº’æ¢å• }
     THOST_FTDC_ORDT_Swap = '5';    
-  {/´ó×Ú½»Ò×³É½»ÑÜÉú }
+  {/å¤§å®—äº¤æ˜“æˆäº¤è¡ç”Ÿ }
     THOST_FTDC_ORDT_DeriveFromBlockTrade = '6';    
-  {/ÆÚ×ªÏÖ³É½»ÑÜÉú }
+  {/æœŸè½¬ç°æˆäº¤è¡ç”Ÿ }
     THOST_FTDC_ORDT_DeriveFromEFPTrade = '7';    
 
   type
     PTThostFtdcOrderTypeType = ^TThostFtdcOrderTypeType;
     TThostFtdcOrderTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTimeConditionTypeÊÇÒ»¸öÓĞĞ§ÆÚÀàĞÍÀàĞÍ }
+  {/TFtdcTimeConditionTypeæ˜¯ä¸€ä¸ªæœ‰æ•ˆæœŸç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Á¢¼´Íê³É£¬·ñÔò³·Ïú }
+  {/ç«‹å³å®Œæˆï¼Œå¦åˆ™æ’¤é”€ }
 
   const
     THOST_FTDC_TC_IOC = '1';    
-  {/±¾½ÚÓĞĞ§ }
+  {/æœ¬èŠ‚æœ‰æ•ˆ }
     THOST_FTDC_TC_GFS = '2';    
-  {/µ±ÈÕÓĞĞ§ }
+  {/å½“æ—¥æœ‰æ•ˆ }
     THOST_FTDC_TC_GFD = '3';    
-  {/Ö¸¶¨ÈÕÆÚÇ°ÓĞĞ§ }
+  {/æŒ‡å®šæ—¥æœŸå‰æœ‰æ•ˆ }
     THOST_FTDC_TC_GTD = '4';    
-  {/³·ÏúÇ°ÓĞĞ§ }
+  {/æ’¤é”€å‰æœ‰æ•ˆ }
     THOST_FTDC_TC_GTC = '5';    
-  {/¼¯ºÏ¾º¼ÛÓĞĞ§ }
+  {/é›†åˆç«ä»·æœ‰æ•ˆ }
     THOST_FTDC_TC_GFA = '6';    
 
   type
     PTThostFtdcTimeConditionType = ^TThostFtdcTimeConditionType;
     TThostFtdcTimeConditionType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcVolumeConditionTypeÊÇÒ»¸ö³É½»Á¿ÀàĞÍÀàĞÍ }
+  {/TFtdcVolumeConditionTypeæ˜¯ä¸€ä¸ªæˆäº¤é‡ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÈÎºÎÊıÁ¿ }
+  {/ä»»ä½•æ•°é‡ }
 
   const
     THOST_FTDC_VC_AV = '1';    
-  {/×îĞ¡ÊıÁ¿ }
+  {/æœ€å°æ•°é‡ }
     THOST_FTDC_VC_MV = '2';    
-  {/È«²¿ÊıÁ¿ }
+  {/å…¨éƒ¨æ•°é‡ }
     THOST_FTDC_VC_CV = '3';    
 
   type
     PTThostFtdcVolumeConditionType = ^TThostFtdcVolumeConditionType;
     TThostFtdcVolumeConditionType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcContingentConditionTypeÊÇÒ»¸ö´¥·¢Ìõ¼şÀàĞÍ }
+  {/TFtdcContingentConditionTypeæ˜¯ä¸€ä¸ªè§¦å‘æ¡ä»¶ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Á¢¼´ }
+  {/ç«‹å³ }
 
   const
     THOST_FTDC_CC_Immediately = '1';    
-  {/Ö¹Ëğ }
+  {/æ­¢æŸ }
     THOST_FTDC_CC_Touch = '2';    
-  {/Ö¹Ó® }
+  {/æ­¢èµ¢ }
     THOST_FTDC_CC_TouchProfit = '3';    
-  {/Ô¤Âñµ¥ }
+  {/é¢„åŸ‹å• }
     THOST_FTDC_CC_ParkedOrder = '4';    
-  {/×îĞÂ¼Û´óÓÚÌõ¼ş¼Û }
+  {/æœ€æ–°ä»·å¤§äºæ¡ä»¶ä»· }
     THOST_FTDC_CC_LastPriceGreaterThanStopPrice = '5';    
-  {/×îĞÂ¼Û´óÓÚµÈÓÚÌõ¼ş¼Û }
+  {/æœ€æ–°ä»·å¤§äºç­‰äºæ¡ä»¶ä»· }
     THOST_FTDC_CC_LastPriceGreaterEqualStopPrice = '6';    
-  {/×îĞÂ¼ÛĞ¡ÓÚÌõ¼ş¼Û }
+  {/æœ€æ–°ä»·å°äºæ¡ä»¶ä»· }
     THOST_FTDC_CC_LastPriceLesserThanStopPrice = '7';    
-  {/×îĞÂ¼ÛĞ¡ÓÚµÈÓÚÌõ¼ş¼Û }
+  {/æœ€æ–°ä»·å°äºç­‰äºæ¡ä»¶ä»· }
     THOST_FTDC_CC_LastPriceLesserEqualStopPrice = '8';    
-  {/ÂôÒ»¼Û´óÓÚÌõ¼ş¼Û }
+  {/å–ä¸€ä»·å¤§äºæ¡ä»¶ä»· }
     THOST_FTDC_CC_AskPriceGreaterThanStopPrice = '9';    
-  {/ÂôÒ»¼Û´óÓÚµÈÓÚÌõ¼ş¼Û }
+  {/å–ä¸€ä»·å¤§äºç­‰äºæ¡ä»¶ä»· }
     THOST_FTDC_CC_AskPriceGreaterEqualStopPrice = 'A';    
-  {/ÂôÒ»¼ÛĞ¡ÓÚÌõ¼ş¼Û }
+  {/å–ä¸€ä»·å°äºæ¡ä»¶ä»· }
     THOST_FTDC_CC_AskPriceLesserThanStopPrice = 'B';    
-  {/ÂôÒ»¼ÛĞ¡ÓÚµÈÓÚÌõ¼ş¼Û }
+  {/å–ä¸€ä»·å°äºç­‰äºæ¡ä»¶ä»· }
     THOST_FTDC_CC_AskPriceLesserEqualStopPrice = 'C';    
-  {/ÂòÒ»¼Û´óÓÚÌõ¼ş¼Û }
+  {/ä¹°ä¸€ä»·å¤§äºæ¡ä»¶ä»· }
     THOST_FTDC_CC_BidPriceGreaterThanStopPrice = 'D';    
-  {/ÂòÒ»¼Û´óÓÚµÈÓÚÌõ¼ş¼Û }
+  {/ä¹°ä¸€ä»·å¤§äºç­‰äºæ¡ä»¶ä»· }
     THOST_FTDC_CC_BidPriceGreaterEqualStopPrice = 'E';    
-  {/ÂòÒ»¼ÛĞ¡ÓÚÌõ¼ş¼Û }
+  {/ä¹°ä¸€ä»·å°äºæ¡ä»¶ä»· }
     THOST_FTDC_CC_BidPriceLesserThanStopPrice = 'F';    
-  {/ÂòÒ»¼ÛĞ¡ÓÚµÈÓÚÌõ¼ş¼Û }
+  {/ä¹°ä¸€ä»·å°äºç­‰äºæ¡ä»¶ä»· }
     THOST_FTDC_CC_BidPriceLesserEqualStopPrice = 'H';    
 
   type
     PTThostFtdcContingentConditionType = ^TThostFtdcContingentConditionType;
     TThostFtdcContingentConditionType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcActionFlagTypeÊÇÒ»¸ö²Ù×÷±êÖ¾ÀàĞÍ }
+  {/TFtdcActionFlagTypeæ˜¯ä¸€ä¸ªæ“ä½œæ ‡å¿—ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/É¾³ı }
+  {/åˆ é™¤ }
 
   const
     THOST_FTDC_AF_Delete = '0';    
-  {/ĞŞ¸Ä }
+  {/ä¿®æ”¹ }
     THOST_FTDC_AF_Modify = '3';    
 
   type
     PTThostFtdcActionFlagType = ^TThostFtdcActionFlagType;
     TThostFtdcActionFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTradingRightTypeÊÇÒ»¸ö½»Ò×È¨ÏŞÀàĞÍ }
+  {/TFtdcTradingRightTypeæ˜¯ä¸€ä¸ªäº¤æ˜“æƒé™ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/¿ÉÒÔ½»Ò× }
+  {/å¯ä»¥äº¤æ˜“ }
 
   const
     THOST_FTDC_TR_Allow = '0';    
-  {/Ö»ÄÜÆ½²Ö }
+  {/åªèƒ½å¹³ä»“ }
     THOST_FTDC_TR_CloseOnly = '1';    
-  {/²»ÄÜ½»Ò× }
+  {/ä¸èƒ½äº¤æ˜“ }
     THOST_FTDC_TR_Forbidden = '2';    
 
   type
     PTThostFtdcTradingRightType = ^TThostFtdcTradingRightType;
     TThostFtdcTradingRightType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOrderSourceTypeÊÇÒ»¸ö±¨µ¥À´Ô´ÀàĞÍ }
+  {/TFtdcOrderSourceTypeæ˜¯ä¸€ä¸ªæŠ¥å•æ¥æºç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/À´×Ô²ÎÓëÕß }
+  {/æ¥è‡ªå‚ä¸è€… }
 
   const
     THOST_FTDC_OSRC_Participant = '0';    
-  {/À´×Ô¹ÜÀíÔ± }
+  {/æ¥è‡ªç®¡ç†å‘˜ }
     THOST_FTDC_OSRC_Administrator = '1';    
 
   type
     PTThostFtdcOrderSourceType = ^TThostFtdcOrderSourceType;
     TThostFtdcOrderSourceType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTradeTypeTypeÊÇÒ»¸ö³É½»ÀàĞÍÀàĞÍ }
+  {/TFtdcTradeTypeTypeæ˜¯ä¸€ä¸ªæˆäº¤ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/×éºÏ³Ö²Ö²ğ·ÖÎªµ¥Ò»³Ö²Ö,³õÊ¼»¯²»Ó¦°üº¬¸ÃÀàĞÍµÄ³Ö²Ö }
+  {/ç»„åˆæŒä»“æ‹†åˆ†ä¸ºå•ä¸€æŒä»“,åˆå§‹åŒ–ä¸åº”åŒ…å«è¯¥ç±»å‹çš„æŒä»“ }
 
   const
     THOST_FTDC_TRDT_SplitCombination = '#';    
-  {/ÆÕÍ¨³É½» }
+  {/æ™®é€šæˆäº¤ }
     THOST_FTDC_TRDT_Common = '0';    
-  {/ÆÚÈ¨Ö´ĞĞ }
+  {/æœŸæƒæ‰§è¡Œ }
     THOST_FTDC_TRDT_OptionsExecution = '1';    
-  {/OTC³É½» }
+  {/OTCæˆäº¤ }
     THOST_FTDC_TRDT_OTC = '2';    
-  {/ÆÚ×ªÏÖÑÜÉú³É½» }
+  {/æœŸè½¬ç°è¡ç”Ÿæˆäº¤ }
     THOST_FTDC_TRDT_EFPDerived = '3';    
-  {/×éºÏÑÜÉú³É½» }
+  {/ç»„åˆè¡ç”Ÿæˆäº¤ }
     THOST_FTDC_TRDT_CombinationDerived = '4';    
-  {/´ó×Ú½»Ò×³É½» }
+  {/å¤§å®—äº¤æ˜“æˆäº¤ }
     THOST_FTDC_TRDT_BlockTrade = '5';    
 
   type
     PTThostFtdcTradeTypeType = ^TThostFtdcTradeTypeType;
     TThostFtdcTradeTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSpecPosiTypeTypeÊÇÒ»¸öÌØÊâ³Ö²ÖÃ÷Ï¸±êÊ¶ÀàĞÍ }
+  {/TFtdcSpecPosiTypeTypeæ˜¯ä¸€ä¸ªç‰¹æ®ŠæŒä»“æ˜ç»†æ ‡è¯†ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÆÕÍ¨³Ö²ÖÃ÷Ï¸ }
+  {/æ™®é€šæŒä»“æ˜ç»† }
 
   const
     THOST_FTDC_SPOST_Common = '#';    
-  {/TASºÏÔ¼³É½»²úÉúµÄ±êµÄºÏÔ¼³Ö²ÖÃ÷Ï¸ }
+  {/TASåˆçº¦æˆäº¤äº§ç”Ÿçš„æ ‡çš„åˆçº¦æŒä»“æ˜ç»† }
     THOST_FTDC_SPOST_Tas = '0';    
 
   type
     PTThostFtdcSpecPosiTypeType = ^TThostFtdcSpecPosiTypeType;
     TThostFtdcSpecPosiTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcPriceSourceTypeÊÇÒ»¸ö³É½»¼ÛÀ´Ô´ÀàĞÍ }
+  {/TFtdcPriceSourceTypeæ˜¯ä¸€ä¸ªæˆäº¤ä»·æ¥æºç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Ç°³É½»¼Û }
+  {/å‰æˆäº¤ä»· }
 
   const
     THOST_FTDC_PSRC_LastPrice = '0';    
-  {/ÂòÎ¯ÍĞ¼Û }
+  {/ä¹°å§”æ‰˜ä»· }
     THOST_FTDC_PSRC_Buy = '1';    
-  {/ÂôÎ¯ÍĞ¼Û }
+  {/å–å§”æ‰˜ä»· }
     THOST_FTDC_PSRC_Sell = '2';    
-  {/³¡Íâ³É½»¼Û }
+  {/åœºå¤–æˆäº¤ä»· }
     THOST_FTDC_PSRC_OTC = '3';    
 
   type
     PTThostFtdcPriceSourceType = ^TThostFtdcPriceSourceType;
     TThostFtdcPriceSourceType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcInstrumentStatusTypeÊÇÒ»¸öºÏÔ¼½»Ò××´Ì¬ÀàĞÍ }
+  {/TFtdcInstrumentStatusTypeæ˜¯ä¸€ä¸ªåˆçº¦äº¤æ˜“çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/¿ªÅÌÇ° }
+  {/å¼€ç›˜å‰ }
 
   const
     THOST_FTDC_IS_BeforeTrading = '0';    
-  {/·Ç½»Ò× }
+  {/éäº¤æ˜“ }
     THOST_FTDC_IS_NoTrading = '1';    
-  {/Á¬Ğø½»Ò× }
+  {/è¿ç»­äº¤æ˜“ }
     THOST_FTDC_IS_Continous = '2';    
-  {/¼¯ºÏ¾º¼Û±¨µ¥ }
+  {/é›†åˆç«ä»·æŠ¥å• }
     THOST_FTDC_IS_AuctionOrdering = '3';    
-  {/¼¯ºÏ¾º¼Û¼Û¸ñÆ½ºâ }
+  {/é›†åˆç«ä»·ä»·æ ¼å¹³è¡¡ }
     THOST_FTDC_IS_AuctionBalance = '4';    
-  {/¼¯ºÏ¾º¼Û´éºÏ }
+  {/é›†åˆç«ä»·æ’®åˆ }
     THOST_FTDC_IS_AuctionMatch = '5';    
-  {/ÊÕÅÌ }
+  {/æ”¶ç›˜ }
     THOST_FTDC_IS_Closed = '6';    
 
   type
     PTThostFtdcInstrumentStatusType = ^TThostFtdcInstrumentStatusType;
     TThostFtdcInstrumentStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcInstStatusEnterReasonTypeÊÇÒ»¸öÆ·ÖÖ½øÈë½»Ò××´Ì¬Ô­ÒòÀàĞÍ }
+  {/TFtdcInstStatusEnterReasonTypeæ˜¯ä¸€ä¸ªå“ç§è¿›å…¥äº¤æ˜“çŠ¶æ€åŸå› ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/×Ô¶¯ÇĞ»» }
+  {/è‡ªåŠ¨åˆ‡æ¢ }
 
   const
     THOST_FTDC_IER_Automatic = '1';    
-  {/ÊÖ¶¯ÇĞ»» }
+  {/æ‰‹åŠ¨åˆ‡æ¢ }
     THOST_FTDC_IER_Manual = '2';    
-  {/ÈÛ¶Ï }
+  {/ç†”æ–­ }
     THOST_FTDC_IER_Fuse = '3';    
 
   type
     PTThostFtdcInstStatusEnterReasonType = ^TThostFtdcInstStatusEnterReasonType;
     TThostFtdcInstStatusEnterReasonType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOrderActionRefTypeÊÇÒ»¸ö±¨µ¥²Ù×÷ÒıÓÃÀàĞÍ }
+  {/TFtdcOrderActionRefTypeæ˜¯ä¸€ä¸ªæŠ¥å•æ“ä½œå¼•ç”¨ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcOrderActionRefType = ^TThostFtdcOrderActionRefType;
     TThostFtdcOrderActionRefType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcInstallCountTypeÊÇÒ»¸ö°²×°ÊıÁ¿ÀàĞÍ }
+  {/TFtdcInstallCountTypeæ˜¯ä¸€ä¸ªå®‰è£…æ•°é‡ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcInstallCountType = ^TThostFtdcInstallCountType;
     TThostFtdcInstallCountType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcInstallIDTypeÊÇÒ»¸ö°²×°±àºÅÀàĞÍ }
+  {/TFtdcInstallIDTypeæ˜¯ä¸€ä¸ªå®‰è£…ç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcInstallIDType = ^TThostFtdcInstallIDType;
     TThostFtdcInstallIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcErrorIDTypeÊÇÒ»¸ö´íÎó´úÂëÀàĞÍ }
+  {/TFtdcErrorIDTypeæ˜¯ä¸€ä¸ªé”™è¯¯ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcErrorIDType = ^TThostFtdcErrorIDType;
     TThostFtdcErrorIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSettlementIDTypeÊÇÒ»¸ö½áËã±àºÅÀàĞÍ }
+  {/TFtdcSettlementIDTypeæ˜¯ä¸€ä¸ªç»“ç®—ç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcSettlementIDType = ^TThostFtdcSettlementIDType;
     TThostFtdcSettlementIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcVolumeTypeÊÇÒ»¸öÊıÁ¿ÀàĞÍ }
+  {/TFtdcVolumeTypeæ˜¯ä¸€ä¸ªæ•°é‡ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcVolumeType = ^TThostFtdcVolumeType;
     TThostFtdcVolumeType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFrontIDTypeÊÇÒ»¸öÇ°ÖÃ±àºÅÀàĞÍ }
+  {/TFtdcFrontIDTypeæ˜¯ä¸€ä¸ªå‰ç½®ç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFrontIDType = ^TThostFtdcFrontIDType;
     TThostFtdcFrontIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSessionIDTypeÊÇÒ»¸ö»á»°±àºÅÀàĞÍ }
+  {/TFtdcSessionIDTypeæ˜¯ä¸€ä¸ªä¼šè¯ç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcSessionIDType = ^TThostFtdcSessionIDType;
     TThostFtdcSessionIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSequenceNoTypeÊÇÒ»¸öĞòºÅÀàĞÍ }
+  {/TFtdcSequenceNoTypeæ˜¯ä¸€ä¸ªåºå·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcSequenceNoType = ^TThostFtdcSequenceNoType;
     TThostFtdcSequenceNoType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCommandNoTypeÊÇÒ»¸öDBÃüÁîĞòºÅÀàĞÍ }
+  {/TFtdcCommandNoTypeæ˜¯ä¸€ä¸ªDBå‘½ä»¤åºå·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCommandNoType = ^TThostFtdcCommandNoType;
     TThostFtdcCommandNoType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcMillisecTypeÊÇÒ»¸öÊ±¼ä£¨ºÁÃë£©ÀàĞÍ }
+  {/TFtdcMillisecTypeæ˜¯ä¸€ä¸ªæ—¶é—´ï¼ˆæ¯«ç§’ï¼‰ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcMillisecType = ^TThostFtdcMillisecType;
     TThostFtdcMillisecType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSecTypeÊÇÒ»¸öÊ±¼ä£¨Ãë£©ÀàĞÍ }
+  {/TFtdcSecTypeæ˜¯ä¸€ä¸ªæ—¶é—´ï¼ˆç§’ï¼‰ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcSecType = ^TThostFtdcSecType;
     TThostFtdcSecType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcVolumeMultipleTypeÊÇÒ»¸öºÏÔ¼ÊıÁ¿³ËÊıÀàĞÍ }
+  {/TFtdcVolumeMultipleTypeæ˜¯ä¸€ä¸ªåˆçº¦æ•°é‡ä¹˜æ•°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcVolumeMultipleType = ^TThostFtdcVolumeMultipleType;
     TThostFtdcVolumeMultipleType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTradingSegmentSNTypeÊÇÒ»¸ö½»Ò×½×¶Î±àºÅÀàĞÍ }
+  {/TFtdcTradingSegmentSNTypeæ˜¯ä¸€ä¸ªäº¤æ˜“é˜¶æ®µç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcTradingSegmentSNType = ^TThostFtdcTradingSegmentSNType;
     TThostFtdcTradingSegmentSNType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcRequestIDTypeÊÇÒ»¸öÇëÇó±àºÅÀàĞÍ }
+  {/TFtdcRequestIDTypeæ˜¯ä¸€ä¸ªè¯·æ±‚ç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcRequestIDType = ^TThostFtdcRequestIDType;
     TThostFtdcRequestIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcYearTypeÊÇÒ»¸öÄê·İÀàĞÍ }
+  {/TFtdcYearTypeæ˜¯ä¸€ä¸ªå¹´ä»½ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcYearType = ^TThostFtdcYearType;
     TThostFtdcYearType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcMonthTypeÊÇÒ»¸öÔÂ·İÀàĞÍ }
+  {/TFtdcMonthTypeæ˜¯ä¸€ä¸ªæœˆä»½ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcMonthType = ^TThostFtdcMonthType;
     TThostFtdcMonthType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBoolTypeÊÇÒ»¸ö²¼¶ûĞÍÀàĞÍ }
+  {/TFtdcBoolTypeæ˜¯ä¸€ä¸ªå¸ƒå°”å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBoolType = ^TThostFtdcBoolType;
     TThostFtdcBoolType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcPriceTypeÊÇÒ»¸ö¼Û¸ñÀàĞÍ }
+  {/TFtdcPriceTypeæ˜¯ä¸€ä¸ªä»·æ ¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcPriceType = ^TThostFtdcPriceType;
     TThostFtdcPriceType = double;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCombOffsetFlagTypeÊÇÒ»¸ö×éºÏ¿ªÆ½±êÖ¾ÀàĞÍ }
+  {/TFtdcCombOffsetFlagTypeæ˜¯ä¸€ä¸ªç»„åˆå¼€å¹³æ ‡å¿—ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCombOffsetFlagType = ^TThostFtdcCombOffsetFlagType;
     TThostFtdcCombOffsetFlagType = array[0..4] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCombHedgeFlagTypeÊÇÒ»¸ö×éºÏÍ¶»úÌ×±£±êÖ¾ÀàĞÍ }
+  {/TFtdcCombHedgeFlagTypeæ˜¯ä¸€ä¸ªç»„åˆæŠ•æœºå¥—ä¿æ ‡å¿—ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCombHedgeFlagType = ^TThostFtdcCombHedgeFlagType;
     TThostFtdcCombHedgeFlagType = array[0..4] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcRatioTypeÊÇÒ»¸ö±ÈÂÊÀàĞÍ }
+  {/TFtdcRatioTypeæ˜¯ä¸€ä¸ªæ¯”ç‡ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcRatioType = ^TThostFtdcRatioType;
     TThostFtdcRatioType = double;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcMoneyTypeÊÇÒ»¸ö×Ê½ğÀàĞÍ }
+  {/TFtdcMoneyTypeæ˜¯ä¸€ä¸ªèµ„é‡‘ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcMoneyType = ^TThostFtdcMoneyType;
     TThostFtdcMoneyType = double;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcLargeVolumeTypeÊÇÒ»¸ö´ó¶îÊıÁ¿ÀàĞÍ }
+  {/TFtdcLargeVolumeTypeæ˜¯ä¸€ä¸ªå¤§é¢æ•°é‡ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcLargeVolumeType = ^TThostFtdcLargeVolumeType;
     TThostFtdcLargeVolumeType = double;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSequenceSeriesTypeÊÇÒ»¸öĞòÁĞÏµÁĞºÅÀàĞÍ }
+  {/TFtdcSequenceSeriesTypeæ˜¯ä¸€ä¸ªåºåˆ—ç³»åˆ—å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcSequenceSeriesType = ^TThostFtdcSequenceSeriesType;
     TThostFtdcSequenceSeriesType = smallint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCommPhaseNoTypeÊÇÒ»¸öÍ¨Ñ¶Ê±¶Î±àºÅÀàĞÍ }
+  {/TFtdcCommPhaseNoTypeæ˜¯ä¸€ä¸ªé€šè®¯æ—¶æ®µç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCommPhaseNoType = ^TThostFtdcCommPhaseNoType;
     TThostFtdcCommPhaseNoType = smallint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSequenceLabelTypeÊÇÒ»¸öĞòÁĞ±àºÅÀàĞÍ }
+  {/TFtdcSequenceLabelTypeæ˜¯ä¸€ä¸ªåºåˆ—ç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcSequenceLabelType = ^TThostFtdcSequenceLabelType;
     TThostFtdcSequenceLabelType = array[0..1] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcUnderlyingMultipleTypeÊÇÒ»¸ö»ù´¡ÉÌÆ·³ËÊıÀàĞÍ }
+  {/TFtdcUnderlyingMultipleTypeæ˜¯ä¸€ä¸ªåŸºç¡€å•†å“ä¹˜æ•°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcUnderlyingMultipleType = ^TThostFtdcUnderlyingMultipleType;
     TThostFtdcUnderlyingMultipleType = double;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcPriorityTypeÊÇÒ»¸öÓÅÏÈ¼¶ÀàĞÍ }
+  {/TFtdcPriorityTypeæ˜¯ä¸€ä¸ªä¼˜å…ˆçº§ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcPriorityType = ^TThostFtdcPriorityType;
     TThostFtdcPriorityType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcContractCodeTypeÊÇÒ»¸öºÏÍ¬±àºÅÀàĞÍ }
+  {/TFtdcContractCodeTypeæ˜¯ä¸€ä¸ªåˆåŒç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcContractCodeType = ^TThostFtdcContractCodeType;
     TThostFtdcContractCodeType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCityTypeÊÇÒ»¸öÊĞÀàĞÍ }
+  {/TFtdcCityTypeæ˜¯ä¸€ä¸ªå¸‚ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCityType = ^TThostFtdcCityType;
     TThostFtdcCityType = array[0..50] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcIsStockTypeÊÇÒ»¸öÊÇ·ñ¹ÉÃñÀàĞÍ }
+  {/TFtdcIsStockTypeæ˜¯ä¸€ä¸ªæ˜¯å¦è‚¡æ°‘ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcIsStockType = ^TThostFtdcIsStockType;
     TThostFtdcIsStockType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcChannelTypeÊÇÒ»¸öÇşµÀÀàĞÍ }
+  {/TFtdcChannelTypeæ˜¯ä¸€ä¸ªæ¸ é“ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcChannelType = ^TThostFtdcChannelType;
     TThostFtdcChannelType = array[0..50] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAddressTypeÊÇÒ»¸öÍ¨Ñ¶µØÖ·ÀàĞÍ }
+  {/TFtdcAddressTypeæ˜¯ä¸€ä¸ªé€šè®¯åœ°å€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAddressType = ^TThostFtdcAddressType;
     TThostFtdcAddressType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcZipCodeTypeÊÇÒ»¸öÓÊÕş±àÂëÀàĞÍ }
+  {/TFtdcZipCodeTypeæ˜¯ä¸€ä¸ªé‚®æ”¿ç¼–ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcZipCodeType = ^TThostFtdcZipCodeType;
     TThostFtdcZipCodeType = array[0..6] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTelephoneTypeÊÇÒ»¸öÁªÏµµç»°ÀàĞÍ }
+  {/TFtdcTelephoneTypeæ˜¯ä¸€ä¸ªè”ç³»ç”µè¯ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcTelephoneType = ^TThostFtdcTelephoneType;
     TThostFtdcTelephoneType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFaxTypeÊÇÒ»¸ö´«ÕæÀàĞÍ }
+  {/TFtdcFaxTypeæ˜¯ä¸€ä¸ªä¼ çœŸç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFaxType = ^TThostFtdcFaxType;
     TThostFtdcFaxType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcMobileTypeÊÇÒ»¸öÊÖ»úÀàĞÍ }
+  {/TFtdcMobileTypeæ˜¯ä¸€ä¸ªæ‰‹æœºç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcMobileType = ^TThostFtdcMobileType;
     TThostFtdcMobileType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcEMailTypeÊÇÒ»¸öµç×ÓÓÊ¼şÀàĞÍ }
+  {/TFtdcEMailTypeæ˜¯ä¸€ä¸ªç”µå­é‚®ä»¶ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcEMailType = ^TThostFtdcEMailType;
     TThostFtdcEMailType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcMemoTypeÊÇÒ»¸ö±¸×¢ÀàĞÍ }
+  {/TFtdcMemoTypeæ˜¯ä¸€ä¸ªå¤‡æ³¨ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcMemoType = ^TThostFtdcMemoType;
     TThostFtdcMemoType = array[0..160] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCompanyCodeTypeÊÇÒ»¸öÆóÒµ´úÂëÀàĞÍ }
+  {/TFtdcCompanyCodeTypeæ˜¯ä¸€ä¸ªä¼ä¸šä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCompanyCodeType = ^TThostFtdcCompanyCodeType;
     TThostFtdcCompanyCodeType = array[0..50] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcWebsiteTypeÊÇÒ»¸öÍøÕ¾µØÖ·ÀàĞÍ }
+  {/TFtdcWebsiteTypeæ˜¯ä¸€ä¸ªç½‘ç«™åœ°å€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcWebsiteType = ^TThostFtdcWebsiteType;
     TThostFtdcWebsiteType = array[0..50] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTaxNoTypeÊÇÒ»¸öË°ÎñµÇ¼ÇºÅÀàĞÍ }
+  {/TFtdcTaxNoTypeæ˜¯ä¸€ä¸ªç¨åŠ¡ç™»è®°å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcTaxNoType = ^TThostFtdcTaxNoType;
     TThostFtdcTaxNoType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBatchStatusTypeÊÇÒ»¸ö´¦Àí×´Ì¬ÀàĞÍ }
+  {/TFtdcBatchStatusTypeæ˜¯ä¸€ä¸ªå¤„ç†çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Î´ÉÏ´« }
+  {/æœªä¸Šä¼  }
 
   const
     THOST_FTDC_BS_NoUpload = '1';    
-  {/ÒÑÉÏ´« }
+  {/å·²ä¸Šä¼  }
     THOST_FTDC_BS_Uploaded = '2';    
-  {/ÉóºËÊ§°Ü }
+  {/å®¡æ ¸å¤±è´¥ }
     THOST_FTDC_BS_Failed = '3';    
 
   type
     PTThostFtdcBatchStatusType = ^TThostFtdcBatchStatusType;
     TThostFtdcBatchStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcPropertyIDTypeÊÇÒ»¸öÊôĞÔ´úÂëÀàĞÍ }
+  {/TFtdcPropertyIDTypeæ˜¯ä¸€ä¸ªå±æ€§ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcPropertyIDType = ^TThostFtdcPropertyIDType;
     TThostFtdcPropertyIDType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcPropertyNameTypeÊÇÒ»¸öÊôĞÔÃû³ÆÀàĞÍ }
+  {/TFtdcPropertyNameTypeæ˜¯ä¸€ä¸ªå±æ€§åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcPropertyNameType = ^TThostFtdcPropertyNameType;
     TThostFtdcPropertyNameType = array[0..64] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcLicenseNoTypeÊÇÒ»¸öÓªÒµÖ´ÕÕºÅÀàĞÍ }
+  {/TFtdcLicenseNoTypeæ˜¯ä¸€ä¸ªè¥ä¸šæ‰§ç…§å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcLicenseNoType = ^TThostFtdcLicenseNoType;
     TThostFtdcLicenseNoType = array[0..50] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAgentIDTypeÊÇÒ»¸ö¾­¼ÍÈË´úÂëÀàĞÍ }
+  {/TFtdcAgentIDTypeæ˜¯ä¸€ä¸ªç»çºªäººä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAgentIDType = ^TThostFtdcAgentIDType;
     TThostFtdcAgentIDType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAgentNameTypeÊÇÒ»¸ö¾­¼ÍÈËÃû³ÆÀàĞÍ }
+  {/TFtdcAgentNameTypeæ˜¯ä¸€ä¸ªç»çºªäººåç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAgentNameType = ^TThostFtdcAgentNameType;
     TThostFtdcAgentNameType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAgentGroupIDTypeÊÇÒ»¸ö¾­¼ÍÈË×é´úÂëÀàĞÍ }
+  {/TFtdcAgentGroupIDTypeæ˜¯ä¸€ä¸ªç»çºªäººç»„ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAgentGroupIDType = ^TThostFtdcAgentGroupIDType;
     TThostFtdcAgentGroupIDType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAgentGroupNameTypeÊÇÒ»¸ö¾­¼ÍÈË×éÃû³ÆÀàĞÍ }
+  {/TFtdcAgentGroupNameTypeæ˜¯ä¸€ä¸ªç»çºªäººç»„åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAgentGroupNameType = ^TThostFtdcAgentGroupNameType;
     TThostFtdcAgentGroupNameType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcReturnStyleTypeÊÇÒ»¸ö°´Æ·ÖÖ·µ»¹·½Ê½ÀàĞÍ }
+  {/TFtdcReturnStyleTypeæ˜¯ä¸€ä¸ªæŒ‰å“ç§è¿”è¿˜æ–¹å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/°´ËùÓĞÆ·ÖÖ }
+  {/æŒ‰æ‰€æœ‰å“ç§ }
 
   const
     THOST_FTDC_RS_All = '1';    
-  {/°´Æ·ÖÖ }
+  {/æŒ‰å“ç§ }
     THOST_FTDC_RS_ByProduct = '2';    
 
   type
     PTThostFtdcReturnStyleType = ^TThostFtdcReturnStyleType;
     TThostFtdcReturnStyleType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcReturnPatternTypeÊÇÒ»¸ö·µ»¹Ä£Ê½ÀàĞÍ }
+  {/TFtdcReturnPatternTypeæ˜¯ä¸€ä¸ªè¿”è¿˜æ¨¡å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/°´³É½»ÊÖÊı }
+  {/æŒ‰æˆäº¤æ‰‹æ•° }
 
   const
     THOST_FTDC_RP_ByVolume = '1';    
-  {/°´Áô´æÊÖĞø·Ñ }
+  {/æŒ‰ç•™å­˜æ‰‹ç»­è´¹ }
     THOST_FTDC_RP_ByFeeOnHand = '2';    
 
   type
     PTThostFtdcReturnPatternType = ^TThostFtdcReturnPatternType;
     TThostFtdcReturnPatternType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcReturnLevelTypeÊÇÒ»¸ö·µ»¹¼¶±ğÀàĞÍ }
+  {/TFtdcReturnLevelTypeæ˜¯ä¸€ä¸ªè¿”è¿˜çº§åˆ«ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/¼¶±ğ1 }
+  {/çº§åˆ«1 }
 
   const
     THOST_FTDC_RL_Level1 = '1';    
-  {/¼¶±ğ2 }
+  {/çº§åˆ«2 }
     THOST_FTDC_RL_Level2 = '2';    
-  {/¼¶±ğ3 }
+  {/çº§åˆ«3 }
     THOST_FTDC_RL_Level3 = '3';    
-  {/¼¶±ğ4 }
+  {/çº§åˆ«4 }
     THOST_FTDC_RL_Level4 = '4';    
-  {/¼¶±ğ5 }
+  {/çº§åˆ«5 }
     THOST_FTDC_RL_Level5 = '5';    
-  {/¼¶±ğ6 }
+  {/çº§åˆ«6 }
     THOST_FTDC_RL_Level6 = '6';    
-  {/¼¶±ğ7 }
+  {/çº§åˆ«7 }
     THOST_FTDC_RL_Level7 = '7';    
-  {/¼¶±ğ8 }
+  {/çº§åˆ«8 }
     THOST_FTDC_RL_Level8 = '8';    
-  {/¼¶±ğ9 }
+  {/çº§åˆ«9 }
     THOST_FTDC_RL_Level9 = '9';    
 
   type
     PTThostFtdcReturnLevelType = ^TThostFtdcReturnLevelType;
     TThostFtdcReturnLevelType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcReturnStandardTypeÊÇÒ»¸ö·µ»¹±ê×¼ÀàĞÍ }
+  {/TFtdcReturnStandardTypeæ˜¯ä¸€ä¸ªè¿”è¿˜æ ‡å‡†ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/·Ö½×¶Î·µ»¹ }
+  {/åˆ†é˜¶æ®µè¿”è¿˜ }
 
   const
     THOST_FTDC_RSD_ByPeriod = '1';    
-  {/°´Ä³Ò»±ê×¼ }
+  {/æŒ‰æŸä¸€æ ‡å‡† }
     THOST_FTDC_RSD_ByStandard = '2';    
 
   type
     PTThostFtdcReturnStandardType = ^TThostFtdcReturnStandardType;
     TThostFtdcReturnStandardType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcMortgageTypeTypeÊÇÒ»¸öÖÊÑºÀàĞÍÀàĞÍ }
+  {/TFtdcMortgageTypeTypeæ˜¯ä¸€ä¸ªè´¨æŠ¼ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÖÊ³ö }
+  {/è´¨å‡º }
 
   const
     THOST_FTDC_MT_Out = '0';    
-  {/ÖÊÈë }
+  {/è´¨å…¥ }
     THOST_FTDC_MT_In = '1';    
 
   type
     PTThostFtdcMortgageTypeType = ^TThostFtdcMortgageTypeType;
     TThostFtdcMortgageTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcInvestorSettlementParamIDTypeÊÇÒ»¸öÍ¶×ÊÕß½áËã²ÎÊı´úÂëÀàĞÍ }
+  {/TFtdcInvestorSettlementParamIDTypeæ˜¯ä¸€ä¸ªæŠ•èµ„è€…ç»“ç®—å‚æ•°ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÖÊÑº±ÈÀı }
+  {/è´¨æŠ¼æ¯”ä¾‹ }
 
   const
     THOST_FTDC_ISPI_MortgageRatio = '4';    
-  {/±£Ö¤½ğËã·¨ }
+  {/ä¿è¯é‡‘ç®—æ³• }
     THOST_FTDC_ISPI_MarginWay = '5';    
-  {/½áËãµ¥½á´æÊÇ·ñ°üº¬ÖÊÑº }
+  {/ç»“ç®—å•ç»“å­˜æ˜¯å¦åŒ…å«è´¨æŠ¼ }
     THOST_FTDC_ISPI_BillDeposit = '9';    
 
   type
     PTThostFtdcInvestorSettlementParamIDType = ^TThostFtdcInvestorSettlementParamIDType;
     TThostFtdcInvestorSettlementParamIDType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcExchangeSettlementParamIDTypeÊÇÒ»¸ö½»Ò×Ëù½áËã²ÎÊı´úÂëÀàĞÍ }
+  {/TFtdcExchangeSettlementParamIDTypeæ˜¯ä¸€ä¸ªäº¤æ˜“æ‰€ç»“ç®—å‚æ•°ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÖÊÑº±ÈÀı }
+  {/è´¨æŠ¼æ¯”ä¾‹ }
 
   const
     THOST_FTDC_ESPI_MortgageRatio = '1';    
-  {/·ÖÏî×Ê½ğµ¼ÈëÏî }
+  {/åˆ†é¡¹èµ„é‡‘å¯¼å…¥é¡¹ }
     THOST_FTDC_ESPI_OtherFundItem = '2';    
-  {/·ÖÏî×Ê½ğÈë½»Ò×Ëù³öÈë½ğ }
+  {/åˆ†é¡¹èµ„é‡‘å…¥äº¤æ˜“æ‰€å‡ºå…¥é‡‘ }
     THOST_FTDC_ESPI_OtherFundImport = '3';    
-  {/ÖĞ½ğËù¿ª»§×îµÍ¿ÉÓÃ½ğ¶î }
+  {/ä¸­é‡‘æ‰€å¼€æˆ·æœ€ä½å¯ç”¨é‡‘é¢ }
     THOST_FTDC_ESPI_CFFEXMinPrepa = '6';    
-  {/Ö£ÉÌËù½áËã·½Ê½ }
+  {/éƒ‘å•†æ‰€ç»“ç®—æ–¹å¼ }
     THOST_FTDC_ESPI_CZCESettlementType = '7';    
-  {/½»Ò×Ëù½»¸îÊÖĞø·ÑÊÕÈ¡·½Ê½ }
+  {/äº¤æ˜“æ‰€äº¤å‰²æ‰‹ç»­è´¹æ”¶å–æ–¹å¼ }
     THOST_FTDC_ESPI_ExchDelivFeeMode = '9';    
-  {/Í¶×ÊÕß½»¸îÊÖĞø·ÑÊÕÈ¡·½Ê½ }
+  {/æŠ•èµ„è€…äº¤å‰²æ‰‹ç»­è´¹æ”¶å–æ–¹å¼ }
     THOST_FTDC_ESPI_DelivFeeMode = '0';    
-  {/Ö£ÉÌËù×éºÏ³Ö²Ö±£Ö¤½ğÊÕÈ¡·½Ê½ }
+  {/éƒ‘å•†æ‰€ç»„åˆæŒä»“ä¿è¯é‡‘æ”¶å–æ–¹å¼ }
     THOST_FTDC_ESPI_CZCEComMarginType = 'A';    
-  {/´óÉÌËùÌ×Àû±£Ö¤½ğÊÇ·ñÓÅ»İ }
+  {/å¤§å•†æ‰€å¥—åˆ©ä¿è¯é‡‘æ˜¯å¦ä¼˜æƒ  }
     THOST_FTDC_ESPI_DceComMarginType = 'B';    
-  {/ĞéÖµÆÚÈ¨±£Ö¤½ğÓÅ»İ±ÈÂÊ }
+  {/è™šå€¼æœŸæƒä¿è¯é‡‘ä¼˜æƒ æ¯”ç‡ }
     THOST_FTDC_ESPI_OptOutDisCountRate = 'a';    
-  {/×îµÍ±£ÕÏÏµÊı }
+  {/æœ€ä½ä¿éšœç³»æ•° }
     THOST_FTDC_ESPI_OptMiniGuarantee = 'b';    
 
   type
     PTThostFtdcExchangeSettlementParamIDType = ^TThostFtdcExchangeSettlementParamIDType;
     TThostFtdcExchangeSettlementParamIDType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSystemParamIDTypeÊÇÒ»¸öÏµÍ³²ÎÊı´úÂëÀàĞÍ }
+  {/TFtdcSystemParamIDTypeæ˜¯ä¸€ä¸ªç³»ç»Ÿå‚æ•°ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Í¶×ÊÕß´úÂë×îĞ¡³¤¶È }
+  {/æŠ•èµ„è€…ä»£ç æœ€å°é•¿åº¦ }
 
   const
     THOST_FTDC_SPI_InvestorIDMinLength = '1';    
-  {/Í¶×ÊÕßÕÊºÅ´úÂë×îĞ¡³¤¶È }
+  {/æŠ•èµ„è€…å¸å·ä»£ç æœ€å°é•¿åº¦ }
     THOST_FTDC_SPI_AccountIDMinLength = '2';    
-  {/Í¶×ÊÕß¿ª»§Ä¬ÈÏµÇÂ¼È¨ÏŞ }
+  {/æŠ•èµ„è€…å¼€æˆ·é»˜è®¤ç™»å½•æƒé™ }
     THOST_FTDC_SPI_UserRightLogon = '3';    
-  {/Í¶×ÊÕß½»Ò×½áËãµ¥³É½»»ã×Ü·½Ê½ }
+  {/æŠ•èµ„è€…äº¤æ˜“ç»“ç®—å•æˆäº¤æ±‡æ€»æ–¹å¼ }
     THOST_FTDC_SPI_SettlementBillTrade = '4';    
-  {/Í³Ò»¿ª»§¸üĞÂ½»Ò×±àÂë·½Ê½ }
+  {/ç»Ÿä¸€å¼€æˆ·æ›´æ–°äº¤æ˜“ç¼–ç æ–¹å¼ }
     THOST_FTDC_SPI_TradingCode = '5';    
-  {/½áËãÊÇ·ñÅĞ¶Ï´æÔÚÎ´¸´ºËµÄ³öÈë½ğºÍ·ÖÏî×Ê½ğ }
+  {/ç»“ç®—æ˜¯å¦åˆ¤æ–­å­˜åœ¨æœªå¤æ ¸çš„å‡ºå…¥é‡‘å’Œåˆ†é¡¹èµ„é‡‘ }
     THOST_FTDC_SPI_CheckFund = '6';    
-  {/ÊÇ·ñÆôÓÃÊÖĞø·ÑÄ£°åÊı¾İÈ¨ÏŞ }
+  {/æ˜¯å¦å¯ç”¨æ‰‹ç»­è´¹æ¨¡æ¿æ•°æ®æƒé™ }
     THOST_FTDC_SPI_CommModelRight = '7';    
-  {/ÊÇ·ñÆôÓÃ±£Ö¤½ğÂÊÄ£°åÊı¾İÈ¨ÏŞ }
+  {/æ˜¯å¦å¯ç”¨ä¿è¯é‡‘ç‡æ¨¡æ¿æ•°æ®æƒé™ }
     THOST_FTDC_SPI_MarginModelRight = '9';    
-  {/ÊÇ·ñ¹æ·¶ÓÃ»§²ÅÄÜ¼¤»î }
+  {/æ˜¯å¦è§„èŒƒç”¨æˆ·æ‰èƒ½æ¿€æ´» }
     THOST_FTDC_SPI_IsStandardActive = '8';    
-  {/ÉÏ´«µÄ½»Ò×Ëù½áËãÎÄ¼şÂ·¾¶ }
+  {/ä¸Šä¼ çš„äº¤æ˜“æ‰€ç»“ç®—æ–‡ä»¶è·¯å¾„ }
     THOST_FTDC_SPI_UploadSettlementFile = 'U';    
-  {/ÉÏ±¨±£Ö¤½ğ¼à¿ØÖĞĞÄÎÄ¼şÂ·¾¶ }
+  {/ä¸ŠæŠ¥ä¿è¯é‡‘ç›‘æ§ä¸­å¿ƒæ–‡ä»¶è·¯å¾„ }
     THOST_FTDC_SPI_DownloadCSRCFile = 'D';    
-  {/Éú³ÉµÄ½áËãµ¥ÎÄ¼şÂ·¾¶ }
+  {/ç”Ÿæˆçš„ç»“ç®—å•æ–‡ä»¶è·¯å¾„ }
     THOST_FTDC_SPI_SettlementBillFile = 'S';    
-  {/Ö¤¼à»áÎÄ¼ş±êÊ¶ }
+  {/è¯ç›‘ä¼šæ–‡ä»¶æ ‡è¯† }
     THOST_FTDC_SPI_CSRCOthersFile = 'C';    
-  {/Í¶×ÊÕßÕÕÆ¬Â·¾¶ }
+  {/æŠ•èµ„è€…ç…§ç‰‡è·¯å¾„ }
     THOST_FTDC_SPI_InvestorPhoto = 'P';    
-  {/È«½á¾­¼Í¹«Ë¾ÉÏ´«ÎÄ¼şÂ·¾¶ }
+  {/å…¨ç»“ç»çºªå…¬å¸ä¸Šä¼ æ–‡ä»¶è·¯å¾„ }
     THOST_FTDC_SPI_CSRCData = 'R';    
-  {/¿ª»§ÃÜÂëÂ¼Èë·½Ê½ }
+  {/å¼€æˆ·å¯†ç å½•å…¥æ–¹å¼ }
     THOST_FTDC_SPI_InvestorPwdModel = 'I';    
-  {/Í¶×ÊÕßÖĞ½ğËù½áËãÎÄ¼şÏÂÔØÂ·¾¶ }
+  {/æŠ•èµ„è€…ä¸­é‡‘æ‰€ç»“ç®—æ–‡ä»¶ä¸‹è½½è·¯å¾„ }
     THOST_FTDC_SPI_CFFEXInvestorSettleFile = 'F';    
-  {/Í¶×ÊÕß´úÂë±àÂë·½Ê½ }
+  {/æŠ•èµ„è€…ä»£ç ç¼–ç æ–¹å¼ }
     THOST_FTDC_SPI_InvestorIDType = 'a';    
-  {/ĞİÃß»§×î¸ßÈ¨Òæ }
+  {/ä¼‘çœ æˆ·æœ€é«˜æƒç›Š }
     THOST_FTDC_SPI_FreezeMaxReMain = 'r';    
-  {/ÊÖĞø·ÑÏà¹Ø²Ù×÷ÊµÊ±ÉÏ³¡¿ª¹Ø }
+  {/æ‰‹ç»­è´¹ç›¸å…³æ“ä½œå®æ—¶ä¸Šåœºå¼€å…³ }
     THOST_FTDC_SPI_IsSync = 'A';    
-  {/½â³ı¿ª²ÖÈ¨ÏŞÏŞÖÆ }
+  {/è§£é™¤å¼€ä»“æƒé™é™åˆ¶ }
     THOST_FTDC_SPI_RelieveOpenLimit = 'O';    
-  {/ÊÇ·ñ¹æ·¶ÓÃ»§²ÅÄÜĞİÃß }
+  {/æ˜¯å¦è§„èŒƒç”¨æˆ·æ‰èƒ½ä¼‘çœ  }
     THOST_FTDC_SPI_IsStandardFreeze = 'X';    
-  {/Ö£ÉÌËùÊÇ·ñ¿ª·ÅËùÓĞÆ·ÖÖÌ×±£½»Ò× }
+  {/éƒ‘å•†æ‰€æ˜¯å¦å¼€æ”¾æ‰€æœ‰å“ç§å¥—ä¿äº¤æ˜“ }
     THOST_FTDC_SPI_CZCENormalProductHedge = 'B';    
 
   type
     PTThostFtdcSystemParamIDType = ^TThostFtdcSystemParamIDType;
     TThostFtdcSystemParamIDType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTradeParamIDTypeÊÇÒ»¸ö½»Ò×ÏµÍ³²ÎÊı´úÂëÀàĞÍ }
+  {/TFtdcTradeParamIDTypeæ˜¯ä¸€ä¸ªäº¤æ˜“ç³»ç»Ÿå‚æ•°ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÏµÍ³¼ÓÃÜËã·¨ }
+  {/ç³»ç»ŸåŠ å¯†ç®—æ³• }
 
   const
     THOST_FTDC_TPID_EncryptionStandard = 'E';    
-  {/ÏµÍ³·çÏÕËã·¨ }
+  {/ç³»ç»Ÿé£é™©ç®—æ³• }
     THOST_FTDC_TPID_RiskMode = 'R';    
-  {/ÏµÍ³·çÏÕËã·¨ÊÇ·ñÈ«¾Ö 0-·ñ 1-ÊÇ }
+  {/ç³»ç»Ÿé£é™©ç®—æ³•æ˜¯å¦å…¨å±€ 0-å¦ 1-æ˜¯ }
     THOST_FTDC_TPID_RiskModeGlobal = 'G';    
-  {/ÃÜÂë¼ÓÃÜËã·¨ }
+  {/å¯†ç åŠ å¯†ç®—æ³• }
     THOST_FTDC_TPID_modeEncode = 'P';    
-  {/¼Û¸ñĞ¡ÊıÎ»Êı²ÎÊı }
+  {/ä»·æ ¼å°æ•°ä½æ•°å‚æ•° }
     THOST_FTDC_TPID_tickMode = 'T';    
-  {/ÓÃ»§×î´ó»á»°Êı }
+  {/ç”¨æˆ·æœ€å¤§ä¼šè¯æ•° }
     THOST_FTDC_TPID_SingleUserSessionMaxNum = 'S';    
-  {/×î´óÁ¬ĞøµÇÂ¼Ê§°ÜÊı }
+  {/æœ€å¤§è¿ç»­ç™»å½•å¤±è´¥æ•° }
     THOST_FTDC_TPID_LoginFailMaxNum = 'L';    
-  {/ÊÇ·ñÇ¿ÖÆÈÏÖ¤ }
+  {/æ˜¯å¦å¼ºåˆ¶è®¤è¯ }
     THOST_FTDC_TPID_IsAuthForce = 'A';    
-  {/ÊÇ·ñ¶³½áÖ¤È¯³Ö²Ö }
+  {/æ˜¯å¦å†»ç»“è¯åˆ¸æŒä»“ }
     THOST_FTDC_TPID_IsPosiFreeze = 'F';    
-  {/ÊÇ·ñÏŞ²Ö }
+  {/æ˜¯å¦é™ä»“ }
     THOST_FTDC_TPID_IsPosiLimit = 'M';    
-  {/Ö£ÉÌËùÑ¯¼ÛÊ±¼ä¼ä¸ô }
+  {/éƒ‘å•†æ‰€è¯¢ä»·æ—¶é—´é—´éš” }
     THOST_FTDC_TPID_ForQuoteTimeInterval = 'Q';    
-  {/ÊÇ·ñÆÚ»õÏŞ²Ö }
+  {/æ˜¯å¦æœŸè´§é™ä»“ }
     THOST_FTDC_TPID_IsFuturePosiLimit = 'B';    
-  {/ÊÇ·ñÆÚ»õÏÂµ¥ÆµÂÊÏŞÖÆ }
+  {/æ˜¯å¦æœŸè´§ä¸‹å•é¢‘ç‡é™åˆ¶ }
     THOST_FTDC_TPID_IsFutureOrderFreq = 'C';    
-  {/ĞĞÈ¨¶³½áÊÇ·ñ¼ÆËãÓ¯Àû }
+  {/è¡Œæƒå†»ç»“æ˜¯å¦è®¡ç®—ç›ˆåˆ© }
     THOST_FTDC_TPID_IsExecOrderProfit = 'H';    
-  {/ÒøÆÚ¿ª»§ÊÇ·ñÑéÖ¤¿ª»§ÒøĞĞ¿¨ºÅÊÇ·ñÊÇÔ¤ÁôÒøĞĞÕË»§ }
+  {/é“¶æœŸå¼€æˆ·æ˜¯å¦éªŒè¯å¼€æˆ·é“¶è¡Œå¡å·æ˜¯å¦æ˜¯é¢„ç•™é“¶è¡Œè´¦æˆ· }
     THOST_FTDC_TPID_IsCheckBankAcc = 'I';    
-  {/ÈõÃÜÂë×îºóĞŞ¸ÄÈÕÆÚ }
+  {/å¼±å¯†ç æœ€åä¿®æ”¹æ—¥æœŸ }
     THOST_FTDC_TPID_PasswordDeadLine = 'J';    
-  {/Ç¿ÃÜÂëĞ£Ñé }
+  {/å¼ºå¯†ç æ ¡éªŒ }
     THOST_FTDC_TPID_IsStrongPassword = 'K';    
-  {/×ÔÓĞ×Ê½ğÖÊÑº±È }
+  {/è‡ªæœ‰èµ„é‡‘è´¨æŠ¼æ¯” }
     THOST_FTDC_TPID_BalanceMorgage = 'a';    
-  {/×îĞ¡ÃÜÂë³¤¶È }
+  {/æœ€å°å¯†ç é•¿åº¦ }
     THOST_FTDC_TPID_MinPwdLen = 'O';    
-  {/IPµ±ÈÕ×î´óµÇÂ½Ê§°Ü´ÎÊı }
+  {/IPå½“æ—¥æœ€å¤§ç™»é™†å¤±è´¥æ¬¡æ•° }
     THOST_FTDC_TPID_LoginFailMaxNumForIP = 'U';    
-  {/ÃÜÂëÓĞĞ§ÆÚ }
+  {/å¯†ç æœ‰æ•ˆæœŸ }
     THOST_FTDC_TPID_PasswordPeriod = 'V';    
 
   type
     PTThostFtdcTradeParamIDType = ^TThostFtdcTradeParamIDType;
     TThostFtdcTradeParamIDType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSettlementParamValueTypeÊÇÒ»¸ö²ÎÊı´úÂëÖµÀàĞÍ }
+  {/TFtdcSettlementParamValueTypeæ˜¯ä¸€ä¸ªå‚æ•°ä»£ç å€¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcSettlementParamValueType = ^TThostFtdcSettlementParamValueType;
     TThostFtdcSettlementParamValueType = array[0..255] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCounterIDTypeÊÇÒ»¸ö¼ÆÊıÆ÷´úÂëÀàĞÍ }
+  {/TFtdcCounterIDTypeæ˜¯ä¸€ä¸ªè®¡æ•°å™¨ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCounterIDType = ^TThostFtdcCounterIDType;
     TThostFtdcCounterIDType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcInvestorGroupNameTypeÊÇÒ»¸öÍ¶×ÊÕß·Ö×éÃû³ÆÀàĞÍ }
+  {/TFtdcInvestorGroupNameTypeæ˜¯ä¸€ä¸ªæŠ•èµ„è€…åˆ†ç»„åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcInvestorGroupNameType = ^TThostFtdcInvestorGroupNameType;
     TThostFtdcInvestorGroupNameType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBrandCodeTypeÊÇÒ»¸öÅÆºÅÀàĞÍ }
+  {/TFtdcBrandCodeTypeæ˜¯ä¸€ä¸ªç‰Œå·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBrandCodeType = ^TThostFtdcBrandCodeType;
     TThostFtdcBrandCodeType = array[0..256] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcWarehouseTypeÊÇÒ»¸ö²Ö¿âÀàĞÍ }
+  {/TFtdcWarehouseTypeæ˜¯ä¸€ä¸ªä»“åº“ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcWarehouseType = ^TThostFtdcWarehouseType;
     TThostFtdcWarehouseType = array[0..256] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcProductDateTypeÊÇÒ»¸ö²úÆÚÀàĞÍ }
+  {/TFtdcProductDateTypeæ˜¯ä¸€ä¸ªäº§æœŸç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcProductDateType = ^TThostFtdcProductDateType;
     TThostFtdcProductDateType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcGradeTypeÊÇÒ»¸öµÈ¼¶ÀàĞÍ }
+  {/TFtdcGradeTypeæ˜¯ä¸€ä¸ªç­‰çº§ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcGradeType = ^TThostFtdcGradeType;
     TThostFtdcGradeType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcClassifyTypeÊÇÒ»¸öÀà±ğÀàĞÍ }
+  {/TFtdcClassifyTypeæ˜¯ä¸€ä¸ªç±»åˆ«ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcClassifyType = ^TThostFtdcClassifyType;
     TThostFtdcClassifyType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcPositionTypeÊÇÒ»¸ö»õÎ»ÀàĞÍ }
+  {/TFtdcPositionTypeæ˜¯ä¸€ä¸ªè´§ä½ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcPositionType = ^TThostFtdcPositionType;
     TThostFtdcPositionType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcYieldlyTypeÊÇÒ»¸ö²úµØÀàĞÍ }
+  {/TFtdcYieldlyTypeæ˜¯ä¸€ä¸ªäº§åœ°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcYieldlyType = ^TThostFtdcYieldlyType;
     TThostFtdcYieldlyType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcWeightTypeÊÇÒ»¸ö¹«¶¨ÖØÁ¿ÀàĞÍ }
+  {/TFtdcWeightTypeæ˜¯ä¸€ä¸ªå…¬å®šé‡é‡ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcWeightType = ^TThostFtdcWeightType;
     TThostFtdcWeightType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSubEntryFundNoTypeÊÇÒ»¸ö·ÖÏî×Ê½ğÁ÷Ë®ºÅÀàĞÍ }
+  {/TFtdcSubEntryFundNoTypeæ˜¯ä¸€ä¸ªåˆ†é¡¹èµ„é‡‘æµæ°´å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcSubEntryFundNoType = ^TThostFtdcSubEntryFundNoType;
     TThostFtdcSubEntryFundNoType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFileIDTypeÊÇÒ»¸öÎÄ¼ş±êÊ¶ÀàĞÍ }
+  {/TFtdcFileIDTypeæ˜¯ä¸€ä¸ªæ–‡ä»¶æ ‡è¯†ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/×Ê½ğÊı¾İ }
+  {/èµ„é‡‘æ•°æ® }
 
   const
     THOST_FTDC_FI_SettlementFund = 'F';    
-  {/³É½»Êı¾İ }
+  {/æˆäº¤æ•°æ® }
     THOST_FTDC_FI_Trade = 'T';    
-  {/Í¶×ÊÕß³Ö²ÖÊı¾İ }
+  {/æŠ•èµ„è€…æŒä»“æ•°æ® }
     THOST_FTDC_FI_InvestorPosition = 'P';    
-  {/Í¶×ÊÕß·ÖÏî×Ê½ğÊı¾İ }
+  {/æŠ•èµ„è€…åˆ†é¡¹èµ„é‡‘æ•°æ® }
     THOST_FTDC_FI_SubEntryFund = 'O';    
-  {/×éºÏ³Ö²ÖÊı¾İ }
+  {/ç»„åˆæŒä»“æ•°æ® }
     THOST_FTDC_FI_CZCECombinationPos = 'C';    
-  {/ÉÏ±¨±£Ö¤½ğ¼à¿ØÖĞĞÄÊı¾İ }
+  {/ä¸ŠæŠ¥ä¿è¯é‡‘ç›‘æ§ä¸­å¿ƒæ•°æ® }
     THOST_FTDC_FI_CSRCData = 'R';    
-  {/Ö£ÉÌËùÆ½²ÖÁË½áÊı¾İ }
+  {/éƒ‘å•†æ‰€å¹³ä»“äº†ç»“æ•°æ® }
     THOST_FTDC_FI_CZCEClose = 'L';    
-  {/Ö£ÉÌËù·ÇÆ½²ÖÁË½áÊı¾İ }
+  {/éƒ‘å•†æ‰€éå¹³ä»“äº†ç»“æ•°æ® }
     THOST_FTDC_FI_CZCENoClose = 'N';    
-  {/³Ö²ÖÃ÷Ï¸Êı¾İ }
+  {/æŒä»“æ˜ç»†æ•°æ® }
     THOST_FTDC_FI_PositionDtl = 'D';    
-  {/ÆÚÈ¨Ö´ĞĞÎÄ¼ş }
+  {/æœŸæƒæ‰§è¡Œæ–‡ä»¶ }
     THOST_FTDC_FI_OptionStrike = 'S';    
-  {/½áËã¼Û±È¶ÔÎÄ¼ş }
+  {/ç»“ç®—ä»·æ¯”å¯¹æ–‡ä»¶ }
     THOST_FTDC_FI_SettlementPriceComparison = 'M';    
-  {/ÉÏÆÚËù·Ç³Ö²Ö±ä¶¯Ã÷Ï¸ }
+  {/ä¸ŠæœŸæ‰€éæŒä»“å˜åŠ¨æ˜ç»† }
     THOST_FTDC_FI_NonTradePosChange = 'B';    
 
   type
     PTThostFtdcFileIDType = ^TThostFtdcFileIDType;
     TThostFtdcFileIDType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFileNameTypeÊÇÒ»¸öÎÄ¼şÃû³ÆÀàĞÍ }
+  {/TFtdcFileNameTypeæ˜¯ä¸€ä¸ªæ–‡ä»¶åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFileNameType = ^TThostFtdcFileNameType;
     TThostFtdcFileNameType = array[0..256] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFileTypeTypeÊÇÒ»¸öÎÄ¼şÉÏ´«ÀàĞÍÀàĞÍ }
+  {/TFtdcFileTypeTypeæ˜¯ä¸€ä¸ªæ–‡ä»¶ä¸Šä¼ ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/½áËã }
+  {/ç»“ç®— }
 
   const
     THOST_FTDC_FUT_Settlement = '0';    
-  {/ºË¶Ô }
+  {/æ ¸å¯¹ }
     THOST_FTDC_FUT_Check = '1';    
 
   type
     PTThostFtdcFileTypeType = ^TThostFtdcFileTypeType;
     TThostFtdcFileTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFileFormatTypeÊÇÒ»¸öÎÄ¼ş¸ñÊ½ÀàĞÍ }
+  {/TFtdcFileFormatTypeæ˜¯ä¸€ä¸ªæ–‡ä»¶æ ¼å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÎÄ±¾ÎÄ¼ş(.txt) }
+  {/æ–‡æœ¬æ–‡ä»¶(.txt) }
 
   const
     THOST_FTDC_FFT_Txt = '0';    
-  {/Ñ¹ËõÎÄ¼ş(.zip) }
+  {/å‹ç¼©æ–‡ä»¶(.zip) }
     THOST_FTDC_FFT_Zip = '1';    
-  {/DBFÎÄ¼ş(.dbf) }
+  {/DBFæ–‡ä»¶(.dbf) }
     THOST_FTDC_FFT_DBF = '2';    
 
   type
     PTThostFtdcFileFormatType = ^TThostFtdcFileFormatType;
     TThostFtdcFileFormatType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFileUploadStatusTypeÊÇÒ»¸öÎÄ¼ş×´Ì¬ÀàĞÍ }
+  {/TFtdcFileUploadStatusTypeæ˜¯ä¸€ä¸ªæ–‡ä»¶çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÉÏ´«³É¹¦ }
+  {/ä¸Šä¼ æˆåŠŸ }
 
   const
     THOST_FTDC_FUS_SucceedUpload = '1';    
-  {/ÉÏ´«Ê§°Ü }
+  {/ä¸Šä¼ å¤±è´¥ }
     THOST_FTDC_FUS_FailedUpload = '2';    
-  {/µ¼Èë³É¹¦ }
+  {/å¯¼å…¥æˆåŠŸ }
     THOST_FTDC_FUS_SucceedLoad = '3';    
-  {/µ¼Èë²¿·Ö³É¹¦ }
+  {/å¯¼å…¥éƒ¨åˆ†æˆåŠŸ }
     THOST_FTDC_FUS_PartSucceedLoad = '4';    
-  {/µ¼ÈëÊ§°Ü }
+  {/å¯¼å…¥å¤±è´¥ }
     THOST_FTDC_FUS_FailedLoad = '5';    
 
   type
     PTThostFtdcFileUploadStatusType = ^TThostFtdcFileUploadStatusType;
     TThostFtdcFileUploadStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTransferDirectionTypeÊÇÒ»¸öÒÆ²Ö·½ÏòÀàĞÍ }
+  {/TFtdcTransferDirectionTypeæ˜¯ä¸€ä¸ªç§»ä»“æ–¹å‘ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÒÆ³ö }
+  {/ç§»å‡º }
 
   const
     THOST_FTDC_TD_Out = '0';    
-  {/ÒÆÈë }
+  {/ç§»å…¥ }
     THOST_FTDC_TD_In = '1';    
 
   type
     PTThostFtdcTransferDirectionType = ^TThostFtdcTransferDirectionType;
     TThostFtdcTransferDirectionType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcUploadModeTypeÊÇÒ»¸öÉÏ´«ÎÄ¼şÀàĞÍÀàĞÍ }
+  {/TFtdcUploadModeTypeæ˜¯ä¸€ä¸ªä¸Šä¼ æ–‡ä»¶ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcUploadModeType = ^TThostFtdcUploadModeType;
     TThostFtdcUploadModeType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAccountIDTypeÊÇÒ»¸öÍ¶×ÊÕßÕÊºÅÀàĞÍ }
+  {/TFtdcAccountIDTypeæ˜¯ä¸€ä¸ªæŠ•èµ„è€…å¸å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAccountIDType = ^TThostFtdcAccountIDType;
     TThostFtdcAccountIDType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBankFlagTypeÊÇÒ»¸öÒøĞĞÍ³Ò»±êÊ¶ÀàĞÍÀàĞÍ }
+  {/TFtdcBankFlagTypeæ˜¯ä¸€ä¸ªé“¶è¡Œç»Ÿä¸€æ ‡è¯†ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBankFlagType = ^TThostFtdcBankFlagType;
     TThostFtdcBankFlagType = array[0..3] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBankAccountTypeÊÇÒ»¸öÒøĞĞÕË»§ÀàĞÍ }
+  {/TFtdcBankAccountTypeæ˜¯ä¸€ä¸ªé“¶è¡Œè´¦æˆ·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBankAccountType = ^TThostFtdcBankAccountType;
     TThostFtdcBankAccountType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOpenNameTypeÊÇÒ»¸öÒøĞĞÕË»§µÄ¿ª»§ÈËÃû³ÆÀàĞÍ }
+  {/TFtdcOpenNameTypeæ˜¯ä¸€ä¸ªé“¶è¡Œè´¦æˆ·çš„å¼€æˆ·äººåç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcOpenNameType = ^TThostFtdcOpenNameType;
     TThostFtdcOpenNameType = array[0..60] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOpenBankTypeÊÇÒ»¸öÒøĞĞÕË»§µÄ¿ª»§ĞĞÀàĞÍ }
+  {/TFtdcOpenBankTypeæ˜¯ä¸€ä¸ªé“¶è¡Œè´¦æˆ·çš„å¼€æˆ·è¡Œç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcOpenBankType = ^TThostFtdcOpenBankType;
     TThostFtdcOpenBankType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBankNameTypeÊÇÒ»¸öÒøĞĞÃû³ÆÀàĞÍ }
+  {/TFtdcBankNameTypeæ˜¯ä¸€ä¸ªé“¶è¡Œåç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBankNameType = ^TThostFtdcBankNameType;
     TThostFtdcBankNameType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcPublishPathTypeÊÇÒ»¸ö·¢²¼Â·¾¶ÀàĞÍ }
+  {/TFtdcPublishPathTypeæ˜¯ä¸€ä¸ªå‘å¸ƒè·¯å¾„ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcPublishPathType = ^TThostFtdcPublishPathType;
     TThostFtdcPublishPathType = array[0..256] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOperatorIDTypeÊÇÒ»¸ö²Ù×÷Ô±´úÂëÀàĞÍ }
+  {/TFtdcOperatorIDTypeæ˜¯ä¸€ä¸ªæ“ä½œå‘˜ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcOperatorIDType = ^TThostFtdcOperatorIDType;
     TThostFtdcOperatorIDType = array[0..64] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcMonthCountTypeÊÇÒ»¸öÔÂ·İÊıÁ¿ÀàĞÍ }
+  {/TFtdcMonthCountTypeæ˜¯ä¸€ä¸ªæœˆä»½æ•°é‡ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcMonthCountType = ^TThostFtdcMonthCountType;
     TThostFtdcMonthCountType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAdvanceMonthArrayTypeÊÇÒ»¸öÔÂ·İÌáÇ°Êı×éÀàĞÍ }
+  {/TFtdcAdvanceMonthArrayTypeæ˜¯ä¸€ä¸ªæœˆä»½æå‰æ•°ç»„ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAdvanceMonthArrayType = ^TThostFtdcAdvanceMonthArrayType;
     TThostFtdcAdvanceMonthArrayType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcDateExprTypeÊÇÒ»¸öÈÕÆÚ±í´ïÊ½ÀàĞÍ }
+  {/TFtdcDateExprTypeæ˜¯ä¸€ä¸ªæ—¥æœŸè¡¨è¾¾å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcDateExprType = ^TThostFtdcDateExprType;
     TThostFtdcDateExprType = array[0..1024] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcInstrumentIDExprTypeÊÇÒ»¸öºÏÔ¼´úÂë±í´ïÊ½ÀàĞÍ }
+  {/TFtdcInstrumentIDExprTypeæ˜¯ä¸€ä¸ªåˆçº¦ä»£ç è¡¨è¾¾å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcInstrumentIDExprType = ^TThostFtdcInstrumentIDExprType;
     TThostFtdcInstrumentIDExprType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcInstrumentNameExprTypeÊÇÒ»¸öºÏÔ¼Ãû³Æ±í´ïÊ½ÀàĞÍ }
+  {/TFtdcInstrumentNameExprTypeæ˜¯ä¸€ä¸ªåˆçº¦åç§°è¡¨è¾¾å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcInstrumentNameExprType = ^TThostFtdcInstrumentNameExprType;
     TThostFtdcInstrumentNameExprType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSpecialCreateRuleTypeÊÇÒ»¸öÌØÊâµÄ´´½¨¹æÔòÀàĞÍ }
+  {/TFtdcSpecialCreateRuleTypeæ˜¯ä¸€ä¸ªç‰¹æ®Šçš„åˆ›å»ºè§„åˆ™ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Ã»ÓĞÌØÊâ´´½¨¹æÔò }
+  {/æ²¡æœ‰ç‰¹æ®Šåˆ›å»ºè§„åˆ™ }
 
   const
     THOST_FTDC_SC_NoSpecialRule = '0';    
-  {/²»°üº¬´º½Ú }
+  {/ä¸åŒ…å«æ˜¥èŠ‚ }
     THOST_FTDC_SC_NoSpringFestival = '1';    
 
   type
     PTThostFtdcSpecialCreateRuleType = ^TThostFtdcSpecialCreateRuleType;
     TThostFtdcSpecialCreateRuleType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBasisPriceTypeTypeÊÇÒ»¸ö¹ÒÅÆ»ù×¼¼ÛÀàĞÍÀàĞÍ }
+  {/TFtdcBasisPriceTypeTypeæ˜¯ä¸€ä¸ªæŒ‚ç‰ŒåŸºå‡†ä»·ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÉÏÒ»ºÏÔ¼½áËã¼Û }
+  {/ä¸Šä¸€åˆçº¦ç»“ç®—ä»· }
 
   const
     THOST_FTDC_IPT_LastSettlement = '1';    
-  {/ÉÏÒ»ºÏÔ¼ÊÕÅÌ¼Û }
+  {/ä¸Šä¸€åˆçº¦æ”¶ç›˜ä»· }
     THOST_FTDC_IPT_LaseClose = '2';    
 
   type
     PTThostFtdcBasisPriceTypeType = ^TThostFtdcBasisPriceTypeType;
     TThostFtdcBasisPriceTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcProductLifePhaseTypeÊÇÒ»¸ö²úÆ·ÉúÃüÖÜÆÚ×´Ì¬ÀàĞÍ }
+  {/TFtdcProductLifePhaseTypeæ˜¯ä¸€ä¸ªäº§å“ç”Ÿå‘½å‘¨æœŸçŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/»îÔ¾ }
+  {/æ´»è·ƒ }
 
   const
     THOST_FTDC_PLP_Active = '1';    
-  {/²»»îÔ¾ }
+  {/ä¸æ´»è·ƒ }
     THOST_FTDC_PLP_NonActive = '2';    
-  {/×¢Ïú }
+  {/æ³¨é”€ }
     THOST_FTDC_PLP_Canceled = '3';    
 
   type
     PTThostFtdcProductLifePhaseType = ^TThostFtdcProductLifePhaseType;
     TThostFtdcProductLifePhaseType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcDeliveryModeTypeÊÇÒ»¸ö½»¸î·½Ê½ÀàĞÍ }
+  {/TFtdcDeliveryModeTypeæ˜¯ä¸€ä¸ªäº¤å‰²æ–¹å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÏÖ½ğ½»¸î }
+  {/ç°é‡‘äº¤å‰² }
 
   const
     THOST_FTDC_DM_CashDeliv = '1';    
-  {/ÊµÎï½»¸î }
+  {/å®ç‰©äº¤å‰² }
     THOST_FTDC_DM_CommodityDeliv = '2';    
 
   type
     PTThostFtdcDeliveryModeType = ^TThostFtdcDeliveryModeType;
     TThostFtdcDeliveryModeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcLogLevelTypeÊÇÒ»¸öÈÕÖ¾¼¶±ğÀàĞÍ }
+  {/TFtdcLogLevelTypeæ˜¯ä¸€ä¸ªæ—¥å¿—çº§åˆ«ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcLogLevelType = ^TThostFtdcLogLevelType;
     TThostFtdcLogLevelType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcProcessNameTypeÊÇÒ»¸ö´æ´¢¹ı³ÌÃû³ÆÀàĞÍ }
+  {/TFtdcProcessNameTypeæ˜¯ä¸€ä¸ªå­˜å‚¨è¿‡ç¨‹åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcProcessNameType = ^TThostFtdcProcessNameType;
     TThostFtdcProcessNameType = array[0..256] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOperationMemoTypeÊÇÒ»¸ö²Ù×÷ÕªÒªÀàĞÍ }
+  {/TFtdcOperationMemoTypeæ˜¯ä¸€ä¸ªæ“ä½œæ‘˜è¦ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcOperationMemoType = ^TThostFtdcOperationMemoType;
     TThostFtdcOperationMemoType = array[0..1024] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFundIOTypeTypeÊÇÒ»¸ö³öÈë½ğÀàĞÍÀàĞÍ }
+  {/TFtdcFundIOTypeTypeæ˜¯ä¸€ä¸ªå‡ºå…¥é‡‘ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/³öÈë½ğ }
+  {/å‡ºå…¥é‡‘ }
 
   const
     THOST_FTDC_FIOT_FundIO = '1';    
-  {/ÒøÆÚ×ªÕÊ }
+  {/é“¶æœŸè½¬å¸ }
     THOST_FTDC_FIOT_Transfer = '2';    
-  {/ÒøÆÚ»»»ã }
+  {/é“¶æœŸæ¢æ±‡ }
     THOST_FTDC_FIOT_SwapCurrency = '3';    
 
   type
     PTThostFtdcFundIOTypeType = ^TThostFtdcFundIOTypeType;
     TThostFtdcFundIOTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFundTypeTypeÊÇÒ»¸ö×Ê½ğÀàĞÍÀàĞÍ }
+  {/TFtdcFundTypeTypeæ˜¯ä¸€ä¸ªèµ„é‡‘ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÒøĞĞ´æ¿î }
+  {/é“¶è¡Œå­˜æ¬¾ }
 
   const
     THOST_FTDC_FT_Deposite = '1';    
-  {/·ÖÏî×Ê½ğ }
+  {/åˆ†é¡¹èµ„é‡‘ }
     THOST_FTDC_FT_ItemFund = '2';    
-  {/¹«Ë¾µ÷Õû }
+  {/å…¬å¸è°ƒæ•´ }
     THOST_FTDC_FT_Company = '3';    
-  {/×Ê½ğÄÚ×ª }
+  {/èµ„é‡‘å†…è½¬ }
     THOST_FTDC_FT_InnerTransfer = '4';    
 
   type
     PTThostFtdcFundTypeType = ^TThostFtdcFundTypeType;
     TThostFtdcFundTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFundDirectionTypeÊÇÒ»¸ö³öÈë½ğ·½ÏòÀàĞÍ }
+  {/TFtdcFundDirectionTypeæ˜¯ä¸€ä¸ªå‡ºå…¥é‡‘æ–¹å‘ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Èë½ğ }
+  {/å…¥é‡‘ }
 
   const
     THOST_FTDC_FD_In = '1';    
-  {/³ö½ğ }
+  {/å‡ºé‡‘ }
     THOST_FTDC_FD_Out = '2';    
 
   type
     PTThostFtdcFundDirectionType = ^TThostFtdcFundDirectionType;
     TThostFtdcFundDirectionType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFundStatusTypeÊÇÒ»¸ö×Ê½ğ×´Ì¬ÀàĞÍ }
+  {/TFtdcFundStatusTypeæ˜¯ä¸€ä¸ªèµ„é‡‘çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÒÑÂ¼Èë }
+  {/å·²å½•å…¥ }
 
   const
     THOST_FTDC_FS_Record = '1';    
-  {/ÒÑ¸´ºË }
+  {/å·²å¤æ ¸ }
     THOST_FTDC_FS_Check = '2';    
-  {/ÒÑ³åÏú }
+  {/å·²å†²é”€ }
     THOST_FTDC_FS_AnsiCharge = '3';
 
   type
     PTThostFtdcFundStatusType = ^TThostFtdcFundStatusType;
     TThostFtdcFundStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBillNoTypeÊÇÒ»¸öÆ±¾İºÅÀàĞÍ }
+  {/TFtdcBillNoTypeæ˜¯ä¸€ä¸ªç¥¨æ®å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBillNoType = ^TThostFtdcBillNoType;
     TThostFtdcBillNoType = array[0..14] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBillNameTypeÊÇÒ»¸öÆ±¾İÃû³ÆÀàĞÍ }
+  {/TFtdcBillNameTypeæ˜¯ä¸€ä¸ªç¥¨æ®åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBillNameType = ^TThostFtdcBillNameType;
     TThostFtdcBillNameType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcPublishStatusTypeÊÇÒ»¸ö·¢²¼×´Ì¬ÀàĞÍ }
+  {/TFtdcPublishStatusTypeæ˜¯ä¸€ä¸ªå‘å¸ƒçŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Î´·¢²¼ }
+  {/æœªå‘å¸ƒ }
 
   const
     THOST_FTDC_PS_None = '1';    
-  {/ÕıÔÚ·¢²¼ }
+  {/æ­£åœ¨å‘å¸ƒ }
     THOST_FTDC_PS_Publishing = '2';    
-  {/ÒÑ·¢²¼ }
+  {/å·²å‘å¸ƒ }
     THOST_FTDC_PS_Published = '3';    
 
   type
     PTThostFtdcPublishStatusType = ^TThostFtdcPublishStatusType;
     TThostFtdcPublishStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcEnumValueIDTypeÊÇÒ»¸öÃ¶¾ÙÖµ´úÂëÀàĞÍ }
+  {/TFtdcEnumValueIDTypeæ˜¯ä¸€ä¸ªæšä¸¾å€¼ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcEnumValueIDType = ^TThostFtdcEnumValueIDType;
     TThostFtdcEnumValueIDType = array[0..64] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcEnumValueTypeTypeÊÇÒ»¸öÃ¶¾ÙÖµÀàĞÍÀàĞÍ }
+  {/TFtdcEnumValueTypeTypeæ˜¯ä¸€ä¸ªæšä¸¾å€¼ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcEnumValueTypeType = ^TThostFtdcEnumValueTypeType;
     TThostFtdcEnumValueTypeType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcEnumValueLabelTypeÊÇÒ»¸öÃ¶¾ÙÖµÃû³ÆÀàĞÍ }
+  {/TFtdcEnumValueLabelTypeæ˜¯ä¸€ä¸ªæšä¸¾å€¼åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcEnumValueLabelType = ^TThostFtdcEnumValueLabelType;
     TThostFtdcEnumValueLabelType = array[0..64] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcEnumValueResultTypeÊÇÒ»¸öÃ¶¾ÙÖµ½á¹ûÀàĞÍ }
+  {/TFtdcEnumValueResultTypeæ˜¯ä¸€ä¸ªæšä¸¾å€¼ç»“æœç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcEnumValueResultType = ^TThostFtdcEnumValueResultType;
     TThostFtdcEnumValueResultType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSystemStatusTypeÊÇÒ»¸öÏµÍ³×´Ì¬ÀàĞÍ }
+  {/TFtdcSystemStatusTypeæ˜¯ä¸€ä¸ªç³»ç»ŸçŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/²»»îÔ¾ }
+  {/ä¸æ´»è·ƒ }
 
   const
     THOST_FTDC_ES_NonActive = '1';    
-  {/Æô¶¯ }
+  {/å¯åŠ¨ }
     THOST_FTDC_ES_Startup = '2';    
-  {/½»Ò×¿ªÊ¼³õÊ¼»¯ }
+  {/äº¤æ˜“å¼€å§‹åˆå§‹åŒ– }
     THOST_FTDC_ES_Initialize = '3';    
-  {/½»Ò×Íê³É³õÊ¼»¯ }
+  {/äº¤æ˜“å®Œæˆåˆå§‹åŒ– }
     THOST_FTDC_ES_Initialized = '4';    
-  {/ÊÕÊĞ¿ªÊ¼ }
+  {/æ”¶å¸‚å¼€å§‹ }
     THOST_FTDC_ES_Close = '5';    
-  {/ÊÕÊĞÍê³É }
+  {/æ”¶å¸‚å®Œæˆ }
     THOST_FTDC_ES_Closed = '6';    
-  {/½áËã }
+  {/ç»“ç®— }
     THOST_FTDC_ES_Settlement = '7';    
 
   type
     PTThostFtdcSystemStatusType = ^TThostFtdcSystemStatusType;
     TThostFtdcSystemStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSettlementStatusTypeÊÇÒ»¸ö½áËã×´Ì¬ÀàĞÍ }
+  {/TFtdcSettlementStatusTypeæ˜¯ä¸€ä¸ªç»“ç®—çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/³õÊ¼ }
+  {/åˆå§‹ }
 
   const
     THOST_FTDC_STS_Initialize = '0';    
-  {/½áËãÖĞ }
+  {/ç»“ç®—ä¸­ }
     THOST_FTDC_STS_Settlementing = '1';    
-  {/ÒÑ½áËã }
+  {/å·²ç»“ç®— }
     THOST_FTDC_STS_Settlemented = '2';    
-  {/½áËãÍê³É }
+  {/ç»“ç®—å®Œæˆ }
     THOST_FTDC_STS_Finished = '3';    
 
   type
     PTThostFtdcSettlementStatusType = ^TThostFtdcSettlementStatusType;
     TThostFtdcSettlementStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcRangeIntTypeTypeÊÇÒ»¸öÏŞ¶¨ÖµÀàĞÍÀàĞÍ }
+  {/TFtdcRangeIntTypeTypeæ˜¯ä¸€ä¸ªé™å®šå€¼ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcRangeIntTypeType = ^TThostFtdcRangeIntTypeType;
     TThostFtdcRangeIntTypeType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcRangeIntFromTypeÊÇÒ»¸öÏŞ¶¨ÖµÏÂÏŞÀàĞÍ }
+  {/TFtdcRangeIntFromTypeæ˜¯ä¸€ä¸ªé™å®šå€¼ä¸‹é™ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcRangeIntFromType = ^TThostFtdcRangeIntFromType;
     TThostFtdcRangeIntFromType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcRangeIntToTypeÊÇÒ»¸öÏŞ¶¨ÖµÉÏÏŞÀàĞÍ }
+  {/TFtdcRangeIntToTypeæ˜¯ä¸€ä¸ªé™å®šå€¼ä¸Šé™ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcRangeIntToType = ^TThostFtdcRangeIntToType;
     TThostFtdcRangeIntToType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFunctionIDTypeÊÇÒ»¸ö¹¦ÄÜ´úÂëÀàĞÍ }
+  {/TFtdcFunctionIDTypeæ˜¯ä¸€ä¸ªåŠŸèƒ½ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFunctionIDType = ^TThostFtdcFunctionIDType;
     TThostFtdcFunctionIDType = array[0..24] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFunctionValueCodeTypeÊÇÒ»¸ö¹¦ÄÜ±àÂëÀàĞÍ }
+  {/TFtdcFunctionValueCodeTypeæ˜¯ä¸€ä¸ªåŠŸèƒ½ç¼–ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFunctionValueCodeType = ^TThostFtdcFunctionValueCodeType;
     TThostFtdcFunctionValueCodeType = array[0..256] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFunctionNameTypeÊÇÒ»¸ö¹¦ÄÜÃû³ÆÀàĞÍ }
+  {/TFtdcFunctionNameTypeæ˜¯ä¸€ä¸ªåŠŸèƒ½åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFunctionNameType = ^TThostFtdcFunctionNameType;
     TThostFtdcFunctionNameType = array[0..64] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcRoleIDTypeÊÇÒ»¸ö½ÇÉ«±àºÅÀàĞÍ }
+  {/TFtdcRoleIDTypeæ˜¯ä¸€ä¸ªè§’è‰²ç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcRoleIDType = ^TThostFtdcRoleIDType;
     TThostFtdcRoleIDType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcRoleNameTypeÊÇÒ»¸ö½ÇÉ«Ãû³ÆÀàĞÍ }
+  {/TFtdcRoleNameTypeæ˜¯ä¸€ä¸ªè§’è‰²åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcRoleNameType = ^TThostFtdcRoleNameType;
     TThostFtdcRoleNameType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcDescriptionTypeÊÇÒ»¸öÃèÊöÀàĞÍ }
+  {/TFtdcDescriptionTypeæ˜¯ä¸€ä¸ªæè¿°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcDescriptionType = ^TThostFtdcDescriptionType;
     TThostFtdcDescriptionType = array[0..400] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCombineIDTypeÊÇÒ»¸ö×éºÏ±àºÅÀàĞÍ }
+  {/TFtdcCombineIDTypeæ˜¯ä¸€ä¸ªç»„åˆç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCombineIDType = ^TThostFtdcCombineIDType;
     TThostFtdcCombineIDType = array[0..24] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCombineTypeTypeÊÇÒ»¸ö×éºÏÀàĞÍÀàĞÍ }
+  {/TFtdcCombineTypeTypeæ˜¯ä¸€ä¸ªç»„åˆç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCombineTypeType = ^TThostFtdcCombineTypeType;
     TThostFtdcCombineTypeType = array[0..24] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcInvestorTypeTypeÊÇÒ»¸öÍ¶×ÊÕßÀàĞÍÀàĞÍ }
+  {/TFtdcInvestorTypeTypeæ˜¯ä¸€ä¸ªæŠ•èµ„è€…ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/×ÔÈ»ÈË }
+  {/è‡ªç„¶äºº }
 
   const
     THOST_FTDC_CT_Person = '0';    
-  {/·¨ÈË }
+  {/æ³•äºº }
     THOST_FTDC_CT_Company = '1';    
-  {/Í¶×Ê»ù½ğ }
+  {/æŠ•èµ„åŸºé‡‘ }
     THOST_FTDC_CT_Fund = '2';    
-  {/ÌØÊâ·¨ÈË }
+  {/ç‰¹æ®Šæ³•äºº }
     THOST_FTDC_CT_SpecialOrgan = '3';    
-  {/×Ê¹Ü»§ }
+  {/èµ„ç®¡æˆ· }
     THOST_FTDC_CT_Asset = '4';    
 
   type
     PTThostFtdcInvestorTypeType = ^TThostFtdcInvestorTypeType;
     TThostFtdcInvestorTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBrokerTypeTypeÊÇÒ»¸ö¾­¼Í¹«Ë¾ÀàĞÍÀàĞÍ }
+  {/TFtdcBrokerTypeTypeæ˜¯ä¸€ä¸ªç»çºªå…¬å¸ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/½»Ò×»áÔ± }
+  {/äº¤æ˜“ä¼šå‘˜ }
 
   const
     THOST_FTDC_BT_Trade = '0';    
-  {/½»Ò×½áËã»áÔ± }
+  {/äº¤æ˜“ç»“ç®—ä¼šå‘˜ }
     THOST_FTDC_BT_TradeSettle = '1';    
 
   type
     PTThostFtdcBrokerTypeType = ^TThostFtdcBrokerTypeType;
     TThostFtdcBrokerTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcRiskLevelTypeÊÇÒ»¸ö·çÏÕµÈ¼¶ÀàĞÍ }
+  {/TFtdcRiskLevelTypeæ˜¯ä¸€ä¸ªé£é™©ç­‰çº§ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/µÍ·çÏÕ¿Í»§ }
+  {/ä½é£é™©å®¢æˆ· }
 
   const
     THOST_FTDC_FAS_Low = '1';    
-  {/ÆÕÍ¨¿Í»§ }
+  {/æ™®é€šå®¢æˆ· }
     THOST_FTDC_FAS_Normal = '2';    
-  {/¹Ø×¢¿Í»§ }
+  {/å…³æ³¨å®¢æˆ· }
     THOST_FTDC_FAS_Focus = '3';    
-  {/·çÏÕ¿Í»§ }
+  {/é£é™©å®¢æˆ· }
     THOST_FTDC_FAS_Risk = '4';    
 
   type
     PTThostFtdcRiskLevelType = ^TThostFtdcRiskLevelType;
     TThostFtdcRiskLevelType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFeeAcceptStyleTypeÊÇÒ»¸öÊÖĞø·ÑÊÕÈ¡·½Ê½ÀàĞÍ }
+  {/TFtdcFeeAcceptStyleTypeæ˜¯ä¸€ä¸ªæ‰‹ç»­è´¹æ”¶å–æ–¹å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/°´½»Ò×ÊÕÈ¡ }
+  {/æŒ‰äº¤æ˜“æ”¶å– }
 
   const
     THOST_FTDC_FAS_ByTrade = '1';    
-  {/°´½»¸îÊÕÈ¡ }
+  {/æŒ‰äº¤å‰²æ”¶å– }
     THOST_FTDC_FAS_ByDeliv = '2';    
-  {/²»ÊÕ }
+  {/ä¸æ”¶ }
     THOST_FTDC_FAS_None = '3';    
-  {/°´Ö¸¶¨ÊÖĞø·ÑÊÕÈ¡ }
+  {/æŒ‰æŒ‡å®šæ‰‹ç»­è´¹æ”¶å– }
     THOST_FTDC_FAS_FixFee = '4';    
 
   type
     PTThostFtdcFeeAcceptStyleType = ^TThostFtdcFeeAcceptStyleType;
     TThostFtdcFeeAcceptStyleType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcPasswordTypeTypeÊÇÒ»¸öÃÜÂëÀàĞÍÀàĞÍ }
+  {/TFtdcPasswordTypeTypeæ˜¯ä¸€ä¸ªå¯†ç ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/½»Ò×ÃÜÂë }
+  {/äº¤æ˜“å¯†ç  }
 
   const
     THOST_FTDC_PWDT_Trade = '1';    
-  {/×Ê½ğÃÜÂë }
+  {/èµ„é‡‘å¯†ç  }
     THOST_FTDC_PWDT_Account = '2';    
 
   type
     PTThostFtdcPasswordTypeType = ^TThostFtdcPasswordTypeType;
     TThostFtdcPasswordTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAlgorithmTypeÊÇÒ»¸öÓ¯¿÷Ëã·¨ÀàĞÍ }
+  {/TFtdcAlgorithmTypeæ˜¯ä¸€ä¸ªç›ˆäºç®—æ³•ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/¸¡Ó¯¸¡¿÷¶¼¼ÆËã }
+  {/æµ®ç›ˆæµ®äºéƒ½è®¡ç®— }
 
   const
     THOST_FTDC_AG_All = '1';    
-  {/¸¡Ó¯²»¼Æ£¬¸¡¿÷¼Æ }
+  {/æµ®ç›ˆä¸è®¡ï¼Œæµ®äºè®¡ }
     THOST_FTDC_AG_OnlyLost = '2';    
-  {/¸¡Ó¯¼Æ£¬¸¡¿÷²»¼Æ }
+  {/æµ®ç›ˆè®¡ï¼Œæµ®äºä¸è®¡ }
     THOST_FTDC_AG_OnlyGain = '3';    
-  {/¸¡Ó¯¸¡¿÷¶¼²»¼ÆËã }
+  {/æµ®ç›ˆæµ®äºéƒ½ä¸è®¡ç®— }
     THOST_FTDC_AG_None = '4';    
 
   type
     PTThostFtdcAlgorithmType = ^TThostFtdcAlgorithmType;
     TThostFtdcAlgorithmType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcIncludeCloseProfitTypeÊÇÒ»¸öÊÇ·ñ°üº¬Æ½²ÖÓ¯ÀûÀàĞÍ }
+  {/TFtdcIncludeCloseProfitTypeæ˜¯ä¸€ä¸ªæ˜¯å¦åŒ…å«å¹³ä»“ç›ˆåˆ©ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/°üº¬Æ½²ÖÓ¯Àû }
+  {/åŒ…å«å¹³ä»“ç›ˆåˆ© }
 
   const
     THOST_FTDC_ICP_Include = '0';    
-  {/²»°üº¬Æ½²ÖÓ¯Àû }
+  {/ä¸åŒ…å«å¹³ä»“ç›ˆåˆ© }
     THOST_FTDC_ICP_NotInclude = '2';    
 
   type
     PTThostFtdcIncludeCloseProfitType = ^TThostFtdcIncludeCloseProfitType;
     TThostFtdcIncludeCloseProfitType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAllWithoutTradeTypeÊÇÒ»¸öÊÇ·ñÊÜ¿ÉÌá±ÈÀıÏŞÖÆÀàĞÍ }
+  {/TFtdcAllWithoutTradeTypeæ˜¯ä¸€ä¸ªæ˜¯å¦å—å¯ææ¯”ä¾‹é™åˆ¶ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÎŞ²ÖÎŞ³É½»²»ÊÜ¿ÉÌá±ÈÀıÏŞÖÆ }
+  {/æ— ä»“æ— æˆäº¤ä¸å—å¯ææ¯”ä¾‹é™åˆ¶ }
 
   const
     THOST_FTDC_AWT_Enable = '0';    
-  {/ÊÜ¿ÉÌá±ÈÀıÏŞÖÆ }
+  {/å—å¯ææ¯”ä¾‹é™åˆ¶ }
     THOST_FTDC_AWT_Disable = '2';    
-  {/ÎŞ²Ö²»ÊÜ¿ÉÌá±ÈÀıÏŞÖÆ }
+  {/æ— ä»“ä¸å—å¯ææ¯”ä¾‹é™åˆ¶ }
     THOST_FTDC_AWT_NoHoldEnable = '3';    
 
   type
     PTThostFtdcAllWithoutTradeType = ^TThostFtdcAllWithoutTradeType;
     TThostFtdcAllWithoutTradeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCommentTypeÊÇÒ»¸öÓ¯¿÷Ëã·¨ËµÃ÷ÀàĞÍ }
+  {/TFtdcCommentTypeæ˜¯ä¸€ä¸ªç›ˆäºç®—æ³•è¯´æ˜ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCommentType = ^TThostFtdcCommentType;
     TThostFtdcCommentType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcVersionTypeÊÇÒ»¸ö°æ±¾ºÅÀàĞÍ }
+  {/TFtdcVersionTypeæ˜¯ä¸€ä¸ªç‰ˆæœ¬å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcVersionType = ^TThostFtdcVersionType;
     TThostFtdcVersionType = array[0..3] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTradeCodeTypeÊÇÒ»¸ö½»Ò×´úÂëÀàĞÍ }
+  {/TFtdcTradeCodeTypeæ˜¯ä¸€ä¸ªäº¤æ˜“ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcTradeCodeType = ^TThostFtdcTradeCodeType;
     TThostFtdcTradeCodeType = array[0..6] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTradeDateTypeÊÇÒ»¸ö½»Ò×ÈÕÆÚÀàĞÍ }
+  {/TFtdcTradeDateTypeæ˜¯ä¸€ä¸ªäº¤æ˜“æ—¥æœŸç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcTradeDateType = ^TThostFtdcTradeDateType;
     TThostFtdcTradeDateType = array[0..8] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTradeTimeTypeÊÇÒ»¸ö½»Ò×Ê±¼äÀàĞÍ }
+  {/TFtdcTradeTimeTypeæ˜¯ä¸€ä¸ªäº¤æ˜“æ—¶é—´ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcTradeTimeType = ^TThostFtdcTradeTimeType;
     TThostFtdcTradeTimeType = array[0..8] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTradeSerialTypeÊÇÒ»¸ö·¢Æğ·½Á÷Ë®ºÅÀàĞÍ }
+  {/TFtdcTradeSerialTypeæ˜¯ä¸€ä¸ªå‘èµ·æ–¹æµæ°´å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcTradeSerialType = ^TThostFtdcTradeSerialType;
     TThostFtdcTradeSerialType = array[0..8] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTradeSerialNoTypeÊÇÒ»¸ö·¢Æğ·½Á÷Ë®ºÅÀàĞÍ }
+  {/TFtdcTradeSerialNoTypeæ˜¯ä¸€ä¸ªå‘èµ·æ–¹æµæ°´å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcTradeSerialNoType = ^TThostFtdcTradeSerialNoType;
     TThostFtdcTradeSerialNoType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFutureIDTypeÊÇÒ»¸öÆÚ»õ¹«Ë¾´úÂëÀàĞÍ }
+  {/TFtdcFutureIDTypeæ˜¯ä¸€ä¸ªæœŸè´§å…¬å¸ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFutureIDType = ^TThostFtdcFutureIDType;
     TThostFtdcFutureIDType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBankIDTypeÊÇÒ»¸öÒøĞĞ´úÂëÀàĞÍ }
+  {/TFtdcBankIDTypeæ˜¯ä¸€ä¸ªé“¶è¡Œä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBankIDType = ^TThostFtdcBankIDType;
     TThostFtdcBankIDType = array[0..3] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBankBrchIDTypeÊÇÒ»¸öÒøĞĞ·ÖÖĞĞÄ´úÂëÀàĞÍ }
+  {/TFtdcBankBrchIDTypeæ˜¯ä¸€ä¸ªé“¶è¡Œåˆ†ä¸­å¿ƒä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBankBrchIDType = ^TThostFtdcBankBrchIDType;
     TThostFtdcBankBrchIDType = array[0..4] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBankBranchIDTypeÊÇÒ»¸ö·ÖÖĞĞÄ´úÂëÀàĞÍ }
+  {/TFtdcBankBranchIDTypeæ˜¯ä¸€ä¸ªåˆ†ä¸­å¿ƒä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBankBranchIDType = ^TThostFtdcBankBranchIDType;
     TThostFtdcBankBranchIDType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOperNoTypeÊÇÒ»¸ö½»Ò×¹ñÔ±ÀàĞÍ }
+  {/TFtdcOperNoTypeæ˜¯ä¸€ä¸ªäº¤æ˜“æŸœå‘˜ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcOperNoType = ^TThostFtdcOperNoType;
     TThostFtdcOperNoType = array[0..16] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcDeviceIDTypeÊÇÒ»¸öÇşµÀ±êÖ¾ÀàĞÍ }
+  {/TFtdcDeviceIDTypeæ˜¯ä¸€ä¸ªæ¸ é“æ ‡å¿—ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcDeviceIDType = ^TThostFtdcDeviceIDType;
     TThostFtdcDeviceIDType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcRecordNumTypeÊÇÒ»¸ö¼ÇÂ¼ÊıÀàĞÍ }
+  {/TFtdcRecordNumTypeæ˜¯ä¸€ä¸ªè®°å½•æ•°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcRecordNumType = ^TThostFtdcRecordNumType;
     TThostFtdcRecordNumType = array[0..6] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFutureAccountTypeÊÇÒ»¸öÆÚ»õ×Ê½ğÕËºÅÀàĞÍ }
+  {/TFtdcFutureAccountTypeæ˜¯ä¸€ä¸ªæœŸè´§èµ„é‡‘è´¦å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFutureAccountType = ^TThostFtdcFutureAccountType;
     TThostFtdcFutureAccountType = array[0..21] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFuturePwdFlagTypeÊÇÒ»¸ö×Ê½ğÃÜÂëºË¶Ô±êÖ¾ÀàĞÍ }
+  {/TFtdcFuturePwdFlagTypeæ˜¯ä¸€ä¸ªèµ„é‡‘å¯†ç æ ¸å¯¹æ ‡å¿—ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/²»ºË¶Ô }
+  {/ä¸æ ¸å¯¹ }
 
   const
     THOST_FTDC_FPWD_UnCheck = '0';    
-  {/ºË¶Ô }
+  {/æ ¸å¯¹ }
     THOST_FTDC_FPWD_Check = '1';    
 
   type
     PTThostFtdcFuturePwdFlagType = ^TThostFtdcFuturePwdFlagType;
     TThostFtdcFuturePwdFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTransferTypeTypeÊÇÒ»¸öÒøÆÚ×ªÕËÀàĞÍÀàĞÍ }
+  {/TFtdcTransferTypeTypeæ˜¯ä¸€ä¸ªé“¶æœŸè½¬è´¦ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÒøĞĞ×ªÆÚ»õ }
+  {/é“¶è¡Œè½¬æœŸè´§ }
 
   const
     THOST_FTDC_TT_BankToFuture = '0';    
-  {/ÆÚ»õ×ªÒøĞĞ }
+  {/æœŸè´§è½¬é“¶è¡Œ }
     THOST_FTDC_TT_FutureToBank = '1';    
 
   type
     PTThostFtdcTransferTypeType = ^TThostFtdcTransferTypeType;
     TThostFtdcTransferTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFutureAccPwdTypeÊÇÒ»¸öÆÚ»õ×Ê½ğÃÜÂëÀàĞÍ }
+  {/TFtdcFutureAccPwdTypeæ˜¯ä¸€ä¸ªæœŸè´§èµ„é‡‘å¯†ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFutureAccPwdType = ^TThostFtdcFutureAccPwdType;
     TThostFtdcFutureAccPwdType = array[0..16] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCurrencyCodeTypeÊÇÒ»¸ö±ÒÖÖÀàĞÍ }
+  {/TFtdcCurrencyCodeTypeæ˜¯ä¸€ä¸ªå¸ç§ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCurrencyCodeType = ^TThostFtdcCurrencyCodeType;
     TThostFtdcCurrencyCodeType = array[0..3] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcRetCodeTypeÊÇÒ»¸öÏìÓ¦´úÂëÀàĞÍ }
+  {/TFtdcRetCodeTypeæ˜¯ä¸€ä¸ªå“åº”ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcRetCodeType = ^TThostFtdcRetCodeType;
     TThostFtdcRetCodeType = array[0..4] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcRetInfoTypeÊÇÒ»¸öÏìÓ¦ĞÅÏ¢ÀàĞÍ }
+  {/TFtdcRetInfoTypeæ˜¯ä¸€ä¸ªå“åº”ä¿¡æ¯ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcRetInfoType = ^TThostFtdcRetInfoType;
     TThostFtdcRetInfoType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTradeAmtTypeÊÇÒ»¸öÒøĞĞ×ÜÓà¶îÀàĞÍ }
+  {/TFtdcTradeAmtTypeæ˜¯ä¸€ä¸ªé“¶è¡Œæ€»ä½™é¢ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcTradeAmtType = ^TThostFtdcTradeAmtType;
     TThostFtdcTradeAmtType = array[0..19] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcUseAmtTypeÊÇÒ»¸öÒøĞĞ¿ÉÓÃÓà¶îÀàĞÍ }
+  {/TFtdcUseAmtTypeæ˜¯ä¸€ä¸ªé“¶è¡Œå¯ç”¨ä½™é¢ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcUseAmtType = ^TThostFtdcUseAmtType;
     TThostFtdcUseAmtType = array[0..19] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFetchAmtTypeÊÇÒ»¸öÒøĞĞ¿ÉÈ¡Óà¶îÀàĞÍ }
+  {/TFtdcFetchAmtTypeæ˜¯ä¸€ä¸ªé“¶è¡Œå¯å–ä½™é¢ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFetchAmtType = ^TThostFtdcFetchAmtType;
     TThostFtdcFetchAmtType = array[0..19] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTransferValidFlagTypeÊÇÒ»¸ö×ªÕËÓĞĞ§±êÖ¾ÀàĞÍ }
+  {/TFtdcTransferValidFlagTypeæ˜¯ä¸€ä¸ªè½¬è´¦æœ‰æ•ˆæ ‡å¿—ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÎŞĞ§»òÊ§°Ü }
+  {/æ— æ•ˆæˆ–å¤±è´¥ }
 
   const
     THOST_FTDC_TVF_Invalid = '0';    
-  {/ÓĞĞ§ }
+  {/æœ‰æ•ˆ }
     THOST_FTDC_TVF_Valid = '1';    
-  {/³åÕı }
+  {/å†²æ­£ }
     THOST_FTDC_TVF_Reverse = '2';    
 
   type
     PTThostFtdcTransferValidFlagType = ^TThostFtdcTransferValidFlagType;
     TThostFtdcTransferValidFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCertCodeTypeÊÇÒ»¸öÖ¤¼şºÅÂëÀàĞÍ }
+  {/TFtdcCertCodeTypeæ˜¯ä¸€ä¸ªè¯ä»¶å·ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCertCodeType = ^TThostFtdcCertCodeType;
     TThostFtdcCertCodeType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcReasonTypeÊÇÒ»¸öÊÂÓÉÀàĞÍ }
+  {/TFtdcReasonTypeæ˜¯ä¸€ä¸ªäº‹ç”±ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/´íµ¥ }
+  {/é”™å• }
 
   const
     THOST_FTDC_RN_CD = '0';    
-  {/×Ê½ğÔÚÍ¾ }
+  {/èµ„é‡‘åœ¨é€” }
     THOST_FTDC_RN_ZT = '1';    
-  {/ÆäËü }
+  {/å…¶å®ƒ }
     THOST_FTDC_RN_QT = '2';    
 
   type
     PTThostFtdcReasonType = ^TThostFtdcReasonType;
     TThostFtdcReasonType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFundProjectIDTypeÊÇÒ»¸ö×Ê½ğÏîÄ¿±àºÅÀàĞÍ }
+  {/TFtdcFundProjectIDTypeæ˜¯ä¸€ä¸ªèµ„é‡‘é¡¹ç›®ç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFundProjectIDType = ^TThostFtdcFundProjectIDType;
     TThostFtdcFundProjectIDType = array[0..4] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSexTypeÊÇÒ»¸öĞÔ±ğÀàĞÍ }
+  {/TFtdcSexTypeæ˜¯ä¸€ä¸ªæ€§åˆ«ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Î´Öª }
+  {/æœªçŸ¥ }
 
   const
     THOST_FTDC_SEX_None = '0';    
-  {/ÄĞ }
+  {/ç”· }
     THOST_FTDC_SEX_Man = '1';    
-  {/Å® }
+  {/å¥³ }
     THOST_FTDC_SEX_Woman = '2';    
 
   type
     PTThostFtdcSexType = ^TThostFtdcSexType;
     TThostFtdcSexType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcProfessionTypeÊÇÒ»¸öÖ°ÒµÀàĞÍ }
+  {/TFtdcProfessionTypeæ˜¯ä¸€ä¸ªèŒä¸šç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcProfessionType = ^TThostFtdcProfessionType;
     TThostFtdcProfessionType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcNationalTypeÊÇÒ»¸ö¹ú¼®ÀàĞÍ }
+  {/TFtdcNationalTypeæ˜¯ä¸€ä¸ªå›½ç±ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcNationalType = ^TThostFtdcNationalType;
     TThostFtdcNationalType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcProvinceTypeÊÇÒ»¸öÊ¡ÀàĞÍ }
+  {/TFtdcProvinceTypeæ˜¯ä¸€ä¸ªçœç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcProvinceType = ^TThostFtdcProvinceType;
     TThostFtdcProvinceType = array[0..50] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcRegionTypeÊÇÒ»¸öÇøÀàĞÍ }
+  {/TFtdcRegionTypeæ˜¯ä¸€ä¸ªåŒºç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcRegionType = ^TThostFtdcRegionType;
     TThostFtdcRegionType = array[0..15] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCountryTypeÊÇÒ»¸ö¹ú¼ÒÀàĞÍ }
+  {/TFtdcCountryTypeæ˜¯ä¸€ä¸ªå›½å®¶ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCountryType = ^TThostFtdcCountryType;
     TThostFtdcCountryType = array[0..15] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcLicenseNOTypeÊÇÒ»¸öÓªÒµÖ´ÕÕÀàĞÍ }
+  {/TFtdcLicenseNOTypeæ˜¯ä¸€ä¸ªè¥ä¸šæ‰§ç…§ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     //PTThostFtdcLicenseNOType = ^TThostFtdcLicenseNOType;
    // TThostFtdcLicenseNOType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCompanyTypeTypeÊÇÒ»¸öÆóÒµĞÔÖÊÀàĞÍ }
+  {/TFtdcCompanyTypeTypeæ˜¯ä¸€ä¸ªä¼ä¸šæ€§è´¨ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCompanyTypeType = ^TThostFtdcCompanyTypeType;
     TThostFtdcCompanyTypeType = array[0..15] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBusinessScopeTypeÊÇÒ»¸ö¾­Óª·¶Î§ÀàĞÍ }
+  {/TFtdcBusinessScopeTypeæ˜¯ä¸€ä¸ªç»è¥èŒƒå›´ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBusinessScopeType = ^TThostFtdcBusinessScopeType;
     TThostFtdcBusinessScopeType = array[0..1000] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCapitalCurrencyTypeÊÇÒ»¸ö×¢²á×Ê±¾±ÒÖÖÀàĞÍ }
+  {/TFtdcCapitalCurrencyTypeæ˜¯ä¸€ä¸ªæ³¨å†Œèµ„æœ¬å¸ç§ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCapitalCurrencyType = ^TThostFtdcCapitalCurrencyType;
     TThostFtdcCapitalCurrencyType = array[0..3] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcUserTypeTypeÊÇÒ»¸öÓÃ»§ÀàĞÍÀàĞÍ }
+  {/TFtdcUserTypeTypeæ˜¯ä¸€ä¸ªç”¨æˆ·ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Í¶×ÊÕß }
+  {/æŠ•èµ„è€… }
 
   const
     THOST_FTDC_UT_Investor = '0';    
-  {/²Ù×÷Ô± }
+  {/æ“ä½œå‘˜ }
     THOST_FTDC_UT_Operator = '1';    
-  {/¹ÜÀíÔ± }
+  {/ç®¡ç†å‘˜ }
     THOST_FTDC_UT_SuperUser = '2';    
 
   type
     PTThostFtdcUserTypeType = ^TThostFtdcUserTypeType;
     TThostFtdcUserTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBranchIDTypeÊÇÒ»¸öÓªÒµ²¿±àºÅÀàĞÍ }
+  {/TFtdcBranchIDTypeæ˜¯ä¸€ä¸ªè¥ä¸šéƒ¨ç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBranchIDType = ^TThostFtdcBranchIDType;
     TThostFtdcBranchIDType = array[0..8] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcRateTypeTypeÊÇÒ»¸ö·ÑÂÊÀàĞÍÀàĞÍ }
+  {/TFtdcRateTypeTypeæ˜¯ä¸€ä¸ªè´¹ç‡ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/±£Ö¤½ğÂÊ }
+  {/ä¿è¯é‡‘ç‡ }
 
   const
     THOST_FTDC_RATETYPE_MarginRate = '2';    
@@ -2746,1258 +2751,1258 @@ interface
     PTThostFtdcRateTypeType = ^TThostFtdcRateTypeType;
     TThostFtdcRateTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcNoteTypeTypeÊÇÒ»¸öÍ¨ÖªÀàĞÍÀàĞÍ }
+  {/TFtdcNoteTypeTypeæ˜¯ä¸€ä¸ªé€šçŸ¥ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/½»Ò×½áËãµ¥ }
+  {/äº¤æ˜“ç»“ç®—å• }
 
   const
     THOST_FTDC_NOTETYPE_TradeSettleBill = '1';    
-  {/½»Ò×½áËãÔÂ±¨ }
+  {/äº¤æ˜“ç»“ç®—æœˆæŠ¥ }
     THOST_FTDC_NOTETYPE_TradeSettleMonth = '2';    
-  {/×·¼Ó±£Ö¤½ğÍ¨ÖªÊé }
+  {/è¿½åŠ ä¿è¯é‡‘é€šçŸ¥ä¹¦ }
     THOST_FTDC_NOTETYPE_CallMarginNotes = '3';    
-  {/Ç¿ĞĞÆ½²ÖÍ¨ÖªÊé }
+  {/å¼ºè¡Œå¹³ä»“é€šçŸ¥ä¹¦ }
     THOST_FTDC_NOTETYPE_ForceCloseNotes = '4';    
-  {/³É½»Í¨ÖªÊé }
+  {/æˆäº¤é€šçŸ¥ä¹¦ }
     THOST_FTDC_NOTETYPE_TradeNotes = '5';    
-  {/½»¸îÍ¨ÖªÊé }
+  {/äº¤å‰²é€šçŸ¥ä¹¦ }
     THOST_FTDC_NOTETYPE_DelivNotes = '6';    
 
   type
     PTThostFtdcNoteTypeType = ^TThostFtdcNoteTypeType;
     TThostFtdcNoteTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSettlementStyleTypeÊÇÒ»¸ö½áËãµ¥·½Ê½ÀàĞÍ }
+  {/TFtdcSettlementStyleTypeæ˜¯ä¸€ä¸ªç»“ç®—å•æ–¹å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÖğÈÕ¶¢ÊĞ }
+  {/é€æ—¥ç›¯å¸‚ }
 
   const
     THOST_FTDC_SBS_Day = '1';    
-  {/Öğ±Ê¶Ô³å }
+  {/é€ç¬”å¯¹å†² }
     THOST_FTDC_SBS_Volume = '2';    
 
   type
     PTThostFtdcSettlementStyleType = ^TThostFtdcSettlementStyleType;
     TThostFtdcSettlementStyleType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBrokerDNSTypeÊÇÒ»¸öÓòÃûÀàĞÍ }
+  {/TFtdcBrokerDNSTypeæ˜¯ä¸€ä¸ªåŸŸåç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBrokerDNSType = ^TThostFtdcBrokerDNSType;
     TThostFtdcBrokerDNSType = array[0..255] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSentenceTypeÊÇÒ»¸öÓï¾äÀàĞÍ }
+  {/TFtdcSentenceTypeæ˜¯ä¸€ä¸ªè¯­å¥ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcSentenceType = ^TThostFtdcSentenceType;
     TThostFtdcSentenceType = array[0..500] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSettlementBillTypeTypeÊÇÒ»¸ö½áËãµ¥ÀàĞÍÀàĞÍ }
+  {/TFtdcSettlementBillTypeTypeæ˜¯ä¸€ä¸ªç»“ç®—å•ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÈÕ±¨ }
+  {/æ—¥æŠ¥ }
 
   const
     THOST_FTDC_ST_Day = '0';    
-  {/ÔÂ±¨ }
+  {/æœˆæŠ¥ }
     THOST_FTDC_ST_Month = '1';    
 
   type
     PTThostFtdcSettlementBillTypeType = ^TThostFtdcSettlementBillTypeType;
     TThostFtdcSettlementBillTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcUserRightTypeTypeÊÇÒ»¸ö¿Í»§È¨ÏŞÀàĞÍÀàĞÍ }
+  {/TFtdcUserRightTypeTypeæ˜¯ä¸€ä¸ªå®¢æˆ·æƒé™ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/µÇÂ¼ }
+  {/ç™»å½• }
 
   const
     THOST_FTDC_URT_Logon = '1';    
-  {/ÒøÆÚ×ªÕÊ }
+  {/é“¶æœŸè½¬å¸ }
     THOST_FTDC_URT_Transfer = '2';    
-  {/ÓÊ¼Ä½áËãµ¥ }
+  {/é‚®å¯„ç»“ç®—å• }
     THOST_FTDC_URT_EMail = '3';    
-  {/´«Õæ½áËãµ¥ }
+  {/ä¼ çœŸç»“ç®—å• }
     THOST_FTDC_URT_Fax = '4';    
-  {/Ìõ¼şµ¥ }
+  {/æ¡ä»¶å• }
     THOST_FTDC_URT_ConditionOrder = '5';    
 
   type
     PTThostFtdcUserRightTypeType = ^TThostFtdcUserRightTypeType;
     TThostFtdcUserRightTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcMarginPriceTypeTypeÊÇÒ»¸ö±£Ö¤½ğ¼Û¸ñÀàĞÍÀàĞÍ }
+  {/TFtdcMarginPriceTypeTypeæ˜¯ä¸€ä¸ªä¿è¯é‡‘ä»·æ ¼ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/×ò½áËã¼Û }
+  {/æ˜¨ç»“ç®—ä»· }
 
   const
     THOST_FTDC_MPT_PreSettlementPrice = '1';    
-  {/×îĞÂ¼Û }
+  {/æœ€æ–°ä»· }
     THOST_FTDC_MPT_SettlementPrice = '2';    
-  {/³É½»¾ù¼Û }
+  {/æˆäº¤å‡ä»· }
     THOST_FTDC_MPT_AveragePrice = '3';    
-  {/¿ª²Ö¼Û }
+  {/å¼€ä»“ä»· }
     THOST_FTDC_MPT_OpenPrice = '4';    
 
   type
     PTThostFtdcMarginPriceTypeType = ^TThostFtdcMarginPriceTypeType;
     TThostFtdcMarginPriceTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBillGenStatusTypeÊÇÒ»¸ö½áËãµ¥Éú³É×´Ì¬ÀàĞÍ }
+  {/TFtdcBillGenStatusTypeæ˜¯ä¸€ä¸ªç»“ç®—å•ç”ŸæˆçŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Î´Éú³É }
+  {/æœªç”Ÿæˆ }
 
   const
     THOST_FTDC_BGS_None = '0';    
-  {/Éú³ÉÖĞ }
+  {/ç”Ÿæˆä¸­ }
     THOST_FTDC_BGS_NoGenerated = '1';    
-  {/ÒÑÉú³É }
+  {/å·²ç”Ÿæˆ }
     THOST_FTDC_BGS_Generated = '2';    
 
   type
     PTThostFtdcBillGenStatusType = ^TThostFtdcBillGenStatusType;
     TThostFtdcBillGenStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAlgoTypeTypeÊÇÒ»¸öËã·¨ÀàĞÍÀàĞÍ }
+  {/TFtdcAlgoTypeTypeæ˜¯ä¸€ä¸ªç®—æ³•ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/³Ö²Ö´¦ÀíËã·¨ }
+  {/æŒä»“å¤„ç†ç®—æ³• }
 
   const
     THOST_FTDC_AT_HandlePositionAlgo = '1';    
-  {/Ñ°ÕÒ±£Ö¤½ğÂÊËã·¨ }
+  {/å¯»æ‰¾ä¿è¯é‡‘ç‡ç®—æ³• }
     THOST_FTDC_AT_FindMarginRateAlgo = '2';    
 
   type
     PTThostFtdcAlgoTypeType = ^TThostFtdcAlgoTypeType;
     TThostFtdcAlgoTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcHandlePositionAlgoIDTypeÊÇÒ»¸ö³Ö²Ö´¦ÀíËã·¨±àºÅÀàĞÍ }
+  {/TFtdcHandlePositionAlgoIDTypeæ˜¯ä¸€ä¸ªæŒä»“å¤„ç†ç®—æ³•ç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/»ù±¾ }
+  {/åŸºæœ¬ }
 
   const
     THOST_FTDC_HPA_Base = '1';    
-  {/´óÁ¬ÉÌÆ·½»Ò×Ëù }
+  {/å¤§è¿å•†å“äº¤æ˜“æ‰€ }
     THOST_FTDC_HPA_DCE = '2';    
-  {/Ö£ÖİÉÌÆ·½»Ò×Ëù }
+  {/éƒ‘å·å•†å“äº¤æ˜“æ‰€ }
     THOST_FTDC_HPA_CZCE = '3';    
 
   type
     PTThostFtdcHandlePositionAlgoIDType = ^TThostFtdcHandlePositionAlgoIDType;
     TThostFtdcHandlePositionAlgoIDType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFindMarginRateAlgoIDTypeÊÇÒ»¸öÑ°ÕÒ±£Ö¤½ğÂÊËã·¨±àºÅÀàĞÍ }
+  {/TFtdcFindMarginRateAlgoIDTypeæ˜¯ä¸€ä¸ªå¯»æ‰¾ä¿è¯é‡‘ç‡ç®—æ³•ç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/»ù±¾ }
+  {/åŸºæœ¬ }
 
   const
     THOST_FTDC_FMRA_Base = '1';    
-  {/´óÁ¬ÉÌÆ·½»Ò×Ëù }
+  {/å¤§è¿å•†å“äº¤æ˜“æ‰€ }
     THOST_FTDC_FMRA_DCE = '2';    
-  {/Ö£ÖİÉÌÆ·½»Ò×Ëù }
+  {/éƒ‘å·å•†å“äº¤æ˜“æ‰€ }
     THOST_FTDC_FMRA_CZCE = '3';    
 
   type
     PTThostFtdcFindMarginRateAlgoIDType = ^TThostFtdcFindMarginRateAlgoIDType;
     TThostFtdcFindMarginRateAlgoIDType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcHandleTradingAccountAlgoIDTypeÊÇÒ»¸ö×Ê½ğ´¦ÀíËã·¨±àºÅÀàĞÍ }
+  {/TFtdcHandleTradingAccountAlgoIDTypeæ˜¯ä¸€ä¸ªèµ„é‡‘å¤„ç†ç®—æ³•ç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/»ù±¾ }
+  {/åŸºæœ¬ }
 
   const
     THOST_FTDC_HTAA_Base = '1';    
-  {/´óÁ¬ÉÌÆ·½»Ò×Ëù }
+  {/å¤§è¿å•†å“äº¤æ˜“æ‰€ }
     THOST_FTDC_HTAA_DCE = '2';    
-  {/Ö£ÖİÉÌÆ·½»Ò×Ëù }
+  {/éƒ‘å·å•†å“äº¤æ˜“æ‰€ }
     THOST_FTDC_HTAA_CZCE = '3';    
 
   type
     PTThostFtdcHandleTradingAccountAlgoIDType = ^TThostFtdcHandleTradingAccountAlgoIDType;
     TThostFtdcHandleTradingAccountAlgoIDType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcPersonTypeTypeÊÇÒ»¸öÁªÏµÈËÀàĞÍÀàĞÍ }
+  {/TFtdcPersonTypeTypeæ˜¯ä¸€ä¸ªè”ç³»äººç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Ö¸¶¨ÏÂµ¥ÈË }
+  {/æŒ‡å®šä¸‹å•äºº }
 
   const
     THOST_FTDC_PST_Order = '1';    
-  {/¿ª»§ÊÚÈ¨ÈË }
+  {/å¼€æˆ·æˆæƒäºº }
     THOST_FTDC_PST_Open = '2';    
-  {/×Ê½ğµ÷²¦ÈË }
+  {/èµ„é‡‘è°ƒæ‹¨äºº }
     THOST_FTDC_PST_Fund = '3';    
-  {/½áËãµ¥È·ÈÏÈË }
+  {/ç»“ç®—å•ç¡®è®¤äºº }
     THOST_FTDC_PST_Settlement = '4';    
-  {/·¨ÈË }
+  {/æ³•äºº }
     THOST_FTDC_PST_Company = '5';    
-  {/·¨ÈË´ú±í }
+  {/æ³•äººä»£è¡¨ }
     THOST_FTDC_PST_Corporation = '6';    
-  {/Í¶×ÊÕßÁªÏµÈË }
+  {/æŠ•èµ„è€…è”ç³»äºº }
     THOST_FTDC_PST_LinkMan = '7';    
-  {/·Ö»§¹ÜÀí×Ê²ú¸ºÔğÈË }
+  {/åˆ†æˆ·ç®¡ç†èµ„äº§è´Ÿè´£äºº }
     THOST_FTDC_PST_Ledger = '8';    
-  {/ÍĞ£¨±££©¹ÜÈË }
+  {/æ‰˜ï¼ˆä¿ï¼‰ç®¡äºº }
     THOST_FTDC_PST_Trustee = '9';    
-  {/ÍĞ£¨±££©¹Ü»ú¹¹·¨ÈË´ú±í }
+  {/æ‰˜ï¼ˆä¿ï¼‰ç®¡æœºæ„æ³•äººä»£è¡¨ }
     THOST_FTDC_PST_TrusteeCorporation = 'A';    
-  {/ÍĞ£¨±££©¹Ü»ú¹¹¿ª»§ÊÚÈ¨ÈË }
+  {/æ‰˜ï¼ˆä¿ï¼‰ç®¡æœºæ„å¼€æˆ·æˆæƒäºº }
     THOST_FTDC_PST_TrusteeOpen = 'B';    
-  {/ÍĞ£¨±££©¹Ü»ú¹¹ÁªÏµÈË }
+  {/æ‰˜ï¼ˆä¿ï¼‰ç®¡æœºæ„è”ç³»äºº }
     THOST_FTDC_PST_TrusteeContact = 'C';    
-  {/¾³Íâ×ÔÈ»ÈË²Î¿¼Ö¤¼ş }
+  {/å¢ƒå¤–è‡ªç„¶äººå‚è€ƒè¯ä»¶ }
     THOST_FTDC_PST_ForeignerRefer = 'D';    
-  {/·¨ÈË´ú±í²Î¿¼Ö¤¼ş }
+  {/æ³•äººä»£è¡¨å‚è€ƒè¯ä»¶ }
     THOST_FTDC_PST_CorporationRefer = 'E';    
 
   type
     PTThostFtdcPersonTypeType = ^TThostFtdcPersonTypeType;
     TThostFtdcPersonTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcQueryInvestorRangeTypeÊÇÒ»¸ö²éÑ¯·¶Î§ÀàĞÍ }
+  {/TFtdcQueryInvestorRangeTypeæ˜¯ä¸€ä¸ªæŸ¥è¯¢èŒƒå›´ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ËùÓĞ }
+  {/æ‰€æœ‰ }
 
   const
     THOST_FTDC_QIR_All = '1';    
-  {/²éÑ¯·ÖÀà }
+  {/æŸ¥è¯¢åˆ†ç±» }
     THOST_FTDC_QIR_Group = '2';    
-  {/µ¥Ò»Í¶×ÊÕß }
+  {/å•ä¸€æŠ•èµ„è€… }
     THOST_FTDC_QIR_Single = '3';    
 
   type
     PTThostFtdcQueryInvestorRangeType = ^TThostFtdcQueryInvestorRangeType;
     TThostFtdcQueryInvestorRangeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcInvestorRiskStatusTypeÊÇÒ»¸öÍ¶×ÊÕß·çÏÕ×´Ì¬ÀàĞÍ }
+  {/TFtdcInvestorRiskStatusTypeæ˜¯ä¸€ä¸ªæŠ•èµ„è€…é£é™©çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Õı³£ }
+  {/æ­£å¸¸ }
 
   const
     THOST_FTDC_IRS_Normal = '1';    
-  {/¾¯¸æ }
+  {/è­¦å‘Š }
     THOST_FTDC_IRS_Warn = '2';    
-  {/×·±£ }
+  {/è¿½ä¿ }
     THOST_FTDC_IRS_Call = '3';    
-  {/Ç¿Æ½ }
+  {/å¼ºå¹³ }
     THOST_FTDC_IRS_Force = '4';    
-  {/Òì³£ }
+  {/å¼‚å¸¸ }
     THOST_FTDC_IRS_Exception = '5';    
 
   type
     PTThostFtdcInvestorRiskStatusType = ^TThostFtdcInvestorRiskStatusType;
     TThostFtdcInvestorRiskStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcLegIDTypeÊÇÒ»¸öµ¥ÍÈ±àºÅÀàĞÍ }
+  {/TFtdcLegIDTypeæ˜¯ä¸€ä¸ªå•è…¿ç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcLegIDType = ^TThostFtdcLegIDType;
     TThostFtdcLegIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcLegMultipleTypeÊÇÒ»¸öµ¥ÍÈ³ËÊıÀàĞÍ }
+  {/TFtdcLegMultipleTypeæ˜¯ä¸€ä¸ªå•è…¿ä¹˜æ•°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcLegMultipleType = ^TThostFtdcLegMultipleType;
     TThostFtdcLegMultipleType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcImplyLevelTypeÊÇÒ»¸öÅÉÉú²ãÊıÀàĞÍ }
+  {/TFtdcImplyLevelTypeæ˜¯ä¸€ä¸ªæ´¾ç”Ÿå±‚æ•°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcImplyLevelType = ^TThostFtdcImplyLevelType;
     TThostFtdcImplyLevelType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcClearAccountTypeÊÇÒ»¸ö½áËãÕË»§ÀàĞÍ }
+  {/TFtdcClearAccountTypeæ˜¯ä¸€ä¸ªç»“ç®—è´¦æˆ·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcClearAccountType = ^TThostFtdcClearAccountType;
     TThostFtdcClearAccountType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOrganNOTypeÊÇÒ»¸ö½áËãÕË»§ÀàĞÍ }
+  {/TFtdcOrganNOTypeæ˜¯ä¸€ä¸ªç»“ç®—è´¦æˆ·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcOrganNOType = ^TThostFtdcOrganNOType;
     TThostFtdcOrganNOType = array[0..5] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcClearbarchIDTypeÊÇÒ»¸ö½áËãÕË»§ÁªĞĞºÅÀàĞÍ }
+  {/TFtdcClearbarchIDTypeæ˜¯ä¸€ä¸ªç»“ç®—è´¦æˆ·è”è¡Œå·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcClearbarchIDType = ^TThostFtdcClearbarchIDType;
     TThostFtdcClearbarchIDType = array[0..5] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcUserEventTypeTypeÊÇÒ»¸öÓÃ»§ÊÂ¼şÀàĞÍÀàĞÍ }
+  {/TFtdcUserEventTypeTypeæ˜¯ä¸€ä¸ªç”¨æˆ·äº‹ä»¶ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/µÇÂ¼ }
+  {/ç™»å½• }
 
   const
     THOST_FTDC_UET_Login = '1';    
-  {/µÇ³ö }
+  {/ç™»å‡º }
     THOST_FTDC_UET_Logout = '2';    
-  {/½»Ò×³É¹¦ }
+  {/äº¤æ˜“æˆåŠŸ }
     THOST_FTDC_UET_Trading = '3';    
-  {/½»Ò×Ê§°Ü }
+  {/äº¤æ˜“å¤±è´¥ }
     THOST_FTDC_UET_TradingError = '4';    
-  {/ĞŞ¸ÄÃÜÂë }
+  {/ä¿®æ”¹å¯†ç  }
     THOST_FTDC_UET_UpdatePassword = '5';    
-  {/¿Í»§¶ËÈÏÖ¤ }
+  {/å®¢æˆ·ç«¯è®¤è¯ }
     THOST_FTDC_UET_Authenticate = '6';    
-  {/ÖÕ¶ËĞÅÏ¢ÉÏ±¨ }
+  {/ç»ˆç«¯ä¿¡æ¯ä¸ŠæŠ¥ }
     THOST_FTDC_UET_SubmitSysInfo = '7';    
-  {/×ªÕË }
+  {/è½¬è´¦ }
     THOST_FTDC_UET_Transfer = '8';    
-  {/ÆäËû }
+  {/å…¶ä»– }
     THOST_FTDC_UET_Other = '9';    
 
   type
     PTThostFtdcUserEventTypeType = ^TThostFtdcUserEventTypeType;
     TThostFtdcUserEventTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcUserEventInfoTypeÊÇÒ»¸öÓÃ»§ÊÂ¼şĞÅÏ¢ÀàĞÍ }
+  {/TFtdcUserEventInfoTypeæ˜¯ä¸€ä¸ªç”¨æˆ·äº‹ä»¶ä¿¡æ¯ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcUserEventInfoType = ^TThostFtdcUserEventInfoType;
     TThostFtdcUserEventInfoType = array[0..1024] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCloseStyleTypeÊÇÒ»¸öÆ½²Ö·½Ê½ÀàĞÍ }
+  {/TFtdcCloseStyleTypeæ˜¯ä¸€ä¸ªå¹³ä»“æ–¹å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÏÈ¿ªÏÈÆ½ }
+  {/å…ˆå¼€å…ˆå¹³ }
 
   const
     THOST_FTDC_ICS_Close = '0';    
-  {/ÏÈÆ½½ñÔÙÆ½×ò }
+  {/å…ˆå¹³ä»Šå†å¹³æ˜¨ }
     THOST_FTDC_ICS_CloseToday = '1';    
 
   type
     PTThostFtdcCloseStyleType = ^TThostFtdcCloseStyleType;
     TThostFtdcCloseStyleType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcStatModeTypeÊÇÒ»¸öÍ³¼Æ·½Ê½ÀàĞÍ }
+  {/TFtdcStatModeTypeæ˜¯ä¸€ä¸ªç»Ÿè®¡æ–¹å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
   {/---- }
 
   const
     THOST_FTDC_SM_Non = '0';    
-  {/°´ºÏÔ¼Í³¼Æ }
+  {/æŒ‰åˆçº¦ç»Ÿè®¡ }
     THOST_FTDC_SM_Instrument = '1';    
-  {/°´²úÆ·Í³¼Æ }
+  {/æŒ‰äº§å“ç»Ÿè®¡ }
     THOST_FTDC_SM_Product = '2';    
-  {/°´Í¶×ÊÕßÍ³¼Æ }
+  {/æŒ‰æŠ•èµ„è€…ç»Ÿè®¡ }
     THOST_FTDC_SM_Investor = '3';    
 
   type
     PTThostFtdcStatModeType = ^TThostFtdcStatModeType;
     TThostFtdcStatModeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcParkedOrderStatusTypeÊÇÒ»¸öÔ¤Âñµ¥×´Ì¬ÀàĞÍ }
+  {/TFtdcParkedOrderStatusTypeæ˜¯ä¸€ä¸ªé¢„åŸ‹å•çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Î´·¢ËÍ }
+  {/æœªå‘é€ }
 
   const
     THOST_FTDC_PAOS_NotSend = '1';    
-  {/ÒÑ·¢ËÍ }
+  {/å·²å‘é€ }
     THOST_FTDC_PAOS_Send = '2';    
-  {/ÒÑÉ¾³ı }
+  {/å·²åˆ é™¤ }
     THOST_FTDC_PAOS_Deleted = '3';    
 
   type
     PTThostFtdcParkedOrderStatusType = ^TThostFtdcParkedOrderStatusType;
     TThostFtdcParkedOrderStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcParkedOrderIDTypeÊÇÒ»¸öÔ¤Âñ±¨µ¥±àºÅÀàĞÍ }
+  {/TFtdcParkedOrderIDTypeæ˜¯ä¸€ä¸ªé¢„åŸ‹æŠ¥å•ç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcParkedOrderIDType = ^TThostFtdcParkedOrderIDType;
     TThostFtdcParkedOrderIDType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcParkedOrderActionIDTypeÊÇÒ»¸öÔ¤Âñ³·µ¥±àºÅÀàĞÍ }
+  {/TFtdcParkedOrderActionIDTypeæ˜¯ä¸€ä¸ªé¢„åŸ‹æ’¤å•ç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcParkedOrderActionIDType = ^TThostFtdcParkedOrderActionIDType;
     TThostFtdcParkedOrderActionIDType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcVirDealStatusTypeÊÇÒ»¸ö´¦Àí×´Ì¬ÀàĞÍ }
+  {/TFtdcVirDealStatusTypeæ˜¯ä¸€ä¸ªå¤„ç†çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÕıÔÚ´¦Àí }
+  {/æ­£åœ¨å¤„ç† }
 
   const
     THOST_FTDC_VDS_Dealing = '1';    
-  {/´¦Àí³É¹¦ }
+  {/å¤„ç†æˆåŠŸ }
     THOST_FTDC_VDS_DeaclSucceed = '2';    
 
   type
     PTThostFtdcVirDealStatusType = ^TThostFtdcVirDealStatusType;
     TThostFtdcVirDealStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOrgSystemIDTypeÊÇÒ»¸öÔ­ÓĞÏµÍ³´úÂëÀàĞÍ }
+  {/TFtdcOrgSystemIDTypeæ˜¯ä¸€ä¸ªåŸæœ‰ç³»ç»Ÿä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/×ÛºÏ½»Ò×Æ½Ì¨ }
+  {/ç»¼åˆäº¤æ˜“å¹³å° }
 
   const
     THOST_FTDC_ORGS_Standard = '0';    
-  {/Ò×Ê¢ÏµÍ³ }
+  {/æ˜“ç››ç³»ç»Ÿ }
     THOST_FTDC_ORGS_ESunny = '1';    
-  {/½ğÊË´ïV6ÏµÍ³ }
+  {/é‡‘ä»•è¾¾V6ç³»ç»Ÿ }
     THOST_FTDC_ORGS_KingStarV6 = '2';    
 
   type
     PTThostFtdcOrgSystemIDType = ^TThostFtdcOrgSystemIDType;
     TThostFtdcOrgSystemIDType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcVirTradeStatusTypeÊÇÒ»¸ö½»Ò××´Ì¬ÀàĞÍ }
+  {/TFtdcVirTradeStatusTypeæ˜¯ä¸€ä¸ªäº¤æ˜“çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Õı³£´¦ÀíÖĞ }
+  {/æ­£å¸¸å¤„ç†ä¸­ }
 
   const
     THOST_FTDC_VTS_NaturalDeal = '0';    
-  {/³É¹¦½áÊø }
+  {/æˆåŠŸç»“æŸ }
     THOST_FTDC_VTS_SucceedEnd = '1';    
-  {/Ê§°Ü½áÊø }
+  {/å¤±è´¥ç»“æŸ }
     THOST_FTDC_VTS_FailedEND = '2';    
-  {/Òì³£ÖĞ }
+  {/å¼‚å¸¸ä¸­ }
     THOST_FTDC_VTS_Exception = '3';    
-  {/ÒÑÈË¹¤Òì³£´¦Àí }
+  {/å·²äººå·¥å¼‚å¸¸å¤„ç† }
     THOST_FTDC_VTS_ManualDeal = '4';    
-  {/Í¨Ñ¶Òì³£ £¬ÇëÈË¹¤´¦Àí }
+  {/é€šè®¯å¼‚å¸¸ ï¼Œè¯·äººå·¥å¤„ç† }
     THOST_FTDC_VTS_MesException = '5';    
-  {/ÏµÍ³³ö´í£¬ÇëÈË¹¤´¦Àí }
+  {/ç³»ç»Ÿå‡ºé”™ï¼Œè¯·äººå·¥å¤„ç† }
     THOST_FTDC_VTS_SysException = '6';    
 
   type
     PTThostFtdcVirTradeStatusType = ^TThostFtdcVirTradeStatusType;
     TThostFtdcVirTradeStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcVirBankAccTypeTypeÊÇÒ»¸öÒøĞĞÕÊ»§ÀàĞÍÀàĞÍ }
+  {/TFtdcVirBankAccTypeTypeæ˜¯ä¸€ä¸ªé“¶è¡Œå¸æˆ·ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/´æÕÛ }
+  {/å­˜æŠ˜ }
 
   const
     THOST_FTDC_VBAT_BankBook = '1';    
-  {/´¢Ğî¿¨ }
+  {/å‚¨è“„å¡ }
     THOST_FTDC_VBAT_BankCard = '2';    
-  {/ĞÅÓÃ¿¨ }
+  {/ä¿¡ç”¨å¡ }
     THOST_FTDC_VBAT_CreditCard = '3';    
 
   type
     PTThostFtdcVirBankAccTypeType = ^TThostFtdcVirBankAccTypeType;
     TThostFtdcVirBankAccTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcVirementStatusTypeÊÇÒ»¸öÒøĞĞÕÊ»§ÀàĞÍÀàĞÍ }
+  {/TFtdcVirementStatusTypeæ˜¯ä¸€ä¸ªé“¶è¡Œå¸æˆ·ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Õı³£ }
+  {/æ­£å¸¸ }
 
   const
     THOST_FTDC_VMS_Natural = '0';    
-  {/Ïú»§ }
+  {/é”€æˆ· }
     THOST_FTDC_VMS_Canceled = '9';    
 
   type
     PTThostFtdcVirementStatusType = ^TThostFtdcVirementStatusType;
     TThostFtdcVirementStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcVirementAvailAbilityTypeÊÇÒ»¸öÓĞĞ§±êÖ¾ÀàĞÍ }
+  {/TFtdcVirementAvailAbilityTypeæ˜¯ä¸€ä¸ªæœ‰æ•ˆæ ‡å¿—ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Î´È·ÈÏ }
+  {/æœªç¡®è®¤ }
 
   const
     THOST_FTDC_VAA_NoAvailAbility = '0';    
-  {/ÓĞĞ§ }
+  {/æœ‰æ•ˆ }
     THOST_FTDC_VAA_AvailAbility = '1';    
-  {/³åÕı }
+  {/å†²æ­£ }
     THOST_FTDC_VAA_Repeal = '2';    
 
   type
     PTThostFtdcVirementAvailAbilityType = ^TThostFtdcVirementAvailAbilityType;
     TThostFtdcVirementAvailAbilityType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcVirementTradeCodeTypeÊÇÒ»¸ö½»Ò×´úÂëÀàĞÍ }
+  {/TFtdcVirementTradeCodeTypeæ˜¯ä¸€ä¸ªäº¤æ˜“ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÒøĞĞ·¢ÆğÒøĞĞ×Ê½ğ×ªÆÚ»õ }
+  {/é“¶è¡Œå‘èµ·é“¶è¡Œèµ„é‡‘è½¬æœŸè´§ }
 
   const
     THOST_FTDC_VTC_BankBankToFuture = '102001';    
-  {/ÒøĞĞ·¢ÆğÆÚ»õ×Ê½ğ×ªÒøĞĞ }
+  {/é“¶è¡Œå‘èµ·æœŸè´§èµ„é‡‘è½¬é“¶è¡Œ }
     THOST_FTDC_VTC_BankFutureToBank = '102002';    
-  {/ÆÚ»õ·¢ÆğÒøĞĞ×Ê½ğ×ªÆÚ»õ }
+  {/æœŸè´§å‘èµ·é“¶è¡Œèµ„é‡‘è½¬æœŸè´§ }
     THOST_FTDC_VTC_FutureBankToFuture = '202001';    
-  {/ÆÚ»õ·¢ÆğÆÚ»õ×Ê½ğ×ªÒøĞĞ }
+  {/æœŸè´§å‘èµ·æœŸè´§èµ„é‡‘è½¬é“¶è¡Œ }
     THOST_FTDC_VTC_FutureFutureToBank = '202002';    
 
   type
     PTThostFtdcVirementTradeCodeType = ^TThostFtdcVirementTradeCodeType;
     TThostFtdcVirementTradeCodeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcPhotoTypeNameTypeÊÇÒ»¸öÓ°ÏñÀàĞÍÃû³ÆÀàĞÍ }
+  {/TFtdcPhotoTypeNameTypeæ˜¯ä¸€ä¸ªå½±åƒç±»å‹åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcPhotoTypeNameType = ^TThostFtdcPhotoTypeNameType;
     TThostFtdcPhotoTypeNameType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcPhotoTypeIDTypeÊÇÒ»¸öÓ°ÏñÀàĞÍ´úÂëÀàĞÍ }
+  {/TFtdcPhotoTypeIDTypeæ˜¯ä¸€ä¸ªå½±åƒç±»å‹ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcPhotoTypeIDType = ^TThostFtdcPhotoTypeIDType;
     TThostFtdcPhotoTypeIDType = array[0..4] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcPhotoNameTypeÊÇÒ»¸öÓ°ÏñÃû³ÆÀàĞÍ }
+  {/TFtdcPhotoNameTypeæ˜¯ä¸€ä¸ªå½±åƒåç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcPhotoNameType = ^TThostFtdcPhotoNameType;
     TThostFtdcPhotoNameType = array[0..160] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTopicIDTypeÊÇÒ»¸öÖ÷Ìâ´úÂëÀàĞÍ }
+  {/TFtdcTopicIDTypeæ˜¯ä¸€ä¸ªä¸»é¢˜ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcTopicIDType = ^TThostFtdcTopicIDType;
     TThostFtdcTopicIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcReportTypeIDTypeÊÇÒ»¸ö½»Ò×±¨¸æÀàĞÍ±êÊ¶ÀàĞÍ }
+  {/TFtdcReportTypeIDTypeæ˜¯ä¸€ä¸ªäº¤æ˜“æŠ¥å‘Šç±»å‹æ ‡è¯†ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcReportTypeIDType = ^TThostFtdcReportTypeIDType;
     TThostFtdcReportTypeIDType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAnsiCharacterIDTypeÊÇÒ»¸ö½»Ò×ÌØÕ÷´úÂëÀàĞÍ }
+  {/TFtdcAnsiCharacterIDTypeæ˜¯ä¸€ä¸ªäº¤æ˜“ç‰¹å¾ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAnsiCharacterIDType = ^TThostFtdcAnsiCharacterIDType;
     TThostFtdcAnsiCharacterIDType = array[0..4] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAMLParamIDTypeÊÇÒ»¸ö²ÎÊı´úÂëÀàĞÍ }
+  {/TFtdcAMLParamIDTypeæ˜¯ä¸€ä¸ªå‚æ•°ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAMLParamIDType = ^TThostFtdcAMLParamIDType;
     TThostFtdcAMLParamIDType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAMLInvestorTypeTypeÊÇÒ»¸öÍ¶×ÊÕßÀàĞÍÀàĞÍ }
+  {/TFtdcAMLInvestorTypeTypeæ˜¯ä¸€ä¸ªæŠ•èµ„è€…ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAMLInvestorTypeType = ^TThostFtdcAMLInvestorTypeType;
     TThostFtdcAMLInvestorTypeType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAMLIdCardTypeTypeÊÇÒ»¸öÖ¤¼şÀàĞÍÀàĞÍ }
+  {/TFtdcAMLIdCardTypeTypeæ˜¯ä¸€ä¸ªè¯ä»¶ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAMLIdCardTypeType = ^TThostFtdcAMLIdCardTypeType;
     TThostFtdcAMLIdCardTypeType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAMLTradeDirectTypeÊÇÒ»¸ö×Ê½ğ½ø³ö·½ÏòÀàĞÍ }
+  {/TFtdcAMLTradeDirectTypeæ˜¯ä¸€ä¸ªèµ„é‡‘è¿›å‡ºæ–¹å‘ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAMLTradeDirectType = ^TThostFtdcAMLTradeDirectType;
     TThostFtdcAMLTradeDirectType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAMLTradeModelTypeÊÇÒ»¸ö×Ê½ğ½ø³ö·½Ê½ÀàĞÍ }
+  {/TFtdcAMLTradeModelTypeæ˜¯ä¸€ä¸ªèµ„é‡‘è¿›å‡ºæ–¹å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAMLTradeModelType = ^TThostFtdcAMLTradeModelType;
     TThostFtdcAMLTradeModelType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAMLOpParamValueTypeÊÇÒ»¸öÒµÎñ²ÎÊı´úÂëÖµÀàĞÍ }
+  {/TFtdcAMLOpParamValueTypeæ˜¯ä¸€ä¸ªä¸šåŠ¡å‚æ•°ä»£ç å€¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAMLOpParamValueType = ^TThostFtdcAMLOpParamValueType;
     TThostFtdcAMLOpParamValueType = double;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAMLCustomerCardTypeTypeÊÇÒ»¸ö¿Í»§Éí·İÖ¤¼ş/Ö¤Ã÷ÎÄ¼şÀàĞÍÀàĞÍ }
+  {/TFtdcAMLCustomerCardTypeTypeæ˜¯ä¸€ä¸ªå®¢æˆ·èº«ä»½è¯ä»¶/è¯æ˜æ–‡ä»¶ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAMLCustomerCardTypeType = ^TThostFtdcAMLCustomerCardTypeType;
     TThostFtdcAMLCustomerCardTypeType = array[0..80] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAMLInstitutionNameTypeÊÇÒ»¸ö½ğÈÚ»ú¹¹ÍøµãÃû³ÆÀàĞÍ }
+  {/TFtdcAMLInstitutionNameTypeæ˜¯ä¸€ä¸ªé‡‘èæœºæ„ç½‘ç‚¹åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAMLInstitutionNameType = ^TThostFtdcAMLInstitutionNameType;
     TThostFtdcAMLInstitutionNameType = array[0..64] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAMLDistrictIDTypeÊÇÒ»¸ö½ğÈÚ»ú¹¹ÍøµãËùÔÚµØÇøĞĞÕşÇø»®´úÂëÀàĞÍ }
+  {/TFtdcAMLDistrictIDTypeæ˜¯ä¸€ä¸ªé‡‘èæœºæ„ç½‘ç‚¹æ‰€åœ¨åœ°åŒºè¡Œæ”¿åŒºåˆ’ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAMLDistrictIDType = ^TThostFtdcAMLDistrictIDType;
     TThostFtdcAMLDistrictIDType = array[0..6] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAMLRelationShipTypeÊÇÒ»¸ö½ğÈÚ»ú¹¹ÍøµãÓë´ó¶î½»Ò×µÄ¹ØÏµÀàĞÍ }
+  {/TFtdcAMLRelationShipTypeæ˜¯ä¸€ä¸ªé‡‘èæœºæ„ç½‘ç‚¹ä¸å¤§é¢äº¤æ˜“çš„å…³ç³»ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAMLRelationShipType = ^TThostFtdcAMLRelationShipType;
     TThostFtdcAMLRelationShipType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAMLInstitutionTypeTypeÊÇÒ»¸ö½ğÈÚ»ú¹¹Íøµã´úÂëÀàĞÍÀàĞÍ }
+  {/TFtdcAMLInstitutionTypeTypeæ˜¯ä¸€ä¸ªé‡‘èæœºæ„ç½‘ç‚¹ä»£ç ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAMLInstitutionTypeType = ^TThostFtdcAMLInstitutionTypeType;
     TThostFtdcAMLInstitutionTypeType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAMLInstitutionIDTypeÊÇÒ»¸ö½ğÈÚ»ú¹¹Íøµã´úÂëÀàĞÍ }
+  {/TFtdcAMLInstitutionIDTypeæ˜¯ä¸€ä¸ªé‡‘èæœºæ„ç½‘ç‚¹ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAMLInstitutionIDType = ^TThostFtdcAMLInstitutionIDType;
     TThostFtdcAMLInstitutionIDType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAMLAccountTypeTypeÊÇÒ»¸öÕË»§ÀàĞÍÀàĞÍ }
+  {/TFtdcAMLAccountTypeTypeæ˜¯ä¸€ä¸ªè´¦æˆ·ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAMLAccountTypeType = ^TThostFtdcAMLAccountTypeType;
     TThostFtdcAMLAccountTypeType = array[0..4] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAMLTradingTypeTypeÊÇÒ»¸ö½»Ò×·½Ê½ÀàĞÍ }
+  {/TFtdcAMLTradingTypeTypeæ˜¯ä¸€ä¸ªäº¤æ˜“æ–¹å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAMLTradingTypeType = ^TThostFtdcAMLTradingTypeType;
     TThostFtdcAMLTradingTypeType = array[0..6] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAMLTransactClassTypeÊÇÒ»¸öÉæÍâÊÕÖ§½»Ò×·ÖÀàÓë´úÂëÀàĞÍ }
+  {/TFtdcAMLTransactClassTypeæ˜¯ä¸€ä¸ªæ¶‰å¤–æ”¶æ”¯äº¤æ˜“åˆ†ç±»ä¸ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAMLTransactClassType = ^TThostFtdcAMLTransactClassType;
     TThostFtdcAMLTransactClassType = array[0..6] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAMLCapitalIOTypeÊÇÒ»¸ö×Ê½ğÊÕ¸¶±êÊ¶ÀàĞÍ }
+  {/TFtdcAMLCapitalIOTypeæ˜¯ä¸€ä¸ªèµ„é‡‘æ”¶ä»˜æ ‡è¯†ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAMLCapitalIOType = ^TThostFtdcAMLCapitalIOType;
     TThostFtdcAMLCapitalIOType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAMLSiteTypeÊÇÒ»¸ö½»Ò×µØµãÀàĞÍ }
+  {/TFtdcAMLSiteTypeæ˜¯ä¸€ä¸ªäº¤æ˜“åœ°ç‚¹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAMLSiteType = ^TThostFtdcAMLSiteType;
     TThostFtdcAMLSiteType = array[0..9] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAMLCapitalPurposeTypeÊÇÒ»¸ö×Ê½ğÓÃÍ¾ÀàĞÍ }
+  {/TFtdcAMLCapitalPurposeTypeæ˜¯ä¸€ä¸ªèµ„é‡‘ç”¨é€”ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAMLCapitalPurposeType = ^TThostFtdcAMLCapitalPurposeType;
     TThostFtdcAMLCapitalPurposeType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAMLReportTypeTypeÊÇÒ»¸ö±¨ÎÄÀàĞÍÀàĞÍ }
+  {/TFtdcAMLReportTypeTypeæ˜¯ä¸€ä¸ªæŠ¥æ–‡ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAMLReportTypeType = ^TThostFtdcAMLReportTypeType;
     TThostFtdcAMLReportTypeType = array[0..1] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAMLSerialNoTypeÊÇÒ»¸ö±àºÅÀàĞÍ }
+  {/TFtdcAMLSerialNoTypeæ˜¯ä¸€ä¸ªç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAMLSerialNoType = ^TThostFtdcAMLSerialNoType;
     TThostFtdcAMLSerialNoType = array[0..4] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAMLStatusTypeÊÇÒ»¸ö×´Ì¬ÀàĞÍ }
+  {/TFtdcAMLStatusTypeæ˜¯ä¸€ä¸ªçŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAMLStatusType = ^TThostFtdcAMLStatusType;
     TThostFtdcAMLStatusType = array[0..1] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAMLGenStatusTypeÊÇÒ»¸öAmlÉú³É·½Ê½ÀàĞÍ }
+  {/TFtdcAMLGenStatusTypeæ˜¯ä¸€ä¸ªAmlç”Ÿæˆæ–¹å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/³ÌĞòÉú³É }
+  {/ç¨‹åºç”Ÿæˆ }
 
   const
     THOST_FTDC_GEN_Program = '0';    
-  {/ÈË¹¤Éú³É }
+  {/äººå·¥ç”Ÿæˆ }
     THOST_FTDC_GEN_HandWork = '1';    
 
   type
     PTThostFtdcAMLGenStatusType = ^TThostFtdcAMLGenStatusType;
     TThostFtdcAMLGenStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAMLSeqCodeTypeÊÇÒ»¸öÒµÎñ±êÊ¶ºÅÀàĞÍ }
+  {/TFtdcAMLSeqCodeTypeæ˜¯ä¸€ä¸ªä¸šåŠ¡æ ‡è¯†å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAMLSeqCodeType = ^TThostFtdcAMLSeqCodeType;
     TThostFtdcAMLSeqCodeType = array[0..64] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAMLFileNameTypeÊÇÒ»¸öAMLÎÄ¼şÃûÀàĞÍ }
+  {/TFtdcAMLFileNameTypeæ˜¯ä¸€ä¸ªAMLæ–‡ä»¶åç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAMLFileNameType = ^TThostFtdcAMLFileNameType;
     TThostFtdcAMLFileNameType = array[0..256] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAMLMoneyTypeÊÇÒ»¸ö·´Ï´Ç®×Ê½ğÀàĞÍ }
+  {/TFtdcAMLMoneyTypeæ˜¯ä¸€ä¸ªåæ´—é’±èµ„é‡‘ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAMLMoneyType = ^TThostFtdcAMLMoneyType;
     TThostFtdcAMLMoneyType = double;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAMLFileAmountTypeÊÇÒ»¸ö·´Ï´Ç®×Ê½ğÀàĞÍ }
+  {/TFtdcAMLFileAmountTypeæ˜¯ä¸€ä¸ªåæ´—é’±èµ„é‡‘ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAMLFileAmountType = ^TThostFtdcAMLFileAmountType;
     TThostFtdcAMLFileAmountType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCFMMCKeyTypeÊÇÒ»¸öÃÜÔ¿ÀàĞÍ(±£Ö¤½ğ¼à¹Ü)ÀàĞÍ }
+  {/TFtdcCFMMCKeyTypeæ˜¯ä¸€ä¸ªå¯†é’¥ç±»å‹(ä¿è¯é‡‘ç›‘ç®¡)ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCFMMCKeyType = ^TThostFtdcCFMMCKeyType;
     TThostFtdcCFMMCKeyType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCFMMCTokenTypeÊÇÒ»¸öÁîÅÆÀàĞÍ(±£Ö¤½ğ¼à¹Ü)ÀàĞÍ }
+  {/TFtdcCFMMCTokenTypeæ˜¯ä¸€ä¸ªä»¤ç‰Œç±»å‹(ä¿è¯é‡‘ç›‘ç®¡)ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCFMMCTokenType = ^TThostFtdcCFMMCTokenType;
     TThostFtdcCFMMCTokenType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCFMMCKeyKindTypeÊÇÒ»¸ö¶¯Ì¬ÃÜÔ¿Àà±ğ(±£Ö¤½ğ¼à¹Ü)ÀàĞÍ }
+  {/TFtdcCFMMCKeyKindTypeæ˜¯ä¸€ä¸ªåŠ¨æ€å¯†é’¥ç±»åˆ«(ä¿è¯é‡‘ç›‘ç®¡)ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Ö÷¶¯ÇëÇó¸üĞÂ }
+  {/ä¸»åŠ¨è¯·æ±‚æ›´æ–° }
 
   const
     THOST_FTDC_CFMMCKK_REQUEST = 'R';    
-  {/CFMMC×Ô¶¯¸üĞÂ }
+  {/CFMMCè‡ªåŠ¨æ›´æ–° }
     THOST_FTDC_CFMMCKK_AUTO = 'A';    
-  {/CFMMCÊÖ¶¯¸üĞÂ }
+  {/CFMMCæ‰‹åŠ¨æ›´æ–° }
     THOST_FTDC_CFMMCKK_MANUAL = 'M';    
 
   type
     PTThostFtdcCFMMCKeyKindType = ^TThostFtdcCFMMCKeyKindType;
     TThostFtdcCFMMCKeyKindType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAMLReportNameTypeÊÇÒ»¸ö±¨ÎÄÃû³ÆÀàĞÍ }
+  {/TFtdcAMLReportNameTypeæ˜¯ä¸€ä¸ªæŠ¥æ–‡åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAMLReportNameType = ^TThostFtdcAMLReportNameType;
     TThostFtdcAMLReportNameType = array[0..80] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcIndividualNameTypeÊÇÒ»¸ö¸öÈËĞÕÃûÀàĞÍ }
+  {/TFtdcIndividualNameTypeæ˜¯ä¸€ä¸ªä¸ªäººå§“åç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcIndividualNameType = ^TThostFtdcIndividualNameType;
     TThostFtdcIndividualNameType = array[0..50] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCurrencyIDTypeÊÇÒ»¸ö±ÒÖÖ´úÂëÀàĞÍ }
+  {/TFtdcCurrencyIDTypeæ˜¯ä¸€ä¸ªå¸ç§ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCurrencyIDType = ^TThostFtdcCurrencyIDType;
     TThostFtdcCurrencyIDType = array[0..3] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCustNumberTypeÊÇÒ»¸ö¿Í»§±àºÅÀàĞÍ }
+  {/TFtdcCustNumberTypeæ˜¯ä¸€ä¸ªå®¢æˆ·ç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCustNumberType = ^TThostFtdcCustNumberType;
     TThostFtdcCustNumberType = array[0..35] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOrganCodeTypeÊÇÒ»¸ö»ú¹¹±àÂëÀàĞÍ }
+  {/TFtdcOrganCodeTypeæ˜¯ä¸€ä¸ªæœºæ„ç¼–ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcOrganCodeType = ^TThostFtdcOrganCodeType;
     TThostFtdcOrganCodeType = array[0..35] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOrganNameTypeÊÇÒ»¸ö»ú¹¹Ãû³ÆÀàĞÍ }
+  {/TFtdcOrganNameTypeæ˜¯ä¸€ä¸ªæœºæ„åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcOrganNameType = ^TThostFtdcOrganNameType;
     TThostFtdcOrganNameType = array[0..70] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSuperOrganCodeTypeÊÇÒ»¸öÉÏ¼¶»ú¹¹±àÂë,¼´ÆÚ»õ¹«Ë¾×Ü²¿¡¢ÒøĞĞ×ÜĞĞÀàĞÍ }
+  {/TFtdcSuperOrganCodeTypeæ˜¯ä¸€ä¸ªä¸Šçº§æœºæ„ç¼–ç ,å³æœŸè´§å…¬å¸æ€»éƒ¨ã€é“¶è¡Œæ€»è¡Œç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcSuperOrganCodeType = ^TThostFtdcSuperOrganCodeType;
     TThostFtdcSuperOrganCodeType = array[0..11] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSubBranchIDTypeÊÇÒ»¸ö·ÖÖ§»ú¹¹ÀàĞÍ }
+  {/TFtdcSubBranchIDTypeæ˜¯ä¸€ä¸ªåˆ†æ”¯æœºæ„ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcSubBranchIDType = ^TThostFtdcSubBranchIDType;
     TThostFtdcSubBranchIDType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSubBranchNameTypeÊÇÒ»¸ö·ÖÖ§»ú¹¹Ãû³ÆÀàĞÍ }
+  {/TFtdcSubBranchNameTypeæ˜¯ä¸€ä¸ªåˆ†æ”¯æœºæ„åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcSubBranchNameType = ^TThostFtdcSubBranchNameType;
     TThostFtdcSubBranchNameType = array[0..70] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBranchNetCodeTypeÊÇÒ»¸ö»ú¹¹ÍøµãºÅÀàĞÍ }
+  {/TFtdcBranchNetCodeTypeæ˜¯ä¸€ä¸ªæœºæ„ç½‘ç‚¹å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBranchNetCodeType = ^TThostFtdcBranchNetCodeType;
     TThostFtdcBranchNetCodeType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBranchNetNameTypeÊÇÒ»¸ö»ú¹¹ÍøµãÃû³ÆÀàĞÍ }
+  {/TFtdcBranchNetNameTypeæ˜¯ä¸€ä¸ªæœºæ„ç½‘ç‚¹åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBranchNetNameType = ^TThostFtdcBranchNetNameType;
     TThostFtdcBranchNetNameType = array[0..70] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOrganFlagTypeÊÇÒ»¸ö»ú¹¹±êÊ¶ÀàĞÍ }
+  {/TFtdcOrganFlagTypeæ˜¯ä¸€ä¸ªæœºæ„æ ‡è¯†ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcOrganFlagType = ^TThostFtdcOrganFlagType;
     TThostFtdcOrganFlagType = array[0..1] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBankCodingForFutureTypeÊÇÒ»¸öÒøĞĞ¶ÔÆÚ»õ¹«Ë¾µÄ±àÂëÀàĞÍ }
+  {/TFtdcBankCodingForFutureTypeæ˜¯ä¸€ä¸ªé“¶è¡Œå¯¹æœŸè´§å…¬å¸çš„ç¼–ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBankCodingForFutureType = ^TThostFtdcBankCodingForFutureType;
     TThostFtdcBankCodingForFutureType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBankReturnCodeTypeÊÇÒ»¸öÒøĞĞ¶Ô·µ»ØÂëµÄ¶¨ÒåÀàĞÍ }
+  {/TFtdcBankReturnCodeTypeæ˜¯ä¸€ä¸ªé“¶è¡Œå¯¹è¿”å›ç çš„å®šä¹‰ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBankReturnCodeType = ^TThostFtdcBankReturnCodeType;
     TThostFtdcBankReturnCodeType = array[0..6] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcPlateReturnCodeTypeÊÇÒ»¸öÒøÆÚ×ªÕÊÆ½Ì¨¶Ô·µ»ØÂëµÄ¶¨ÒåÀàĞÍ }
+  {/TFtdcPlateReturnCodeTypeæ˜¯ä¸€ä¸ªé“¶æœŸè½¬å¸å¹³å°å¯¹è¿”å›ç çš„å®šä¹‰ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcPlateReturnCodeType = ^TThostFtdcPlateReturnCodeType;
     TThostFtdcPlateReturnCodeType = array[0..4] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBankSubBranchIDTypeÊÇÒ»¸öÒøĞĞ·ÖÖ§»ú¹¹±àÂëÀàĞÍ }
+  {/TFtdcBankSubBranchIDTypeæ˜¯ä¸€ä¸ªé“¶è¡Œåˆ†æ”¯æœºæ„ç¼–ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBankSubBranchIDType = ^TThostFtdcBankSubBranchIDType;
     TThostFtdcBankSubBranchIDType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFutureBranchIDTypeÊÇÒ»¸öÆÚ»õ·ÖÖ§»ú¹¹±àÂëÀàĞÍ }
+  {/TFtdcFutureBranchIDTypeæ˜¯ä¸€ä¸ªæœŸè´§åˆ†æ”¯æœºæ„ç¼–ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFutureBranchIDType = ^TThostFtdcFutureBranchIDType;
     TThostFtdcFutureBranchIDType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcReturnCodeTypeÊÇÒ»¸ö·µ»Ø´úÂëÀàĞÍ }
+  {/TFtdcReturnCodeTypeæ˜¯ä¸€ä¸ªè¿”å›ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcReturnCodeType = ^TThostFtdcReturnCodeType;
     TThostFtdcReturnCodeType = array[0..6] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOperatorCodeTypeÊÇÒ»¸ö²Ù×÷Ô±ÀàĞÍ }
+  {/TFtdcOperatorCodeTypeæ˜¯ä¸€ä¸ªæ“ä½œå‘˜ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcOperatorCodeType = ^TThostFtdcOperatorCodeType;
     TThostFtdcOperatorCodeType = array[0..16] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcClearDepIDTypeÊÇÒ»¸ö»ú¹¹½áËãÕÊ»§»ú¹¹ºÅÀàĞÍ }
+  {/TFtdcClearDepIDTypeæ˜¯ä¸€ä¸ªæœºæ„ç»“ç®—å¸æˆ·æœºæ„å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcClearDepIDType = ^TThostFtdcClearDepIDType;
     TThostFtdcClearDepIDType = array[0..5] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcClearBrchIDTypeÊÇÒ»¸ö»ú¹¹½áËãÕÊ»§ÁªĞĞºÅÀàĞÍ }
+  {/TFtdcClearBrchIDTypeæ˜¯ä¸€ä¸ªæœºæ„ç»“ç®—å¸æˆ·è”è¡Œå·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcClearBrchIDType = ^TThostFtdcClearBrchIDType;
     TThostFtdcClearBrchIDType = array[0..5] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcClearNameTypeÊÇÒ»¸ö»ú¹¹½áËãÕÊ»§Ãû³ÆÀàĞÍ }
+  {/TFtdcClearNameTypeæ˜¯ä¸€ä¸ªæœºæ„ç»“ç®—å¸æˆ·åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcClearNameType = ^TThostFtdcClearNameType;
     TThostFtdcClearNameType = array[0..70] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBankAccountNameTypeÊÇÒ»¸öÒøĞĞÕÊ»§Ãû³ÆÀàĞÍ }
+  {/TFtdcBankAccountNameTypeæ˜¯ä¸€ä¸ªé“¶è¡Œå¸æˆ·åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBankAccountNameType = ^TThostFtdcBankAccountNameType;
     TThostFtdcBankAccountNameType = array[0..70] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcInvDepIDTypeÊÇÒ»¸ö»ú¹¹Í¶×ÊÈËÕËºÅ»ú¹¹ºÅÀàĞÍ }
+  {/TFtdcInvDepIDTypeæ˜¯ä¸€ä¸ªæœºæ„æŠ•èµ„äººè´¦å·æœºæ„å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcInvDepIDType = ^TThostFtdcInvDepIDType;
     TThostFtdcInvDepIDType = array[0..5] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcInvBrchIDTypeÊÇÒ»¸ö»ú¹¹Í¶×ÊÈËÁªĞĞºÅÀàĞÍ }
+  {/TFtdcInvBrchIDTypeæ˜¯ä¸€ä¸ªæœºæ„æŠ•èµ„äººè”è¡Œå·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcInvBrchIDType = ^TThostFtdcInvBrchIDType;
     TThostFtdcInvBrchIDType = array[0..5] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcMessageFormatVersionTypeÊÇÒ»¸öĞÅÏ¢¸ñÊ½°æ±¾ÀàĞÍ }
+  {/TFtdcMessageFormatVersionTypeæ˜¯ä¸€ä¸ªä¿¡æ¯æ ¼å¼ç‰ˆæœ¬ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcMessageFormatVersionType = ^TThostFtdcMessageFormatVersionType;
     TThostFtdcMessageFormatVersionType = array[0..35] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcDigestTypeÊÇÒ»¸öÕªÒªÀàĞÍ }
+  {/TFtdcDigestTypeæ˜¯ä¸€ä¸ªæ‘˜è¦ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcDigestType = ^TThostFtdcDigestType;
     TThostFtdcDigestType = array[0..35] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAuthenticDataTypeÊÇÒ»¸öÈÏÖ¤Êı¾İÀàĞÍ }
+  {/TFtdcAuthenticDataTypeæ˜¯ä¸€ä¸ªè®¤è¯æ•°æ®ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAuthenticDataType = ^TThostFtdcAuthenticDataType;
     TThostFtdcAuthenticDataType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcPasswordKeyTypeÊÇÒ»¸öÃÜÔ¿ÀàĞÍ }
+  {/TFtdcPasswordKeyTypeæ˜¯ä¸€ä¸ªå¯†é’¥ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcPasswordKeyType = ^TThostFtdcPasswordKeyType;
     TThostFtdcPasswordKeyType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFutureAccountNameTypeÊÇÒ»¸öÆÚ»õÕÊ»§Ãû³ÆÀàĞÍ }
+  {/TFtdcFutureAccountNameTypeæ˜¯ä¸€ä¸ªæœŸè´§å¸æˆ·åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFutureAccountNameType = ^TThostFtdcFutureAccountNameType;
     TThostFtdcFutureAccountNameType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcMobilePhoneTypeÊÇÒ»¸öÊÖ»úÀàĞÍ }
+  {/TFtdcMobilePhoneTypeæ˜¯ä¸€ä¸ªæ‰‹æœºç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcMobilePhoneType = ^TThostFtdcMobilePhoneType;
     TThostFtdcMobilePhoneType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFutureMainKeyTypeÊÇÒ»¸öÆÚ»õ¹«Ë¾Ö÷ÃÜÔ¿ÀàĞÍ }
+  {/TFtdcFutureMainKeyTypeæ˜¯ä¸€ä¸ªæœŸè´§å…¬å¸ä¸»å¯†é’¥ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFutureMainKeyType = ^TThostFtdcFutureMainKeyType;
     TThostFtdcFutureMainKeyType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFutureWorkKeyTypeÊÇÒ»¸öÆÚ»õ¹«Ë¾¹¤×÷ÃÜÔ¿ÀàĞÍ }
+  {/TFtdcFutureWorkKeyTypeæ˜¯ä¸€ä¸ªæœŸè´§å…¬å¸å·¥ä½œå¯†é’¥ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFutureWorkKeyType = ^TThostFtdcFutureWorkKeyType;
     TThostFtdcFutureWorkKeyType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFutureTransKeyTypeÊÇÒ»¸öÆÚ»õ¹«Ë¾´«ÊäÃÜÔ¿ÀàĞÍ }
+  {/TFtdcFutureTransKeyTypeæ˜¯ä¸€ä¸ªæœŸè´§å…¬å¸ä¼ è¾“å¯†é’¥ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFutureTransKeyType = ^TThostFtdcFutureTransKeyType;
     TThostFtdcFutureTransKeyType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBankMainKeyTypeÊÇÒ»¸öÒøĞĞÖ÷ÃÜÔ¿ÀàĞÍ }
+  {/TFtdcBankMainKeyTypeæ˜¯ä¸€ä¸ªé“¶è¡Œä¸»å¯†é’¥ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBankMainKeyType = ^TThostFtdcBankMainKeyType;
     TThostFtdcBankMainKeyType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBankWorkKeyTypeÊÇÒ»¸öÒøĞĞ¹¤×÷ÃÜÔ¿ÀàĞÍ }
+  {/TFtdcBankWorkKeyTypeæ˜¯ä¸€ä¸ªé“¶è¡Œå·¥ä½œå¯†é’¥ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBankWorkKeyType = ^TThostFtdcBankWorkKeyType;
     TThostFtdcBankWorkKeyType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBankTransKeyTypeÊÇÒ»¸öÒøĞĞ´«ÊäÃÜÔ¿ÀàĞÍ }
+  {/TFtdcBankTransKeyTypeæ˜¯ä¸€ä¸ªé“¶è¡Œä¼ è¾“å¯†é’¥ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBankTransKeyType = ^TThostFtdcBankTransKeyType;
     TThostFtdcBankTransKeyType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBankServerDescriptionTypeÊÇÒ»¸öÒøĞĞ·şÎñÆ÷ÃèÊöĞÅÏ¢ÀàĞÍ }
+  {/TFtdcBankServerDescriptionTypeæ˜¯ä¸€ä¸ªé“¶è¡ŒæœåŠ¡å™¨æè¿°ä¿¡æ¯ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBankServerDescriptionType = ^TThostFtdcBankServerDescriptionType;
     TThostFtdcBankServerDescriptionType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAddInfoTypeÊÇÒ»¸ö¸½¼ÓĞÅÏ¢ÀàĞÍ }
+  {/TFtdcAddInfoTypeæ˜¯ä¸€ä¸ªé™„åŠ ä¿¡æ¯ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAddInfoType = ^TThostFtdcAddInfoType;
     TThostFtdcAddInfoType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcDescrInfoForReturnCodeTypeÊÇÒ»¸ö·µ»ØÂëÃèÊöÀàĞÍ }
+  {/TFtdcDescrInfoForReturnCodeTypeæ˜¯ä¸€ä¸ªè¿”å›ç æè¿°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcDescrInfoForReturnCodeType = ^TThostFtdcDescrInfoForReturnCodeType;
     TThostFtdcDescrInfoForReturnCodeType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCountryCodeTypeÊÇÒ»¸ö¹ú¼Ò´úÂëÀàĞÍ }
+  {/TFtdcCountryCodeTypeæ˜¯ä¸€ä¸ªå›½å®¶ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCountryCodeType = ^TThostFtdcCountryCodeType;
     TThostFtdcCountryCodeType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSerialTypeÊÇÒ»¸öÁ÷Ë®ºÅÀàĞÍ }
+  {/TFtdcSerialTypeæ˜¯ä¸€ä¸ªæµæ°´å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcSerialType = ^TThostFtdcSerialType;
     TThostFtdcSerialType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcPlateSerialTypeÊÇÒ»¸öÆ½Ì¨Á÷Ë®ºÅÀàĞÍ }
+  {/TFtdcPlateSerialTypeæ˜¯ä¸€ä¸ªå¹³å°æµæ°´å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcPlateSerialType = ^TThostFtdcPlateSerialType;
     TThostFtdcPlateSerialType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBankSerialTypeÊÇÒ»¸öÒøĞĞÁ÷Ë®ºÅÀàĞÍ }
+  {/TFtdcBankSerialTypeæ˜¯ä¸€ä¸ªé“¶è¡Œæµæ°´å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBankSerialType = ^TThostFtdcBankSerialType;
     TThostFtdcBankSerialType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCorrectSerialTypeÊÇÒ»¸ö±»³åÕı½»Ò×Á÷Ë®ºÅÀàĞÍ }
+  {/TFtdcCorrectSerialTypeæ˜¯ä¸€ä¸ªè¢«å†²æ­£äº¤æ˜“æµæ°´å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCorrectSerialType = ^TThostFtdcCorrectSerialType;
     TThostFtdcCorrectSerialType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFutureSerialTypeÊÇÒ»¸öÆÚ»õ¹«Ë¾Á÷Ë®ºÅÀàĞÍ }
+  {/TFtdcFutureSerialTypeæ˜¯ä¸€ä¸ªæœŸè´§å…¬å¸æµæ°´å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFutureSerialType = ^TThostFtdcFutureSerialType;
     TThostFtdcFutureSerialType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcApplicationIDTypeÊÇÒ»¸öÓ¦ÓÃ±êÊ¶ÀàĞÍ }
+  {/TFtdcApplicationIDTypeæ˜¯ä¸€ä¸ªåº”ç”¨æ ‡è¯†ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcApplicationIDType = ^TThostFtdcApplicationIDType;
     TThostFtdcApplicationIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBankProxyIDTypeÊÇÒ»¸öÒøĞĞ´úÀí±êÊ¶ÀàĞÍ }
+  {/TFtdcBankProxyIDTypeæ˜¯ä¸€ä¸ªé“¶è¡Œä»£ç†æ ‡è¯†ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBankProxyIDType = ^TThostFtdcBankProxyIDType;
     TThostFtdcBankProxyIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFBTCoreIDTypeÊÇÒ»¸öÒøÆÚ×ªÕÊºËĞÄÏµÍ³±êÊ¶ÀàĞÍ }
+  {/TFtdcFBTCoreIDTypeæ˜¯ä¸€ä¸ªé“¶æœŸè½¬å¸æ ¸å¿ƒç³»ç»Ÿæ ‡è¯†ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFBTCoreIDType = ^TThostFtdcFBTCoreIDType;
     TThostFtdcFBTCoreIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcServerPortTypeÊÇÒ»¸ö·şÎñ¶Ë¿ÚºÅÀàĞÍ }
+  {/TFtdcServerPortTypeæ˜¯ä¸€ä¸ªæœåŠ¡ç«¯å£å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcServerPortType = ^TThostFtdcServerPortType;
     TThostFtdcServerPortType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcRepealedTimesTypeÊÇÒ»¸öÒÑ¾­³åÕı´ÎÊıÀàĞÍ }
+  {/TFtdcRepealedTimesTypeæ˜¯ä¸€ä¸ªå·²ç»å†²æ­£æ¬¡æ•°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcRepealedTimesType = ^TThostFtdcRepealedTimesType;
     TThostFtdcRepealedTimesType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcRepealTimeIntervalTypeÊÇÒ»¸ö³åÕıÊ±¼ä¼ä¸ôÀàĞÍ }
+  {/TFtdcRepealTimeIntervalTypeæ˜¯ä¸€ä¸ªå†²æ­£æ—¶é—´é—´éš”ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcRepealTimeIntervalType = ^TThostFtdcRepealTimeIntervalType;
     TThostFtdcRepealTimeIntervalType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTotalTimesTypeÊÇÒ»¸öÃ¿ÈÕÀÛ¼Æ×ªÕÊ´ÎÊıÀàĞÍ }
+  {/TFtdcTotalTimesTypeæ˜¯ä¸€ä¸ªæ¯æ—¥ç´¯è®¡è½¬å¸æ¬¡æ•°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcTotalTimesType = ^TThostFtdcTotalTimesType;
     TThostFtdcTotalTimesType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFBTRequestIDTypeÊÇÒ»¸öÇëÇóIDÀàĞÍ }
+  {/TFtdcFBTRequestIDTypeæ˜¯ä¸€ä¸ªè¯·æ±‚IDç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFBTRequestIDType = ^TThostFtdcFBTRequestIDType;
     TThostFtdcFBTRequestIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTIDTypeÊÇÒ»¸ö½»Ò×IDÀàĞÍ }
+  {/TFtdcTIDTypeæ˜¯ä¸€ä¸ªäº¤æ˜“IDç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcTIDType = ^TThostFtdcTIDType;
     TThostFtdcTIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTradeAmountTypeÊÇÒ»¸ö½»Ò×½ğ¶î£¨Ôª£©ÀàĞÍ }
+  {/TFtdcTradeAmountTypeæ˜¯ä¸€ä¸ªäº¤æ˜“é‡‘é¢ï¼ˆå…ƒï¼‰ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcTradeAmountType = ^TThostFtdcTradeAmountType;
     TThostFtdcTradeAmountType = double;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCustFeeTypeÊÇÒ»¸öÓ¦ÊÕ¿Í»§·ÑÓÃ£¨Ôª£©ÀàĞÍ }
+  {/TFtdcCustFeeTypeæ˜¯ä¸€ä¸ªåº”æ”¶å®¢æˆ·è´¹ç”¨ï¼ˆå…ƒï¼‰ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCustFeeType = ^TThostFtdcCustFeeType;
     TThostFtdcCustFeeType = double;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFutureFeeTypeÊÇÒ»¸öÓ¦ÊÕÆÚ»õ¹«Ë¾·ÑÓÃ£¨Ôª£©ÀàĞÍ }
+  {/TFtdcFutureFeeTypeæ˜¯ä¸€ä¸ªåº”æ”¶æœŸè´§å…¬å¸è´¹ç”¨ï¼ˆå…ƒï¼‰ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFutureFeeType = ^TThostFtdcFutureFeeType;
     TThostFtdcFutureFeeType = double;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSingleMaxAmtTypeÊÇÒ»¸öµ¥±Ê×î¸ßÏŞ¶îÀàĞÍ }
+  {/TFtdcSingleMaxAmtTypeæ˜¯ä¸€ä¸ªå•ç¬”æœ€é«˜é™é¢ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcSingleMaxAmtType = ^TThostFtdcSingleMaxAmtType;
     TThostFtdcSingleMaxAmtType = double;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSingleMinAmtTypeÊÇÒ»¸öµ¥±Ê×îµÍÏŞ¶îÀàĞÍ }
+  {/TFtdcSingleMinAmtTypeæ˜¯ä¸€ä¸ªå•ç¬”æœ€ä½é™é¢ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcSingleMinAmtType = ^TThostFtdcSingleMinAmtType;
     TThostFtdcSingleMinAmtType = double;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTotalAmtTypeÊÇÒ»¸öÃ¿ÈÕÀÛ¼Æ×ªÕÊ¶î¶ÈÀàĞÍ }
+  {/TFtdcTotalAmtTypeæ˜¯ä¸€ä¸ªæ¯æ—¥ç´¯è®¡è½¬å¸é¢åº¦ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcTotalAmtType = ^TThostFtdcTotalAmtType;
     TThostFtdcTotalAmtType = double;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCertificationTypeTypeÊÇÒ»¸öÖ¤¼şÀàĞÍÀàĞÍ }
+  {/TFtdcCertificationTypeTypeæ˜¯ä¸€ä¸ªè¯ä»¶ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Éí·İÖ¤ }
+  {/èº«ä»½è¯ }
 
   const
     THOST_FTDC_CFT_IDCard = '0';    
-  {/»¤ÕÕ }
+  {/æŠ¤ç…§ }
     THOST_FTDC_CFT_Passport = '1';    
-  {/¾ü¹ÙÖ¤ }
+  {/å†›å®˜è¯ }
     THOST_FTDC_CFT_OfficerIDCard = '2';    
-  {/Ê¿±øÖ¤ }
+  {/å£«å…µè¯ }
     THOST_FTDC_CFT_SoldierIDCard = '3';    
-  {/»ØÏçÖ¤ }
+  {/å›ä¹¡è¯ }
     THOST_FTDC_CFT_HomeComingCard = '4';    
-  {/»§¿Ú²¾ }
+  {/æˆ·å£ç°¿ }
     THOST_FTDC_CFT_HouseholdRegister = '5';    
-  {/ÓªÒµÖ´ÕÕºÅ }
+  {/è¥ä¸šæ‰§ç…§å· }
     THOST_FTDC_CFT_LicenseNo = '6';    
-  {/×éÖ¯»ú¹¹´úÂëÖ¤ }
+  {/ç»„ç»‡æœºæ„ä»£ç è¯ }
     THOST_FTDC_CFT_InstitutionCodeCard = '7';    
-  {/ÁÙÊ±ÓªÒµÖ´ÕÕºÅ }
+  {/ä¸´æ—¶è¥ä¸šæ‰§ç…§å· }
     THOST_FTDC_CFT_TempLicenseNo = '8';    
-  {/Ãñ°ì·ÇÆóÒµµÇ¼ÇÖ¤Êé }
+  {/æ°‘åŠéä¼ä¸šç™»è®°è¯ä¹¦ }
     THOST_FTDC_CFT_NoEnterpriseLicenseNo = '9';    
-  {/ÆäËûÖ¤¼ş }
+  {/å…¶ä»–è¯ä»¶ }
     THOST_FTDC_CFT_OtherCard = 'x';    
-  {/Ö÷¹Ü²¿ÃÅÅúÎÄ }
+  {/ä¸»ç®¡éƒ¨é—¨æ‰¹æ–‡ }
     THOST_FTDC_CFT_SuperDepAgree = 'a';    
 
   type
     PTThostFtdcCertificationTypeType = ^TThostFtdcCertificationTypeType;
     TThostFtdcCertificationTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFileBusinessCodeTypeÊÇÒ»¸öÎÄ¼şÒµÎñ¹¦ÄÜÀàĞÍ }
+  {/TFtdcFileBusinessCodeTypeæ˜¯ä¸€ä¸ªæ–‡ä»¶ä¸šåŠ¡åŠŸèƒ½ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÆäËû }
+  {/å…¶ä»– }
 
   const
     THOST_FTDC_FBC_Others = '0';    
-  {/×ªÕË½»Ò×Ã÷Ï¸¶ÔÕË }
+  {/è½¬è´¦äº¤æ˜“æ˜ç»†å¯¹è´¦ }
     THOST_FTDC_FBC_TransferDetails = '1';    
-  {/¿Í»§ÕË»§×´Ì¬¶ÔÕË }
+  {/å®¢æˆ·è´¦æˆ·çŠ¶æ€å¯¹è´¦ }
     THOST_FTDC_FBC_CustAccStatus = '2';    
-  {/ÕË»§Àà½»Ò×Ã÷Ï¸¶ÔÕË }
+  {/è´¦æˆ·ç±»äº¤æ˜“æ˜ç»†å¯¹è´¦ }
     THOST_FTDC_FBC_AccountTradeDetails = '3';    
-  {/ÆÚ»õÕË»§ĞÅÏ¢±ä¸üÃ÷Ï¸¶ÔÕË }
+  {/æœŸè´§è´¦æˆ·ä¿¡æ¯å˜æ›´æ˜ç»†å¯¹è´¦ }
     THOST_FTDC_FBC_FutureAccountChangeInfoDetails = '4';    
-  {/¿Í»§×Ê½ğÌ¨ÕËÓà¶îÃ÷Ï¸¶ÔÕË }
+  {/å®¢æˆ·èµ„é‡‘å°è´¦ä½™é¢æ˜ç»†å¯¹è´¦ }
     THOST_FTDC_FBC_CustMoneyDetail = '5';    
-  {/¿Í»§Ïú»§½áÏ¢Ã÷Ï¸¶ÔÕË }
+  {/å®¢æˆ·é”€æˆ·ç»“æ¯æ˜ç»†å¯¹è´¦ }
     THOST_FTDC_FBC_CustCancelAccountInfo = '6';    
-  {/¿Í»§×Ê½ğÓà¶î¶ÔÕË½á¹û }
+  {/å®¢æˆ·èµ„é‡‘ä½™é¢å¯¹è´¦ç»“æœ }
     THOST_FTDC_FBC_CustMoneyResult = '7';    
-  {/ÆäËü¶ÔÕËÒì³£½á¹ûÎÄ¼ş }
+  {/å…¶å®ƒå¯¹è´¦å¼‚å¸¸ç»“æœæ–‡ä»¶ }
     THOST_FTDC_FBC_OthersExceptionResult = '8';    
-  {/¿Í»§½áÏ¢¾»¶îÃ÷Ï¸ }
+  {/å®¢æˆ·ç»“æ¯å‡€é¢æ˜ç»† }
     THOST_FTDC_FBC_CustInterestNetMoneyDetails = '9';    
-  {/¿Í»§×Ê½ğ½»ÊÕÃ÷Ï¸ }
+  {/å®¢æˆ·èµ„é‡‘äº¤æ”¶æ˜ç»† }
     THOST_FTDC_FBC_CustMoneySendAndReceiveDetails = 'a';    
-  {/·¨ÈË´æ¹ÜÒøĞĞ×Ê½ğ½»ÊÕ»ã×Ü }
+  {/æ³•äººå­˜ç®¡é“¶è¡Œèµ„é‡‘äº¤æ”¶æ±‡æ€» }
     THOST_FTDC_FBC_CorporationMoneyTotal = 'b';    
-  {/Ö÷Ìå¼ä×Ê½ğ½»ÊÕ»ã×Ü }
+  {/ä¸»ä½“é—´èµ„é‡‘äº¤æ”¶æ±‡æ€» }
     THOST_FTDC_FBC_MainbodyMoneyTotal = 'c';    
-  {/×Ü·ÖÆ½ºâ¼à¹ÜÊı¾İ }
+  {/æ€»åˆ†å¹³è¡¡ç›‘ç®¡æ•°æ® }
     THOST_FTDC_FBC_MainPartMonitorData = 'd';    
-  {/´æ¹ÜÒøĞĞ±¸¸¶½ğÓà¶î }
+  {/å­˜ç®¡é“¶è¡Œå¤‡ä»˜é‡‘ä½™é¢ }
     THOST_FTDC_FBC_PreparationMoney = 'e';    
-  {/Ğ­°ì´æ¹ÜÒøĞĞ×Ê½ğ¼à¹ÜÊı¾İ }
+  {/ååŠå­˜ç®¡é“¶è¡Œèµ„é‡‘ç›‘ç®¡æ•°æ® }
     THOST_FTDC_FBC_BankMoneyMonitorData = 'f';    
 
   type
     PTThostFtdcFileBusinessCodeType = ^TThostFtdcFileBusinessCodeType;
     TThostFtdcFileBusinessCodeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCashExchangeCodeTypeÊÇÒ»¸ö»ã³®±êÖ¾ÀàĞÍ }
+  {/TFtdcCashExchangeCodeTypeæ˜¯ä¸€ä¸ªæ±‡é’æ ‡å¿—ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/»ã }
+  {/æ±‡ }
 
   const
     THOST_FTDC_CEC_Exchange = '1';    
-  {/³® }
+  {/é’ }
     THOST_FTDC_CEC_Cash = '2';    
 
   type
     PTThostFtdcCashExchangeCodeType = ^TThostFtdcCashExchangeCodeType;
     TThostFtdcCashExchangeCodeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcYesNoIndicatorTypeÊÇÒ»¸öÊÇ»ò·ñ±êÊ¶ÀàĞÍ }
+  {/TFtdcYesNoIndicatorTypeæ˜¯ä¸€ä¸ªæ˜¯æˆ–å¦æ ‡è¯†ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÊÇ }
+  {/æ˜¯ }
 
   const
     THOST_FTDC_YNI_Yes = '0';    
-  {/·ñ }
+  {/å¦ }
     THOST_FTDC_YNI_No = '1';    
 
   type
     PTThostFtdcYesNoIndicatorType = ^TThostFtdcYesNoIndicatorType;
     TThostFtdcYesNoIndicatorType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBanlanceTypeTypeÊÇÒ»¸öÓà¶îÀàĞÍÀàĞÍ }
+  {/TFtdcBanlanceTypeTypeæ˜¯ä¸€ä¸ªä½™é¢ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/µ±Ç°Óà¶î }
+  {/å½“å‰ä½™é¢ }
 
   const
     THOST_FTDC_BLT_CurrentMoney = '0';    
-  {/¿ÉÓÃÓà¶î }
+  {/å¯ç”¨ä½™é¢ }
     THOST_FTDC_BLT_UsableMoney = '1';    
-  {/¿ÉÈ¡Óà¶î }
+  {/å¯å–ä½™é¢ }
     THOST_FTDC_BLT_FetchableMoney = '2';    
-  {/¶³½áÓà¶î }
+  {/å†»ç»“ä½™é¢ }
     THOST_FTDC_BLT_FreezeMoney = '3';    
 
   type
     PTThostFtdcBanlanceTypeType = ^TThostFtdcBanlanceTypeType;
     TThostFtdcBanlanceTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcGenderTypeÊÇÒ»¸öĞÔ±ğÀàĞÍ }
+  {/TFtdcGenderTypeæ˜¯ä¸€ä¸ªæ€§åˆ«ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Î´Öª×´Ì¬ }
+  {/æœªçŸ¥çŠ¶æ€ }
 
   const
     THOST_FTDC_GD_Unknown = '0';    
-  {/ÄĞ }
+  {/ç”· }
     THOST_FTDC_GD_Male = '1';    
-  {/Å® }
+  {/å¥³ }
     THOST_FTDC_GD_Female = '2';    
 
   type
     PTThostFtdcGenderType = ^TThostFtdcGenderType;
     TThostFtdcGenderType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFeePayFlagTypeÊÇÒ»¸ö·ÑÓÃÖ§¸¶±êÖ¾ÀàĞÍ }
+  {/TFtdcFeePayFlagTypeæ˜¯ä¸€ä¸ªè´¹ç”¨æ”¯ä»˜æ ‡å¿—ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÓÉÊÜÒæ·½Ö§¸¶·ÑÓÃ }
+  {/ç”±å—ç›Šæ–¹æ”¯ä»˜è´¹ç”¨ }
 
   const
     THOST_FTDC_FPF_BEN = '0';    
-  {/ÓÉ·¢ËÍ·½Ö§¸¶·ÑÓÃ }
+  {/ç”±å‘é€æ–¹æ”¯ä»˜è´¹ç”¨ }
     THOST_FTDC_FPF_OUR = '1';    
-  {/ÓÉ·¢ËÍ·½Ö§¸¶·¢ÆğµÄ·ÑÓÃ£¬ÊÜÒæ·½Ö§¸¶½ÓÊÜµÄ·ÑÓÃ }
+  {/ç”±å‘é€æ–¹æ”¯ä»˜å‘èµ·çš„è´¹ç”¨ï¼Œå—ç›Šæ–¹æ”¯ä»˜æ¥å—çš„è´¹ç”¨ }
     THOST_FTDC_FPF_SHA = '2';    
 
   type
     PTThostFtdcFeePayFlagType = ^TThostFtdcFeePayFlagType;
     TThostFtdcFeePayFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcPassWordKeyTypeTypeÊÇÒ»¸öÃÜÔ¿ÀàĞÍÀàĞÍ }
+  {/TFtdcPassWordKeyTypeTypeæ˜¯ä¸€ä¸ªå¯†é’¥ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/½»»»ÃÜÔ¿ }
+  {/äº¤æ¢å¯†é’¥ }
 
   const
     THOST_FTDC_PWKT_ExchangeKey = '0';    
-  {/ÃÜÂëÃÜÔ¿ }
+  {/å¯†ç å¯†é’¥ }
     THOST_FTDC_PWKT_PassWordKey = '1';    
-  {/MACÃÜÔ¿ }
+  {/MACå¯†é’¥ }
     THOST_FTDC_PWKT_MACKey = '2';    
-  {/±¨ÎÄÃÜÔ¿ }
+  {/æŠ¥æ–‡å¯†é’¥ }
     THOST_FTDC_PWKT_MessageKey = '3';    
 
   type
     PTThostFtdcPassWordKeyTypeType = ^TThostFtdcPassWordKeyTypeType;
     TThostFtdcPassWordKeyTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFBTPassWordTypeTypeÊÇÒ»¸öÃÜÂëÀàĞÍÀàĞÍ }
+  {/TFtdcFBTPassWordTypeTypeæ˜¯ä¸€ä¸ªå¯†ç ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/²éÑ¯ }
+  {/æŸ¥è¯¢ }
 
   const
     THOST_FTDC_PWT_Query = '0';    
-  {/È¡¿î }
+  {/å–æ¬¾ }
     THOST_FTDC_PWT_Fetch = '1';    
-  {/×ªÕÊ }
+  {/è½¬å¸ }
     THOST_FTDC_PWT_Transfer = '2';    
-  {/½»Ò× }
+  {/äº¤æ˜“ }
     THOST_FTDC_PWT_Trade = '3';    
 
   type
     PTThostFtdcFBTPassWordTypeType = ^TThostFtdcFBTPassWordTypeType;
     TThostFtdcFBTPassWordTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFBTEncryModeTypeÊÇÒ»¸ö¼ÓÃÜ·½Ê½ÀàĞÍ }
+  {/TFtdcFBTEncryModeTypeæ˜¯ä¸€ä¸ªåŠ å¯†æ–¹å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/²»¼ÓÃÜ }
+  {/ä¸åŠ å¯† }
 
   const
     THOST_FTDC_EM_NoEncry = '0';    
@@ -4010,932 +4015,932 @@ interface
     PTThostFtdcFBTEncryModeType = ^TThostFtdcFBTEncryModeType;
     TThostFtdcFBTEncryModeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBankRepealFlagTypeÊÇÒ»¸öÒøĞĞ³åÕı±êÖ¾ÀàĞÍ }
+  {/TFtdcBankRepealFlagTypeæ˜¯ä¸€ä¸ªé“¶è¡Œå†²æ­£æ ‡å¿—ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÒøĞĞÎŞĞè×Ô¶¯³åÕı }
+  {/é“¶è¡Œæ— éœ€è‡ªåŠ¨å†²æ­£ }
 
   const
     THOST_FTDC_BRF_BankNotNeedRepeal = '0';    
-  {/ÒøĞĞ´ı×Ô¶¯³åÕı }
+  {/é“¶è¡Œå¾…è‡ªåŠ¨å†²æ­£ }
     THOST_FTDC_BRF_BankWaitingRepeal = '1';    
-  {/ÒøĞĞÒÑ×Ô¶¯³åÕı }
+  {/é“¶è¡Œå·²è‡ªåŠ¨å†²æ­£ }
     THOST_FTDC_BRF_BankBeenRepealed = '2';    
 
   type
     PTThostFtdcBankRepealFlagType = ^TThostFtdcBankRepealFlagType;
     TThostFtdcBankRepealFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBrokerRepealFlagTypeÊÇÒ»¸öÆÚÉÌ³åÕı±êÖ¾ÀàĞÍ }
+  {/TFtdcBrokerRepealFlagTypeæ˜¯ä¸€ä¸ªæœŸå•†å†²æ­£æ ‡å¿—ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÆÚÉÌÎŞĞè×Ô¶¯³åÕı }
+  {/æœŸå•†æ— éœ€è‡ªåŠ¨å†²æ­£ }
 
   const
     THOST_FTDC_BRORF_BrokerNotNeedRepeal = '0';    
-  {/ÆÚÉÌ´ı×Ô¶¯³åÕı }
+  {/æœŸå•†å¾…è‡ªåŠ¨å†²æ­£ }
     THOST_FTDC_BRORF_BrokerWaitingRepeal = '1';    
-  {/ÆÚÉÌÒÑ×Ô¶¯³åÕı }
+  {/æœŸå•†å·²è‡ªåŠ¨å†²æ­£ }
     THOST_FTDC_BRORF_BrokerBeenRepealed = '2';    
 
   type
     PTThostFtdcBrokerRepealFlagType = ^TThostFtdcBrokerRepealFlagType;
     TThostFtdcBrokerRepealFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcInstitutionTypeTypeÊÇÒ»¸ö»ú¹¹Àà±ğÀàĞÍ }
+  {/TFtdcInstitutionTypeTypeæ˜¯ä¸€ä¸ªæœºæ„ç±»åˆ«ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÒøĞĞ }
+  {/é“¶è¡Œ }
 
   const
     THOST_FTDC_TS_Bank = '0';    
-  {/ÆÚÉÌ }
+  {/æœŸå•† }
     THOST_FTDC_TS_Future = '1';    
-  {/È¯ÉÌ }
+  {/åˆ¸å•† }
     THOST_FTDC_TS_Store = '2';    
 
   type
     PTThostFtdcInstitutionTypeType = ^TThostFtdcInstitutionTypeType;
     TThostFtdcInstitutionTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcLastFragmentTypeÊÇÒ»¸ö×îºó·ÖÆ¬±êÖ¾ÀàĞÍ }
+  {/TFtdcLastFragmentTypeæ˜¯ä¸€ä¸ªæœ€ååˆ†ç‰‡æ ‡å¿—ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÊÇ×îºó·ÖÆ¬ }
+  {/æ˜¯æœ€ååˆ†ç‰‡ }
 
   const
     THOST_FTDC_LF_Yes = '0';    
-  {/²»ÊÇ×îºó·ÖÆ¬ }
+  {/ä¸æ˜¯æœ€ååˆ†ç‰‡ }
     THOST_FTDC_LF_No = '1';    
 
   type
     PTThostFtdcLastFragmentType = ^TThostFtdcLastFragmentType;
     TThostFtdcLastFragmentType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBankAccStatusTypeÊÇÒ»¸öÒøĞĞÕË»§×´Ì¬ÀàĞÍ }
+  {/TFtdcBankAccStatusTypeæ˜¯ä¸€ä¸ªé“¶è¡Œè´¦æˆ·çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Õı³£ }
+  {/æ­£å¸¸ }
 
   const
     THOST_FTDC_BAS_Normal = '0';    
-  {/¶³½á }
+  {/å†»ç»“ }
     THOST_FTDC_BAS_Freeze = '1';    
-  {/¹ÒÊ§ }
+  {/æŒ‚å¤± }
     THOST_FTDC_BAS_ReportLoss = '2';    
 
   type
     PTThostFtdcBankAccStatusType = ^TThostFtdcBankAccStatusType;
     TThostFtdcBankAccStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcMoneyAccountStatusTypeÊÇÒ»¸ö×Ê½ğÕË»§×´Ì¬ÀàĞÍ }
+  {/TFtdcMoneyAccountStatusTypeæ˜¯ä¸€ä¸ªèµ„é‡‘è´¦æˆ·çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Õı³£ }
+  {/æ­£å¸¸ }
 
   const
     THOST_FTDC_MAS_Normal = '0';    
-  {/Ïú»§ }
+  {/é”€æˆ· }
     THOST_FTDC_MAS_Cancel = '1';    
 
   type
     PTThostFtdcMoneyAccountStatusType = ^TThostFtdcMoneyAccountStatusType;
     TThostFtdcMoneyAccountStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcManageStatusTypeÊÇÒ»¸ö´æ¹Ü×´Ì¬ÀàĞÍ }
+  {/TFtdcManageStatusTypeæ˜¯ä¸€ä¸ªå­˜ç®¡çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Ö¸¶¨´æ¹Ü }
+  {/æŒ‡å®šå­˜ç®¡ }
 
   const
     THOST_FTDC_MSS_Point = '0';    
-  {/Ô¤Ö¸¶¨ }
+  {/é¢„æŒ‡å®š }
     THOST_FTDC_MSS_PrePoint = '1';    
-  {/³·ÏúÖ¸¶¨ }
+  {/æ’¤é”€æŒ‡å®š }
     THOST_FTDC_MSS_CancelPoint = '2';    
 
   type
     PTThostFtdcManageStatusType = ^TThostFtdcManageStatusType;
     TThostFtdcManageStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSystemTypeTypeÊÇÒ»¸öÓ¦ÓÃÏµÍ³ÀàĞÍÀàĞÍ }
+  {/TFtdcSystemTypeTypeæ˜¯ä¸€ä¸ªåº”ç”¨ç³»ç»Ÿç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÒøÆÚ×ªÕÊ }
+  {/é“¶æœŸè½¬å¸ }
 
   const
     THOST_FTDC_SYT_FutureBankTransfer = '0';    
-  {/ÒøÖ¤×ªÕÊ }
+  {/é“¶è¯è½¬å¸ }
     THOST_FTDC_SYT_StockBankTransfer = '1';    
-  {/µÚÈı·½´æ¹Ü }
+  {/ç¬¬ä¸‰æ–¹å­˜ç®¡ }
     THOST_FTDC_SYT_TheThirdPartStore = '2';    
 
   type
     PTThostFtdcSystemTypeType = ^TThostFtdcSystemTypeType;
     TThostFtdcSystemTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTxnEndFlagTypeÊÇÒ»¸öÒøÆÚ×ªÕÊ»®×ª½á¹û±êÖ¾ÀàĞÍ }
+  {/TFtdcTxnEndFlagTypeæ˜¯ä¸€ä¸ªé“¶æœŸè½¬å¸åˆ’è½¬ç»“æœæ ‡å¿—ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Õı³£´¦ÀíÖĞ }
+  {/æ­£å¸¸å¤„ç†ä¸­ }
 
   const
     THOST_FTDC_TEF_NormalProcessing = '0';    
-  {/³É¹¦½áÊø }
+  {/æˆåŠŸç»“æŸ }
     THOST_FTDC_TEF_Success = '1';    
-  {/Ê§°Ü½áÊø }
+  {/å¤±è´¥ç»“æŸ }
     THOST_FTDC_TEF_Failed = '2';    
-  {/Òì³£ÖĞ }
+  {/å¼‚å¸¸ä¸­ }
     THOST_FTDC_TEF_Abnormal = '3';    
-  {/ÒÑÈË¹¤Òì³£´¦Àí }
+  {/å·²äººå·¥å¼‚å¸¸å¤„ç† }
     THOST_FTDC_TEF_ManualProcessedForException = '4';    
-  {/Í¨Ñ¶Òì³£ £¬ÇëÈË¹¤´¦Àí }
+  {/é€šè®¯å¼‚å¸¸ ï¼Œè¯·äººå·¥å¤„ç† }
     THOST_FTDC_TEF_CommuFailedNeedManualProcess = '5';    
-  {/ÏµÍ³³ö´í£¬ÇëÈË¹¤´¦Àí }
+  {/ç³»ç»Ÿå‡ºé”™ï¼Œè¯·äººå·¥å¤„ç† }
     THOST_FTDC_TEF_SysErrorNeedManualProcess = '6';    
 
   type
     PTThostFtdcTxnEndFlagType = ^TThostFtdcTxnEndFlagType;
     TThostFtdcTxnEndFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcProcessStatusTypeÊÇÒ»¸öÒøÆÚ×ªÕÊ·şÎñ´¦Àí×´Ì¬ÀàĞÍ }
+  {/TFtdcProcessStatusTypeæ˜¯ä¸€ä¸ªé“¶æœŸè½¬å¸æœåŠ¡å¤„ç†çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Î´´¦Àí }
+  {/æœªå¤„ç† }
 
   const
     THOST_FTDC_PSS_NotProcess = '0';    
-  {/¿ªÊ¼´¦Àí }
+  {/å¼€å§‹å¤„ç† }
     THOST_FTDC_PSS_StartProcess = '1';    
-  {/´¦ÀíÍê³É }
+  {/å¤„ç†å®Œæˆ }
     THOST_FTDC_PSS_Finished = '2';    
 
   type
     PTThostFtdcProcessStatusType = ^TThostFtdcProcessStatusType;
     TThostFtdcProcessStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCustTypeTypeÊÇÒ»¸ö¿Í»§ÀàĞÍÀàĞÍ }
+  {/TFtdcCustTypeTypeæ˜¯ä¸€ä¸ªå®¢æˆ·ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/×ÔÈ»ÈË }
+  {/è‡ªç„¶äºº }
 
   const
     THOST_FTDC_CUSTT_Person = '0';    
-  {/»ú¹¹»§ }
+  {/æœºæ„æˆ· }
     THOST_FTDC_CUSTT_Institution = '1';    
 
   type
     PTThostFtdcCustTypeType = ^TThostFtdcCustTypeType;
     TThostFtdcCustTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFBTTransferDirectionTypeÊÇÒ»¸öÒøÆÚ×ªÕÊ·½ÏòÀàĞÍ }
+  {/TFtdcFBTTransferDirectionTypeæ˜¯ä¸€ä¸ªé“¶æœŸè½¬å¸æ–¹å‘ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Èë½ğ£¬ÒøĞĞ×ªÆÚ»õ }
+  {/å…¥é‡‘ï¼Œé“¶è¡Œè½¬æœŸè´§ }
 
   const
     THOST_FTDC_FBTTD_FromBankToFuture = '1';    
-  {/³ö½ğ£¬ÆÚ»õ×ªÒøĞĞ }
+  {/å‡ºé‡‘ï¼ŒæœŸè´§è½¬é“¶è¡Œ }
     THOST_FTDC_FBTTD_FromFutureToBank = '2';    
 
   type
     PTThostFtdcFBTTransferDirectionType = ^TThostFtdcFBTTransferDirectionType;
     TThostFtdcFBTTransferDirectionType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOpenOrDestroyTypeÊÇÒ»¸ö¿ªÏú»§Àà±ğÀàĞÍ }
+  {/TFtdcOpenOrDestroyTypeæ˜¯ä¸€ä¸ªå¼€é”€æˆ·ç±»åˆ«ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/¿ª»§ }
+  {/å¼€æˆ· }
 
   const
     THOST_FTDC_OOD_Open = '1';    
-  {/Ïú»§ }
+  {/é”€æˆ· }
     THOST_FTDC_OOD_Destroy = '0';    
 
   type
     PTThostFtdcOpenOrDestroyType = ^TThostFtdcOpenOrDestroyType;
     TThostFtdcOpenOrDestroyType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAvailabilityFlagTypeÊÇÒ»¸öÓĞĞ§±êÖ¾ÀàĞÍ }
+  {/TFtdcAvailabilityFlagTypeæ˜¯ä¸€ä¸ªæœ‰æ•ˆæ ‡å¿—ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Î´È·ÈÏ }
+  {/æœªç¡®è®¤ }
 
   const
     THOST_FTDC_AVAF_Invalid = '0';    
-  {/ÓĞĞ§ }
+  {/æœ‰æ•ˆ }
     THOST_FTDC_AVAF_Valid = '1';    
-  {/³åÕı }
+  {/å†²æ­£ }
     THOST_FTDC_AVAF_Repeal = '2';    
 
   type
     PTThostFtdcAvailabilityFlagType = ^TThostFtdcAvailabilityFlagType;
     TThostFtdcAvailabilityFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOrganTypeTypeÊÇÒ»¸ö»ú¹¹ÀàĞÍÀàĞÍ }
+  {/TFtdcOrganTypeTypeæ˜¯ä¸€ä¸ªæœºæ„ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÒøĞĞ´úÀí }
+  {/é“¶è¡Œä»£ç† }
 
   const
     THOST_FTDC_OT_Bank = '1';    
-  {/½»Ò×Ç°ÖÃ }
+  {/äº¤æ˜“å‰ç½® }
     THOST_FTDC_OT_Future = '2';    
-  {/ÒøÆÚ×ªÕÊÆ½Ì¨¹ÜÀí }
+  {/é“¶æœŸè½¬å¸å¹³å°ç®¡ç† }
     THOST_FTDC_OT_PlateForm = '9';    
 
   type
     PTThostFtdcOrganTypeType = ^TThostFtdcOrganTypeType;
     TThostFtdcOrganTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOrganLevelTypeÊÇÒ»¸ö»ú¹¹¼¶±ğÀàĞÍ }
+  {/TFtdcOrganLevelTypeæ˜¯ä¸€ä¸ªæœºæ„çº§åˆ«ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÒøĞĞ×ÜĞĞ»òÆÚÉÌ×Ü²¿ }
+  {/é“¶è¡Œæ€»è¡Œæˆ–æœŸå•†æ€»éƒ¨ }
 
   const
     THOST_FTDC_OL_HeadQuarters = '1';    
-  {/ÒøĞĞ·ÖÖĞĞÄ»òÆÚ»õ¹«Ë¾ÓªÒµ²¿ }
+  {/é“¶è¡Œåˆ†ä¸­å¿ƒæˆ–æœŸè´§å…¬å¸è¥ä¸šéƒ¨ }
     THOST_FTDC_OL_Branch = '2';    
 
   type
     PTThostFtdcOrganLevelType = ^TThostFtdcOrganLevelType;
     TThostFtdcOrganLevelType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcProtocalIDTypeÊÇÒ»¸öĞ­ÒéÀàĞÍÀàĞÍ }
+  {/TFtdcProtocalIDTypeæ˜¯ä¸€ä¸ªåè®®ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÆÚÉÌĞ­Òé }
+  {/æœŸå•†åè®® }
 
   const
     THOST_FTDC_PID_FutureProtocal = '0';    
-  {/¹¤ĞĞĞ­Òé }
+  {/å·¥è¡Œåè®® }
     THOST_FTDC_PID_ICBCProtocal = '1';    
-  {/Å©ĞĞĞ­Òé }
+  {/å†œè¡Œåè®® }
     THOST_FTDC_PID_ABCProtocal = '2';    
-  {/ÖĞ¹úÒøĞĞĞ­Òé }
+  {/ä¸­å›½é“¶è¡Œåè®® }
     THOST_FTDC_PID_CBCProtocal = '3';    
-  {/½¨ĞĞĞ­Òé }
+  {/å»ºè¡Œåè®® }
     THOST_FTDC_PID_CCBProtocal = '4';    
-  {/½»ĞĞĞ­Òé }
+  {/äº¤è¡Œåè®® }
     THOST_FTDC_PID_BOCOMProtocal = '5';    
-  {/ÒøÆÚ×ªÕÊÆ½Ì¨Ğ­Òé }
+  {/é“¶æœŸè½¬å¸å¹³å°åè®® }
     THOST_FTDC_PID_FBTPlateFormProtocal = 'X';    
 
   type
     PTThostFtdcProtocalIDType = ^TThostFtdcProtocalIDType;
     TThostFtdcProtocalIDType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcConnectModeTypeÊÇÒ»¸öÌ×½Ó×ÖÁ¬½Ó·½Ê½ÀàĞÍ }
+  {/TFtdcConnectModeTypeæ˜¯ä¸€ä¸ªå¥—æ¥å­—è¿æ¥æ–¹å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/¶ÌÁ¬½Ó }
+  {/çŸ­è¿æ¥ }
 
   const
     THOST_FTDC_CM_ShortConnect = '0';    
-  {/³¤Á¬½Ó }
+  {/é•¿è¿æ¥ }
     THOST_FTDC_CM_LongConnect = '1';    
 
   type
     PTThostFtdcConnectModeType = ^TThostFtdcConnectModeType;
     TThostFtdcConnectModeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSyncModeTypeÊÇÒ»¸öÌ×½Ó×ÖÍ¨ĞÅ·½Ê½ÀàĞÍ }
+  {/TFtdcSyncModeTypeæ˜¯ä¸€ä¸ªå¥—æ¥å­—é€šä¿¡æ–¹å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Òì²½ }
+  {/å¼‚æ­¥ }
 
   const
     THOST_FTDC_SRM_ASync = '0';    
-  {/Í¬²½ }
+  {/åŒæ­¥ }
     THOST_FTDC_SRM_Sync = '1';    
 
   type
     PTThostFtdcSyncModeType = ^TThostFtdcSyncModeType;
     TThostFtdcSyncModeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBankAccTypeTypeÊÇÒ»¸öÒøĞĞÕÊºÅÀàĞÍÀàĞÍ }
+  {/TFtdcBankAccTypeTypeæ˜¯ä¸€ä¸ªé“¶è¡Œå¸å·ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÒøĞĞ´æÕÛ }
+  {/é“¶è¡Œå­˜æŠ˜ }
 
   const
     THOST_FTDC_BAT_BankBook = '1';    
-  {/´¢Ğî¿¨ }
+  {/å‚¨è“„å¡ }
     THOST_FTDC_BAT_SavingCard = '2';    
-  {/ĞÅÓÃ¿¨ }
+  {/ä¿¡ç”¨å¡ }
     THOST_FTDC_BAT_CreditCard = '3';    
 
   type
     PTThostFtdcBankAccTypeType = ^TThostFtdcBankAccTypeType;
     TThostFtdcBankAccTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFutureAccTypeTypeÊÇÒ»¸öÆÚ»õ¹«Ë¾ÕÊºÅÀàĞÍÀàĞÍ }
+  {/TFtdcFutureAccTypeTypeæ˜¯ä¸€ä¸ªæœŸè´§å…¬å¸å¸å·ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÒøĞĞ´æÕÛ }
+  {/é“¶è¡Œå­˜æŠ˜ }
 
   const
     THOST_FTDC_FAT_BankBook = '1';    
-  {/´¢Ğî¿¨ }
+  {/å‚¨è“„å¡ }
     THOST_FTDC_FAT_SavingCard = '2';    
-  {/ĞÅÓÃ¿¨ }
+  {/ä¿¡ç”¨å¡ }
     THOST_FTDC_FAT_CreditCard = '3';    
 
   type
     PTThostFtdcFutureAccTypeType = ^TThostFtdcFutureAccTypeType;
     TThostFtdcFutureAccTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOrganStatusTypeÊÇÒ»¸ö½ÓÈë»ú¹¹×´Ì¬ÀàĞÍ }
+  {/TFtdcOrganStatusTypeæ˜¯ä¸€ä¸ªæ¥å…¥æœºæ„çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÆôÓÃ }
+  {/å¯ç”¨ }
 
   const
     THOST_FTDC_OS_Ready = '0';    
-  {/Ç©µ½ }
+  {/ç­¾åˆ° }
     THOST_FTDC_OS_CheckIn = '1';    
-  {/Ç©ÍË }
+  {/ç­¾é€€ }
     THOST_FTDC_OS_CheckOut = '2';    
-  {/¶ÔÕÊÎÄ¼şµ½´ï }
+  {/å¯¹å¸æ–‡ä»¶åˆ°è¾¾ }
     THOST_FTDC_OS_CheckFileArrived = '3';    
-  {/¶ÔÕÊ }
+  {/å¯¹å¸ }
     THOST_FTDC_OS_CheckDetail = '4';    
-  {/ÈÕÖÕÇåÀí }
+  {/æ—¥ç»ˆæ¸…ç† }
     THOST_FTDC_OS_DayEndClean = '5';    
-  {/×¢Ïú }
+  {/æ³¨é”€ }
     THOST_FTDC_OS_Invalid = '9';    
 
   type
     PTThostFtdcOrganStatusType = ^TThostFtdcOrganStatusType;
     TThostFtdcOrganStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCCBFeeModeTypeÊÇÒ»¸ö½¨ĞĞÊÕ·ÑÄ£Ê½ÀàĞÍ }
+  {/TFtdcCCBFeeModeTypeæ˜¯ä¸€ä¸ªå»ºè¡Œæ”¶è´¹æ¨¡å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/°´½ğ¶î¿ÛÊÕ }
+  {/æŒ‰é‡‘é¢æ‰£æ”¶ }
 
   const
     THOST_FTDC_CCBFM_ByAmount = '1';    
-  {/°´ÔÂ¿ÛÊÕ }
+  {/æŒ‰æœˆæ‰£æ”¶ }
     THOST_FTDC_CCBFM_ByMonth = '2';    
 
   type
     PTThostFtdcCCBFeeModeType = ^TThostFtdcCCBFeeModeType;
     TThostFtdcCCBFeeModeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCommApiTypeTypeÊÇÒ»¸öÍ¨Ñ¶APIÀàĞÍÀàĞÍ }
+  {/TFtdcCommApiTypeTypeæ˜¯ä¸€ä¸ªé€šè®¯APIç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/¿Í»§¶Ë }
+  {/å®¢æˆ·ç«¯ }
 
   const
     THOST_FTDC_CAPIT_Client = '1';    
-  {/·şÎñ¶Ë }
+  {/æœåŠ¡ç«¯ }
     THOST_FTDC_CAPIT_Server = '2';    
-  {/½»Ò×ÏµÍ³µÄUserApi }
+  {/äº¤æ˜“ç³»ç»Ÿçš„UserApi }
     THOST_FTDC_CAPIT_UserApi = '3';    
 
   type
     PTThostFtdcCommApiTypeType = ^TThostFtdcCommApiTypeType;
     TThostFtdcCommApiTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcServiceIDTypeÊÇÒ»¸ö·şÎñ±àºÅÀàĞÍ }
+  {/TFtdcServiceIDTypeæ˜¯ä¸€ä¸ªæœåŠ¡ç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcServiceIDType = ^TThostFtdcServiceIDType;
     TThostFtdcServiceIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcServiceLineNoTypeÊÇÒ»¸ö·şÎñÏßÂ·±àºÅÀàĞÍ }
+  {/TFtdcServiceLineNoTypeæ˜¯ä¸€ä¸ªæœåŠ¡çº¿è·¯ç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcServiceLineNoType = ^TThostFtdcServiceLineNoType;
     TThostFtdcServiceLineNoType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcServiceNameTypeÊÇÒ»¸ö·şÎñÃûÀàĞÍ }
+  {/TFtdcServiceNameTypeæ˜¯ä¸€ä¸ªæœåŠ¡åç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcServiceNameType = ^TThostFtdcServiceNameType;
     TThostFtdcServiceNameType = array[0..60] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcLinkStatusTypeÊÇÒ»¸öÁ¬½Ó×´Ì¬ÀàĞÍ }
+  {/TFtdcLinkStatusTypeæ˜¯ä¸€ä¸ªè¿æ¥çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÒÑ¾­Á¬½Ó }
+  {/å·²ç»è¿æ¥ }
 
   const
     THOST_FTDC_LS_Connected = '1';    
-  {/Ã»ÓĞÁ¬½Ó }
+  {/æ²¡æœ‰è¿æ¥ }
     THOST_FTDC_LS_Disconnected = '2';    
 
   type
     PTThostFtdcLinkStatusType = ^TThostFtdcLinkStatusType;
     TThostFtdcLinkStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCommApiPointerTypeÊÇÒ»¸öÍ¨Ñ¶APIÖ¸ÕëÀàĞÍ }
+  {/TFtdcCommApiPointerTypeæ˜¯ä¸€ä¸ªé€šè®¯APIæŒ‡é’ˆç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCommApiPointerType = ^TThostFtdcCommApiPointerType;
     TThostFtdcCommApiPointerType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcPwdFlagTypeÊÇÒ»¸öÃÜÂëºË¶Ô±êÖ¾ÀàĞÍ }
+  {/TFtdcPwdFlagTypeæ˜¯ä¸€ä¸ªå¯†ç æ ¸å¯¹æ ‡å¿—ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/²»ºË¶Ô }
+  {/ä¸æ ¸å¯¹ }
 
   const
     THOST_FTDC_BPWDF_NoCheck = '0';    
-  {/Ã÷ÎÄºË¶Ô }
+  {/æ˜æ–‡æ ¸å¯¹ }
     THOST_FTDC_BPWDF_BlankCheck = '1';    
-  {/ÃÜÎÄºË¶Ô }
+  {/å¯†æ–‡æ ¸å¯¹ }
     THOST_FTDC_BPWDF_EncryptCheck = '2';    
 
   type
     PTThostFtdcPwdFlagType = ^TThostFtdcPwdFlagType;
     TThostFtdcPwdFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSecuAccTypeTypeÊÇÒ»¸öÆÚ»õÕÊºÅÀàĞÍÀàĞÍ }
+  {/TFtdcSecuAccTypeTypeæ˜¯ä¸€ä¸ªæœŸè´§å¸å·ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/×Ê½ğÕÊºÅ }
+  {/èµ„é‡‘å¸å· }
 
   const
     THOST_FTDC_SAT_AccountID = '1';    
-  {/×Ê½ğ¿¨ºÅ }
+  {/èµ„é‡‘å¡å· }
     THOST_FTDC_SAT_CardID = '2';    
-  {/ÉÏº£¹É¶«ÕÊºÅ }
+  {/ä¸Šæµ·è‚¡ä¸œå¸å· }
     THOST_FTDC_SAT_SHStockholderID = '3';    
-  {/ÉîÛÚ¹É¶«ÕÊºÅ }
+  {/æ·±åœ³è‚¡ä¸œå¸å· }
     THOST_FTDC_SAT_SZStockholderID = '4';    
 
   type
     PTThostFtdcSecuAccTypeType = ^TThostFtdcSecuAccTypeType;
     TThostFtdcSecuAccTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTransferStatusTypeÊÇÒ»¸ö×ªÕË½»Ò××´Ì¬ÀàĞÍ }
+  {/TFtdcTransferStatusTypeæ˜¯ä¸€ä¸ªè½¬è´¦äº¤æ˜“çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Õı³£ }
+  {/æ­£å¸¸ }
 
   const
     THOST_FTDC_TRFS_Normal = '0';    
-  {/±»³åÕı }
+  {/è¢«å†²æ­£ }
     THOST_FTDC_TRFS_Repealed = '1';    
 
   type
     PTThostFtdcTransferStatusType = ^TThostFtdcTransferStatusType;
     TThostFtdcTransferStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSponsorTypeTypeÊÇÒ»¸ö·¢Æğ·½ÀàĞÍ }
+  {/TFtdcSponsorTypeTypeæ˜¯ä¸€ä¸ªå‘èµ·æ–¹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÆÚÉÌ }
+  {/æœŸå•† }
 
   const
     THOST_FTDC_SPTYPE_Broker = '0';    
-  {/ÒøĞĞ }
+  {/é“¶è¡Œ }
     THOST_FTDC_SPTYPE_Bank = '1';    
 
   type
     PTThostFtdcSponsorTypeType = ^TThostFtdcSponsorTypeType;
     TThostFtdcSponsorTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcReqRspTypeTypeÊÇÒ»¸öÇëÇóÏìÓ¦Àà±ğÀàĞÍ }
+  {/TFtdcReqRspTypeTypeæ˜¯ä¸€ä¸ªè¯·æ±‚å“åº”ç±»åˆ«ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÇëÇó }
+  {/è¯·æ±‚ }
 
   const
     THOST_FTDC_REQRSP_Request = '0';    
-  {/ÏìÓ¦ }
+  {/å“åº” }
     THOST_FTDC_REQRSP_Response = '1';    
 
   type
     PTThostFtdcReqRspTypeType = ^TThostFtdcReqRspTypeType;
     TThostFtdcReqRspTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFBTUserEventTypeTypeÊÇÒ»¸öÒøÆÚ×ªÕÊÓÃ»§ÊÂ¼şÀàĞÍÀàĞÍ }
+  {/TFtdcFBTUserEventTypeTypeæ˜¯ä¸€ä¸ªé“¶æœŸè½¬å¸ç”¨æˆ·äº‹ä»¶ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Ç©µ½ }
+  {/ç­¾åˆ° }
 
   const
     THOST_FTDC_FBTUET_SignIn = '0';    
-  {/ÒøĞĞ×ªÆÚ»õ }
+  {/é“¶è¡Œè½¬æœŸè´§ }
     THOST_FTDC_FBTUET_FromBankToFuture = '1';    
-  {/ÆÚ»õ×ªÒøĞĞ }
+  {/æœŸè´§è½¬é“¶è¡Œ }
     THOST_FTDC_FBTUET_FromFutureToBank = '2';    
-  {/¿ª»§ }
+  {/å¼€æˆ· }
     THOST_FTDC_FBTUET_OpenAccount = '3';    
-  {/Ïú»§ }
+  {/é”€æˆ· }
     THOST_FTDC_FBTUET_CancelAccount = '4';    
-  {/±ä¸üÒøĞĞÕË»§ }
+  {/å˜æ›´é“¶è¡Œè´¦æˆ· }
     THOST_FTDC_FBTUET_ChangeAccount = '5';    
-  {/³åÕıÒøĞĞ×ªÆÚ»õ }
+  {/å†²æ­£é“¶è¡Œè½¬æœŸè´§ }
     THOST_FTDC_FBTUET_RepealFromBankToFuture = '6';    
-  {/³åÕıÆÚ»õ×ªÒøĞĞ }
+  {/å†²æ­£æœŸè´§è½¬é“¶è¡Œ }
     THOST_FTDC_FBTUET_RepealFromFutureToBank = '7';    
-  {/²éÑ¯ÒøĞĞÕË»§ }
+  {/æŸ¥è¯¢é“¶è¡Œè´¦æˆ· }
     THOST_FTDC_FBTUET_QueryBankAccount = '8';    
-  {/²éÑ¯ÆÚ»õÕË»§ }
+  {/æŸ¥è¯¢æœŸè´§è´¦æˆ· }
     THOST_FTDC_FBTUET_QueryFutureAccount = '9';    
-  {/Ç©ÍË }
+  {/ç­¾é€€ }
     THOST_FTDC_FBTUET_SignOut = 'A';    
-  {/ÃÜÔ¿Í¬²½ }
+  {/å¯†é’¥åŒæ­¥ }
     THOST_FTDC_FBTUET_SyncKey = 'B';    
-  {/Ô¤Ô¼¿ª»§ }
+  {/é¢„çº¦å¼€æˆ· }
     THOST_FTDC_FBTUET_ReserveOpenAccount = 'C';    
-  {/³·ÏúÔ¤Ô¼¿ª»§ }
+  {/æ’¤é”€é¢„çº¦å¼€æˆ· }
     THOST_FTDC_FBTUET_CancelReserveOpenAccount = 'D';    
-  {/Ô¤Ô¼¿ª»§È·ÈÏ }
+  {/é¢„çº¦å¼€æˆ·ç¡®è®¤ }
     THOST_FTDC_FBTUET_ReserveOpenAccountConfirm = 'E';    
-  {/ÆäËû }
+  {/å…¶ä»– }
     THOST_FTDC_FBTUET_Other = 'Z';    
 
   type
     PTThostFtdcFBTUserEventTypeType = ^TThostFtdcFBTUserEventTypeType;
     TThostFtdcFBTUserEventTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBankIDByBankTypeÊÇÒ»¸öÒøĞĞ×Ô¼ºµÄ±àÂëÀàĞÍ }
+  {/TFtdcBankIDByBankTypeæ˜¯ä¸€ä¸ªé“¶è¡Œè‡ªå·±çš„ç¼–ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBankIDByBankType = ^TThostFtdcBankIDByBankType;
     TThostFtdcBankIDByBankType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBankOperNoTypeÊÇÒ»¸öÒøĞĞ²Ù×÷Ô±ºÅÀàĞÍ }
+  {/TFtdcBankOperNoTypeæ˜¯ä¸€ä¸ªé“¶è¡Œæ“ä½œå‘˜å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBankOperNoType = ^TThostFtdcBankOperNoType;
     TThostFtdcBankOperNoType = array[0..3] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBankCustNoTypeÊÇÒ»¸öÒøĞĞ¿Í»§ºÅÀàĞÍ }
+  {/TFtdcBankCustNoTypeæ˜¯ä¸€ä¸ªé“¶è¡Œå®¢æˆ·å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBankCustNoType = ^TThostFtdcBankCustNoType;
     TThostFtdcBankCustNoType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcDBOPSeqNoTypeÊÇÒ»¸öµİÔöµÄĞòÁĞºÅÀàĞÍ }
+  {/TFtdcDBOPSeqNoTypeæ˜¯ä¸€ä¸ªé€’å¢çš„åºåˆ—å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcDBOPSeqNoType = ^TThostFtdcDBOPSeqNoType;
     TThostFtdcDBOPSeqNoType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTableNameTypeÊÇÒ»¸öFBT±íÃûÀàĞÍ }
+  {/TFtdcTableNameTypeæ˜¯ä¸€ä¸ªFBTè¡¨åç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcTableNameType = ^TThostFtdcTableNameType;
     TThostFtdcTableNameType = array[0..60] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcPKNameTypeÊÇÒ»¸öFBT±í²Ù×÷Ö÷¼üÃûÀàĞÍ }
+  {/TFtdcPKNameTypeæ˜¯ä¸€ä¸ªFBTè¡¨æ“ä½œä¸»é”®åç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcPKNameType = ^TThostFtdcPKNameType;
     TThostFtdcPKNameType = array[0..200] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcPKValueTypeÊÇÒ»¸öFBT±í²Ù×÷Ö÷¼üÖµÀàĞÍ }
+  {/TFtdcPKValueTypeæ˜¯ä¸€ä¸ªFBTè¡¨æ“ä½œä¸»é”®å€¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcPKValueType = ^TThostFtdcPKValueType;
     TThostFtdcPKValueType = array[0..500] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcDBOperationTypeÊÇÒ»¸ö¼ÇÂ¼²Ù×÷ÀàĞÍÀàĞÍ }
+  {/TFtdcDBOperationTypeæ˜¯ä¸€ä¸ªè®°å½•æ“ä½œç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/²åÈë }
+  {/æ’å…¥ }
 
   const
     THOST_FTDC_DBOP_Insert = '0';    
-  {/¸üĞÂ }
+  {/æ›´æ–° }
     THOST_FTDC_DBOP_Update = '1';    
-  {/É¾³ı }
+  {/åˆ é™¤ }
     THOST_FTDC_DBOP_Delete = '2';    
 
   type
     PTThostFtdcDBOperationType = ^TThostFtdcDBOperationType;
     TThostFtdcDBOperationType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSyncFlagTypeÊÇÒ»¸öÍ¬²½±ê¼ÇÀàĞÍ }
+  {/TFtdcSyncFlagTypeæ˜¯ä¸€ä¸ªåŒæ­¥æ ‡è®°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÒÑÍ¬²½ }
+  {/å·²åŒæ­¥ }
 
   const
     THOST_FTDC_SYNF_Yes = '0';    
-  {/Î´Í¬²½ }
+  {/æœªåŒæ­¥ }
     THOST_FTDC_SYNF_No = '1';    
 
   type
     PTThostFtdcSyncFlagType = ^TThostFtdcSyncFlagType;
     TThostFtdcSyncFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTargetIDTypeÊÇÒ»¸öÍ¬²½Ä¿±ê±àºÅÀàĞÍ }
+  {/TFtdcTargetIDTypeæ˜¯ä¸€ä¸ªåŒæ­¥ç›®æ ‡ç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcTargetIDType = ^TThostFtdcTargetIDType;
     TThostFtdcTargetIDType = array[0..3] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSyncTypeTypeÊÇÒ»¸öÍ¬²½ÀàĞÍÀàĞÍ }
+  {/TFtdcSyncTypeTypeæ˜¯ä¸€ä¸ªåŒæ­¥ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Ò»´ÎÍ¬²½ }
+  {/ä¸€æ¬¡åŒæ­¥ }
 
   const
     THOST_FTDC_SYNT_OneOffSync = '0';    
-  {/¶¨Ê±Í¬²½ }
+  {/å®šæ—¶åŒæ­¥ }
     THOST_FTDC_SYNT_TimerSync = '1';    
-  {/¶¨Ê±ÍêÈ«Í¬²½ }
+  {/å®šæ—¶å®Œå…¨åŒæ­¥ }
     THOST_FTDC_SYNT_TimerFullSync = '2';    
 
   type
     PTThostFtdcSyncTypeType = ^TThostFtdcSyncTypeType;
     TThostFtdcSyncTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFBETimeTypeÊÇÒ»¸ö¸÷ÖÖ»»»ãÊ±¼äÀàĞÍ }
+  {/TFtdcFBETimeTypeæ˜¯ä¸€ä¸ªå„ç§æ¢æ±‡æ—¶é—´ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFBETimeType = ^TThostFtdcFBETimeType;
     TThostFtdcFBETimeType = array[0..6] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFBEBankNoTypeÊÇÒ»¸ö»»»ãÒøĞĞĞĞºÅÀàĞÍ }
+  {/TFtdcFBEBankNoTypeæ˜¯ä¸€ä¸ªæ¢æ±‡é“¶è¡Œè¡Œå·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFBEBankNoType = ^TThostFtdcFBEBankNoType;
     TThostFtdcFBEBankNoType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFBECertNoTypeÊÇÒ»¸ö»»»ãÆ¾Ö¤ºÅÀàĞÍ }
+  {/TFtdcFBECertNoTypeæ˜¯ä¸€ä¸ªæ¢æ±‡å‡­è¯å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFBECertNoType = ^TThostFtdcFBECertNoType;
     TThostFtdcFBECertNoType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcExDirectionTypeÊÇÒ»¸ö»»»ã·½ÏòÀàĞÍ }
+  {/TFtdcExDirectionTypeæ˜¯ä¸€ä¸ªæ¢æ±‡æ–¹å‘ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/½á»ã }
+  {/ç»“æ±‡ }
 
   const
     THOST_FTDC_FBEDIR_Settlement = '0';    
-  {/ÊÛ»ã }
+  {/å”®æ±‡ }
     THOST_FTDC_FBEDIR_Sale = '1';    
 
   type
     PTThostFtdcExDirectionType = ^TThostFtdcExDirectionType;
     TThostFtdcExDirectionType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFBEBankAccountTypeÊÇÒ»¸ö»»»ãÒøĞĞÕË»§ÀàĞÍ }
+  {/TFtdcFBEBankAccountTypeæ˜¯ä¸€ä¸ªæ¢æ±‡é“¶è¡Œè´¦æˆ·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFBEBankAccountType = ^TThostFtdcFBEBankAccountType;
     TThostFtdcFBEBankAccountType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFBEBankAccountNameTypeÊÇÒ»¸ö»»»ãÒøĞĞÕË»§ÃûÀàĞÍ }
+  {/TFtdcFBEBankAccountNameTypeæ˜¯ä¸€ä¸ªæ¢æ±‡é“¶è¡Œè´¦æˆ·åç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFBEBankAccountNameType = ^TThostFtdcFBEBankAccountNameType;
     TThostFtdcFBEBankAccountNameType = array[0..60] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFBEAmtTypeÊÇÒ»¸ö¸÷ÖÖ»»»ã½ğ¶îÀàĞÍ }
+  {/TFtdcFBEAmtTypeæ˜¯ä¸€ä¸ªå„ç§æ¢æ±‡é‡‘é¢ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFBEAmtType = ^TThostFtdcFBEAmtType;
     TThostFtdcFBEAmtType = double;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFBEBusinessTypeTypeÊÇÒ»¸ö»»»ãÒµÎñÀàĞÍÀàĞÍ }
+  {/TFtdcFBEBusinessTypeTypeæ˜¯ä¸€ä¸ªæ¢æ±‡ä¸šåŠ¡ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFBEBusinessTypeType = ^TThostFtdcFBEBusinessTypeType;
     TThostFtdcFBEBusinessTypeType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFBEPostScriptTypeÊÇÒ»¸ö»»»ã¸½ÑÔÀàĞÍ }
+  {/TFtdcFBEPostScriptTypeæ˜¯ä¸€ä¸ªæ¢æ±‡é™„è¨€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFBEPostScriptType = ^TThostFtdcFBEPostScriptType;
     TThostFtdcFBEPostScriptType = array[0..60] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFBERemarkTypeÊÇÒ»¸ö»»»ã±¸×¢ÀàĞÍ }
+  {/TFtdcFBERemarkTypeæ˜¯ä¸€ä¸ªæ¢æ±‡å¤‡æ³¨ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFBERemarkType = ^TThostFtdcFBERemarkType;
     TThostFtdcFBERemarkType = array[0..70] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcExRateTypeÊÇÒ»¸ö»»»ã»ãÂÊÀàĞÍ }
+  {/TFtdcExRateTypeæ˜¯ä¸€ä¸ªæ¢æ±‡æ±‡ç‡ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcExRateType = ^TThostFtdcExRateType;
     TThostFtdcExRateType = double;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFBEResultFlagTypeÊÇÒ»¸ö»»»ã³É¹¦±êÖ¾ÀàĞÍ }
+  {/TFtdcFBEResultFlagTypeæ˜¯ä¸€ä¸ªæ¢æ±‡æˆåŠŸæ ‡å¿—ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/³É¹¦ }
+  {/æˆåŠŸ }
 
   const
     THOST_FTDC_FBERES_Success = '0';    
-  {/ÕË»§Óà¶î²»×ã }
+  {/è´¦æˆ·ä½™é¢ä¸è¶³ }
     THOST_FTDC_FBERES_InsufficientBalance = '1';    
-  {/½»Ò×½á¹ûÎ´Öª }
+  {/äº¤æ˜“ç»“æœæœªçŸ¥ }
     THOST_FTDC_FBERES_UnknownTrading = '8';    
-  {/Ê§°Ü }
+  {/å¤±è´¥ }
     THOST_FTDC_FBERES_Fail = 'x';    
 
   type
     PTThostFtdcFBEResultFlagType = ^TThostFtdcFBEResultFlagType;
     TThostFtdcFBEResultFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFBERtnMsgTypeÊÇÒ»¸ö»»»ã·µ»ØĞÅÏ¢ÀàĞÍ }
+  {/TFtdcFBERtnMsgTypeæ˜¯ä¸€ä¸ªæ¢æ±‡è¿”å›ä¿¡æ¯ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFBERtnMsgType = ^TThostFtdcFBERtnMsgType;
     TThostFtdcFBERtnMsgType = array[0..60] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFBEExtendMsgTypeÊÇÒ»¸ö»»»ãÀ©Õ¹ĞÅÏ¢ÀàĞÍ }
+  {/TFtdcFBEExtendMsgTypeæ˜¯ä¸€ä¸ªæ¢æ±‡æ‰©å±•ä¿¡æ¯ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFBEExtendMsgType = ^TThostFtdcFBEExtendMsgType;
     TThostFtdcFBEExtendMsgType = array[0..60] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFBEBusinessSerialTypeÊÇÒ»¸ö»»»ã¼ÇÕËÁ÷Ë®ºÅÀàĞÍ }
+  {/TFtdcFBEBusinessSerialTypeæ˜¯ä¸€ä¸ªæ¢æ±‡è®°è´¦æµæ°´å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFBEBusinessSerialType = ^TThostFtdcFBEBusinessSerialType;
     TThostFtdcFBEBusinessSerialType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFBESystemSerialTypeÊÇÒ»¸ö»»»ãÁ÷Ë®ºÅÀàĞÍ }
+  {/TFtdcFBESystemSerialTypeæ˜¯ä¸€ä¸ªæ¢æ±‡æµæ°´å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFBESystemSerialType = ^TThostFtdcFBESystemSerialType;
     TThostFtdcFBESystemSerialType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFBETotalExCntTypeÊÇÒ»¸ö»»»ã½»Ò××Ü±ÊÊıÀàĞÍ }
+  {/TFtdcFBETotalExCntTypeæ˜¯ä¸€ä¸ªæ¢æ±‡äº¤æ˜“æ€»ç¬”æ•°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFBETotalExCntType = ^TThostFtdcFBETotalExCntType;
     TThostFtdcFBETotalExCntType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFBEExchStatusTypeÊÇÒ»¸ö»»»ã½»Ò××´Ì¬ÀàĞÍ }
+  {/TFtdcFBEExchStatusTypeæ˜¯ä¸€ä¸ªæ¢æ±‡äº¤æ˜“çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Õı³£ }
+  {/æ­£å¸¸ }
 
   const
     THOST_FTDC_FBEES_Normal = '0';    
-  {/½»Ò×ÖØ·¢ }
+  {/äº¤æ˜“é‡å‘ }
     THOST_FTDC_FBEES_ReExchange = '1';    
 
   type
     PTThostFtdcFBEExchStatusType = ^TThostFtdcFBEExchStatusType;
     TThostFtdcFBEExchStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFBEFileFlagTypeÊÇÒ»¸ö»»»ãÎÄ¼ş±êÖ¾ÀàĞÍ }
+  {/TFtdcFBEFileFlagTypeæ˜¯ä¸€ä¸ªæ¢æ±‡æ–‡ä»¶æ ‡å¿—ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Êı¾İ°ü }
+  {/æ•°æ®åŒ… }
 
   const
     THOST_FTDC_FBEFG_DataPackage = '0';    
-  {/ÎÄ¼ş }
+  {/æ–‡ä»¶ }
     THOST_FTDC_FBEFG_File = '1';    
 
   type
     PTThostFtdcFBEFileFlagType = ^TThostFtdcFBEFileFlagType;
     TThostFtdcFBEFileFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFBEAlreadyTradeTypeÊÇÒ»¸ö»»»ãÒÑ½»Ò×±êÖ¾ÀàĞÍ }
+  {/TFtdcFBEAlreadyTradeTypeæ˜¯ä¸€ä¸ªæ¢æ±‡å·²äº¤æ˜“æ ‡å¿—ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Î´½»Ò× }
+  {/æœªäº¤æ˜“ }
 
   const
     THOST_FTDC_FBEAT_NotTrade = '0';    
-  {/ÒÑ½»Ò× }
+  {/å·²äº¤æ˜“ }
     THOST_FTDC_FBEAT_Trade = '1';    
 
   type
     PTThostFtdcFBEAlreadyTradeType = ^TThostFtdcFBEAlreadyTradeType;
     TThostFtdcFBEAlreadyTradeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFBEOpenBankTypeÊÇÒ»¸ö»»»ãÕË»§¿ª»§ĞĞÀàĞÍ }
+  {/TFtdcFBEOpenBankTypeæ˜¯ä¸€ä¸ªæ¢æ±‡è´¦æˆ·å¼€æˆ·è¡Œç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFBEOpenBankType = ^TThostFtdcFBEOpenBankType;
     TThostFtdcFBEOpenBankType = array[0..60] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFBEUserEventTypeTypeÊÇÒ»¸öÒøÆÚ»»»ãÓÃ»§ÊÂ¼şÀàĞÍÀàĞÍ }
+  {/TFtdcFBEUserEventTypeTypeæ˜¯ä¸€ä¸ªé“¶æœŸæ¢æ±‡ç”¨æˆ·äº‹ä»¶ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Ç©µ½ }
+  {/ç­¾åˆ° }
 
   const
     THOST_FTDC_FBEUET_SignIn = '0';    
-  {/»»»ã }
+  {/æ¢æ±‡ }
     THOST_FTDC_FBEUET_Exchange = '1';    
-  {/»»»ãÖØ·¢ }
+  {/æ¢æ±‡é‡å‘ }
     THOST_FTDC_FBEUET_ReExchange = '2';    
-  {/ÒøĞĞÕË»§²éÑ¯ }
+  {/é“¶è¡Œè´¦æˆ·æŸ¥è¯¢ }
     THOST_FTDC_FBEUET_QueryBankAccount = '3';    
-  {/»»»ãÃ÷Ï¸²éÑ¯ }
+  {/æ¢æ±‡æ˜ç»†æŸ¥è¯¢ }
     THOST_FTDC_FBEUET_QueryExchDetial = '4';    
-  {/»»»ã»ã×Ü²éÑ¯ }
+  {/æ¢æ±‡æ±‡æ€»æŸ¥è¯¢ }
     THOST_FTDC_FBEUET_QueryExchSummary = '5';    
-  {/»»»ã»ãÂÊ²éÑ¯ }
+  {/æ¢æ±‡æ±‡ç‡æŸ¥è¯¢ }
     THOST_FTDC_FBEUET_QueryExchRate = '6';    
-  {/¶ÔÕËÎÄ¼şÍ¨Öª }
+  {/å¯¹è´¦æ–‡ä»¶é€šçŸ¥ }
     THOST_FTDC_FBEUET_CheckBankAccount = '7';    
-  {/Ç©ÍË }
+  {/ç­¾é€€ }
     THOST_FTDC_FBEUET_SignOut = '8';    
-  {/ÆäËû }
+  {/å…¶ä»– }
     THOST_FTDC_FBEUET_Other = 'Z';    
 
   type
     PTThostFtdcFBEUserEventTypeType = ^TThostFtdcFBEUserEventTypeType;
     TThostFtdcFBEUserEventTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFBEFileNameTypeÊÇÒ»¸ö»»»ãÏà¹ØÎÄ¼şÃûÀàĞÍ }
+  {/TFtdcFBEFileNameTypeæ˜¯ä¸€ä¸ªæ¢æ±‡ç›¸å…³æ–‡ä»¶åç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFBEFileNameType = ^TThostFtdcFBEFileNameType;
     TThostFtdcFBEFileNameType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFBEBatchSerialTypeÊÇÒ»¸ö»»»ãÅú´ÎºÅÀàĞÍ }
+  {/TFtdcFBEBatchSerialTypeæ˜¯ä¸€ä¸ªæ¢æ±‡æ‰¹æ¬¡å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFBEBatchSerialType = ^TThostFtdcFBEBatchSerialType;
     TThostFtdcFBEBatchSerialType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFBEReqFlagTypeÊÇÒ»¸ö»»»ã·¢ËÍ±êÖ¾ÀàĞÍ }
+  {/TFtdcFBEReqFlagTypeæ˜¯ä¸€ä¸ªæ¢æ±‡å‘é€æ ‡å¿—ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Î´´¦Àí }
+  {/æœªå¤„ç† }
 
   const
     THOST_FTDC_FBERF_UnProcessed = '0';    
-  {/µÈ´ı·¢ËÍ }
+  {/ç­‰å¾…å‘é€ }
     THOST_FTDC_FBERF_WaitSend = '1';    
-  {/·¢ËÍ³É¹¦ }
+  {/å‘é€æˆåŠŸ }
     THOST_FTDC_FBERF_SendSuccess = '2';    
-  {/·¢ËÍÊ§°Ü }
+  {/å‘é€å¤±è´¥ }
     THOST_FTDC_FBERF_SendFailed = '3';    
-  {/µÈ´ıÖØ·¢ }
+  {/ç­‰å¾…é‡å‘ }
     THOST_FTDC_FBERF_WaitReSend = '4';    
 
   type
     PTThostFtdcFBEReqFlagType = ^TThostFtdcFBEReqFlagType;
     TThostFtdcFBEReqFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcNotifyClassTypeÊÇÒ»¸ö·çÏÕÍ¨ÖªÀàĞÍÀàĞÍ }
+  {/TFtdcNotifyClassTypeæ˜¯ä¸€ä¸ªé£é™©é€šçŸ¥ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Õı³£ }
+  {/æ­£å¸¸ }
 
   const
     THOST_FTDC_NC_NOERROR = '0';    
-  {/¾¯Ê¾ }
+  {/è­¦ç¤º }
     THOST_FTDC_NC_Warn = '1';    
-  {/×·±£ }
+  {/è¿½ä¿ }
     THOST_FTDC_NC_Call = '2';    
-  {/Ç¿Æ½ }
+  {/å¼ºå¹³ }
     THOST_FTDC_NC_Force = '3';    
-  {/´©²Ö }
+  {/ç©¿ä»“ }
     THOST_FTDC_NC_CHUANCANG = '4';    
-  {/Òì³£ }
+  {/å¼‚å¸¸ }
     THOST_FTDC_NC_Exception = '5';    
 
   type
     PTThostFtdcNotifyClassType = ^TThostFtdcNotifyClassType;
     TThostFtdcNotifyClassType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcRiskNofityInfoTypeÊÇÒ»¸ö¿Í»§·çÏÕÍ¨ÖªÏûÏ¢ÀàĞÍ }
+  {/TFtdcRiskNofityInfoTypeæ˜¯ä¸€ä¸ªå®¢æˆ·é£é™©é€šçŸ¥æ¶ˆæ¯ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcRiskNofityInfoType = ^TThostFtdcRiskNofityInfoType;
     TThostFtdcRiskNofityInfoType = array[0..256] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcForceCloseSceneIdTypeÊÇÒ»¸öÇ¿Æ½³¡¾°±àºÅÀàĞÍ }
+  {/TFtdcForceCloseSceneIdTypeæ˜¯ä¸€ä¸ªå¼ºå¹³åœºæ™¯ç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcForceCloseSceneIdType = ^TThostFtdcForceCloseSceneIdType;
     TThostFtdcForceCloseSceneIdType = array[0..23] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcForceCloseTypeTypeÊÇÒ»¸öÇ¿Æ½µ¥ÀàĞÍÀàĞÍ }
+  {/TFtdcForceCloseTypeTypeæ˜¯ä¸€ä¸ªå¼ºå¹³å•ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÊÖ¹¤Ç¿Æ½ }
+  {/æ‰‹å·¥å¼ºå¹³ }
 
   const
     THOST_FTDC_FCT_Manual = '0';    
-  {/µ¥Ò»Í¶×ÊÕß¸¨ÖúÇ¿Æ½ }
+  {/å•ä¸€æŠ•èµ„è€…è¾…åŠ©å¼ºå¹³ }
     THOST_FTDC_FCT_Single = '1';    
-  {/ÅúÁ¿Í¶×ÊÕß¸¨ÖúÇ¿Æ½ }
+  {/æ‰¹é‡æŠ•èµ„è€…è¾…åŠ©å¼ºå¹³ }
     THOST_FTDC_FCT_Group = '2';    
 
   type
     PTThostFtdcForceCloseTypeType = ^TThostFtdcForceCloseTypeType;
     TThostFtdcForceCloseTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcInstrumentIDsTypeÊÇÒ»¸ö¶à¸ö²úÆ·´úÂë,ÓÃ+·Ö¸ô,Èçcu+znÀàĞÍ }
+  {/TFtdcInstrumentIDsTypeæ˜¯ä¸€ä¸ªå¤šä¸ªäº§å“ä»£ç ,ç”¨+åˆ†éš”,å¦‚cu+znç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcInstrumentIDsType = ^TThostFtdcInstrumentIDsType;
     TThostFtdcInstrumentIDsType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcRiskNotifyMethodTypeÊÇÒ»¸ö·çÏÕÍ¨ÖªÍ¾¾¶ÀàĞÍ }
+  {/TFtdcRiskNotifyMethodTypeæ˜¯ä¸€ä¸ªé£é™©é€šçŸ¥é€”å¾„ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÏµÍ³Í¨Öª }
+  {/ç³»ç»Ÿé€šçŸ¥ }
 
   const
     THOST_FTDC_RNM_System = '0';    
-  {/¶ÌĞÅÍ¨Öª }
+  {/çŸ­ä¿¡é€šçŸ¥ }
     THOST_FTDC_RNM_SMS = '1';    
-  {/ÓÊ¼şÍ¨Öª }
+  {/é‚®ä»¶é€šçŸ¥ }
     THOST_FTDC_RNM_EMail = '2';    
-  {/ÈË¹¤Í¨Öª }
+  {/äººå·¥é€šçŸ¥ }
     THOST_FTDC_RNM_Manual = '3';    
 
   type
     PTThostFtdcRiskNotifyMethodType = ^TThostFtdcRiskNotifyMethodType;
     TThostFtdcRiskNotifyMethodType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcRiskNotifyStatusTypeÊÇÒ»¸ö·çÏÕÍ¨Öª×´Ì¬ÀàĞÍ }
+  {/TFtdcRiskNotifyStatusTypeæ˜¯ä¸€ä¸ªé£é™©é€šçŸ¥çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Î´Éú³É }
+  {/æœªç”Ÿæˆ }
 
   const
     THOST_FTDC_RNS_NotGen = '0';    
-  {/ÒÑÉú³ÉÎ´·¢ËÍ }
+  {/å·²ç”Ÿæˆæœªå‘é€ }
     THOST_FTDC_RNS_Generated = '1';    
-  {/·¢ËÍÊ§°Ü }
+  {/å‘é€å¤±è´¥ }
     THOST_FTDC_RNS_SendError = '2';    
-  {/ÒÑ·¢ËÍÎ´½ÓÊÕ }
+  {/å·²å‘é€æœªæ¥æ”¶ }
     THOST_FTDC_RNS_SendOk = '3';    
-  {/ÒÑ½ÓÊÕÎ´È·ÈÏ }
+  {/å·²æ¥æ”¶æœªç¡®è®¤ }
     THOST_FTDC_RNS_Received = '4';    
-  {/ÒÑÈ·ÈÏ }
+  {/å·²ç¡®è®¤ }
     THOST_FTDC_RNS_Confirmed = '5';    
 
   type
     PTThostFtdcRiskNotifyStatusType = ^TThostFtdcRiskNotifyStatusType;
     TThostFtdcRiskNotifyStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcRiskUserEventTypeÊÇÒ»¸ö·ç¿ØÓÃ»§²Ù×÷ÊÂ¼şÀàĞÍ }
+  {/TFtdcRiskUserEventTypeæ˜¯ä¸€ä¸ªé£æ§ç”¨æˆ·æ“ä½œäº‹ä»¶ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/µ¼³öÊı¾İ }
+  {/å¯¼å‡ºæ•°æ® }
 
   const
     THOST_FTDC_RUE_ExportData = '0';    
@@ -4944,1338 +4949,1338 @@ interface
     PTThostFtdcRiskUserEventType = ^TThostFtdcRiskUserEventType;
     TThostFtdcRiskUserEventType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcParamIDTypeÊÇÒ»¸ö²ÎÊı´úÂëÀàĞÍ }
+  {/TFtdcParamIDTypeæ˜¯ä¸€ä¸ªå‚æ•°ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcParamIDType = ^TThostFtdcParamIDType;
     TThostFtdcParamIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcParamNameTypeÊÇÒ»¸ö²ÎÊıÃûÀàĞÍ }
+  {/TFtdcParamNameTypeæ˜¯ä¸€ä¸ªå‚æ•°åç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcParamNameType = ^TThostFtdcParamNameType;
     TThostFtdcParamNameType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcParamValueTypeÊÇÒ»¸ö²ÎÊıÖµÀàĞÍ }
+  {/TFtdcParamValueTypeæ˜¯ä¸€ä¸ªå‚æ•°å€¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcParamValueType = ^TThostFtdcParamValueType;
     TThostFtdcParamValueType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcConditionalOrderSortTypeTypeÊÇÒ»¸öÌõ¼şµ¥Ë÷ÒıÌõ¼şÀàĞÍ }
+  {/TFtdcConditionalOrderSortTypeTypeæ˜¯ä¸€ä¸ªæ¡ä»¶å•ç´¢å¼•æ¡ä»¶ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Ê¹ÓÃ×îĞÂ¼ÛÉıĞò }
+  {/ä½¿ç”¨æœ€æ–°ä»·å‡åº }
 
   const
     THOST_FTDC_COST_LastPriceAsc = '0';    
-  {/Ê¹ÓÃ×îĞÂ¼Û½µĞò }
+  {/ä½¿ç”¨æœ€æ–°ä»·é™åº }
     THOST_FTDC_COST_LastPriceDesc = '1';    
-  {/Ê¹ÓÃÂô¼ÛÉıĞò }
+  {/ä½¿ç”¨å–ä»·å‡åº }
     THOST_FTDC_COST_AskPriceAsc = '2';    
-  {/Ê¹ÓÃÂô¼Û½µĞò }
+  {/ä½¿ç”¨å–ä»·é™åº }
     THOST_FTDC_COST_AskPriceDesc = '3';    
-  {/Ê¹ÓÃÂò¼ÛÉıĞò }
+  {/ä½¿ç”¨ä¹°ä»·å‡åº }
     THOST_FTDC_COST_BidPriceAsc = '4';    
-  {/Ê¹ÓÃÂò¼Û½µĞò }
+  {/ä½¿ç”¨ä¹°ä»·é™åº }
     THOST_FTDC_COST_BidPriceDesc = '5';    
 
   type
     PTThostFtdcConditionalOrderSortTypeType = ^TThostFtdcConditionalOrderSortTypeType;
     TThostFtdcConditionalOrderSortTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSendTypeTypeÊÇÒ»¸ö±¨ËÍ×´Ì¬ÀàĞÍ }
+  {/TFtdcSendTypeTypeæ˜¯ä¸€ä¸ªæŠ¥é€çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Î´·¢ËÍ }
+  {/æœªå‘é€ }
 
   const
     THOST_FTDC_UOAST_NoSend = '0';    
-  {/ÒÑ·¢ËÍ }
+  {/å·²å‘é€ }
     THOST_FTDC_UOAST_Sended = '1';    
-  {/ÒÑÉú³É }
+  {/å·²ç”Ÿæˆ }
     THOST_FTDC_UOAST_Generated = '2';    
-  {/±¨ËÍÊ§°Ü }
+  {/æŠ¥é€å¤±è´¥ }
     THOST_FTDC_UOAST_SendFail = '3';    
-  {/½ÓÊÕ³É¹¦ }
+  {/æ¥æ”¶æˆåŠŸ }
     THOST_FTDC_UOAST_Success = '4';    
-  {/½ÓÊÕÊ§°Ü }
+  {/æ¥æ”¶å¤±è´¥ }
     THOST_FTDC_UOAST_Fail = '5';    
-  {/È¡Ïû±¨ËÍ }
+  {/å–æ¶ˆæŠ¥é€ }
     THOST_FTDC_UOAST_Cancel = '6';    
 
   type
     PTThostFtdcSendTypeType = ^TThostFtdcSendTypeType;
     TThostFtdcSendTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcClientIDStatusTypeÊÇÒ»¸ö½»Ò×±àÂë×´Ì¬ÀàĞÍ }
+  {/TFtdcClientIDStatusTypeæ˜¯ä¸€ä¸ªäº¤æ˜“ç¼–ç çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Î´ÉêÇë }
+  {/æœªç”³è¯· }
 
   const
     THOST_FTDC_UOACS_NoApply = '1';    
-  {/ÒÑÌá½»ÉêÇë }
+  {/å·²æäº¤ç”³è¯· }
     THOST_FTDC_UOACS_Submited = '2';    
-  {/ÒÑ·¢ËÍÉêÇë }
+  {/å·²å‘é€ç”³è¯· }
     THOST_FTDC_UOACS_Sended = '3';    
-  {/Íê³É }
+  {/å®Œæˆ }
     THOST_FTDC_UOACS_Success = '4';    
-  {/¾Ü¾ø }
+  {/æ‹’ç» }
     THOST_FTDC_UOACS_Refuse = '5';    
-  {/ÒÑ³·Ïú±àÂë }
+  {/å·²æ’¤é”€ç¼–ç  }
     THOST_FTDC_UOACS_Cancel = '6';    
 
   type
     PTThostFtdcClientIDStatusType = ^TThostFtdcClientIDStatusType;
     TThostFtdcClientIDStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcIndustryIDTypeÊÇÒ»¸öĞĞÒµ±àÂëÀàĞÍ }
+  {/TFtdcIndustryIDTypeæ˜¯ä¸€ä¸ªè¡Œä¸šç¼–ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcIndustryIDType = ^TThostFtdcIndustryIDType;
     TThostFtdcIndustryIDType = array[0..16] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcQuestionIDTypeÊÇÒ»¸öÌØÓĞĞÅÏ¢±àºÅÀàĞÍ }
+  {/TFtdcQuestionIDTypeæ˜¯ä¸€ä¸ªç‰¹æœ‰ä¿¡æ¯ç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcQuestionIDType = ^TThostFtdcQuestionIDType;
     TThostFtdcQuestionIDType = array[0..4] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcQuestionContentTypeÊÇÒ»¸öÌØÓĞĞÅÏ¢ËµÃ÷ÀàĞÍ }
+  {/TFtdcQuestionContentTypeæ˜¯ä¸€ä¸ªç‰¹æœ‰ä¿¡æ¯è¯´æ˜ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcQuestionContentType = ^TThostFtdcQuestionContentType;
     TThostFtdcQuestionContentType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOptionIDTypeÊÇÒ»¸öÑ¡Ïî±àºÅÀàĞÍ }
+  {/TFtdcOptionIDTypeæ˜¯ä¸€ä¸ªé€‰é¡¹ç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcOptionIDType = ^TThostFtdcOptionIDType;
     TThostFtdcOptionIDType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOptionContentTypeÊÇÒ»¸öÑ¡ÏîËµÃ÷ÀàĞÍ }
+  {/TFtdcOptionContentTypeæ˜¯ä¸€ä¸ªé€‰é¡¹è¯´æ˜ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcOptionContentType = ^TThostFtdcOptionContentType;
     TThostFtdcOptionContentType = array[0..60] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcQuestionTypeTypeÊÇÒ»¸öÌØÓĞĞÅÏ¢ÀàĞÍÀàĞÍ }
+  {/TFtdcQuestionTypeTypeæ˜¯ä¸€ä¸ªç‰¹æœ‰ä¿¡æ¯ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/µ¥Ñ¡ }
+  {/å•é€‰ }
 
   const
     THOST_FTDC_QT_Radio = '1';    
-  {/¶àÑ¡ }
+  {/å¤šé€‰ }
     THOST_FTDC_QT_Option = '2';    
-  {/Ìî¿Õ }
+  {/å¡«ç©º }
     THOST_FTDC_QT_Blank = '3';    
 
   type
     PTThostFtdcQuestionTypeType = ^TThostFtdcQuestionTypeType;
     TThostFtdcQuestionTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcProcessIDTypeÊÇÒ»¸öÒµÎñÁ÷Ë®ºÅÀàĞÍ }
+  {/TFtdcProcessIDTypeæ˜¯ä¸€ä¸ªä¸šåŠ¡æµæ°´å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcProcessIDType = ^TThostFtdcProcessIDType;
     TThostFtdcProcessIDType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSeqNoTypeÊÇÒ»¸öÁ÷Ë®ºÅÀàĞÍ }
+  {/TFtdcSeqNoTypeæ˜¯ä¸€ä¸ªæµæ°´å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcSeqNoType = ^TThostFtdcSeqNoType;
     TThostFtdcSeqNoType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcUOAProcessStatusTypeÊÇÒ»¸öÁ÷³Ì×´Ì¬ÀàĞÍ }
+  {/TFtdcUOAProcessStatusTypeæ˜¯ä¸€ä¸ªæµç¨‹çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcUOAProcessStatusType = ^TThostFtdcUOAProcessStatusType;
     TThostFtdcUOAProcessStatusType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcProcessTypeTypeÊÇÒ»¸öÁ÷³Ì¹¦ÄÜÀàĞÍÀàĞÍ }
+  {/TFtdcProcessTypeTypeæ˜¯ä¸€ä¸ªæµç¨‹åŠŸèƒ½ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcProcessTypeType = ^TThostFtdcProcessTypeType;
     TThostFtdcProcessTypeType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBusinessTypeTypeÊÇÒ»¸öÒµÎñÀàĞÍÀàĞÍ }
+  {/TFtdcBusinessTypeTypeæ˜¯ä¸€ä¸ªä¸šåŠ¡ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÇëÇó }
+  {/è¯·æ±‚ }
 
   const
     THOST_FTDC_BT_Request = '1';    
-  {/Ó¦´ğ }
+  {/åº”ç­” }
     THOST_FTDC_BT_Response = '2';    
-  {/Í¨Öª }
+  {/é€šçŸ¥ }
     THOST_FTDC_BT_Notice = '3';    
 
   type
     PTThostFtdcBusinessTypeType = ^TThostFtdcBusinessTypeType;
     TThostFtdcBusinessTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCfmmcReturnCodeTypeÊÇÒ»¸ö¼à¿ØÖĞĞÄ·µ»ØÂëÀàĞÍ }
+  {/TFtdcCfmmcReturnCodeTypeæ˜¯ä¸€ä¸ªç›‘æ§ä¸­å¿ƒè¿”å›ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/³É¹¦ }
+  {/æˆåŠŸ }
 
   const
     THOST_FTDC_CRC_Success = '0';    
-  {/¸Ã¿Í»§ÒÑ¾­ÓĞÁ÷³ÌÔÚ´¦ÀíÖĞ }
+  {/è¯¥å®¢æˆ·å·²ç»æœ‰æµç¨‹åœ¨å¤„ç†ä¸­ }
     THOST_FTDC_CRC_Working = '1';    
-  {/¼à¿ØÖĞ¿Í»§×ÊÁÏ¼ì²éÊ§°Ü }
+  {/ç›‘æ§ä¸­å®¢æˆ·èµ„æ–™æ£€æŸ¥å¤±è´¥ }
     THOST_FTDC_CRC_InfoFail = '2';    
-  {/¼à¿ØÖĞÊµÃûÖÆ¼ì²éÊ§°Ü }
+  {/ç›‘æ§ä¸­å®ååˆ¶æ£€æŸ¥å¤±è´¥ }
     THOST_FTDC_CRC_IDCardFail = '3';    
-  {/ÆäËû´íÎó }
+  {/å…¶ä»–é”™è¯¯ }
     THOST_FTDC_CRC_OtherFail = '4';    
 
   type
     PTThostFtdcCfmmcReturnCodeType = ^TThostFtdcCfmmcReturnCodeType;
     TThostFtdcCfmmcReturnCodeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcExReturnCodeTypeÊÇÒ»¸ö½»Ò×Ëù·µ»ØÂëÀàĞÍ }
+  {/TFtdcExReturnCodeTypeæ˜¯ä¸€ä¸ªäº¤æ˜“æ‰€è¿”å›ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcExReturnCodeType = ^TThostFtdcExReturnCodeType;
     TThostFtdcExReturnCodeType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcClientTypeTypeÊÇÒ»¸ö¿Í»§ÀàĞÍÀàĞÍ }
+  {/TFtdcClientTypeTypeæ˜¯ä¸€ä¸ªå®¢æˆ·ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ËùÓĞ }
+  {/æ‰€æœ‰ }
 
   const
     THOST_FTDC_CfMMCCT_All = '0';    
-  {/¸öÈË }
+  {/ä¸ªäºº }
     THOST_FTDC_CfMMCCT_Person = '1';    
-  {/µ¥Î» }
+  {/å•ä½ }
     THOST_FTDC_CfMMCCT_Company = '2';    
-  {/ÆäËû }
+  {/å…¶ä»– }
     THOST_FTDC_CfMMCCT_Other = '3';    
-  {/ÌØÊâ·¨ÈË }
+  {/ç‰¹æ®Šæ³•äºº }
     THOST_FTDC_CfMMCCT_SpecialOrgan = '4';    
-  {/×Ê¹Ü»§ }
+  {/èµ„ç®¡æˆ· }
     THOST_FTDC_CfMMCCT_Asset = '5';    
 
   type
     PTThostFtdcClientTypeType = ^TThostFtdcClientTypeType;
     TThostFtdcClientTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcExchangeIDTypeTypeÊÇÒ»¸ö½»Ò×Ëù±àºÅÀàĞÍ }
+  {/TFtdcExchangeIDTypeTypeæ˜¯ä¸€ä¸ªäº¤æ˜“æ‰€ç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÉÏº£ÆÚ»õ½»Ò×Ëù }
+  {/ä¸Šæµ·æœŸè´§äº¤æ˜“æ‰€ }
 
   const
     THOST_FTDC_EIDT_SHFE = 'S';    
-  {/Ö£ÖİÉÌÆ·½»Ò×Ëù }
+  {/éƒ‘å·å•†å“äº¤æ˜“æ‰€ }
     THOST_FTDC_EIDT_CZCE = 'Z';    
-  {/´óÁ¬ÉÌÆ·½»Ò×Ëù }
+  {/å¤§è¿å•†å“äº¤æ˜“æ‰€ }
     THOST_FTDC_EIDT_DCE = 'D';    
-  {/ÖĞ¹ú½ğÈÚÆÚ»õ½»Ò×Ëù }
+  {/ä¸­å›½é‡‘èæœŸè´§äº¤æ˜“æ‰€ }
     THOST_FTDC_EIDT_CFFEX = 'J';    
-  {/ÉÏº£¹ú¼ÊÄÜÔ´½»Ò×ÖĞĞÄ¹É·İÓĞÏŞ¹«Ë¾ }
+  {/ä¸Šæµ·å›½é™…èƒ½æºäº¤æ˜“ä¸­å¿ƒè‚¡ä»½æœ‰é™å…¬å¸ }
     THOST_FTDC_EIDT_INE = 'N';    
 
   type
     PTThostFtdcExchangeIDTypeType = ^TThostFtdcExchangeIDTypeType;
     TThostFtdcExchangeIDTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcExClientIDTypeTypeÊÇÒ»¸ö½»Ò×±àÂëÀàĞÍÀàĞÍ }
+  {/TFtdcExClientIDTypeTypeæ˜¯ä¸€ä¸ªäº¤æ˜“ç¼–ç ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Ì×±£ }
+  {/å¥—ä¿ }
 
   const
     THOST_FTDC_ECIDT_Hedge = '1';    
-  {/Ì×Àû }
+  {/å¥—åˆ© }
     THOST_FTDC_ECIDT_Arbitrage = '2';    
-  {/Í¶»ú }
+  {/æŠ•æœº }
     THOST_FTDC_ECIDT_Speculation = '3';    
 
   type
     PTThostFtdcExClientIDTypeType = ^TThostFtdcExClientIDTypeType;
     TThostFtdcExClientIDTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcClientClassifyTypeÊÇÒ»¸ö¿Í»§·ÖÀàÂëÀàĞÍ }
+  {/TFtdcClientClassifyTypeæ˜¯ä¸€ä¸ªå®¢æˆ·åˆ†ç±»ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcClientClassifyType = ^TThostFtdcClientClassifyType;
     TThostFtdcClientClassifyType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcUOAOrganTypeTypeÊÇÒ»¸öµ¥Î»ĞÔÖÊÀàĞÍ }
+  {/TFtdcUOAOrganTypeTypeæ˜¯ä¸€ä¸ªå•ä½æ€§è´¨ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcUOAOrganTypeType = ^TThostFtdcUOAOrganTypeType;
     TThostFtdcUOAOrganTypeType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcUOACountryCodeTypeÊÇÒ»¸ö¹ú¼Ò´úÂëÀàĞÍ }
+  {/TFtdcUOACountryCodeTypeæ˜¯ä¸€ä¸ªå›½å®¶ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcUOACountryCodeType = ^TThostFtdcUOACountryCodeType;
     TThostFtdcUOACountryCodeType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAreaCodeTypeÊÇÒ»¸öÇøºÅÀàĞÍ }
+  {/TFtdcAreaCodeTypeæ˜¯ä¸€ä¸ªåŒºå·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAreaCodeType = ^TThostFtdcAreaCodeType;
     TThostFtdcAreaCodeType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFuturesIDTypeÊÇÒ»¸ö¼à¿ØÖĞĞÄÎª¿Í»§·ÖÅäµÄ´úÂëÀàĞÍ }
+  {/TFtdcFuturesIDTypeæ˜¯ä¸€ä¸ªç›‘æ§ä¸­å¿ƒä¸ºå®¢æˆ·åˆ†é…çš„ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFuturesIDType = ^TThostFtdcFuturesIDType;
     TThostFtdcFuturesIDType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCffmcDateTypeÊÇÒ»¸öÈÕÆÚÀàĞÍ }
+  {/TFtdcCffmcDateTypeæ˜¯ä¸€ä¸ªæ—¥æœŸç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCffmcDateType = ^TThostFtdcCffmcDateType;
     TThostFtdcCffmcDateType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCffmcTimeTypeÊÇÒ»¸öÊ±¼äÀàĞÍ }
+  {/TFtdcCffmcTimeTypeæ˜¯ä¸€ä¸ªæ—¶é—´ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCffmcTimeType = ^TThostFtdcCffmcTimeType;
     TThostFtdcCffmcTimeType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcNocIDTypeÊÇÒ»¸ö×éÖ¯»ú¹¹´úÂëÀàĞÍ }
+  {/TFtdcNocIDTypeæ˜¯ä¸€ä¸ªç»„ç»‡æœºæ„ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcNocIDType = ^TThostFtdcNocIDType;
     TThostFtdcNocIDType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcUpdateFlagTypeÊÇÒ»¸ö¸üĞÂ×´Ì¬ÀàĞÍ }
+  {/TFtdcUpdateFlagTypeæ˜¯ä¸€ä¸ªæ›´æ–°çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Î´¸üĞÂ }
+  {/æœªæ›´æ–° }
 
   const
     THOST_FTDC_UF_NoUpdate = '0';    
-  {/¸üĞÂÈ«²¿ĞÅÏ¢³É¹¦ }
+  {/æ›´æ–°å…¨éƒ¨ä¿¡æ¯æˆåŠŸ }
     THOST_FTDC_UF_Success = '1';    
-  {/¸üĞÂÈ«²¿ĞÅÏ¢Ê§°Ü }
+  {/æ›´æ–°å…¨éƒ¨ä¿¡æ¯å¤±è´¥ }
     THOST_FTDC_UF_Fail = '2';    
-  {/¸üĞÂ½»Ò×±àÂë³É¹¦ }
+  {/æ›´æ–°äº¤æ˜“ç¼–ç æˆåŠŸ }
     THOST_FTDC_UF_TCSuccess = '3';    
-  {/¸üĞÂ½»Ò×±àÂëÊ§°Ü }
+  {/æ›´æ–°äº¤æ˜“ç¼–ç å¤±è´¥ }
     THOST_FTDC_UF_TCFail = '4';    
-  {/ÒÑ¶ªÆú }
+  {/å·²ä¸¢å¼ƒ }
     THOST_FTDC_UF_Cancel = '5';    
 
   type
     PTThostFtdcUpdateFlagType = ^TThostFtdcUpdateFlagType;
     TThostFtdcUpdateFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcApplyOperateIDTypeÊÇÒ»¸öÉêÇë¶¯×÷ÀàĞÍ }
+  {/TFtdcApplyOperateIDTypeæ˜¯ä¸€ä¸ªç”³è¯·åŠ¨ä½œç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/¿ª»§ }
+  {/å¼€æˆ· }
 
   const
     THOST_FTDC_AOID_OpenInvestor = '1';    
-  {/ĞŞ¸ÄÉí·İĞÅÏ¢ }
+  {/ä¿®æ”¹èº«ä»½ä¿¡æ¯ }
     THOST_FTDC_AOID_ModifyIDCard = '2';    
-  {/ĞŞ¸ÄÒ»°ãĞÅÏ¢ }
+  {/ä¿®æ”¹ä¸€èˆ¬ä¿¡æ¯ }
     THOST_FTDC_AOID_ModifyNoIDCard = '3';    
-  {/ÉêÇë½»Ò×±àÂë }
+  {/ç”³è¯·äº¤æ˜“ç¼–ç  }
     THOST_FTDC_AOID_ApplyTradingCode = '4';    
-  {/³·Ïú½»Ò×±àÂë }
+  {/æ’¤é”€äº¤æ˜“ç¼–ç  }
     THOST_FTDC_AOID_CancelTradingCode = '5';    
-  {/Ïú»§ }
+  {/é”€æˆ· }
     THOST_FTDC_AOID_CancelInvestor = '6';    
-  {/ÕË»§ĞİÃß }
+  {/è´¦æˆ·ä¼‘çœ  }
     THOST_FTDC_AOID_FreezeAccount = '8';    
-  {/¼¤»îĞİÃßÕË»§ }
+  {/æ¿€æ´»ä¼‘çœ è´¦æˆ· }
     THOST_FTDC_AOID_ActiveFreezeAccount = '9';    
 
   type
     PTThostFtdcApplyOperateIDType = ^TThostFtdcApplyOperateIDType;
     TThostFtdcApplyOperateIDType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcApplyStatusIDTypeÊÇÒ»¸öÉêÇë×´Ì¬ÀàĞÍ }
+  {/TFtdcApplyStatusIDTypeæ˜¯ä¸€ä¸ªç”³è¯·çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Î´²¹È« }
+  {/æœªè¡¥å…¨ }
 
   const
     THOST_FTDC_ASID_NoComplete = '1';    
-  {/ÒÑÌá½» }
+  {/å·²æäº¤ }
     THOST_FTDC_ASID_Submited = '2';    
-  {/ÒÑÉóºË }
+  {/å·²å®¡æ ¸ }
     THOST_FTDC_ASID_Checked = '3';    
-  {/ÒÑ¾Ü¾ø }
+  {/å·²æ‹’ç» }
     THOST_FTDC_ASID_Refused = '4';    
-  {/ÒÑÉ¾³ı }
+  {/å·²åˆ é™¤ }
     THOST_FTDC_ASID_Deleted = '5';    
 
   type
     PTThostFtdcApplyStatusIDType = ^TThostFtdcApplyStatusIDType;
     TThostFtdcApplyStatusIDType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSendMethodTypeÊÇÒ»¸ö·¢ËÍ·½Ê½ÀàĞÍ }
+  {/TFtdcSendMethodTypeæ˜¯ä¸€ä¸ªå‘é€æ–¹å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÎÄ¼ş·¢ËÍ }
+  {/æ–‡ä»¶å‘é€ }
 
   const
     THOST_FTDC_UOASM_ByAPI = '1';    
-  {/µç×Ó·¢ËÍ }
+  {/ç”µå­å‘é€ }
     THOST_FTDC_UOASM_ByFile = '2';    
 
   type
     PTThostFtdcSendMethodType = ^TThostFtdcSendMethodType;
     TThostFtdcSendMethodType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcEventTypeTypeÊÇÒ»¸öÒµÎñ²Ù×÷ÀàĞÍÀàĞÍ }
+  {/TFtdcEventTypeTypeæ˜¯ä¸€ä¸ªä¸šåŠ¡æ“ä½œç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcEventTypeType = ^TThostFtdcEventTypeType;
     TThostFtdcEventTypeType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcEventModeTypeÊÇÒ»¸ö²Ù×÷·½·¨ÀàĞÍ }
+  {/TFtdcEventModeTypeæ˜¯ä¸€ä¸ªæ“ä½œæ–¹æ³•ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Ôö¼Ó }
+  {/å¢åŠ  }
 
   const
     THOST_FTDC_EvM_ADD = '1';    
-  {/ĞŞ¸Ä }
+  {/ä¿®æ”¹ }
     THOST_FTDC_EvM_UPDATE = '2';    
-  {/É¾³ı }
+  {/åˆ é™¤ }
     THOST_FTDC_EvM_DELETE = '3';    
-  {/¸´ºË }
+  {/å¤æ ¸ }
     THOST_FTDC_EvM_CHECK = '4';    
-  {/¸´ÖÆ }
+  {/å¤åˆ¶ }
     THOST_FTDC_EvM_COPY = '5';    
-  {/×¢Ïú }
+  {/æ³¨é”€ }
     THOST_FTDC_EvM_CANCEL = '6';    
-  {/³åÏú }
+  {/å†²é”€ }
     THOST_FTDC_EvM_Reverse = '7';    
 
   type
     PTThostFtdcEventModeType = ^TThostFtdcEventModeType;
     TThostFtdcEventModeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcUOAAutoSendTypeÊÇÒ»¸öÍ³Ò»¿ª»§ÉêÇë×Ô¶¯·¢ËÍÀàĞÍ }
+  {/TFtdcUOAAutoSendTypeæ˜¯ä¸€ä¸ªç»Ÿä¸€å¼€æˆ·ç”³è¯·è‡ªåŠ¨å‘é€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/×Ô¶¯·¢ËÍ²¢½ÓÊÕ }
+  {/è‡ªåŠ¨å‘é€å¹¶æ¥æ”¶ }
 
   const
     THOST_FTDC_UOAA_ASR = '1';    
-  {/×Ô¶¯·¢ËÍ£¬²»×Ô¶¯½ÓÊÕ }
+  {/è‡ªåŠ¨å‘é€ï¼Œä¸è‡ªåŠ¨æ¥æ”¶ }
     THOST_FTDC_UOAA_ASNR = '2';    
-  {/²»×Ô¶¯·¢ËÍ£¬×Ô¶¯½ÓÊÕ }
+  {/ä¸è‡ªåŠ¨å‘é€ï¼Œè‡ªåŠ¨æ¥æ”¶ }
     THOST_FTDC_UOAA_NSAR = '3';    
-  {/²»×Ô¶¯·¢ËÍ£¬Ò²²»×Ô¶¯½ÓÊÕ }
+  {/ä¸è‡ªåŠ¨å‘é€ï¼Œä¹Ÿä¸è‡ªåŠ¨æ¥æ”¶ }
     THOST_FTDC_UOAA_NSR = '4';    
 
   type
     PTThostFtdcUOAAutoSendType = ^TThostFtdcUOAAutoSendType;
     TThostFtdcUOAAutoSendType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcQueryDepthTypeÊÇÒ»¸ö²éÑ¯Éî¶ÈÀàĞÍ }
+  {/TFtdcQueryDepthTypeæ˜¯ä¸€ä¸ªæŸ¥è¯¢æ·±åº¦ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcQueryDepthType = ^TThostFtdcQueryDepthType;
     TThostFtdcQueryDepthType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcDataCenterIDTypeÊÇÒ»¸öÊı¾İÖĞĞÄ´úÂëÀàĞÍ }
+  {/TFtdcDataCenterIDTypeæ˜¯ä¸€ä¸ªæ•°æ®ä¸­å¿ƒä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcDataCenterIDType = ^TThostFtdcDataCenterIDType;
     TThostFtdcDataCenterIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFlowIDTypeÊÇÒ»¸öÁ÷³ÌIDÀàĞÍ }
+  {/TFtdcFlowIDTypeæ˜¯ä¸€ä¸ªæµç¨‹IDç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Í¶×ÊÕß¶ÔÓ¦Í¶×ÊÕß×éÉèÖÃ }
+  {/æŠ•èµ„è€…å¯¹åº”æŠ•èµ„è€…ç»„è®¾ç½® }
 
   const
     THOST_FTDC_EvM_InvestorGroupFlow = '1';    
-  {/Í¶×ÊÕßÊÖĞø·ÑÂÊÉèÖÃ }
+  {/æŠ•èµ„è€…æ‰‹ç»­è´¹ç‡è®¾ç½® }
     THOST_FTDC_EvM_InvestorRate = '2';    
-  {/Í¶×ÊÕßÊÖĞø·ÑÂÊÄ£°å¹ØÏµÉèÖÃ }
+  {/æŠ•èµ„è€…æ‰‹ç»­è´¹ç‡æ¨¡æ¿å…³ç³»è®¾ç½® }
     THOST_FTDC_EvM_InvestorCommRateModel = '3';    
 
   type
     PTThostFtdcFlowIDType = ^TThostFtdcFlowIDType;
     TThostFtdcFlowIDType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCheckLevelTypeÊÇÒ»¸ö¸´ºË¼¶±ğÀàĞÍ }
+  {/TFtdcCheckLevelTypeæ˜¯ä¸€ä¸ªå¤æ ¸çº§åˆ«ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Áã¼¶¸´ºË }
+  {/é›¶çº§å¤æ ¸ }
 
   const
     THOST_FTDC_CL_Zero = '0';    
-  {/Ò»¼¶¸´ºË }
+  {/ä¸€çº§å¤æ ¸ }
     THOST_FTDC_CL_One = '1';    
-  {/¶ş¼¶¸´ºË }
+  {/äºŒçº§å¤æ ¸ }
     THOST_FTDC_CL_Two = '2';    
 
   type
     PTThostFtdcCheckLevelType = ^TThostFtdcCheckLevelType;
     TThostFtdcCheckLevelType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCheckNoTypeÊÇÒ»¸ö²Ù×÷´ÎÊıÀàĞÍ }
+  {/TFtdcCheckNoTypeæ˜¯ä¸€ä¸ªæ“ä½œæ¬¡æ•°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCheckNoType = ^TThostFtdcCheckNoType;
     TThostFtdcCheckNoType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCheckStatusTypeÊÇÒ»¸ö¸´ºË¼¶±ğÀàĞÍ }
+  {/TFtdcCheckStatusTypeæ˜¯ä¸€ä¸ªå¤æ ¸çº§åˆ«ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Î´¸´ºË }
+  {/æœªå¤æ ¸ }
 
   const
     THOST_FTDC_CHS_Init = '0';    
-  {/¸´ºËÖĞ }
+  {/å¤æ ¸ä¸­ }
     THOST_FTDC_CHS_Checking = '1';    
-  {/ÒÑ¸´ºË }
+  {/å·²å¤æ ¸ }
     THOST_FTDC_CHS_Checked = '2';    
-  {/¾Ü¾ø }
+  {/æ‹’ç» }
     THOST_FTDC_CHS_Refuse = '3';    
-  {/×÷·Ï }
+  {/ä½œåºŸ }
     THOST_FTDC_CHS_Cancel = '4';    
 
   type
     PTThostFtdcCheckStatusType = ^TThostFtdcCheckStatusType;
     TThostFtdcCheckStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcUsedStatusTypeÊÇÒ»¸öÉúĞ§×´Ì¬ÀàĞÍ }
+  {/TFtdcUsedStatusTypeæ˜¯ä¸€ä¸ªç”Ÿæ•ˆçŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Î´ÉúĞ§ }
+  {/æœªç”Ÿæ•ˆ }
 
   const
     THOST_FTDC_CHU_Unused = '0';    
-  {/ÒÑÉúĞ§ }
+  {/å·²ç”Ÿæ•ˆ }
     THOST_FTDC_CHU_Used = '1';    
-  {/ÉúĞ§Ê§°Ü }
+  {/ç”Ÿæ•ˆå¤±è´¥ }
     THOST_FTDC_CHU_Fail = '2';    
 
   type
     PTThostFtdcUsedStatusType = ^TThostFtdcUsedStatusType;
     TThostFtdcUsedStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcRateTemplateNameTypeÊÇÒ»¸öÄ£ĞÍÃû³ÆÀàĞÍ }
+  {/TFtdcRateTemplateNameTypeæ˜¯ä¸€ä¸ªæ¨¡å‹åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcRateTemplateNameType = ^TThostFtdcRateTemplateNameType;
     TThostFtdcRateTemplateNameType = array[0..60] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcPropertyStringTypeÊÇÒ»¸öÓÃÓÚ²éÑ¯µÄÍ¶×ÊÊôĞÔ×Ö¶ÎÀàĞÍ }
+  {/TFtdcPropertyStringTypeæ˜¯ä¸€ä¸ªç”¨äºæŸ¥è¯¢çš„æŠ•èµ„å±æ€§å­—æ®µç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcPropertyStringType = ^TThostFtdcPropertyStringType;
     TThostFtdcPropertyStringType = array[0..2048] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBankAcountOriginTypeÊÇÒ»¸öÕË»§À´Ô´ÀàĞÍ }
+  {/TFtdcBankAcountOriginTypeæ˜¯ä¸€ä¸ªè´¦æˆ·æ¥æºç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÊÖ¹¤Â¼Èë }
+  {/æ‰‹å·¥å½•å…¥ }
 
   const
     THOST_FTDC_BAO_ByAccProperty = '0';    
-  {/ÒøÆÚ×ªÕË }
+  {/é“¶æœŸè½¬è´¦ }
     THOST_FTDC_BAO_ByFBTransfer = '1';    
 
   type
     PTThostFtdcBankAcountOriginType = ^TThostFtdcBankAcountOriginType;
     TThostFtdcBankAcountOriginType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcMonthBillTradeSumTypeÊÇÒ»¸ö½áËãµ¥ÔÂ±¨³É½»»ã×Ü·½Ê½ÀàĞÍ }
+  {/TFtdcMonthBillTradeSumTypeæ˜¯ä¸€ä¸ªç»“ç®—å•æœˆæŠ¥æˆäº¤æ±‡æ€»æ–¹å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Í¬ÈÕÍ¬ºÏÔ¼ }
+  {/åŒæ—¥åŒåˆçº¦ }
 
   const
     THOST_FTDC_MBTS_ByInstrument = '0';    
-  {/Í¬ÈÕÍ¬ºÏÔ¼Í¬¼Û¸ñ }
+  {/åŒæ—¥åŒåˆçº¦åŒä»·æ ¼ }
     THOST_FTDC_MBTS_ByDayInsPrc = '1';    
-  {/Í¬ºÏÔ¼ }
+  {/åŒåˆçº¦ }
     THOST_FTDC_MBTS_ByDayIns = '2';    
 
   type
     PTThostFtdcMonthBillTradeSumType = ^TThostFtdcMonthBillTradeSumType;
     TThostFtdcMonthBillTradeSumType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFBTTradeCodeEnumTypeÊÇÒ»¸öÒøÆÚ½»Ò×´úÂëÃ¶¾ÙÀàĞÍ }
+  {/TFtdcFBTTradeCodeEnumTypeæ˜¯ä¸€ä¸ªé“¶æœŸäº¤æ˜“ä»£ç æšä¸¾ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÒøĞĞ·¢ÆğÒøĞĞ×ªÆÚ»õ }
+  {/é“¶è¡Œå‘èµ·é“¶è¡Œè½¬æœŸè´§ }
 
   const
     THOST_FTDC_FTC_BankLaunchBankToBroker = '102001';    
-  {/ÆÚ»õ·¢ÆğÒøĞĞ×ªÆÚ»õ }
+  {/æœŸè´§å‘èµ·é“¶è¡Œè½¬æœŸè´§ }
     THOST_FTDC_FTC_BrokerLaunchBankToBroker = '202001';    
-  {/ÒøĞĞ·¢ÆğÆÚ»õ×ªÒøĞĞ }
+  {/é“¶è¡Œå‘èµ·æœŸè´§è½¬é“¶è¡Œ }
     THOST_FTDC_FTC_BankLaunchBrokerToBank = '102002';    
-  {/ÆÚ»õ·¢ÆğÆÚ»õ×ªÒøĞĞ }
+  {/æœŸè´§å‘èµ·æœŸè´§è½¬é“¶è¡Œ }
     THOST_FTDC_FTC_BrokerLaunchBrokerToBank = '202002';    
 
   type
     PTThostFtdcFBTTradeCodeEnumType = ^TThostFtdcFBTTradeCodeEnumType;
     TThostFtdcFBTTradeCodeEnumType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcRateTemplateIDTypeÊÇÒ»¸öÄ£ĞÍ´úÂëÀàĞÍ }
+  {/TFtdcRateTemplateIDTypeæ˜¯ä¸€ä¸ªæ¨¡å‹ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcRateTemplateIDType = ^TThostFtdcRateTemplateIDType;
     TThostFtdcRateTemplateIDType = array[0..8] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcRiskRateTypeÊÇÒ»¸ö·çÏÕ¶ÈÀàĞÍ }
+  {/TFtdcRiskRateTypeæ˜¯ä¸€ä¸ªé£é™©åº¦ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcRiskRateType = ^TThostFtdcRiskRateType;
     TThostFtdcRiskRateType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTimestampTypeÊÇÒ»¸öÊ±¼ä´ÁÀàĞÍ }
+  {/TFtdcTimestampTypeæ˜¯ä¸€ä¸ªæ—¶é—´æˆ³ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcTimestampType = ^TThostFtdcTimestampType;
     TThostFtdcTimestampType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcInvestorIDRuleNameTypeÊÇÒ»¸öºÅ¶Î¹æÔòÃû³ÆÀàĞÍ }
+  {/TFtdcInvestorIDRuleNameTypeæ˜¯ä¸€ä¸ªå·æ®µè§„åˆ™åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcInvestorIDRuleNameType = ^TThostFtdcInvestorIDRuleNameType;
     TThostFtdcInvestorIDRuleNameType = array[0..60] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcInvestorIDRuleExprTypeÊÇÒ»¸öºÅ¶Î¹æÔò±í´ïÊ½ÀàĞÍ }
+  {/TFtdcInvestorIDRuleExprTypeæ˜¯ä¸€ä¸ªå·æ®µè§„åˆ™è¡¨è¾¾å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcInvestorIDRuleExprType = ^TThostFtdcInvestorIDRuleExprType;
     TThostFtdcInvestorIDRuleExprType = array[0..512] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcLastDriftTypeÊÇÒ»¸öÉÏ´ÎOTPÆ¯ÒÆÖµÀàĞÍ }
+  {/TFtdcLastDriftTypeæ˜¯ä¸€ä¸ªä¸Šæ¬¡OTPæ¼‚ç§»å€¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcLastDriftType = ^TThostFtdcLastDriftType;
     TThostFtdcLastDriftType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcLastSuccessTypeÊÇÒ»¸öÉÏ´ÎOTP³É¹¦ÖµÀàĞÍ }
+  {/TFtdcLastSuccessTypeæ˜¯ä¸€ä¸ªä¸Šæ¬¡OTPæˆåŠŸå€¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcLastSuccessType = ^TThostFtdcLastSuccessType;
     TThostFtdcLastSuccessType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAuthKeyTypeÊÇÒ»¸öÁîÅÆÃÜÔ¿ÀàĞÍ }
+  {/TFtdcAuthKeyTypeæ˜¯ä¸€ä¸ªä»¤ç‰Œå¯†é’¥ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAuthKeyType = ^TThostFtdcAuthKeyType;
     TThostFtdcAuthKeyType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSerialNumberTypeÊÇÒ»¸öĞòÁĞºÅÀàĞÍ }
+  {/TFtdcSerialNumberTypeæ˜¯ä¸€ä¸ªåºåˆ—å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcSerialNumberType = ^TThostFtdcSerialNumberType;
     TThostFtdcSerialNumberType = array[0..16] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOTPTypeTypeÊÇÒ»¸ö¶¯Ì¬ÁîÅÆÀàĞÍÀàĞÍ }
+  {/TFtdcOTPTypeTypeæ˜¯ä¸€ä¸ªåŠ¨æ€ä»¤ç‰Œç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÎŞ¶¯Ì¬ÁîÅÆ }
+  {/æ— åŠ¨æ€ä»¤ç‰Œ }
 
   const
     THOST_FTDC_OTP_NONE = '0';    
-  {/Ê±¼äÁîÅÆ }
+  {/æ—¶é—´ä»¤ç‰Œ }
     THOST_FTDC_OTP_TOTP = '1';    
 
   type
     PTThostFtdcOTPTypeType = ^TThostFtdcOTPTypeType;
     TThostFtdcOTPTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOTPVendorsIDTypeÊÇÒ»¸ö¶¯Ì¬ÁîÅÆÌá¹©ÉÌÀàĞÍ }
+  {/TFtdcOTPVendorsIDTypeæ˜¯ä¸€ä¸ªåŠ¨æ€ä»¤ç‰Œæä¾›å•†ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcOTPVendorsIDType = ^TThostFtdcOTPVendorsIDType;
     TThostFtdcOTPVendorsIDType = array[0..1] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOTPVendorsNameTypeÊÇÒ»¸ö¶¯Ì¬ÁîÅÆÌá¹©ÉÌÃû³ÆÀàĞÍ }
+  {/TFtdcOTPVendorsNameTypeæ˜¯ä¸€ä¸ªåŠ¨æ€ä»¤ç‰Œæä¾›å•†åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcOTPVendorsNameType = ^TThostFtdcOTPVendorsNameType;
     TThostFtdcOTPVendorsNameType = array[0..60] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOTPStatusTypeÊÇÒ»¸ö¶¯Ì¬ÁîÅÆ×´Ì¬ÀàĞÍ }
+  {/TFtdcOTPStatusTypeæ˜¯ä¸€ä¸ªåŠ¨æ€ä»¤ç‰ŒçŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Î´Ê¹ÓÃ }
+  {/æœªä½¿ç”¨ }
 
   const
     THOST_FTDC_OTPS_Unused = '0';    
-  {/ÒÑÊ¹ÓÃ }
+  {/å·²ä½¿ç”¨ }
     THOST_FTDC_OTPS_Used = '1';    
-  {/×¢Ïú }
+  {/æ³¨é”€ }
     THOST_FTDC_OTPS_Disuse = '2';    
 
   type
     PTThostFtdcOTPStatusType = ^TThostFtdcOTPStatusType;
     TThostFtdcOTPStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBrokerUserTypeTypeÊÇÒ»¸ö¾­¼Ã¹«Ë¾ÓÃ»§ÀàĞÍÀàĞÍ }
+  {/TFtdcBrokerUserTypeTypeæ˜¯ä¸€ä¸ªç»æµå…¬å¸ç”¨æˆ·ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Í¶×ÊÕß }
+  {/æŠ•èµ„è€… }
 
   const
     THOST_FTDC_BUT_Investor = '1';    
-  {/²Ù×÷Ô± }
+  {/æ“ä½œå‘˜ }
     THOST_FTDC_BUT_BrokerUser = '2';    
 
   type
     PTThostFtdcBrokerUserTypeType = ^TThostFtdcBrokerUserTypeType;
     TThostFtdcBrokerUserTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFutureTypeTypeÊÇÒ»¸öÆÚ»õÀàĞÍÀàĞÍ }
+  {/TFtdcFutureTypeTypeæ˜¯ä¸€ä¸ªæœŸè´§ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÉÌÆ·ÆÚ»õ }
+  {/å•†å“æœŸè´§ }
 
   const
     THOST_FTDC_FUTT_Commodity = '1';    
-  {/½ğÈÚÆÚ»õ }
+  {/é‡‘èæœŸè´§ }
     THOST_FTDC_FUTT_Financial = '2';    
 
   type
     PTThostFtdcFutureTypeType = ^TThostFtdcFutureTypeType;
     TThostFtdcFutureTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFundEventTypeTypeÊÇÒ»¸ö×Ê½ğ¹ÜÀí²Ù×÷ÀàĞÍÀàĞÍ }
+  {/TFtdcFundEventTypeTypeæ˜¯ä¸€ä¸ªèµ„é‡‘ç®¡ç†æ“ä½œç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/×ªÕËÏŞ¶î }
+  {/è½¬è´¦é™é¢ }
 
   const
     THOST_FTDC_FET_Restriction = '0';    
-  {/µ±ÈÕ×ªÕËÏŞ¶î }
+  {/å½“æ—¥è½¬è´¦é™é¢ }
     THOST_FTDC_FET_TodayRestriction = '1';    
-  {/ÆÚÉÌÁ÷Ë® }
+  {/æœŸå•†æµæ°´ }
     THOST_FTDC_FET_Transfer = '2';    
-  {/×Ê½ğ¶³½á }
+  {/èµ„é‡‘å†»ç»“ }
     THOST_FTDC_FET_Credit = '3';    
-  {/Í¶×ÊÕß¿ÉÌá×Ê½ğ±ÈÀı }
+  {/æŠ•èµ„è€…å¯æèµ„é‡‘æ¯”ä¾‹ }
     THOST_FTDC_FET_InvestorWithdrawAlm = '4';    
-  {/µ¥¸öÒøĞĞÕÊ»§×ªÕËÏŞ¶î }
+  {/å•ä¸ªé“¶è¡Œå¸æˆ·è½¬è´¦é™é¢ }
     THOST_FTDC_FET_BankRestriction = '5';    
-  {/ÒøÆÚÇ©Ô¼ÕË»§ }
+  {/é“¶æœŸç­¾çº¦è´¦æˆ· }
     THOST_FTDC_FET_Accountregister = '6';    
-  {/½»Ò×Ëù³öÈë½ğ }
+  {/äº¤æ˜“æ‰€å‡ºå…¥é‡‘ }
     THOST_FTDC_FET_ExchangeFundIO = '7';    
-  {/Í¶×ÊÕß³öÈë½ğ }
+  {/æŠ•èµ„è€…å‡ºå…¥é‡‘ }
     THOST_FTDC_FET_InvestorFundIO = '8';    
 
   type
     PTThostFtdcFundEventTypeType = ^TThostFtdcFundEventTypeType;
     TThostFtdcFundEventTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAccountSourceTypeTypeÊÇÒ»¸ö×Ê½ğÕË»§À´Ô´ÀàĞÍ }
+  {/TFtdcAccountSourceTypeTypeæ˜¯ä¸€ä¸ªèµ„é‡‘è´¦æˆ·æ¥æºç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÒøÆÚÍ¬²½ }
+  {/é“¶æœŸåŒæ­¥ }
 
   const
     THOST_FTDC_AST_FBTransfer = '0';    
-  {/ÊÖ¹¤Â¼Èë }
+  {/æ‰‹å·¥å½•å…¥ }
     THOST_FTDC_AST_ManualEntry = '1';    
 
   type
     PTThostFtdcAccountSourceTypeType = ^TThostFtdcAccountSourceTypeType;
     TThostFtdcAccountSourceTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCodeSourceTypeTypeÊÇÒ»¸ö½»Ò×±àÂëÀ´Ô´ÀàĞÍ }
+  {/TFtdcCodeSourceTypeTypeæ˜¯ä¸€ä¸ªäº¤æ˜“ç¼–ç æ¥æºç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Í³Ò»¿ª»§(ÒÑ¹æ·¶) }
+  {/ç»Ÿä¸€å¼€æˆ·(å·²è§„èŒƒ) }
 
   const
     THOST_FTDC_CST_UnifyAccount = '0';    
-  {/ÊÖ¹¤Â¼Èë(Î´¹æ·¶) }
+  {/æ‰‹å·¥å½•å…¥(æœªè§„èŒƒ) }
     THOST_FTDC_CST_ManualEntry = '1';    
 
   type
     PTThostFtdcCodeSourceTypeType = ^TThostFtdcCodeSourceTypeType;
     TThostFtdcCodeSourceTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcUserRangeTypeÊÇÒ»¸ö²Ù×÷Ô±·¶Î§ÀàĞÍ }
+  {/TFtdcUserRangeTypeæ˜¯ä¸€ä¸ªæ“ä½œå‘˜èŒƒå›´ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ËùÓĞ }
+  {/æ‰€æœ‰ }
 
   const
     THOST_FTDC_UR_All = '0';    
-  {/µ¥Ò»²Ù×÷Ô± }
+  {/å•ä¸€æ“ä½œå‘˜ }
     THOST_FTDC_UR_Single = '1';    
 
   type
     PTThostFtdcUserRangeType = ^TThostFtdcUserRangeType;
     TThostFtdcUserRangeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTimeSpanTypeÊÇÒ»¸öÊ±¼ä¿ç¶ÈÀàĞÍ }
+  {/TFtdcTimeSpanTypeæ˜¯ä¸€ä¸ªæ—¶é—´è·¨åº¦ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcTimeSpanType = ^TThostFtdcTimeSpanType;
     TThostFtdcTimeSpanType = array[0..8] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcImportSequenceIDTypeÊÇÒ»¸ö¶¯Ì¬ÁîÅÆµ¼ÈëÅú´Î±àºÅÀàĞÍ }
+  {/TFtdcImportSequenceIDTypeæ˜¯ä¸€ä¸ªåŠ¨æ€ä»¤ç‰Œå¯¼å…¥æ‰¹æ¬¡ç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcImportSequenceIDType = ^TThostFtdcImportSequenceIDType;
     TThostFtdcImportSequenceIDType = array[0..16] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcByGroupTypeÊÇÒ»¸ö½»Ò×Í³¼Æ±í°´¿Í»§Í³¼Æ·½Ê½ÀàĞÍ }
+  {/TFtdcByGroupTypeæ˜¯ä¸€ä¸ªäº¤æ˜“ç»Ÿè®¡è¡¨æŒ‰å®¢æˆ·ç»Ÿè®¡æ–¹å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/°´Í¶×ÊÕßÍ³¼Æ }
+  {/æŒ‰æŠ•èµ„è€…ç»Ÿè®¡ }
 
   const
     THOST_FTDC_BG_Investor = '2';    
-  {/°´ÀàÍ³¼Æ }
+  {/æŒ‰ç±»ç»Ÿè®¡ }
     THOST_FTDC_BG_Group = '1';    
 
   type
     PTThostFtdcByGroupType = ^TThostFtdcByGroupType;
     TThostFtdcByGroupType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTradeSumStatModeTypeÊÇÒ»¸ö½»Ò×Í³¼Æ±í°´·¶Î§Í³¼Æ·½Ê½ÀàĞÍ }
+  {/TFtdcTradeSumStatModeTypeæ˜¯ä¸€ä¸ªäº¤æ˜“ç»Ÿè®¡è¡¨æŒ‰èŒƒå›´ç»Ÿè®¡æ–¹å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/°´ºÏÔ¼Í³¼Æ }
+  {/æŒ‰åˆçº¦ç»Ÿè®¡ }
 
   const
     THOST_FTDC_TSSM_Instrument = '1';    
-  {/°´²úÆ·Í³¼Æ }
+  {/æŒ‰äº§å“ç»Ÿè®¡ }
     THOST_FTDC_TSSM_Product = '2';    
-  {/°´½»Ò×ËùÍ³¼Æ }
+  {/æŒ‰äº¤æ˜“æ‰€ç»Ÿè®¡ }
     THOST_FTDC_TSSM_Exchange = '3';    
 
   type
     PTThostFtdcTradeSumStatModeType = ^TThostFtdcTradeSumStatModeType;
     TThostFtdcTradeSumStatModeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcComTypeTypeÊÇÒ»¸ö×éºÏ³É½»ÀàĞÍÀàĞÍ }
+  {/TFtdcComTypeTypeæ˜¯ä¸€ä¸ªç»„åˆæˆäº¤ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcComTypeType = ^TThostFtdcComTypeType;
     TThostFtdcComTypeType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcUserProductIDTypeÊÇÒ»¸ö²úÆ·±êÊ¶ÀàĞÍ }
+  {/TFtdcUserProductIDTypeæ˜¯ä¸€ä¸ªäº§å“æ ‡è¯†ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcUserProductIDType = ^TThostFtdcUserProductIDType;
     TThostFtdcUserProductIDType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcUserProductNameTypeÊÇÒ»¸ö²úÆ·Ãû³ÆÀàĞÍ }
+  {/TFtdcUserProductNameTypeæ˜¯ä¸€ä¸ªäº§å“åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcUserProductNameType = ^TThostFtdcUserProductNameType;
     TThostFtdcUserProductNameType = array[0..64] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcUserProductMemoTypeÊÇÒ»¸ö²úÆ·ËµÃ÷ÀàĞÍ }
+  {/TFtdcUserProductMemoTypeæ˜¯ä¸€ä¸ªäº§å“è¯´æ˜ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcUserProductMemoType = ^TThostFtdcUserProductMemoType;
     TThostFtdcUserProductMemoType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCSRCCancelFlagTypeÊÇÒ»¸öĞÂÔö»ò±ä¸ü±êÖ¾ÀàĞÍ }
+  {/TFtdcCSRCCancelFlagTypeæ˜¯ä¸€ä¸ªæ–°å¢æˆ–å˜æ›´æ ‡å¿—ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCSRCCancelFlagType = ^TThostFtdcCSRCCancelFlagType;
     TThostFtdcCSRCCancelFlagType = array[0..1] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCSRCDateTypeÊÇÒ»¸öÈÕÆÚÀàĞÍ }
+  {/TFtdcCSRCDateTypeæ˜¯ä¸€ä¸ªæ—¥æœŸç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCSRCDateType = ^TThostFtdcCSRCDateType;
     TThostFtdcCSRCDateType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCSRCInvestorNameTypeÊÇÒ»¸ö¿Í»§Ãû³ÆÀàĞÍ }
+  {/TFtdcCSRCInvestorNameTypeæ˜¯ä¸€ä¸ªå®¢æˆ·åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCSRCInvestorNameType = ^TThostFtdcCSRCInvestorNameType;
     TThostFtdcCSRCInvestorNameType = array[0..200] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCSRCOpenInvestorNameTypeÊÇÒ»¸ö¿Í»§Ãû³ÆÀàĞÍ }
+  {/TFtdcCSRCOpenInvestorNameTypeæ˜¯ä¸€ä¸ªå®¢æˆ·åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCSRCOpenInvestorNameType = ^TThostFtdcCSRCOpenInvestorNameType;
     TThostFtdcCSRCOpenInvestorNameType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCSRCInvestorIDTypeÊÇÒ»¸ö¿Í»§´úÂëÀàĞÍ }
+  {/TFtdcCSRCInvestorIDTypeæ˜¯ä¸€ä¸ªå®¢æˆ·ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCSRCInvestorIDType = ^TThostFtdcCSRCInvestorIDType;
     TThostFtdcCSRCInvestorIDType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCSRCIdentifiedCardNoTypeÊÇÒ»¸öÖ¤¼şºÅÂëÀàĞÍ }
+  {/TFtdcCSRCIdentifiedCardNoTypeæ˜¯ä¸€ä¸ªè¯ä»¶å·ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCSRCIdentifiedCardNoType = ^TThostFtdcCSRCIdentifiedCardNoType;
     TThostFtdcCSRCIdentifiedCardNoType = array[0..50] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCSRCClientIDTypeÊÇÒ»¸ö½»Ò×±àÂëÀàĞÍ }
+  {/TFtdcCSRCClientIDTypeæ˜¯ä¸€ä¸ªäº¤æ˜“ç¼–ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCSRCClientIDType = ^TThostFtdcCSRCClientIDType;
     TThostFtdcCSRCClientIDType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCSRCBankFlagTypeÊÇÒ»¸öÒøĞĞ±êÊ¶ÀàĞÍ }
+  {/TFtdcCSRCBankFlagTypeæ˜¯ä¸€ä¸ªé“¶è¡Œæ ‡è¯†ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCSRCBankFlagType = ^TThostFtdcCSRCBankFlagType;
     TThostFtdcCSRCBankFlagType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCSRCBankAccountTypeÊÇÒ»¸öÒøĞĞÕË»§ÀàĞÍ }
+  {/TFtdcCSRCBankAccountTypeæ˜¯ä¸€ä¸ªé“¶è¡Œè´¦æˆ·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCSRCBankAccountType = ^TThostFtdcCSRCBankAccountType;
     TThostFtdcCSRCBankAccountType = array[0..22] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCSRCOpenNameTypeÊÇÒ»¸ö¿ª»§ÈËÀàĞÍ }
+  {/TFtdcCSRCOpenNameTypeæ˜¯ä¸€ä¸ªå¼€æˆ·äººç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCSRCOpenNameType = ^TThostFtdcCSRCOpenNameType;
     TThostFtdcCSRCOpenNameType = array[0..400] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCSRCMemoTypeÊÇÒ»¸öËµÃ÷ÀàĞÍ }
+  {/TFtdcCSRCMemoTypeæ˜¯ä¸€ä¸ªè¯´æ˜ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCSRCMemoType = ^TThostFtdcCSRCMemoType;
     TThostFtdcCSRCMemoType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCSRCTimeTypeÊÇÒ»¸öÊ±¼äÀàĞÍ }
+  {/TFtdcCSRCTimeTypeæ˜¯ä¸€ä¸ªæ—¶é—´ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCSRCTimeType = ^TThostFtdcCSRCTimeType;
     TThostFtdcCSRCTimeType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCSRCTradeIDTypeÊÇÒ»¸ö³É½»Á÷Ë®ºÅÀàĞÍ }
+  {/TFtdcCSRCTradeIDTypeæ˜¯ä¸€ä¸ªæˆäº¤æµæ°´å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCSRCTradeIDType = ^TThostFtdcCSRCTradeIDType;
     TThostFtdcCSRCTradeIDType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCSRCExchangeInstIDTypeÊÇÒ»¸öºÏÔ¼´úÂëÀàĞÍ }
+  {/TFtdcCSRCExchangeInstIDTypeæ˜¯ä¸€ä¸ªåˆçº¦ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCSRCExchangeInstIDType = ^TThostFtdcCSRCExchangeInstIDType;
     TThostFtdcCSRCExchangeInstIDType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCSRCMortgageNameTypeÊÇÒ»¸öÖÊÑºÆ·Ãû³ÆÀàĞÍ }
+  {/TFtdcCSRCMortgageNameTypeæ˜¯ä¸€ä¸ªè´¨æŠ¼å“åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCSRCMortgageNameType = ^TThostFtdcCSRCMortgageNameType;
     TThostFtdcCSRCMortgageNameType = array[0..6] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCSRCReasonTypeÊÇÒ»¸öÊÂÓÉÀàĞÍ }
+  {/TFtdcCSRCReasonTypeæ˜¯ä¸€ä¸ªäº‹ç”±ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCSRCReasonType = ^TThostFtdcCSRCReasonType;
     TThostFtdcCSRCReasonType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcIsSettlementTypeÊÇÒ»¸öÊÇ·ñÎª·Ç½áËã»áÔ±ÀàĞÍ }
+  {/TFtdcIsSettlementTypeæ˜¯ä¸€ä¸ªæ˜¯å¦ä¸ºéç»“ç®—ä¼šå‘˜ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcIsSettlementType = ^TThostFtdcIsSettlementType;
     TThostFtdcIsSettlementType = array[0..1] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCSRCMoneyTypeÊÇÒ»¸ö×Ê½ğÀàĞÍ }
+  {/TFtdcCSRCMoneyTypeæ˜¯ä¸€ä¸ªèµ„é‡‘ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCSRCMoneyType = ^TThostFtdcCSRCMoneyType;
     TThostFtdcCSRCMoneyType = double;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCSRCPriceTypeÊÇÒ»¸ö¼Û¸ñÀàĞÍ }
+  {/TFtdcCSRCPriceTypeæ˜¯ä¸€ä¸ªä»·æ ¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCSRCPriceType = ^TThostFtdcCSRCPriceType;
     TThostFtdcCSRCPriceType = double;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCSRCOptionsTypeTypeÊÇÒ»¸öÆÚÈ¨ÀàĞÍÀàĞÍ }
+  {/TFtdcCSRCOptionsTypeTypeæ˜¯ä¸€ä¸ªæœŸæƒç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCSRCOptionsTypeType = ^TThostFtdcCSRCOptionsTypeType;
     TThostFtdcCSRCOptionsTypeType = array[0..1] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCSRCStrikePriceTypeÊÇÒ»¸öÖ´ĞĞ¼ÛÀàĞÍ }
+  {/TFtdcCSRCStrikePriceTypeæ˜¯ä¸€ä¸ªæ‰§è¡Œä»·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCSRCStrikePriceType = ^TThostFtdcCSRCStrikePriceType;
     TThostFtdcCSRCStrikePriceType = double;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCSRCTargetProductIDTypeÊÇÒ»¸ö±êµÄÆ·ÖÖÀàĞÍ }
+  {/TFtdcCSRCTargetProductIDTypeæ˜¯ä¸€ä¸ªæ ‡çš„å“ç§ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCSRCTargetProductIDType = ^TThostFtdcCSRCTargetProductIDType;
     TThostFtdcCSRCTargetProductIDType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCSRCTargetInstrIDTypeÊÇÒ»¸ö±êµÄºÏÔ¼ÀàĞÍ }
+  {/TFtdcCSRCTargetInstrIDTypeæ˜¯ä¸€ä¸ªæ ‡çš„åˆçº¦ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCSRCTargetInstrIDType = ^TThostFtdcCSRCTargetInstrIDType;
     TThostFtdcCSRCTargetInstrIDType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCommModelNameTypeÊÇÒ»¸öÊÖĞø·ÑÂÊÄ£°åÃû³ÆÀàĞÍ }
+  {/TFtdcCommModelNameTypeæ˜¯ä¸€ä¸ªæ‰‹ç»­è´¹ç‡æ¨¡æ¿åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCommModelNameType = ^TThostFtdcCommModelNameType;
     TThostFtdcCommModelNameType = array[0..160] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCommModelMemoTypeÊÇÒ»¸öÊÖĞø·ÑÂÊÄ£°å±¸×¢ÀàĞÍ }
+  {/TFtdcCommModelMemoTypeæ˜¯ä¸€ä¸ªæ‰‹ç»­è´¹ç‡æ¨¡æ¿å¤‡æ³¨ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCommModelMemoType = ^TThostFtdcCommModelMemoType;
     TThostFtdcCommModelMemoType = array[0..1024] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcExprSetModeTypeÊÇÒ»¸öÈÕÆÚ±í´ïÊ½ÉèÖÃÀàĞÍÀàĞÍ }
+  {/TFtdcExprSetModeTypeæ˜¯ä¸€ä¸ªæ—¥æœŸè¡¨è¾¾å¼è®¾ç½®ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Ïà¶ÔÒÑÓĞ¹æÔòÉèÖÃ }
+  {/ç›¸å¯¹å·²æœ‰è§„åˆ™è®¾ç½® }
 
   const
     THOST_FTDC_ESM_Relative = '1';    
-  {/µäĞÍÉèÖÃ }
+  {/å…¸å‹è®¾ç½® }
     THOST_FTDC_ESM_Typical = '2';    
 
   type
     PTThostFtdcExprSetModeType = ^TThostFtdcExprSetModeType;
     TThostFtdcExprSetModeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcRateInvestorRangeTypeÊÇÒ»¸öÍ¶×ÊÕß·¶Î§ÀàĞÍ }
+  {/TFtdcRateInvestorRangeTypeæ˜¯ä¸€ä¸ªæŠ•èµ„è€…èŒƒå›´ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/¹«Ë¾±ê×¼ }
+  {/å…¬å¸æ ‡å‡† }
 
   const
     THOST_FTDC_RIR_All = '1';    
-  {/Ä£°å }
+  {/æ¨¡æ¿ }
     THOST_FTDC_RIR_Model = '2';    
-  {/µ¥Ò»Í¶×ÊÕß }
+  {/å•ä¸€æŠ•èµ„è€… }
     THOST_FTDC_RIR_Single = '3';    
 
   type
     PTThostFtdcRateInvestorRangeType = ^TThostFtdcRateInvestorRangeType;
     TThostFtdcRateInvestorRangeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAgentBrokerIDTypeÊÇÒ»¸ö´úÀí¾­¼Í¹«Ë¾´úÂëÀàĞÍ }
+  {/TFtdcAgentBrokerIDTypeæ˜¯ä¸€ä¸ªä»£ç†ç»çºªå…¬å¸ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAgentBrokerIDType = ^TThostFtdcAgentBrokerIDType;
     TThostFtdcAgentBrokerIDType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcDRIdentityIDTypeÊÇÒ»¸ö½»Ò×ÖĞĞÄ´úÂëÀàĞÍ }
+  {/TFtdcDRIdentityIDTypeæ˜¯ä¸€ä¸ªäº¤æ˜“ä¸­å¿ƒä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcDRIdentityIDType = ^TThostFtdcDRIdentityIDType;
     TThostFtdcDRIdentityIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcDRIdentityNameTypeÊÇÒ»¸ö½»Ò×ÖĞĞÄÃû³ÆÀàĞÍ }
+  {/TFtdcDRIdentityNameTypeæ˜¯ä¸€ä¸ªäº¤æ˜“ä¸­å¿ƒåç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcDRIdentityNameType = ^TThostFtdcDRIdentityNameType;
     TThostFtdcDRIdentityNameType = array[0..64] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcDBLinkIDTypeÊÇÒ»¸öDBLink±êÊ¶ºÅÀàĞÍ }
+  {/TFtdcDBLinkIDTypeæ˜¯ä¸€ä¸ªDBLinkæ ‡è¯†å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcDBLinkIDType = ^TThostFtdcDBLinkIDType;
     TThostFtdcDBLinkIDType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSyncDataStatusTypeÊÇÒ»¸öÖ÷´ÎÓÃÏµÍ³Êı¾İÍ¬²½×´Ì¬ÀàĞÍ }
+  {/TFtdcSyncDataStatusTypeæ˜¯ä¸€ä¸ªä¸»æ¬¡ç”¨ç³»ç»Ÿæ•°æ®åŒæ­¥çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Î´Í¬²½ }
+  {/æœªåŒæ­¥ }
 
   const
     THOST_FTDC_SDS_Initialize = '0';    
-  {/Í¬²½ÖĞ }
+  {/åŒæ­¥ä¸­ }
     THOST_FTDC_SDS_Settlementing = '1';    
-  {/ÒÑÍ¬²½ }
+  {/å·²åŒæ­¥ }
     THOST_FTDC_SDS_Settlemented = '2';    
 
   type
     PTThostFtdcSyncDataStatusType = ^TThostFtdcSyncDataStatusType;
     TThostFtdcSyncDataStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTradeSourceTypeÊÇÒ»¸ö³É½»À´Ô´ÀàĞÍ }
+  {/TFtdcTradeSourceTypeæ˜¯ä¸€ä¸ªæˆäº¤æ¥æºç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/À´×Ô½»Ò×ËùÆÕÍ¨»Ø±¨ }
+  {/æ¥è‡ªäº¤æ˜“æ‰€æ™®é€šå›æŠ¥ }
 
   const
     THOST_FTDC_TSRC_NORMAL = '0';    
-  {/À´×Ô²éÑ¯ }
+  {/æ¥è‡ªæŸ¥è¯¢ }
     THOST_FTDC_TSRC_QUERY = '1';    
 
   type
     PTThostFtdcTradeSourceType = ^TThostFtdcTradeSourceType;
     TThostFtdcTradeSourceType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFlexStatModeTypeÊÇÒ»¸ö²úÆ·ºÏÔ¼Í³¼Æ·½Ê½ÀàĞÍ }
+  {/TFtdcFlexStatModeTypeæ˜¯ä¸€ä¸ªäº§å“åˆçº¦ç»Ÿè®¡æ–¹å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/²úÆ·Í³¼Æ }
+  {/äº§å“ç»Ÿè®¡ }
 
   const
     THOST_FTDC_FSM_Product = '1';    
-  {/½»Ò×ËùÍ³¼Æ }
+  {/äº¤æ˜“æ‰€ç»Ÿè®¡ }
     THOST_FTDC_FSM_Exchange = '2';    
-  {/Í³¼ÆËùÓĞ }
+  {/ç»Ÿè®¡æ‰€æœ‰ }
     THOST_FTDC_FSM_All = '3';    
 
   type
     PTThostFtdcFlexStatModeType = ^TThostFtdcFlexStatModeType;
     TThostFtdcFlexStatModeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcByInvestorRangeTypeÊÇÒ»¸öÍ¶×ÊÕß·¶Î§Í³¼Æ·½Ê½ÀàĞÍ }
+  {/TFtdcByInvestorRangeTypeæ˜¯ä¸€ä¸ªæŠ•èµ„è€…èŒƒå›´ç»Ÿè®¡æ–¹å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÊôĞÔÍ³¼Æ }
+  {/å±æ€§ç»Ÿè®¡ }
 
   const
     THOST_FTDC_BIR_Property = '1';    
-  {/Í³¼ÆËùÓĞ }
+  {/ç»Ÿè®¡æ‰€æœ‰ }
     THOST_FTDC_BIR_All = '2';    
 
   type
     PTThostFtdcByInvestorRangeType = ^TThostFtdcByInvestorRangeType;
     TThostFtdcByInvestorRangeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSRiskRateTypeÊÇÒ»¸ö·çÏÕ¶ÈÀàĞÍ }
+  {/TFtdcSRiskRateTypeæ˜¯ä¸€ä¸ªé£é™©åº¦ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcSRiskRateType = ^TThostFtdcSRiskRateType;
     TThostFtdcSRiskRateType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSequenceNo12TypeÊÇÒ»¸öĞòºÅÀàĞÍ }
+  {/TFtdcSequenceNo12Typeæ˜¯ä¸€ä¸ªåºå·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcSequenceNo12Type = ^TThostFtdcSequenceNo12Type;
     TThostFtdcSequenceNo12Type = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcPropertyInvestorRangeTypeÊÇÒ»¸öÍ¶×ÊÕß·¶Î§ÀàĞÍ }
+  {/TFtdcPropertyInvestorRangeTypeæ˜¯ä¸€ä¸ªæŠ•èµ„è€…èŒƒå›´ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ËùÓĞ }
+  {/æ‰€æœ‰ }
 
   const
     THOST_FTDC_PIR_All = '1';    
-  {/Í¶×ÊÕßÊôĞÔ }
+  {/æŠ•èµ„è€…å±æ€§ }
     THOST_FTDC_PIR_Property = '2';    
-  {/µ¥Ò»Í¶×ÊÕß }
+  {/å•ä¸€æŠ•èµ„è€… }
     THOST_FTDC_PIR_Single = '3';    
 
   type
     PTThostFtdcPropertyInvestorRangeType = ^TThostFtdcPropertyInvestorRangeType;
     TThostFtdcPropertyInvestorRangeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFileStatusTypeÊÇÒ»¸öÎÄ¼ş×´Ì¬ÀàĞÍ }
+  {/TFtdcFileStatusTypeæ˜¯ä¸€ä¸ªæ–‡ä»¶çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Î´Éú³É }
+  {/æœªç”Ÿæˆ }
 
   const
     THOST_FTDC_FIS_NoCreate = '0';    
-  {/ÒÑÉú³É }
+  {/å·²ç”Ÿæˆ }
     THOST_FTDC_FIS_Created = '1';    
-  {/Éú³ÉÊ§°Ü }
+  {/ç”Ÿæˆå¤±è´¥ }
     THOST_FTDC_FIS_Failed = '2';    
 
   type
     PTThostFtdcFileStatusType = ^TThostFtdcFileStatusType;
     TThostFtdcFileStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFileGenStyleTypeÊÇÒ»¸öÎÄ¼şÉú³É·½Ê½ÀàĞÍ }
+  {/TFtdcFileGenStyleTypeæ˜¯ä¸€ä¸ªæ–‡ä»¶ç”Ÿæˆæ–¹å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÏÂ·¢ }
+  {/ä¸‹å‘ }
 
   const
     THOST_FTDC_FGS_FileTransmit = '0';    
-  {/Éú³É }
+  {/ç”Ÿæˆ }
     THOST_FTDC_FGS_FileGen = '1';    
 
   type
     PTThostFtdcFileGenStyleType = ^TThostFtdcFileGenStyleType;
     TThostFtdcFileGenStyleType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSysOperModeTypeÊÇÒ»¸öÏµÍ³ÈÕÖ¾²Ù×÷·½·¨ÀàĞÍ }
+  {/TFtdcSysOperModeTypeæ˜¯ä¸€ä¸ªç³»ç»Ÿæ—¥å¿—æ“ä½œæ–¹æ³•ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Ôö¼Ó }
+  {/å¢åŠ  }
 
   const
     THOST_FTDC_SoM_Add = '1';    
-  {/ĞŞ¸Ä }
+  {/ä¿®æ”¹ }
     THOST_FTDC_SoM_Update = '2';    
-  {/É¾³ı }
+  {/åˆ é™¤ }
     THOST_FTDC_SoM_Delete = '3';    
-  {/¸´ÖÆ }
+  {/å¤åˆ¶ }
     THOST_FTDC_SoM_Copy = '4';    
-  {/¼¤»î }
+  {/æ¿€æ´» }
     THOST_FTDC_SoM_AcTive = '5';    
-  {/×¢Ïú }
+  {/æ³¨é”€ }
     THOST_FTDC_SoM_CanCel = '6';    
-  {/ÖØÖÃ }
+  {/é‡ç½® }
     THOST_FTDC_SoM_ReSet = '7';    
 
   type
     PTThostFtdcSysOperModeType = ^TThostFtdcSysOperModeType;
     TThostFtdcSysOperModeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSysOperTypeTypeÊÇÒ»¸öÏµÍ³ÈÕÖ¾²Ù×÷ÀàĞÍÀàĞÍ }
+  {/TFtdcSysOperTypeTypeæ˜¯ä¸€ä¸ªç³»ç»Ÿæ—¥å¿—æ“ä½œç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ĞŞ¸Ä²Ù×÷Ô±ÃÜÂë }
+  {/ä¿®æ”¹æ“ä½œå‘˜å¯†ç  }
 
   const
     THOST_FTDC_SoT_UpdatePassword = '0';    
-  {/²Ù×÷Ô±×éÖ¯¼Ü¹¹¹ØÏµ }
+  {/æ“ä½œå‘˜ç»„ç»‡æ¶æ„å…³ç³» }
     THOST_FTDC_SoT_UserDepartment = '1';    
-  {/½ÇÉ«¹ÜÀí }
+  {/è§’è‰²ç®¡ç† }
     THOST_FTDC_SoT_RoleManager = '2';    
-  {/½ÇÉ«¹¦ÄÜÉèÖÃ }
+  {/è§’è‰²åŠŸèƒ½è®¾ç½® }
     THOST_FTDC_SoT_RoleFunction = '3';    
-  {/»ù´¡²ÎÊıÉèÖÃ }
+  {/åŸºç¡€å‚æ•°è®¾ç½® }
     THOST_FTDC_SoT_BaseParam = '4';    
-  {/ÉèÖÃ²Ù×÷Ô± }
+  {/è®¾ç½®æ“ä½œå‘˜ }
     THOST_FTDC_SoT_SetUserID = '5';    
-  {/ÓÃ»§½ÇÉ«ÉèÖÃ }
+  {/ç”¨æˆ·è§’è‰²è®¾ç½® }
     THOST_FTDC_SoT_SetUserRole = '6';    
-  {/ÓÃ»§IPÏŞÖÆ }
+  {/ç”¨æˆ·IPé™åˆ¶ }
     THOST_FTDC_SoT_UserIpRestriction = '7';    
-  {/×éÖ¯¼Ü¹¹¹ÜÀí }
+  {/ç»„ç»‡æ¶æ„ç®¡ç† }
     THOST_FTDC_SoT_DepartmentManager = '8';    
-  {/×éÖ¯¼Ü¹¹Ïò²éÑ¯·ÖÀà¸´ÖÆ }
+  {/ç»„ç»‡æ¶æ„å‘æŸ¥è¯¢åˆ†ç±»å¤åˆ¶ }
     THOST_FTDC_SoT_DepartmentCopy = '9';    
-  {/½»Ò×±àÂë¹ÜÀí }
+  {/äº¤æ˜“ç¼–ç ç®¡ç† }
     THOST_FTDC_SoT_Tradingcode = 'A';    
-  {/Í¶×ÊÕß×´Ì¬Î¬»¤ }
+  {/æŠ•èµ„è€…çŠ¶æ€ç»´æŠ¤ }
     THOST_FTDC_SoT_InvestorStatus = 'B';    
-  {/Í¶×ÊÕßÈ¨ÏŞ¹ÜÀí }
+  {/æŠ•èµ„è€…æƒé™ç®¡ç† }
     THOST_FTDC_SoT_InvestorAuthority = 'C';    
-  {/ÊôĞÔÉèÖÃ }
+  {/å±æ€§è®¾ç½® }
     THOST_FTDC_SoT_PropertySet = 'D';    
-  {/ÖØÖÃÍ¶×ÊÕßÃÜÂë }
+  {/é‡ç½®æŠ•èµ„è€…å¯†ç  }
     THOST_FTDC_SoT_ReSetInvestorPasswd = 'E';    
-  {/Í¶×ÊÕß¸öĞÔĞÅÏ¢Î¬»¤ }
+  {/æŠ•èµ„è€…ä¸ªæ€§ä¿¡æ¯ç»´æŠ¤ }
     THOST_FTDC_SoT_InvestorPersonalityInfo = 'F';    
 
   type
     PTThostFtdcSysOperTypeType = ^TThostFtdcSysOperTypeType;
     TThostFtdcSysOperTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCSRCDataQueyTypeTypeÊÇÒ»¸öÉÏ±¨Êı¾İ²éÑ¯ÀàĞÍÀàĞÍ }
+  {/TFtdcCSRCDataQueyTypeTypeæ˜¯ä¸€ä¸ªä¸ŠæŠ¥æ•°æ®æŸ¥è¯¢ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/²éÑ¯µ±Ç°½»Ò×ÈÕ±¨ËÍµÄÊı¾İ }
+  {/æŸ¥è¯¢å½“å‰äº¤æ˜“æ—¥æŠ¥é€çš„æ•°æ® }
 
   const
     THOST_FTDC_CSRCQ_Current = '0';    
-  {/²éÑ¯ÀúÊ·±¨ËÍµÄ´úÀí¾­¼Í¹«Ë¾µÄÊı¾İ }
+  {/æŸ¥è¯¢å†å²æŠ¥é€çš„ä»£ç†ç»çºªå…¬å¸çš„æ•°æ® }
     THOST_FTDC_CSRCQ_History = '1';    
 
   type
     PTThostFtdcCSRCDataQueyTypeType = ^TThostFtdcCSRCDataQueyTypeType;
     TThostFtdcCSRCDataQueyTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFreezeStatusTypeÊÇÒ»¸öĞİÃß×´Ì¬ÀàĞÍ }
+  {/TFtdcFreezeStatusTypeæ˜¯ä¸€ä¸ªä¼‘çœ çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/»îÔ¾ }
+  {/æ´»è·ƒ }
 
   const
     THOST_FTDC_FRS_Normal = '1';    
-  {/ĞİÃß }
+  {/ä¼‘çœ  }
     THOST_FTDC_FRS_Freeze = '0';    
 
   type
     PTThostFtdcFreezeStatusType = ^TThostFtdcFreezeStatusType;
     TThostFtdcFreezeStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcStandardStatusTypeÊÇÒ»¸ö¹æ·¶×´Ì¬ÀàĞÍ }
+  {/TFtdcStandardStatusTypeæ˜¯ä¸€ä¸ªè§„èŒƒçŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÒÑ¹æ·¶ }
+  {/å·²è§„èŒƒ }
 
   const
     THOST_FTDC_STST_Standard = '0';    
-  {/Î´¹æ·¶ }
+  {/æœªè§„èŒƒ }
     THOST_FTDC_STST_NonStandard = '1';    
 
   type
     PTThostFtdcStandardStatusType = ^TThostFtdcStandardStatusType;
     TThostFtdcStandardStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCSRCFreezeStatusTypeÊÇÒ»¸öĞİÃß×´Ì¬ÀàĞÍ }
+  {/TFtdcCSRCFreezeStatusTypeæ˜¯ä¸€ä¸ªä¼‘çœ çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCSRCFreezeStatusType = ^TThostFtdcCSRCFreezeStatusType;
     TThostFtdcCSRCFreezeStatusType = array[0..1] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcRightParamTypeTypeÊÇÒ»¸öÅäÖÃÀàĞÍÀàĞÍ }
+  {/TFtdcRightParamTypeTypeæ˜¯ä¸€ä¸ªé…ç½®ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ĞİÃß»§ }
+  {/ä¼‘çœ æˆ· }
 
   const
     THOST_FTDC_RPT_Freeze = '1';    
-  {/¼¤»îĞİÃß»§ }
+  {/æ¿€æ´»ä¼‘çœ æˆ· }
     THOST_FTDC_RPT_FreezeActive = '2';    
-  {/¿ª²ÖÈ¨ÏŞÏŞÖÆ }
+  {/å¼€ä»“æƒé™é™åˆ¶ }
     THOST_FTDC_RPT_OpenLimit = '3';    
-  {/½â³ı¿ª²ÖÈ¨ÏŞÏŞÖÆ }
+  {/è§£é™¤å¼€ä»“æƒé™é™åˆ¶ }
     THOST_FTDC_RPT_RelieveOpenLimit = '4';    
 
   type
     PTThostFtdcRightParamTypeType = ^TThostFtdcRightParamTypeType;
     TThostFtdcRightParamTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcRightTemplateIDTypeÊÇÒ»¸öÄ£°å´úÂëÀàĞÍ }
+  {/TFtdcRightTemplateIDTypeæ˜¯ä¸€ä¸ªæ¨¡æ¿ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcRightTemplateIDType = ^TThostFtdcRightTemplateIDType;
     TThostFtdcRightTemplateIDType = array[0..8] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcRightTemplateNameTypeÊÇÒ»¸öÄ£°åÃû³ÆÀàĞÍ }
+  {/TFtdcRightTemplateNameTypeæ˜¯ä¸€ä¸ªæ¨¡æ¿åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcRightTemplateNameType = ^TThostFtdcRightTemplateNameType;
     TThostFtdcRightTemplateNameType = array[0..60] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcDataStatusTypeÊÇÒ»¸ö·´Ï´Ç®ÉóºË±íÊı¾İ×´Ì¬ÀàĞÍ }
+  {/TFtdcDataStatusTypeæ˜¯ä¸€ä¸ªåæ´—é’±å®¡æ ¸è¡¨æ•°æ®çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Õı³£ }
+  {/æ­£å¸¸ }
 
   const
     THOST_FTDC_AMLDS_Normal = '0';    
-  {/ÒÑÉ¾³ı }
+  {/å·²åˆ é™¤ }
     THOST_FTDC_AMLDS_Deleted = '1';    
 
   type
     PTThostFtdcDataStatusType = ^TThostFtdcDataStatusType;
     TThostFtdcDataStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAMLCheckStatusTypeÊÇÒ»¸öÉóºË×´Ì¬ÀàĞÍ }
+  {/TFtdcAMLCheckStatusTypeæ˜¯ä¸€ä¸ªå®¡æ ¸çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Î´¸´ºË }
+  {/æœªå¤æ ¸ }
 
   const
     THOST_FTDC_AMLCHS_Init = '0';    
-  {/¸´ºËÖĞ }
+  {/å¤æ ¸ä¸­ }
     THOST_FTDC_AMLCHS_Checking = '1';    
-  {/ÒÑ¸´ºË }
+  {/å·²å¤æ ¸ }
     THOST_FTDC_AMLCHS_Checked = '2';    
-  {/¾Ü¾øÉÏ±¨ }
+  {/æ‹’ç»ä¸ŠæŠ¥ }
     THOST_FTDC_AMLCHS_RefuseReport = '3';    
 
   type
     PTThostFtdcAMLCheckStatusType = ^TThostFtdcAMLCheckStatusType;
     TThostFtdcAMLCheckStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAmlDateTypeTypeÊÇÒ»¸öÈÕÆÚÀàĞÍÀàĞÍ }
+  {/TFtdcAmlDateTypeTypeæ˜¯ä¸€ä¸ªæ—¥æœŸç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/¼ì²éÈÕÆÚ }
+  {/æ£€æŸ¥æ—¥æœŸ }
 
   const
     THOST_FTDC_AMLDT_DrawDay = '0';    
-  {/·¢ÉúÈÕÆÚ }
+  {/å‘ç”Ÿæ—¥æœŸ }
     THOST_FTDC_AMLDT_TouchDay = '1';    
 
   type
     PTThostFtdcAmlDateTypeType = ^TThostFtdcAmlDateTypeType;
     TThostFtdcAmlDateTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAmlCheckLevelTypeÊÇÒ»¸öÉóºË¼¶±ğÀàĞÍ }
+  {/TFtdcAmlCheckLevelTypeæ˜¯ä¸€ä¸ªå®¡æ ¸çº§åˆ«ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Áã¼¶ÉóºË }
+  {/é›¶çº§å®¡æ ¸ }
 
   const
     THOST_FTDC_AMLCL_CheckLevel0 = '0';    
-  {/Ò»¼¶ÉóºË }
+  {/ä¸€çº§å®¡æ ¸ }
     THOST_FTDC_AMLCL_CheckLevel1 = '1';    
-  {/¶ş¼¶ÉóºË }
+  {/äºŒçº§å®¡æ ¸ }
     THOST_FTDC_AMLCL_CheckLevel2 = '2';    
-  {/Èı¼¶ÉóºË }
+  {/ä¸‰çº§å®¡æ ¸ }
     THOST_FTDC_AMLCL_CheckLevel3 = '3';    
 
   type
     PTThostFtdcAmlCheckLevelType = ^TThostFtdcAmlCheckLevelType;
     TThostFtdcAmlCheckLevelType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAmlCheckFlowTypeÊÇÒ»¸ö·´Ï´Ç®Êı¾İ³éÈ¡ÉóºËÁ÷³ÌÀàĞÍ }
+  {/TFtdcAmlCheckFlowTypeæ˜¯ä¸€ä¸ªåæ´—é’±æ•°æ®æŠ½å–å®¡æ ¸æµç¨‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAmlCheckFlowType = ^TThostFtdcAmlCheckFlowType;
     TThostFtdcAmlCheckFlowType = array[0..1] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcDataTypeTypeÊÇÒ»¸öÊı¾İÀàĞÍÀàĞÍ }
+  {/TFtdcDataTypeTypeæ˜¯ä¸€ä¸ªæ•°æ®ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcDataTypeType = ^TThostFtdcDataTypeType;
     TThostFtdcDataTypeType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcExportFileTypeTypeÊÇÒ»¸öµ¼³öÎÄ¼şÀàĞÍÀàĞÍ }
+  {/TFtdcExportFileTypeTypeæ˜¯ä¸€ä¸ªå¯¼å‡ºæ–‡ä»¶ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
   {/CSV }
 
@@ -6290,990 +6295,990 @@ interface
     PTThostFtdcExportFileTypeType = ^TThostFtdcExportFileTypeType;
     TThostFtdcExportFileTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSettleManagerTypeTypeÊÇÒ»¸ö½áËãÅäÖÃÀàĞÍÀàĞÍ }
+  {/TFtdcSettleManagerTypeTypeæ˜¯ä¸€ä¸ªç»“ç®—é…ç½®ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/½áËãÇ°×¼±¸ }
+  {/ç»“ç®—å‰å‡†å¤‡ }
 
   const
     THOST_FTDC_SMT_Before = '1';    
-  {/½áËã }
+  {/ç»“ç®— }
     THOST_FTDC_SMT_Settlement = '2';    
-  {/½áËãºóºË¶Ô }
+  {/ç»“ç®—åæ ¸å¯¹ }
     THOST_FTDC_SMT_After = '3';    
-  {/½áËãºó´¦Àí }
+  {/ç»“ç®—åå¤„ç† }
     THOST_FTDC_SMT_Settlemented = '4';    
 
   type
     PTThostFtdcSettleManagerTypeType = ^TThostFtdcSettleManagerTypeType;
     TThostFtdcSettleManagerTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSettleManagerIDTypeÊÇÒ»¸ö½áËãÅäÖÃ´úÂëÀàĞÍ }
+  {/TFtdcSettleManagerIDTypeæ˜¯ä¸€ä¸ªç»“ç®—é…ç½®ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcSettleManagerIDType = ^TThostFtdcSettleManagerIDType;
     TThostFtdcSettleManagerIDType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSettleManagerNameTypeÊÇÒ»¸ö½áËãÅäÖÃÃû³ÆÀàĞÍ }
+  {/TFtdcSettleManagerNameTypeæ˜¯ä¸€ä¸ªç»“ç®—é…ç½®åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcSettleManagerNameType = ^TThostFtdcSettleManagerNameType;
     TThostFtdcSettleManagerNameType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSettleManagerLevelTypeÊÇÒ»¸ö½áËãÅäÖÃµÈ¼¶ÀàĞÍ }
+  {/TFtdcSettleManagerLevelTypeæ˜¯ä¸€ä¸ªç»“ç®—é…ç½®ç­‰çº§ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/±ØÒª }
+  {/å¿…è¦ }
 
   const
     THOST_FTDC_SML_Must = '1';    
-  {/¾¯¸æ }
+  {/è­¦å‘Š }
     THOST_FTDC_SML_Alarm = '2';    
-  {/ÌáÊ¾ }
+  {/æç¤º }
     THOST_FTDC_SML_Prompt = '3';    
-  {/²»¼ì²é }
+  {/ä¸æ£€æŸ¥ }
     THOST_FTDC_SML_Ignore = '4';    
 
   type
     PTThostFtdcSettleManagerLevelType = ^TThostFtdcSettleManagerLevelType;
     TThostFtdcSettleManagerLevelType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSettleManagerGroupTypeÊÇÒ»¸öÄ£¿é·Ö×éÀàĞÍ }
+  {/TFtdcSettleManagerGroupTypeæ˜¯ä¸€ä¸ªæ¨¡å—åˆ†ç»„ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/½»Ò×ËùºË¶Ô }
+  {/äº¤æ˜“æ‰€æ ¸å¯¹ }
 
   const
     THOST_FTDC_SMG_Exhcange = '1';    
-  {/ÄÚ²¿ºË¶Ô }
+  {/å†…éƒ¨æ ¸å¯¹ }
     THOST_FTDC_SMG_ASP = '2';    
-  {/ÉÏ±¨Êı¾İºË¶Ô }
+  {/ä¸ŠæŠ¥æ•°æ®æ ¸å¯¹ }
     THOST_FTDC_SMG_CSRC = '3';    
 
   type
     PTThostFtdcSettleManagerGroupType = ^TThostFtdcSettleManagerGroupType;
     TThostFtdcSettleManagerGroupType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCheckResultMemoTypeÊÇÒ»¸öºË¶Ô½á¹ûËµÃ÷ÀàĞÍ }
+  {/TFtdcCheckResultMemoTypeæ˜¯ä¸€ä¸ªæ ¸å¯¹ç»“æœè¯´æ˜ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCheckResultMemoType = ^TThostFtdcCheckResultMemoType;
     TThostFtdcCheckResultMemoType = array[0..1024] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFunctionUrlTypeÊÇÒ»¸ö¹¦ÄÜÁ´½ÓÀàĞÍ }
+  {/TFtdcFunctionUrlTypeæ˜¯ä¸€ä¸ªåŠŸèƒ½é“¾æ¥ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcFunctionUrlType = ^TThostFtdcFunctionUrlType;
     TThostFtdcFunctionUrlType = array[0..1024] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAuthInfoTypeÊÇÒ»¸ö¿Í»§¶ËÈÏÖ¤ĞÅÏ¢ÀàĞÍ }
+  {/TFtdcAuthInfoTypeæ˜¯ä¸€ä¸ªå®¢æˆ·ç«¯è®¤è¯ä¿¡æ¯ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAuthInfoType = ^TThostFtdcAuthInfoType;
     TThostFtdcAuthInfoType = array[0..128] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAuthCodeTypeÊÇÒ»¸ö¿Í»§¶ËÈÏÖ¤ÂëÀàĞÍ }
+  {/TFtdcAuthCodeTypeæ˜¯ä¸€ä¸ªå®¢æˆ·ç«¯è®¤è¯ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAuthCodeType = ^TThostFtdcAuthCodeType;
     TThostFtdcAuthCodeType = array[0..16] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcLimitUseTypeTypeÊÇÒ»¸ö±£Öµ¶î¶ÈÊ¹ÓÃÀàĞÍÀàĞÍ }
+  {/TFtdcLimitUseTypeTypeæ˜¯ä¸€ä¸ªä¿å€¼é¢åº¦ä½¿ç”¨ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/¿ÉÖØ¸´Ê¹ÓÃ }
+  {/å¯é‡å¤ä½¿ç”¨ }
 
   const
     THOST_FTDC_LUT_Repeatable = '1';    
-  {/²»¿ÉÖØ¸´Ê¹ÓÃ }
+  {/ä¸å¯é‡å¤ä½¿ç”¨ }
     THOST_FTDC_LUT_Unrepeatable = '2';    
 
   type
     PTThostFtdcLimitUseTypeType = ^TThostFtdcLimitUseTypeType;
     TThostFtdcLimitUseTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcDataResourceTypeÊÇÒ»¸öÊı¾İÀ´Ô´ÀàĞÍ }
+  {/TFtdcDataResourceTypeæ˜¯ä¸€ä¸ªæ•°æ®æ¥æºç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/±¾ÏµÍ³ }
+  {/æœ¬ç³»ç»Ÿ }
 
   const
     THOST_FTDC_DAR_Settle = '1';    
-  {/½»Ò×Ëù }
+  {/äº¤æ˜“æ‰€ }
     THOST_FTDC_DAR_Exchange = '2';    
-  {/±¨ËÍÊı¾İ }
+  {/æŠ¥é€æ•°æ® }
     THOST_FTDC_DAR_CSRC = '3';    
 
   type
     PTThostFtdcDataResourceType = ^TThostFtdcDataResourceType;
     TThostFtdcDataResourceType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcMarginTypeTypeÊÇÒ»¸ö±£Ö¤½ğÀàĞÍÀàĞÍ }
+  {/TFtdcMarginTypeTypeæ˜¯ä¸€ä¸ªä¿è¯é‡‘ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/½»Ò×Ëù±£Ö¤½ğÂÊ }
+  {/äº¤æ˜“æ‰€ä¿è¯é‡‘ç‡ }
 
   const
     THOST_FTDC_MGT_ExchMarginRate = '0';    
-  {/Í¶×ÊÕß±£Ö¤½ğÂÊ }
+  {/æŠ•èµ„è€…ä¿è¯é‡‘ç‡ }
     THOST_FTDC_MGT_InstrMarginRate = '1';    
-  {/Í¶×ÊÕß½»Ò×±£Ö¤½ğÂÊ }
+  {/æŠ•èµ„è€…äº¤æ˜“ä¿è¯é‡‘ç‡ }
     THOST_FTDC_MGT_InstrMarginRateTrade = '2';    
 
   type
     PTThostFtdcMarginTypeType = ^TThostFtdcMarginTypeType;
     TThostFtdcMarginTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcActiveTypeTypeÊÇÒ»¸öÉúĞ§ÀàĞÍÀàĞÍ }
+  {/TFtdcActiveTypeTypeæ˜¯ä¸€ä¸ªç”Ÿæ•ˆç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/½öµ±ÈÕÉúĞ§ }
+  {/ä»…å½“æ—¥ç”Ÿæ•ˆ }
 
   const
     THOST_FTDC_ACT_Intraday = '1';    
-  {/³¤ÆÚÉúĞ§ }
+  {/é•¿æœŸç”Ÿæ•ˆ }
     THOST_FTDC_ACT_Long = '2';    
 
   type
     PTThostFtdcActiveTypeType = ^TThostFtdcActiveTypeType;
     TThostFtdcActiveTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcMarginRateTypeTypeÊÇÒ»¸ö³åÍ»±£Ö¤½ğÂÊÀàĞÍÀàĞÍ }
+  {/TFtdcMarginRateTypeTypeæ˜¯ä¸€ä¸ªå†²çªä¿è¯é‡‘ç‡ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/½»Ò×Ëù±£Ö¤½ğÂÊ }
+  {/äº¤æ˜“æ‰€ä¿è¯é‡‘ç‡ }
 
   const
     THOST_FTDC_MRT_Exchange = '1';    
-  {/Í¶×ÊÕß±£Ö¤½ğÂÊ }
+  {/æŠ•èµ„è€…ä¿è¯é‡‘ç‡ }
     THOST_FTDC_MRT_Investor = '2';    
-  {/Í¶×ÊÕß½»Ò×±£Ö¤½ğÂÊ }
+  {/æŠ•èµ„è€…äº¤æ˜“ä¿è¯é‡‘ç‡ }
     THOST_FTDC_MRT_InvestorTrade = '3';    
 
   type
     PTThostFtdcMarginRateTypeType = ^TThostFtdcMarginRateTypeType;
     TThostFtdcMarginRateTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBackUpStatusTypeÊÇÒ»¸ö±¸·İÊı¾İ×´Ì¬ÀàĞÍ }
+  {/TFtdcBackUpStatusTypeæ˜¯ä¸€ä¸ªå¤‡ä»½æ•°æ®çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Î´Éú³É±¸·İÊı¾İ }
+  {/æœªç”Ÿæˆå¤‡ä»½æ•°æ® }
 
   const
     THOST_FTDC_BUS_UnBak = '0';    
-  {/±¸·İÊı¾İÉú³ÉÖĞ }
+  {/å¤‡ä»½æ•°æ®ç”Ÿæˆä¸­ }
     THOST_FTDC_BUS_BakUp = '1';    
-  {/ÒÑÉú³É±¸·İÊı¾İ }
+  {/å·²ç”Ÿæˆå¤‡ä»½æ•°æ® }
     THOST_FTDC_BUS_BakUped = '2';    
-  {/±¸·İÊı¾İÊ§°Ü }
+  {/å¤‡ä»½æ•°æ®å¤±è´¥ }
     THOST_FTDC_BUS_BakFail = '3';    
 
   type
     PTThostFtdcBackUpStatusType = ^TThostFtdcBackUpStatusType;
     TThostFtdcBackUpStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcInitSettlementTypeÊÇÒ»¸ö½áËã³õÊ¼»¯×´Ì¬ÀàĞÍ }
+  {/TFtdcInitSettlementTypeæ˜¯ä¸€ä¸ªç»“ç®—åˆå§‹åŒ–çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/½áËã³õÊ¼»¯Î´¿ªÊ¼ }
+  {/ç»“ç®—åˆå§‹åŒ–æœªå¼€å§‹ }
 
   const
     THOST_FTDC_SIS_UnInitialize = '0';    
-  {/½áËã³õÊ¼»¯ÖĞ }
+  {/ç»“ç®—åˆå§‹åŒ–ä¸­ }
     THOST_FTDC_SIS_Initialize = '1';    
-  {/½áËã³õÊ¼»¯Íê³É }
+  {/ç»“ç®—åˆå§‹åŒ–å®Œæˆ }
     THOST_FTDC_SIS_Initialized = '2';    
 
   type
     PTThostFtdcInitSettlementType = ^TThostFtdcInitSettlementType;
     TThostFtdcInitSettlementType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcReportStatusTypeÊÇÒ»¸ö±¨±íÊı¾İÉú³É×´Ì¬ÀàĞÍ }
+  {/TFtdcReportStatusTypeæ˜¯ä¸€ä¸ªæŠ¥è¡¨æ•°æ®ç”ŸæˆçŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Î´Éú³É±¨±íÊı¾İ }
+  {/æœªç”ŸæˆæŠ¥è¡¨æ•°æ® }
 
   const
     THOST_FTDC_SRS_NoCreate = '0';    
-  {/±¨±íÊı¾İÉú³ÉÖĞ }
+  {/æŠ¥è¡¨æ•°æ®ç”Ÿæˆä¸­ }
     THOST_FTDC_SRS_Create = '1';    
-  {/ÒÑÉú³É±¨±íÊı¾İ }
+  {/å·²ç”ŸæˆæŠ¥è¡¨æ•°æ® }
     THOST_FTDC_SRS_Created = '2';    
-  {/Éú³É±¨±íÊı¾İÊ§°Ü }
+  {/ç”ŸæˆæŠ¥è¡¨æ•°æ®å¤±è´¥ }
     THOST_FTDC_SRS_CreateFail = '3';    
 
   type
     PTThostFtdcReportStatusType = ^TThostFtdcReportStatusType;
     TThostFtdcReportStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSaveStatusTypeÊÇÒ»¸öÊı¾İ¹éµµ×´Ì¬ÀàĞÍ }
+  {/TFtdcSaveStatusTypeæ˜¯ä¸€ä¸ªæ•°æ®å½’æ¡£çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/¹éµµÎ´Íê³É }
+  {/å½’æ¡£æœªå®Œæˆ }
 
   const
     THOST_FTDC_SSS_UnSaveData = '0';    
-  {/¹éµµÍê³É }
+  {/å½’æ¡£å®Œæˆ }
     THOST_FTDC_SSS_SaveDatad = '1';    
 
   type
     PTThostFtdcSaveStatusType = ^TThostFtdcSaveStatusType;
     TThostFtdcSaveStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSettArchiveStatusTypeÊÇÒ»¸ö½áËãÈ·ÈÏÊı¾İ¹éµµ×´Ì¬ÀàĞÍ }
+  {/TFtdcSettArchiveStatusTypeæ˜¯ä¸€ä¸ªç»“ç®—ç¡®è®¤æ•°æ®å½’æ¡£çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Î´¹éµµÊı¾İ }
+  {/æœªå½’æ¡£æ•°æ® }
 
   const
     THOST_FTDC_SAS_UnArchived = '0';    
-  {/Êı¾İ¹éµµÖĞ }
+  {/æ•°æ®å½’æ¡£ä¸­ }
     THOST_FTDC_SAS_Archiving = '1';    
-  {/ÒÑ¹éµµÊı¾İ }
+  {/å·²å½’æ¡£æ•°æ® }
     THOST_FTDC_SAS_Archived = '2';    
-  {/¹éµµÊı¾İÊ§°Ü }
+  {/å½’æ¡£æ•°æ®å¤±è´¥ }
     THOST_FTDC_SAS_ArchiveFail = '3';    
 
   type
     PTThostFtdcSettArchiveStatusType = ^TThostFtdcSettArchiveStatusType;
     TThostFtdcSettArchiveStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCTPTypeTypeÊÇÒ»¸öCTP½»Ò×ÏµÍ³ÀàĞÍÀàĞÍ }
+  {/TFtdcCTPTypeTypeæ˜¯ä¸€ä¸ªCTPäº¤æ˜“ç³»ç»Ÿç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Î´ÖªÀàĞÍ }
+  {/æœªçŸ¥ç±»å‹ }
 
   const
     THOST_FTDC_CTPT_Unkown = '0';    
-  {/Ö÷ÖĞĞÄ }
+  {/ä¸»ä¸­å¿ƒ }
     THOST_FTDC_CTPT_MainCenter = '1';    
-  {/±¸ÖĞĞÄ }
+  {/å¤‡ä¸­å¿ƒ }
     THOST_FTDC_CTPT_BackUp = '2';    
 
   type
     PTThostFtdcCTPTypeType = ^TThostFtdcCTPTypeType;
     TThostFtdcCTPTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcToolIDTypeÊÇÒ»¸ö¹¤¾ß´úÂëÀàĞÍ }
+  {/TFtdcToolIDTypeæ˜¯ä¸€ä¸ªå·¥å…·ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcToolIDType = ^TThostFtdcToolIDType;
     TThostFtdcToolIDType = array[0..8] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcToolNameTypeÊÇÒ»¸ö¹¤¾ßÃû³ÆÀàĞÍ }
+  {/TFtdcToolNameTypeæ˜¯ä¸€ä¸ªå·¥å…·åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcToolNameType = ^TThostFtdcToolNameType;
     TThostFtdcToolNameType = array[0..80] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCloseDealTypeTypeÊÇÒ»¸öÆ½²Ö´¦ÀíÀàĞÍÀàĞÍ }
+  {/TFtdcCloseDealTypeTypeæ˜¯ä¸€ä¸ªå¹³ä»“å¤„ç†ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Õı³£ }
+  {/æ­£å¸¸ }
 
   const
     THOST_FTDC_CDT_Normal = '0';    
-  {/Í¶»úÆ½²ÖÓÅÏÈ }
+  {/æŠ•æœºå¹³ä»“ä¼˜å…ˆ }
     THOST_FTDC_CDT_SpecFirst = '1';    
 
   type
     PTThostFtdcCloseDealTypeType = ^TThostFtdcCloseDealTypeType;
     TThostFtdcCloseDealTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcMortgageFundUseRangeTypeÊÇÒ»¸ö»õ±ÒÖÊÑº×Ê½ğ¿ÉÓÃ·¶Î§ÀàĞÍ }
+  {/TFtdcMortgageFundUseRangeTypeæ˜¯ä¸€ä¸ªè´§å¸è´¨æŠ¼èµ„é‡‘å¯ç”¨èŒƒå›´ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/²»ÄÜÊ¹ÓÃ }
+  {/ä¸èƒ½ä½¿ç”¨ }
 
   const
     THOST_FTDC_MFUR_None = '0';    
-  {/ÓÃÓÚ±£Ö¤½ğ }
+  {/ç”¨äºä¿è¯é‡‘ }
     THOST_FTDC_MFUR_Margin = '1';    
-  {/ÓÃÓÚÊÖĞø·Ñ¡¢Ó¯¿÷¡¢±£Ö¤½ğ }
+  {/ç”¨äºæ‰‹ç»­è´¹ã€ç›ˆäºã€ä¿è¯é‡‘ }
     THOST_FTDC_MFUR_All = '2';    
-  {/ÈËÃñ±Ò·½°¸3 }
+  {/äººæ°‘å¸æ–¹æ¡ˆ3 }
     THOST_FTDC_MFUR_CNY3 = '3';    
 
   type
     PTThostFtdcMortgageFundUseRangeType = ^TThostFtdcMortgageFundUseRangeType;
     TThostFtdcMortgageFundUseRangeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCurrencyUnitTypeÊÇÒ»¸ö±ÒÖÖµ¥Î»ÊıÁ¿ÀàĞÍ }
+  {/TFtdcCurrencyUnitTypeæ˜¯ä¸€ä¸ªå¸ç§å•ä½æ•°é‡ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCurrencyUnitType = ^TThostFtdcCurrencyUnitType;
     TThostFtdcCurrencyUnitType = double;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcExchangeRateTypeÊÇÒ»¸ö»ãÂÊÀàĞÍ }
+  {/TFtdcExchangeRateTypeæ˜¯ä¸€ä¸ªæ±‡ç‡ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcExchangeRateType = ^TThostFtdcExchangeRateType;
     TThostFtdcExchangeRateType = double;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSpecProductTypeTypeÊÇÒ»¸öÌØÊâ²úÆ·ÀàĞÍÀàĞÍ }
+  {/TFtdcSpecProductTypeTypeæ˜¯ä¸€ä¸ªç‰¹æ®Šäº§å“ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Ö£ÉÌËùÌ×±£²úÆ· }
+  {/éƒ‘å•†æ‰€å¥—ä¿äº§å“ }
 
   const
     THOST_FTDC_SPT_CzceHedge = '1';    
-  {/»õ±ÒÖÊÑº²úÆ· }
+  {/è´§å¸è´¨æŠ¼äº§å“ }
     THOST_FTDC_SPT_IneForeignCurrency = '2';    
-  {/´óÁ¬¶ÌÏß¿ªÆ½²Ö²úÆ· }
+  {/å¤§è¿çŸ­çº¿å¼€å¹³ä»“äº§å“ }
     THOST_FTDC_SPT_DceOpenClose = '3';    
 
   type
     PTThostFtdcSpecProductTypeType = ^TThostFtdcSpecProductTypeType;
     TThostFtdcSpecProductTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFundMortgageTypeTypeÊÇÒ»¸ö»õ±ÒÖÊÑºÀàĞÍÀàĞÍ }
+  {/TFtdcFundMortgageTypeTypeæ˜¯ä¸€ä¸ªè´§å¸è´¨æŠ¼ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÖÊÑº }
+  {/è´¨æŠ¼ }
 
   const
     THOST_FTDC_FMT_Mortgage = '1';    
-  {/½âÖÊ }
+  {/è§£è´¨ }
     THOST_FTDC_FMT_Redemption = '2';    
 
   type
     PTThostFtdcFundMortgageTypeType = ^TThostFtdcFundMortgageTypeType;
     TThostFtdcFundMortgageTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAccountSettlementParamIDTypeÊÇÒ»¸öÍ¶×ÊÕßÕË»§½áËã²ÎÊı´úÂëÀàĞÍ }
+  {/TFtdcAccountSettlementParamIDTypeæ˜¯ä¸€ä¸ªæŠ•èµ„è€…è´¦æˆ·ç»“ç®—å‚æ•°ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/»ù´¡±£Ö¤½ğ }
+  {/åŸºç¡€ä¿è¯é‡‘ }
 
   const
     THOST_FTDC_ASPI_BaseMargin = '1';    
-  {/×îµÍÈ¨Òæ±ê×¼ }
+  {/æœ€ä½æƒç›Šæ ‡å‡† }
     THOST_FTDC_ASPI_LowestInterest = '2';    
 
   type
     PTThostFtdcAccountSettlementParamIDType = ^TThostFtdcAccountSettlementParamIDType;
     TThostFtdcAccountSettlementParamIDType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCurrencyNameTypeÊÇÒ»¸ö±ÒÖÖÃû³ÆÀàĞÍ }
+  {/TFtdcCurrencyNameTypeæ˜¯ä¸€ä¸ªå¸ç§åç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCurrencyNameType = ^TThostFtdcCurrencyNameType;
     TThostFtdcCurrencyNameType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCurrencySignTypeÊÇÒ»¸ö±ÒÖÖ·ûºÅÀàĞÍ }
+  {/TFtdcCurrencySignTypeæ˜¯ä¸€ä¸ªå¸ç§ç¬¦å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCurrencySignType = ^TThostFtdcCurrencySignType;
     TThostFtdcCurrencySignType = array[0..3] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFundMortDirectionTypeÊÇÒ»¸ö»õ±ÒÖÊÑº·½ÏòÀàĞÍ }
+  {/TFtdcFundMortDirectionTypeæ˜¯ä¸€ä¸ªè´§å¸è´¨æŠ¼æ–¹å‘ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/»õ±ÒÖÊÈë }
+  {/è´§å¸è´¨å…¥ }
 
   const
     THOST_FTDC_FMD_In = '1';    
-  {/»õ±ÒÖÊ³ö }
+  {/è´§å¸è´¨å‡º }
     THOST_FTDC_FMD_Out = '2';    
 
   type
     PTThostFtdcFundMortDirectionType = ^TThostFtdcFundMortDirectionType;
     TThostFtdcFundMortDirectionType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBusinessClassTypeÊÇÒ»¸ö»»»ãÀà±ğÀàĞÍ }
+  {/TFtdcBusinessClassTypeæ˜¯ä¸€ä¸ªæ¢æ±‡ç±»åˆ«ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Ó¯Àû }
+  {/ç›ˆåˆ© }
 
   const
     THOST_FTDC_BT_Profit = '0';    
-  {/¿÷Ëğ }
+  {/äºæŸ }
     THOST_FTDC_BT_Loss = '1';    
-  {/ÆäËû }
+  {/å…¶ä»– }
     THOST_FTDC_BT_Other = 'Z';    
 
   type
     PTThostFtdcBusinessClassType = ^TThostFtdcBusinessClassType;
     TThostFtdcBusinessClassType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSwapSourceTypeTypeÊÇÒ»¸ö»»»ãÊı¾İÀ´Ô´ÀàĞÍ }
+  {/TFtdcSwapSourceTypeTypeæ˜¯ä¸€ä¸ªæ¢æ±‡æ•°æ®æ¥æºç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÊÖ¹¤ }
+  {/æ‰‹å·¥ }
 
   const
     THOST_FTDC_SST_Manual = '0';    
-  {/×Ô¶¯Éú³É }
+  {/è‡ªåŠ¨ç”Ÿæˆ }
     THOST_FTDC_SST_Automatic = '1';    
 
   type
     PTThostFtdcSwapSourceTypeType = ^TThostFtdcSwapSourceTypeType;
     TThostFtdcSwapSourceTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCurrExDirectionTypeÊÇÒ»¸ö»»»ãÀàĞÍÀàĞÍ }
+  {/TFtdcCurrExDirectionTypeæ˜¯ä¸€ä¸ªæ¢æ±‡ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/½á»ã }
+  {/ç»“æ±‡ }
 
   const
     THOST_FTDC_CED_Settlement = '0';    
-  {/ÊÛ»ã }
+  {/å”®æ±‡ }
     THOST_FTDC_CED_Sale = '1';    
 
   type
     PTThostFtdcCurrExDirectionType = ^TThostFtdcCurrExDirectionType;
     TThostFtdcCurrExDirectionType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCurrencySwapStatusTypeÊÇÒ»¸öÉêÇë×´Ì¬ÀàĞÍ }
+  {/TFtdcCurrencySwapStatusTypeæ˜¯ä¸€ä¸ªç”³è¯·çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÒÑÂ¼Èë }
+  {/å·²å½•å…¥ }
 
   const
     THOST_FTDC_CSS_Entry = '1';    
-  {/ÒÑÉóºË }
+  {/å·²å®¡æ ¸ }
     THOST_FTDC_CSS_Approve = '2';    
-  {/ÒÑ¾Ü¾ø }
+  {/å·²æ‹’ç» }
     THOST_FTDC_CSS_Refuse = '3';    
-  {/ÒÑ³·Ïú }
+  {/å·²æ’¤é”€ }
     THOST_FTDC_CSS_Revoke = '4';    
-  {/ÒÑ·¢ËÍ }
+  {/å·²å‘é€ }
     THOST_FTDC_CSS_Send = '5';    
-  {/»»»ã³É¹¦ }
+  {/æ¢æ±‡æˆåŠŸ }
     THOST_FTDC_CSS_Success = '6';    
-  {/»»»ãÊ§°Ü }
+  {/æ¢æ±‡å¤±è´¥ }
     THOST_FTDC_CSS_Failure = '7';    
 
   type
     PTThostFtdcCurrencySwapStatusType = ^TThostFtdcCurrencySwapStatusType;
     TThostFtdcCurrencySwapStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCurrExchCertNoTypeÊÇÒ»¸öÆ¾Ö¤ºÅÀàĞÍ }
+  {/TFtdcCurrExchCertNoTypeæ˜¯ä¸€ä¸ªå‡­è¯å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCurrExchCertNoType = ^TThostFtdcCurrExchCertNoType;
     TThostFtdcCurrExchCertNoType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBatchSerialNoTypeÊÇÒ»¸öÅú´ÎºÅÀàĞÍ }
+  {/TFtdcBatchSerialNoTypeæ˜¯ä¸€ä¸ªæ‰¹æ¬¡å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBatchSerialNoType = ^TThostFtdcBatchSerialNoType;
     TThostFtdcBatchSerialNoType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcReqFlagTypeÊÇÒ»¸ö»»»ã·¢ËÍ±êÖ¾ÀàĞÍ }
+  {/TFtdcReqFlagTypeæ˜¯ä¸€ä¸ªæ¢æ±‡å‘é€æ ‡å¿—ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Î´·¢ËÍ }
+  {/æœªå‘é€ }
 
   const
     THOST_FTDC_REQF_NoSend = '0';    
-  {/·¢ËÍ³É¹¦ }
+  {/å‘é€æˆåŠŸ }
     THOST_FTDC_REQF_SendSuccess = '1';    
-  {/·¢ËÍÊ§°Ü }
+  {/å‘é€å¤±è´¥ }
     THOST_FTDC_REQF_SendFailed = '2';    
-  {/µÈ´ıÖØ·¢ }
+  {/ç­‰å¾…é‡å‘ }
     THOST_FTDC_REQF_WaitReSend = '3';    
 
   type
     PTThostFtdcReqFlagType = ^TThostFtdcReqFlagType;
     TThostFtdcReqFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcResFlagTypeÊÇÒ»¸ö»»»ã·µ»Ø³É¹¦±êÖ¾ÀàĞÍ }
+  {/TFtdcResFlagTypeæ˜¯ä¸€ä¸ªæ¢æ±‡è¿”å›æˆåŠŸæ ‡å¿—ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/³É¹¦ }
+  {/æˆåŠŸ }
 
   const
     THOST_FTDC_RESF_Success = '0';    
-  {/ÕË»§Óà¶î²»×ã }
+  {/è´¦æˆ·ä½™é¢ä¸è¶³ }
     THOST_FTDC_RESF_InsuffiCient = '1';    
-  {/½»Ò×½á¹ûÎ´Öª }
+  {/äº¤æ˜“ç»“æœæœªçŸ¥ }
     THOST_FTDC_RESF_UnKnown = '8';    
 
   type
     PTThostFtdcResFlagType = ^TThostFtdcResFlagType;
     TThostFtdcResFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcPageControlTypeÊÇÒ»¸ö»»»ãÒ³Ãæ¿ØÖÆÀàĞÍ }
+  {/TFtdcPageControlTypeæ˜¯ä¸€ä¸ªæ¢æ±‡é¡µé¢æ§åˆ¶ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcPageControlType = ^TThostFtdcPageControlType;
     TThostFtdcPageControlType = array[0..1] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcRecordCountTypeÊÇÒ»¸ö¼ÇÂ¼ÊıÀàĞÍ }
+  {/TFtdcRecordCountTypeæ˜¯ä¸€ä¸ªè®°å½•æ•°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcRecordCountType = ^TThostFtdcRecordCountType;
     TThostFtdcRecordCountType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCurrencySwapMemoTypeÊÇÒ»¸ö»»»ãĞèÈ·ÈÏĞÅÏ¢ÀàĞÍ }
+  {/TFtdcCurrencySwapMemoTypeæ˜¯ä¸€ä¸ªæ¢æ±‡éœ€ç¡®è®¤ä¿¡æ¯ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCurrencySwapMemoType = ^TThostFtdcCurrencySwapMemoType;
     TThostFtdcCurrencySwapMemoType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcExStatusTypeÊÇÒ»¸öĞŞ¸Ä×´Ì¬ÀàĞÍ }
+  {/TFtdcExStatusTypeæ˜¯ä¸€ä¸ªä¿®æ”¹çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ĞŞ¸ÄÇ° }
+  {/ä¿®æ”¹å‰ }
 
   const
     THOST_FTDC_EXS_Before = '0';    
-  {/ĞŞ¸Äºó }
+  {/ä¿®æ”¹å }
     THOST_FTDC_EXS_After = '1';    
 
   type
     PTThostFtdcExStatusType = ^TThostFtdcExStatusType;
     TThostFtdcExStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcClientRegionTypeÊÇÒ»¸ö¿ª»§¿Í»§µØÓòÀàĞÍ }
+  {/TFtdcClientRegionTypeæ˜¯ä¸€ä¸ªå¼€æˆ·å®¢æˆ·åœ°åŸŸç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/¹úÄÚ¿Í»§ }
+  {/å›½å†…å®¢æˆ· }
 
   const
     THOST_FTDC_CR_Domestic = '1';    
-  {/¸Û°ÄÌ¨¿Í»§ }
+  {/æ¸¯æ¾³å°å®¢æˆ· }
     THOST_FTDC_CR_GMT = '2';    
-  {/¹úÍâ¿Í»§ }
+  {/å›½å¤–å®¢æˆ· }
     THOST_FTDC_CR_Foreign = '3';    
 
   type
     PTThostFtdcClientRegionType = ^TThostFtdcClientRegionType;
     TThostFtdcClientRegionType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcWorkPlaceTypeÊÇÒ»¸ö¹¤×÷µ¥Î»ÀàĞÍ }
+  {/TFtdcWorkPlaceTypeæ˜¯ä¸€ä¸ªå·¥ä½œå•ä½ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcWorkPlaceType = ^TThostFtdcWorkPlaceType;
     TThostFtdcWorkPlaceType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBusinessPeriodTypeÊÇÒ»¸ö¾­ÓªÆÚÏŞÀàĞÍ }
+  {/TFtdcBusinessPeriodTypeæ˜¯ä¸€ä¸ªç»è¥æœŸé™ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBusinessPeriodType = ^TThostFtdcBusinessPeriodType;
     TThostFtdcBusinessPeriodType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcWebSiteTypeÊÇÒ»¸öÍøÖ·ÀàĞÍ }
+  {/TFtdcWebSiteTypeæ˜¯ä¸€ä¸ªç½‘å€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
    // PTThostFtdcWebSiteType = ^TThostFtdcWebSiteType;
    // TThostFtdcWebSiteType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcUOAIdCardTypeTypeÊÇÒ»¸öÍ³Ò»¿ª»§Ö¤¼şÀàĞÍÀàĞÍ }
+  {/TFtdcUOAIdCardTypeTypeæ˜¯ä¸€ä¸ªç»Ÿä¸€å¼€æˆ·è¯ä»¶ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcUOAIdCardTypeType = ^TThostFtdcUOAIdCardTypeType;
     TThostFtdcUOAIdCardTypeType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcClientModeTypeÊÇÒ»¸ö¿ª»§Ä£Ê½ÀàĞÍ }
+  {/TFtdcClientModeTypeæ˜¯ä¸€ä¸ªå¼€æˆ·æ¨¡å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcClientModeType = ^TThostFtdcClientModeType;
     TThostFtdcClientModeType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcInvestorFullNameTypeÊÇÒ»¸öÍ¶×ÊÕßÈ«³ÆÀàĞÍ }
+  {/TFtdcInvestorFullNameTypeæ˜¯ä¸€ä¸ªæŠ•èµ„è€…å…¨ç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcInvestorFullNameType = ^TThostFtdcInvestorFullNameType;
     TThostFtdcInvestorFullNameType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcUOABrokerIDTypeÊÇÒ»¸ö¾³ÍâÖĞ½é»ú¹¹IDÀàĞÍ }
+  {/TFtdcUOABrokerIDTypeæ˜¯ä¸€ä¸ªå¢ƒå¤–ä¸­ä»‹æœºæ„IDç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcUOABrokerIDType = ^TThostFtdcUOABrokerIDType;
     TThostFtdcUOABrokerIDType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcUOAZipCodeTypeÊÇÒ»¸öÓÊÕş±àÂëÀàĞÍ }
+  {/TFtdcUOAZipCodeTypeæ˜¯ä¸€ä¸ªé‚®æ”¿ç¼–ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcUOAZipCodeType = ^TThostFtdcUOAZipCodeType;
     TThostFtdcUOAZipCodeType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcUOAEMailTypeÊÇÒ»¸öµç×ÓÓÊÏäÀàĞÍ }
+  {/TFtdcUOAEMailTypeæ˜¯ä¸€ä¸ªç”µå­é‚®ç®±ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcUOAEMailType = ^TThostFtdcUOAEMailType;
     TThostFtdcUOAEMailType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOldCityTypeÊÇÒ»¸ö³ÇÊĞÀàĞÍ }
+  {/TFtdcOldCityTypeæ˜¯ä¸€ä¸ªåŸå¸‚ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcOldCityType = ^TThostFtdcOldCityType;
     TThostFtdcOldCityType = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCorporateIdentifiedCardNoTypeÊÇÒ»¸ö·¨ÈË´ú±íÖ¤¼şºÅÂëÀàĞÍ }
+  {/TFtdcCorporateIdentifiedCardNoTypeæ˜¯ä¸€ä¸ªæ³•äººä»£è¡¨è¯ä»¶å·ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCorporateIdentifiedCardNoType = ^TThostFtdcCorporateIdentifiedCardNoType;
     TThostFtdcCorporateIdentifiedCardNoType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcHasBoardTypeÊÇÒ»¸öÊÇ·ñÓĞ¶­ÊÂ»áÀàĞÍ }
+  {/TFtdcHasBoardTypeæ˜¯ä¸€ä¸ªæ˜¯å¦æœ‰è‘£äº‹ä¼šç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Ã»ÓĞ }
+  {/æ²¡æœ‰ }
 
   const
     THOST_FTDC_HB_No = '0';    
-  {/ÓĞ }
+  {/æœ‰ }
     THOST_FTDC_HB_Yes = '1';    
 
   type
     PTThostFtdcHasBoardType = ^TThostFtdcHasBoardType;
     TThostFtdcHasBoardType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcStartModeTypeÊÇÒ»¸öÆô¶¯Ä£Ê½ÀàĞÍ }
+  {/TFtdcStartModeTypeæ˜¯ä¸€ä¸ªå¯åŠ¨æ¨¡å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Õı³£ }
+  {/æ­£å¸¸ }
 
   const
     THOST_FTDC_SM_Normal = '1';    
-  {/Ó¦¼± }
+  {/åº”æ€¥ }
     THOST_FTDC_SM_Emerge = '2';    
-  {/»Ö¸´ }
+  {/æ¢å¤ }
     THOST_FTDC_SM_Restore = '3';    
 
   type
     PTThostFtdcStartModeType = ^TThostFtdcStartModeType;
     TThostFtdcStartModeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTemplateTypeTypeÊÇÒ»¸öÄ£ĞÍÀàĞÍÀàĞÍ }
+  {/TFtdcTemplateTypeTypeæ˜¯ä¸€ä¸ªæ¨¡å‹ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/È«Á¿ }
+  {/å…¨é‡ }
 
   const
     THOST_FTDC_TPT_Full = '1';    
-  {/ÔöÁ¿ }
+  {/å¢é‡ }
     THOST_FTDC_TPT_Increment = '2';    
-  {/±¸·İ }
+  {/å¤‡ä»½ }
     THOST_FTDC_TPT_BackUp = '3';    
 
   type
     PTThostFtdcTemplateTypeType = ^TThostFtdcTemplateTypeType;
     TThostFtdcTemplateTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcLoginModeTypeÊÇÒ»¸öµÇÂ¼Ä£Ê½ÀàĞÍ }
+  {/TFtdcLoginModeTypeæ˜¯ä¸€ä¸ªç™»å½•æ¨¡å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/½»Ò× }
+  {/äº¤æ˜“ }
 
   const
     THOST_FTDC_LM_Trade = '0';    
-  {/×ªÕË }
+  {/è½¬è´¦ }
     THOST_FTDC_LM_Transfer = '1';    
 
   type
     PTThostFtdcLoginModeType = ^TThostFtdcLoginModeType;
     TThostFtdcLoginModeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcPromptTypeTypeÊÇÒ»¸öÈÕÀúÌáÊ¾ÀàĞÍÀàĞÍ }
+  {/TFtdcPromptTypeTypeæ˜¯ä¸€ä¸ªæ—¥å†æç¤ºç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ºÏÔ¼ÉÏÏÂÊĞ }
+  {/åˆçº¦ä¸Šä¸‹å¸‚ }
 
   const
     THOST_FTDC_CPT_Instrument = '1';    
-  {/±£Ö¤½ğ·Ö¶ÎÉúĞ§ }
+  {/ä¿è¯é‡‘åˆ†æ®µç”Ÿæ•ˆ }
     THOST_FTDC_CPT_Margin = '2';    
 
   type
     PTThostFtdcPromptTypeType = ^TThostFtdcPromptTypeType;
     TThostFtdcPromptTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcLedgerManageIDTypeÊÇÒ»¸ö·Ö»§¹ÜÀí×Ê²ú±àÂëÀàĞÍ }
+  {/TFtdcLedgerManageIDTypeæ˜¯ä¸€ä¸ªåˆ†æˆ·ç®¡ç†èµ„äº§ç¼–ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcLedgerManageIDType = ^TThostFtdcLedgerManageIDType;
     TThostFtdcLedgerManageIDType = array[0..50] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcInvestVarietyTypeÊÇÒ»¸öÍ¶×ÊÆ·ÖÖÀàĞÍ }
+  {/TFtdcInvestVarietyTypeæ˜¯ä¸€ä¸ªæŠ•èµ„å“ç§ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcInvestVarietyType = ^TThostFtdcInvestVarietyType;
     TThostFtdcInvestVarietyType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBankAccountTypeTypeÊÇÒ»¸öÕË»§Àà±ğÀàĞÍ }
+  {/TFtdcBankAccountTypeTypeæ˜¯ä¸€ä¸ªè´¦æˆ·ç±»åˆ«ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBankAccountTypeType = ^TThostFtdcBankAccountTypeType;
     TThostFtdcBankAccountTypeType = array[0..1] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcLedgerManageBankTypeÊÇÒ»¸ö¿ª»§ÒøĞĞÀàĞÍ }
+  {/TFtdcLedgerManageBankTypeæ˜¯ä¸€ä¸ªå¼€æˆ·é“¶è¡Œç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcLedgerManageBankType = ^TThostFtdcLedgerManageBankType;
     TThostFtdcLedgerManageBankType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCffexDepartmentNameTypeÊÇÒ»¸ö¿ª»§ÓªÒµ²¿ÀàĞÍ }
+  {/TFtdcCffexDepartmentNameTypeæ˜¯ä¸€ä¸ªå¼€æˆ·è¥ä¸šéƒ¨ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCffexDepartmentNameType = ^TThostFtdcCffexDepartmentNameType;
     TThostFtdcCffexDepartmentNameType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCffexDepartmentCodeTypeÊÇÒ»¸öÓªÒµ²¿´úÂëÀàĞÍ }
+  {/TFtdcCffexDepartmentCodeTypeæ˜¯ä¸€ä¸ªè¥ä¸šéƒ¨ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCffexDepartmentCodeType = ^TThostFtdcCffexDepartmentCodeType;
     TThostFtdcCffexDepartmentCodeType = array[0..8] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcHasTrusteeTypeÊÇÒ»¸öÊÇ·ñÓĞÍĞ¹ÜÈËÀàĞÍ }
+  {/TFtdcHasTrusteeTypeæ˜¯ä¸€ä¸ªæ˜¯å¦æœ‰æ‰˜ç®¡äººç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÓĞ }
+  {/æœ‰ }
 
   const
     THOST_FTDC_HT_Yes = '1';    
-  {/Ã»ÓĞ }
+  {/æ²¡æœ‰ }
     THOST_FTDC_HT_No = '0';    
 
   type
     PTThostFtdcHasTrusteeType = ^TThostFtdcHasTrusteeType;
     TThostFtdcHasTrusteeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCSRCMemo1TypeÊÇÒ»¸öËµÃ÷ÀàĞÍ }
+  {/TFtdcCSRCMemo1Typeæ˜¯ä¸€ä¸ªè¯´æ˜ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCSRCMemo1Type = ^TThostFtdcCSRCMemo1Type;
     TThostFtdcCSRCMemo1Type = array[0..40] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAssetmgrCFullNameTypeÊÇÒ»¸ö´úÀí×Ê²ú¹ÜÀíÒµÎñµÄÆÚ»õ¹«Ë¾È«³ÆÀàĞÍ }
+  {/TFtdcAssetmgrCFullNameTypeæ˜¯ä¸€ä¸ªä»£ç†èµ„äº§ç®¡ç†ä¸šåŠ¡çš„æœŸè´§å…¬å¸å…¨ç§°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAssetmgrCFullNameType = ^TThostFtdcAssetmgrCFullNameType;
     TThostFtdcAssetmgrCFullNameType = array[0..100] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAssetmgrApprovalNOTypeÊÇÒ»¸ö×Ê²ú¹ÜÀíÒµÎñÅúÎÄºÅÀàĞÍ }
+  {/TFtdcAssetmgrApprovalNOTypeæ˜¯ä¸€ä¸ªèµ„äº§ç®¡ç†ä¸šåŠ¡æ‰¹æ–‡å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAssetmgrApprovalNOType = ^TThostFtdcAssetmgrApprovalNOType;
     TThostFtdcAssetmgrApprovalNOType = array[0..50] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAssetmgrMgrNameTypeÊÇÒ»¸ö×Ê²ú¹ÜÀíÒµÎñ¸ºÔğÈËĞÕÃûÀàĞÍ }
+  {/TFtdcAssetmgrMgrNameTypeæ˜¯ä¸€ä¸ªèµ„äº§ç®¡ç†ä¸šåŠ¡è´Ÿè´£äººå§“åç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAssetmgrMgrNameType = ^TThostFtdcAssetmgrMgrNameType;
     TThostFtdcAssetmgrMgrNameType = array[0..400] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAmTypeTypeÊÇÒ»¸ö»ú¹¹ÀàĞÍÀàĞÍ }
+  {/TFtdcAmTypeTypeæ˜¯ä¸€ä¸ªæœºæ„ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÒøĞĞ }
+  {/é“¶è¡Œ }
 
   const
     THOST_FTDC_AMT_Bank = '1';    
-  {/Ö¤È¯¹«Ë¾ }
+  {/è¯åˆ¸å…¬å¸ }
     THOST_FTDC_AMT_Securities = '2';    
-  {/»ù½ğ¹«Ë¾ }
+  {/åŸºé‡‘å…¬å¸ }
     THOST_FTDC_AMT_Fund = '3';    
-  {/±£ÏÕ¹«Ë¾ }
+  {/ä¿é™©å…¬å¸ }
     THOST_FTDC_AMT_Insurance = '4';    
-  {/ĞÅÍĞ¹«Ë¾ }
+  {/ä¿¡æ‰˜å…¬å¸ }
     THOST_FTDC_AMT_Trust = '5';    
-  {/ÆäËû }
+  {/å…¶ä»– }
     THOST_FTDC_AMT_Other = '9';    
 
   type
     PTThostFtdcAmTypeType = ^TThostFtdcAmTypeType;
     TThostFtdcAmTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCSRCAmTypeTypeÊÇÒ»¸ö»ú¹¹ÀàĞÍÀàĞÍ }
+  {/TFtdcCSRCAmTypeTypeæ˜¯ä¸€ä¸ªæœºæ„ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCSRCAmTypeType = ^TThostFtdcCSRCAmTypeType;
     TThostFtdcCSRCAmTypeType = array[0..4] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCSRCFundIOTypeTypeÊÇÒ»¸ö³öÈë½ğÀàĞÍÀàĞÍ }
+  {/TFtdcCSRCFundIOTypeTypeæ˜¯ä¸€ä¸ªå‡ºå…¥é‡‘ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/³öÈë½ğ }
+  {/å‡ºå…¥é‡‘ }
 
   const
     THOST_FTDC_CFIOT_FundIO = '0';    
-  {/ÒøÆÚ»»»ã }
+  {/é“¶æœŸæ¢æ±‡ }
     THOST_FTDC_CFIOT_SwapCurrency = '1';    
 
   type
     PTThostFtdcCSRCFundIOTypeType = ^TThostFtdcCSRCFundIOTypeType;
     TThostFtdcCSRCFundIOTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCusAccountTypeTypeÊÇÒ»¸ö½áËãÕË»§ÀàĞÍÀàĞÍ }
+  {/TFtdcCusAccountTypeTypeæ˜¯ä¸€ä¸ªç»“ç®—è´¦æˆ·ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÆÚ»õ½áËãÕË»§ }
+  {/æœŸè´§ç»“ç®—è´¦æˆ· }
 
   const
     THOST_FTDC_CAT_Futures = '1';    
-  {/´¿ÆÚ»õ×Ê¹ÜÒµÎñÏÂµÄ×Ê¹Ü½áËãÕË»§ }
+  {/çº¯æœŸè´§èµ„ç®¡ä¸šåŠ¡ä¸‹çš„èµ„ç®¡ç»“ç®—è´¦æˆ· }
     THOST_FTDC_CAT_AssetmgrFuture = '2';    
-  {/×ÛºÏÀà×Ê¹ÜÒµÎñÏÂµÄÆÚ»õ×Ê¹ÜÍĞ¹ÜÕË»§ }
+  {/ç»¼åˆç±»èµ„ç®¡ä¸šåŠ¡ä¸‹çš„æœŸè´§èµ„ç®¡æ‰˜ç®¡è´¦æˆ· }
     THOST_FTDC_CAT_AssetmgrTrustee = '3';    
-  {/×ÛºÏÀà×Ê¹ÜÒµÎñÏÂµÄ×Ê½ğÖĞ×ªÕË»§ }
+  {/ç»¼åˆç±»èµ„ç®¡ä¸šåŠ¡ä¸‹çš„èµ„é‡‘ä¸­è½¬è´¦æˆ· }
     THOST_FTDC_CAT_AssetmgrTransfer = '4';    
 
   type
     PTThostFtdcCusAccountTypeType = ^TThostFtdcCusAccountTypeType;
     TThostFtdcCusAccountTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCSRCNationalTypeÊÇÒ»¸ö¹ú¼®ÀàĞÍ }
+  {/TFtdcCSRCNationalTypeæ˜¯ä¸€ä¸ªå›½ç±ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCSRCNationalType = ^TThostFtdcCSRCNationalType;
     TThostFtdcCSRCNationalType = array[0..3] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCSRCSecAgentIDTypeÊÇÒ»¸ö¶ş¼¶´úÀíIDÀàĞÍ }
+  {/TFtdcCSRCSecAgentIDTypeæ˜¯ä¸€ä¸ªäºŒçº§ä»£ç†IDç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCSRCSecAgentIDType = ^TThostFtdcCSRCSecAgentIDType;
     TThostFtdcCSRCSecAgentIDType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcLanguageTypeTypeÊÇÒ»¸öÍ¨ÖªÓïÑÔÀàĞÍÀàĞÍ }
+  {/TFtdcLanguageTypeTypeæ˜¯ä¸€ä¸ªé€šçŸ¥è¯­è¨€ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÖĞÎÄ }
+  {/ä¸­æ–‡ }
 
   const
     THOST_FTDC_LT_Chinese = '1';    
-  {/Ó¢ÎÄ }
+  {/è‹±æ–‡ }
     THOST_FTDC_LT_English = '2';    
 
   type
     PTThostFtdcLanguageTypeType = ^TThostFtdcLanguageTypeType;
     TThostFtdcLanguageTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAmAccountTypeÊÇÒ»¸öÍ¶×ÊÕË»§ÀàĞÍ }
+  {/TFtdcAmAccountTypeæ˜¯ä¸€ä¸ªæŠ•èµ„è´¦æˆ·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAmAccountType = ^TThostFtdcAmAccountType;
     TThostFtdcAmAccountType = array[0..22] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAssetmgrClientTypeTypeÊÇÒ»¸ö×Ê²ú¹ÜÀí¿Í»§ÀàĞÍÀàĞÍ }
+  {/TFtdcAssetmgrClientTypeTypeæ˜¯ä¸€ä¸ªèµ„äº§ç®¡ç†å®¢æˆ·ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/¸öÈË×Ê¹Ü¿Í»§ }
+  {/ä¸ªäººèµ„ç®¡å®¢æˆ· }
 
   const
     THOST_FTDC_AMCT_Person = '1';    
-  {/µ¥Î»×Ê¹Ü¿Í»§ }
+  {/å•ä½èµ„ç®¡å®¢æˆ· }
     THOST_FTDC_AMCT_Organ = '2';    
-  {/ÌØÊâµ¥Î»×Ê¹Ü¿Í»§ }
+  {/ç‰¹æ®Šå•ä½èµ„ç®¡å®¢æˆ· }
     THOST_FTDC_AMCT_SpecialOrgan = '4';    
 
   type
     PTThostFtdcAssetmgrClientTypeType = ^TThostFtdcAssetmgrClientTypeType;
     TThostFtdcAssetmgrClientTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAssetmgrTypeTypeÊÇÒ»¸öÍ¶×ÊÀàĞÍÀàĞÍ }
+  {/TFtdcAssetmgrTypeTypeæ˜¯ä¸€ä¸ªæŠ•èµ„ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÆÚ»õÀà }
+  {/æœŸè´§ç±» }
 
   const
     THOST_FTDC_ASST_Futures = '3';    
-  {/×ÛºÏÀà }
+  {/ç»¼åˆç±» }
     THOST_FTDC_ASST_SpecialOrgan = '4';    
 
   type
     PTThostFtdcAssetmgrTypeType = ^TThostFtdcAssetmgrTypeType;
     TThostFtdcAssetmgrTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcUOMTypeÊÇÒ»¸ö¼ÆÁ¿µ¥Î»ÀàĞÍ }
+  {/TFtdcUOMTypeæ˜¯ä¸€ä¸ªè®¡é‡å•ä½ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcUOMType = ^TThostFtdcUOMType;
     TThostFtdcUOMType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSHFEInstLifePhaseTypeÊÇÒ»¸öÉÏÆÚËùºÏÔ¼ÉúÃüÖÜÆÚ×´Ì¬ÀàĞÍ }
+  {/TFtdcSHFEInstLifePhaseTypeæ˜¯ä¸€ä¸ªä¸ŠæœŸæ‰€åˆçº¦ç”Ÿå‘½å‘¨æœŸçŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcSHFEInstLifePhaseType = ^TThostFtdcSHFEInstLifePhaseType;
     TThostFtdcSHFEInstLifePhaseType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSHFEProductClassTypeÊÇÒ»¸ö²úÆ·ÀàĞÍÀàĞÍ }
+  {/TFtdcSHFEProductClassTypeæ˜¯ä¸€ä¸ªäº§å“ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcSHFEProductClassType = ^TThostFtdcSHFEProductClassType;
     TThostFtdcSHFEProductClassType = array[0..10] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcPriceDecimalTypeÊÇÒ»¸ö¼Û¸ñĞ¡ÊıÎ»ÀàĞÍ }
+  {/TFtdcPriceDecimalTypeæ˜¯ä¸€ä¸ªä»·æ ¼å°æ•°ä½ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcPriceDecimalType = ^TThostFtdcPriceDecimalType;
     TThostFtdcPriceDecimalType = array[0..1] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcInTheMoneyFlagTypeÊÇÒ»¸öÆ½ÖµÆÚÈ¨±êÖ¾ÀàĞÍ }
+  {/TFtdcInTheMoneyFlagTypeæ˜¯ä¸€ä¸ªå¹³å€¼æœŸæƒæ ‡å¿—ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcInTheMoneyFlagType = ^TThostFtdcInTheMoneyFlagType;
     TThostFtdcInTheMoneyFlagType = array[0..1] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCheckInstrTypeTypeÊÇÒ»¸öºÏÔ¼±È½ÏÀàĞÍÀàĞÍ }
+  {/TFtdcCheckInstrTypeTypeæ˜¯ä¸€ä¸ªåˆçº¦æ¯”è¾ƒç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ºÏÔ¼½»Ò×Ëù²»´æÔÚ }
+  {/åˆçº¦äº¤æ˜“æ‰€ä¸å­˜åœ¨ }
 
   const
     THOST_FTDC_CIT_HasExch = '0';    
-  {/ºÏÔ¼±¾ÏµÍ³²»´æÔÚ }
+  {/åˆçº¦æœ¬ç³»ç»Ÿä¸å­˜åœ¨ }
     THOST_FTDC_CIT_HasATP = '1';    
-  {/ºÏÔ¼±È½Ï²»Ò»ÖÂ }
+  {/åˆçº¦æ¯”è¾ƒä¸ä¸€è‡´ }
     THOST_FTDC_CIT_HasDiff = '2';    
 
   type
     PTThostFtdcCheckInstrTypeType = ^TThostFtdcCheckInstrTypeType;
     TThostFtdcCheckInstrTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcDeliveryTypeTypeÊÇÒ»¸ö½»¸îÀàĞÍÀàĞÍ }
+  {/TFtdcDeliveryTypeTypeæ˜¯ä¸€ä¸ªäº¤å‰²ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÊÖ¹¤½»¸î }
+  {/æ‰‹å·¥äº¤å‰² }
 
   const
     THOST_FTDC_DT_HandDeliv = '1';    
-  {/µ½ÆÚ½»¸î }
+  {/åˆ°æœŸäº¤å‰² }
     THOST_FTDC_DT_PersonDeliv = '2';    
 
   type
     PTThostFtdcDeliveryTypeType = ^TThostFtdcDeliveryTypeType;
     TThostFtdcDeliveryTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBigMoneyTypeÊÇÒ»¸ö×Ê½ğÀàĞÍ }
+  {/TFtdcBigMoneyTypeæ˜¯ä¸€ä¸ªèµ„é‡‘ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBigMoneyType = ^TThostFtdcBigMoneyType;
     TThostFtdcBigMoneyType = double;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcMaxMarginSideAlgorithmTypeÊÇÒ»¸ö´ó¶îµ¥±ß±£Ö¤½ğËã·¨ÀàĞÍ }
+  {/TFtdcMaxMarginSideAlgorithmTypeæ˜¯ä¸€ä¸ªå¤§é¢å•è¾¹ä¿è¯é‡‘ç®—æ³•ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/²»Ê¹ÓÃ´ó¶îµ¥±ß±£Ö¤½ğËã·¨ }
+  {/ä¸ä½¿ç”¨å¤§é¢å•è¾¹ä¿è¯é‡‘ç®—æ³• }
 
   const
     THOST_FTDC_MMSA_NO = '0';    
-  {/Ê¹ÓÃ´ó¶îµ¥±ß±£Ö¤½ğËã·¨ }
+  {/ä½¿ç”¨å¤§é¢å•è¾¹ä¿è¯é‡‘ç®—æ³• }
     THOST_FTDC_MMSA_YES = '1';    
 
   type
     PTThostFtdcMaxMarginSideAlgorithmType = ^TThostFtdcMaxMarginSideAlgorithmType;
     TThostFtdcMaxMarginSideAlgorithmType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcDAClientTypeTypeÊÇÒ»¸ö×Ê²ú¹ÜÀí¿Í»§ÀàĞÍÀàĞÍ }
+  {/TFtdcDAClientTypeTypeæ˜¯ä¸€ä¸ªèµ„äº§ç®¡ç†å®¢æˆ·ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/×ÔÈ»ÈË }
+  {/è‡ªç„¶äºº }
 
   const
     THOST_FTDC_CACT_Person = '0';    
-  {/·¨ÈË }
+  {/æ³•äºº }
     THOST_FTDC_CACT_Company = '1';    
-  {/ÆäËû }
+  {/å…¶ä»– }
     THOST_FTDC_CACT_Other = '2';    
 
   type
     PTThostFtdcDAClientTypeType = ^TThostFtdcDAClientTypeType;
     TThostFtdcDAClientTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCombinInstrIDTypeÊÇÒ»¸öÌ×ÀûºÏÔ¼´úÂëÀàĞÍ }
+  {/TFtdcCombinInstrIDTypeæ˜¯ä¸€ä¸ªå¥—åˆ©åˆçº¦ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCombinInstrIDType = ^TThostFtdcCombinInstrIDType;
     TThostFtdcCombinInstrIDType = array[0..60] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCombinSettlePriceTypeÊÇÒ»¸ö¸÷ÍÈ½áËã¼ÛÀàĞÍ }
+  {/TFtdcCombinSettlePriceTypeæ˜¯ä¸€ä¸ªå„è…¿ç»“ç®—ä»·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCombinSettlePriceType = ^TThostFtdcCombinSettlePriceType;
     TThostFtdcCombinSettlePriceType = array[0..60] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcDCEPriorityTypeÊÇÒ»¸öÓÅÏÈ¼¶ÀàĞÍ }
+  {/TFtdcDCEPriorityTypeæ˜¯ä¸€ä¸ªä¼˜å…ˆçº§ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcDCEPriorityType = ^TThostFtdcDCEPriorityType;
     TThostFtdcDCEPriorityType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTradeGroupIDTypeÊÇÒ»¸ö³É½»×éºÅÀàĞÍ }
+  {/TFtdcTradeGroupIDTypeæ˜¯ä¸€ä¸ªæˆäº¤ç»„å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcTradeGroupIDType = ^TThostFtdcTradeGroupIDType;
     TThostFtdcTradeGroupIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcIsCheckPrepaTypeÊÇÒ»¸öÊÇ·ñĞ£Ñé¿ª»§¿ÉÓÃ×Ê½ğÀàĞÍ }
+  {/TFtdcIsCheckPrepaTypeæ˜¯ä¸€ä¸ªæ˜¯å¦æ ¡éªŒå¼€æˆ·å¯ç”¨èµ„é‡‘ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcIsCheckPrepaType = ^TThostFtdcIsCheckPrepaType;
     TThostFtdcIsCheckPrepaType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcUOAAssetmgrTypeTypeÊÇÒ»¸öÍ¶×ÊÀàĞÍÀàĞÍ }
+  {/TFtdcUOAAssetmgrTypeTypeæ˜¯ä¸€ä¸ªæŠ•èµ„ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÆÚ»õÀà }
+  {/æœŸè´§ç±» }
 
   const
     THOST_FTDC_UOAAT_Futures = '1';    
-  {/×ÛºÏÀà }
+  {/ç»¼åˆç±» }
     THOST_FTDC_UOAAT_SpecialOrgan = '2';    
 
   type
     PTThostFtdcUOAAssetmgrTypeType = ^TThostFtdcUOAAssetmgrTypeType;
     TThostFtdcUOAAssetmgrTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcDirectionEnTypeÊÇÒ»¸öÂòÂô·½ÏòÀàĞÍ }
+  {/TFtdcDirectionEnTypeæ˜¯ä¸€ä¸ªä¹°å–æ–¹å‘ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
   {/Buy }
 
@@ -7286,7 +7291,7 @@ interface
     PTThostFtdcDirectionEnType = ^TThostFtdcDirectionEnType;
     TThostFtdcDirectionEnType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOffsetFlagEnTypeÊÇÒ»¸ö¿ªÆ½±êÖ¾ÀàĞÍ }
+  {/TFtdcOffsetFlagEnTypeæ˜¯ä¸€ä¸ªå¼€å¹³æ ‡å¿—ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
   {/Position Opening }
 
@@ -7309,7 +7314,7 @@ interface
     PTThostFtdcOffsetFlagEnType = ^TThostFtdcOffsetFlagEnType;
     TThostFtdcOffsetFlagEnType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcHedgeFlagEnTypeÊÇÒ»¸öÍ¶»úÌ×±£±êÖ¾ÀàĞÍ }
+  {/TFtdcHedgeFlagEnTypeæ˜¯ä¸€ä¸ªæŠ•æœºå¥—ä¿æ ‡å¿—ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
   {/Speculation }
 
@@ -7324,7 +7329,7 @@ interface
     PTThostFtdcHedgeFlagEnType = ^TThostFtdcHedgeFlagEnType;
     TThostFtdcHedgeFlagEnType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFundIOTypeEnTypeÊÇÒ»¸ö³öÈë½ğÀàĞÍÀàĞÍ }
+  {/TFtdcFundIOTypeEnTypeæ˜¯ä¸€ä¸ªå‡ºå…¥é‡‘ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
   {/Deposit/Withdrawal }
 
@@ -7339,7 +7344,7 @@ interface
     PTThostFtdcFundIOTypeEnType = ^TThostFtdcFundIOTypeEnType;
     TThostFtdcFundIOTypeEnType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFundTypeEnTypeÊÇÒ»¸ö×Ê½ğÀàĞÍÀàĞÍ }
+  {/TFtdcFundTypeEnTypeæ˜¯ä¸€ä¸ªèµ„é‡‘ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
   {/Bank Deposit }
 
@@ -7356,7 +7361,7 @@ interface
     PTThostFtdcFundTypeEnType = ^TThostFtdcFundTypeEnType;
     TThostFtdcFundTypeEnType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFundDirectionEnTypeÊÇÒ»¸ö³öÈë½ğ·½ÏòÀàĞÍ }
+  {/TFtdcFundDirectionEnTypeæ˜¯ä¸€ä¸ªå‡ºå…¥é‡‘æ–¹å‘ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
   {/Deposit }
 
@@ -7369,7 +7374,7 @@ interface
     PTThostFtdcFundDirectionEnType = ^TThostFtdcFundDirectionEnType;
     TThostFtdcFundDirectionEnType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcFundMortDirectionEnTypeÊÇÒ»¸ö»õ±ÒÖÊÑº·½ÏòÀàĞÍ }
+  {/TFtdcFundMortDirectionEnTypeæ˜¯ä¸€ä¸ªè´§å¸è´¨æŠ¼æ–¹å‘ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
   {/Pledge }
 
@@ -7382,56 +7387,56 @@ interface
     PTThostFtdcFundMortDirectionEnType = ^TThostFtdcFundMortDirectionEnType;
     TThostFtdcFundMortDirectionEnType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSwapBusinessTypeTypeÊÇÒ»¸ö»»»ãÒµÎñÖÖÀàÀàĞÍ }
+  {/TFtdcSwapBusinessTypeTypeæ˜¯ä¸€ä¸ªæ¢æ±‡ä¸šåŠ¡ç§ç±»ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcSwapBusinessTypeType = ^TThostFtdcSwapBusinessTypeType;
     TThostFtdcSwapBusinessTypeType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOptionsTypeTypeÊÇÒ»¸öÆÚÈ¨ÀàĞÍÀàĞÍ }
+  {/TFtdcOptionsTypeTypeæ˜¯ä¸€ä¸ªæœŸæƒç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/¿´ÕÇ }
+  {/çœ‹æ¶¨ }
 
   const
     THOST_FTDC_CP_CallOptions = '1';    
-  {/¿´µø }
+  {/çœ‹è·Œ }
     THOST_FTDC_CP_PutOptions = '2';    
 
   type
     PTThostFtdcOptionsTypeType = ^TThostFtdcOptionsTypeType;
     TThostFtdcOptionsTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcStrikeModeTypeÊÇÒ»¸öÖ´ĞĞ·½Ê½ÀàĞÍ }
+  {/TFtdcStrikeModeTypeæ˜¯ä¸€ä¸ªæ‰§è¡Œæ–¹å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Å·Ê½ }
+  {/æ¬§å¼ }
 
   const
     THOST_FTDC_STM_Continental = '0';    
-  {/ÃÀÊ½ }
+  {/ç¾å¼ }
     THOST_FTDC_STM_American = '1';    
-  {/°ÙÄ½´ó }
+  {/ç™¾æ…•å¤§ }
     THOST_FTDC_STM_Bermuda = '2';    
 
   type
     PTThostFtdcStrikeModeType = ^TThostFtdcStrikeModeType;
     TThostFtdcStrikeModeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcStrikeTypeTypeÊÇÒ»¸öÖ´ĞĞÀàĞÍÀàĞÍ }
+  {/TFtdcStrikeTypeTypeæ˜¯ä¸€ä¸ªæ‰§è¡Œç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/×ÔÉí¶Ô³å }
+  {/è‡ªèº«å¯¹å†² }
 
   const
     THOST_FTDC_STT_Hedge = '0';    
-  {/Æ¥ÅäÖ´ĞĞ }
+  {/åŒ¹é…æ‰§è¡Œ }
     THOST_FTDC_STT_Match = '1';    
 
   type
     PTThostFtdcStrikeTypeType = ^TThostFtdcStrikeTypeType;
     TThostFtdcStrikeTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcApplyTypeTypeÊÇÒ»¸öÖĞ½ğËùÆÚÈ¨·ÅÆúÖ´ĞĞÉêÇëÀàĞÍÀàĞÍ }
+  {/TFtdcApplyTypeTypeæ˜¯ä¸€ä¸ªä¸­é‡‘æ‰€æœŸæƒæ”¾å¼ƒæ‰§è¡Œç”³è¯·ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/²»Ö´ĞĞÊıÁ¿ }
+  {/ä¸æ‰§è¡Œæ•°é‡ }
 
   const
     THOST_FTDC_APPT_NotStrikeNum = '4';    
@@ -7440,291 +7445,291 @@ interface
     PTThostFtdcApplyTypeType = ^TThostFtdcApplyTypeType;
     TThostFtdcApplyTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcGiveUpDataSourceTypeÊÇÒ»¸ö·ÅÆúÖ´ĞĞÉêÇëÊı¾İÀ´Ô´ÀàĞÍ }
+  {/TFtdcGiveUpDataSourceTypeæ˜¯ä¸€ä¸ªæ”¾å¼ƒæ‰§è¡Œç”³è¯·æ•°æ®æ¥æºç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÏµÍ³Éú³É }
+  {/ç³»ç»Ÿç”Ÿæˆ }
 
   const
     THOST_FTDC_GUDS_Gen = '0';    
-  {/ÊÖ¹¤Ìí¼Ó }
+  {/æ‰‹å·¥æ·»åŠ  }
     THOST_FTDC_GUDS_Hand = '1';    
 
   type
     PTThostFtdcGiveUpDataSourceType = ^TThostFtdcGiveUpDataSourceType;
     TThostFtdcGiveUpDataSourceType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcExecOrderSysIDTypeÊÇÒ»¸öÖ´ĞĞĞû¸æÏµÍ³±àºÅÀàĞÍ }
+  {/TFtdcExecOrderSysIDTypeæ˜¯ä¸€ä¸ªæ‰§è¡Œå®£å‘Šç³»ç»Ÿç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcExecOrderSysIDType = ^TThostFtdcExecOrderSysIDType;
     TThostFtdcExecOrderSysIDType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcExecResultTypeÊÇÒ»¸öÖ´ĞĞ½á¹ûÀàĞÍ }
+  {/TFtdcExecResultTypeæ˜¯ä¸€ä¸ªæ‰§è¡Œç»“æœç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Ã»ÓĞÖ´ĞĞ }
+  {/æ²¡æœ‰æ‰§è¡Œ }
 
   const
     THOST_FTDC_OER_NoExec = 'n';    
-  {/ÒÑ¾­È¡Ïû }
+  {/å·²ç»å–æ¶ˆ }
     THOST_FTDC_OER_Canceled = 'c';    
-  {/Ö´ĞĞ³É¹¦ }
+  {/æ‰§è¡ŒæˆåŠŸ }
     THOST_FTDC_OER_OK = '0';    
-  {/ÆÚÈ¨³Ö²Ö²»¹» }
+  {/æœŸæƒæŒä»“ä¸å¤Ÿ }
     THOST_FTDC_OER_NoPosition = '1';    
-  {/×Ê½ğ²»¹» }
+  {/èµ„é‡‘ä¸å¤Ÿ }
     THOST_FTDC_OER_NoDeposit = '2';    
-  {/»áÔ±²»´æÔÚ }
+  {/ä¼šå‘˜ä¸å­˜åœ¨ }
     THOST_FTDC_OER_NoParticipant = '3';    
-  {/¿Í»§²»´æÔÚ }
+  {/å®¢æˆ·ä¸å­˜åœ¨ }
     THOST_FTDC_OER_NoClient = '4';    
-  {/ºÏÔ¼²»´æÔÚ }
+  {/åˆçº¦ä¸å­˜åœ¨ }
     THOST_FTDC_OER_NoInstrument = '6';    
-  {/Ã»ÓĞÖ´ĞĞÈ¨ÏŞ }
+  {/æ²¡æœ‰æ‰§è¡Œæƒé™ }
     THOST_FTDC_OER_NoRight = '7';    
-  {/²»ºÏÀíµÄÊıÁ¿ }
+  {/ä¸åˆç†çš„æ•°é‡ }
     THOST_FTDC_OER_InvalidVolume = '8';    
-  {/Ã»ÓĞ×ã¹»µÄÀúÊ·³É½» }
+  {/æ²¡æœ‰è¶³å¤Ÿçš„å†å²æˆäº¤ }
     THOST_FTDC_OER_NoEnoughHistoryTrade = '9';    
-  {/Î´Öª }
+  {/æœªçŸ¥ }
     THOST_FTDC_OER_Unknown = 'a';    
 
   type
     PTThostFtdcExecResultType = ^TThostFtdcExecResultType;
     TThostFtdcExecResultType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcStrikeSequenceTypeÊÇÒ»¸öÖ´ĞĞĞòºÅÀàĞÍ }
+  {/TFtdcStrikeSequenceTypeæ˜¯ä¸€ä¸ªæ‰§è¡Œåºå·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcStrikeSequenceType = ^TThostFtdcStrikeSequenceType;
     TThostFtdcStrikeSequenceType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcStrikeTimeTypeÊÇÒ»¸öÖ´ĞĞÊ±¼äÀàĞÍ }
+  {/TFtdcStrikeTimeTypeæ˜¯ä¸€ä¸ªæ‰§è¡Œæ—¶é—´ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcStrikeTimeType = ^TThostFtdcStrikeTimeType;
     TThostFtdcStrikeTimeType = array[0..12] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCombinationTypeTypeÊÇÒ»¸ö×éºÏÀàĞÍÀàĞÍ }
+  {/TFtdcCombinationTypeTypeæ˜¯ä¸€ä¸ªç»„åˆç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÆÚ»õ×éºÏ }
+  {/æœŸè´§ç»„åˆ }
 
   const
     THOST_FTDC_COMBT_Future = '0';    
-  {/´¹Ö±¼Û²îBUL }
+  {/å‚ç›´ä»·å·®BUL }
     THOST_FTDC_COMBT_BUL = '1';    
-  {/´¹Ö±¼Û²îBER }
+  {/å‚ç›´ä»·å·®BER }
     THOST_FTDC_COMBT_BER = '2';    
-  {/¿çÊ½×éºÏ }
+  {/è·¨å¼ç»„åˆ }
     THOST_FTDC_COMBT_STD = '3';    
-  {/¿í¿çÊ½×éºÏ }
+  {/å®½è·¨å¼ç»„åˆ }
     THOST_FTDC_COMBT_STG = '4';    
-  {/±¸¶Ò×éºÏ }
+  {/å¤‡å…‘ç»„åˆ }
     THOST_FTDC_COMBT_PRT = '5';    
-  {/Ê±¼ä¼Û²î×éºÏ }
+  {/æ—¶é—´ä»·å·®ç»„åˆ }
     THOST_FTDC_COMBT_CAS = '6';    
-  {/ÆÚÈ¨¶ÔËø×éºÏ }
+  {/æœŸæƒå¯¹é”ç»„åˆ }
     THOST_FTDC_COMBT_OPL = '7';    
-  {/Âò±¸¶Ò×éºÏ }
+  {/ä¹°å¤‡å…‘ç»„åˆ }
     THOST_FTDC_COMBT_BFO = '8';    
-  {/ÂòÈëÆÚÈ¨´¹Ö±¼Û²î×éºÏ }
+  {/ä¹°å…¥æœŸæƒå‚ç›´ä»·å·®ç»„åˆ }
     THOST_FTDC_COMBT_BLS = '9';    
-  {/Âô³öÆÚÈ¨´¹Ö±¼Û²î×éºÏ }
+  {/å–å‡ºæœŸæƒå‚ç›´ä»·å·®ç»„åˆ }
     THOST_FTDC_COMBT_BES = 'a';    
 
   type
     PTThostFtdcCombinationTypeType = ^TThostFtdcCombinationTypeType;
     TThostFtdcCombinationTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcDceCombinationTypeTypeÊÇÒ»¸ö×éºÏÀàĞÍÀàĞÍ }
+  {/TFtdcDceCombinationTypeTypeæ˜¯ä¸€ä¸ªç»„åˆç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÆÚ»õ¶ÔËø×éºÏ }
+  {/æœŸè´§å¯¹é”ç»„åˆ }
 
   const
     THOST_FTDC_DCECOMBT_SPL = '0';    
-  {/ÆÚÈ¨¶ÔËø×éºÏ }
+  {/æœŸæƒå¯¹é”ç»„åˆ }
     THOST_FTDC_DCECOMBT_OPL = '1';    
-  {/ÆÚ»õ¿çÆÚ×éºÏ }
+  {/æœŸè´§è·¨æœŸç»„åˆ }
     THOST_FTDC_DCECOMBT_SP = '2';    
-  {/ÆÚ»õ¿çÆ·ÖÖ×éºÏ }
+  {/æœŸè´§è·¨å“ç§ç»„åˆ }
     THOST_FTDC_DCECOMBT_SPC = '3';    
-  {/ÂòÈëÆÚÈ¨´¹Ö±¼Û²î×éºÏ }
+  {/ä¹°å…¥æœŸæƒå‚ç›´ä»·å·®ç»„åˆ }
     THOST_FTDC_DCECOMBT_BLS = '4';    
-  {/Âô³öÆÚÈ¨´¹Ö±¼Û²î×éºÏ }
+  {/å–å‡ºæœŸæƒå‚ç›´ä»·å·®ç»„åˆ }
     THOST_FTDC_DCECOMBT_BES = '5';    
-  {/ÆÚÈ¨ÈÕÀú¼Û²î×éºÏ }
+  {/æœŸæƒæ—¥å†ä»·å·®ç»„åˆ }
     THOST_FTDC_DCECOMBT_CAS = '6';    
-  {/ÆÚÈ¨¿çÊ½×éºÏ }
+  {/æœŸæƒè·¨å¼ç»„åˆ }
     THOST_FTDC_DCECOMBT_STD = '7';    
-  {/ÆÚÈ¨¿í¿çÊ½×éºÏ }
+  {/æœŸæƒå®½è·¨å¼ç»„åˆ }
     THOST_FTDC_DCECOMBT_STG = '8';    
-  {/ÂòÈëÆÚ»õÆÚÈ¨×éºÏ }
+  {/ä¹°å…¥æœŸè´§æœŸæƒç»„åˆ }
     THOST_FTDC_DCECOMBT_BFO = '9';    
-  {/Âô³öÆÚ»õÆÚÈ¨×éºÏ }
+  {/å–å‡ºæœŸè´§æœŸæƒç»„åˆ }
     THOST_FTDC_DCECOMBT_SFO = 'a';    
 
   type
     PTThostFtdcDceCombinationTypeType = ^TThostFtdcDceCombinationTypeType;
     TThostFtdcDceCombinationTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOptionRoyaltyPriceTypeTypeÊÇÒ»¸öÆÚÈ¨È¨Àû½ğ¼Û¸ñÀàĞÍÀàĞÍ }
+  {/TFtdcOptionRoyaltyPriceTypeTypeæ˜¯ä¸€ä¸ªæœŸæƒæƒåˆ©é‡‘ä»·æ ¼ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/×ò½áËã¼Û }
+  {/æ˜¨ç»“ç®—ä»· }
 
   const
     THOST_FTDC_ORPT_PreSettlementPrice = '1';    
-  {/¿ª²Ö¼Û }
+  {/å¼€ä»“ä»· }
     THOST_FTDC_ORPT_OpenPrice = '4';    
-  {/×îĞÂ¼ÛÓë×ò½áËã¼Û½Ï´óÖµ }
+  {/æœ€æ–°ä»·ä¸æ˜¨ç»“ç®—ä»·è¾ƒå¤§å€¼ }
     THOST_FTDC_ORPT_MaxPreSettlementPrice = '5';    
 
   type
     PTThostFtdcOptionRoyaltyPriceTypeType = ^TThostFtdcOptionRoyaltyPriceTypeType;
     TThostFtdcOptionRoyaltyPriceTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBalanceAlgorithmTypeÊÇÒ»¸öÈ¨ÒæËã·¨ÀàĞÍ }
+  {/TFtdcBalanceAlgorithmTypeæ˜¯ä¸€ä¸ªæƒç›Šç®—æ³•ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/²»¼ÆËãÆÚÈ¨ÊĞÖµÓ¯¿÷ }
+  {/ä¸è®¡ç®—æœŸæƒå¸‚å€¼ç›ˆäº }
 
   const
     THOST_FTDC_BLAG_Default = '1';    
-  {/¼ÆËãÆÚÈ¨ÊĞÖµ¿÷Ëğ }
+  {/è®¡ç®—æœŸæƒå¸‚å€¼äºæŸ }
     THOST_FTDC_BLAG_IncludeOptValLost = '2';    
 
   type
     PTThostFtdcBalanceAlgorithmType = ^TThostFtdcBalanceAlgorithmType;
     TThostFtdcBalanceAlgorithmType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcActionTypeTypeÊÇÒ»¸öÖ´ĞĞÀàĞÍÀàĞÍ }
+  {/TFtdcActionTypeTypeæ˜¯ä¸€ä¸ªæ‰§è¡Œç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Ö´ĞĞ }
+  {/æ‰§è¡Œ }
 
   const
     THOST_FTDC_ACTP_Exec = '1';    
-  {/·ÅÆú }
+  {/æ”¾å¼ƒ }
     THOST_FTDC_ACTP_Abandon = '2';    
 
   type
     PTThostFtdcActionTypeType = ^TThostFtdcActionTypeType;
     TThostFtdcActionTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcForQuoteStatusTypeÊÇÒ»¸öÑ¯¼Û×´Ì¬ÀàĞÍ }
+  {/TFtdcForQuoteStatusTypeæ˜¯ä¸€ä¸ªè¯¢ä»·çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÒÑ¾­Ìá½» }
+  {/å·²ç»æäº¤ }
 
   const
     THOST_FTDC_FQST_Submitted = 'a';    
-  {/ÒÑ¾­½ÓÊÜ }
+  {/å·²ç»æ¥å— }
     THOST_FTDC_FQST_Accepted = 'b';    
-  {/ÒÑ¾­±»¾Ü¾ø }
+  {/å·²ç»è¢«æ‹’ç» }
     THOST_FTDC_FQST_Rejected = 'c';    
 
   type
     PTThostFtdcForQuoteStatusType = ^TThostFtdcForQuoteStatusType;
     TThostFtdcForQuoteStatusType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcValueMethodTypeÊÇÒ»¸öÈ¡Öµ·½Ê½ÀàĞÍ }
+  {/TFtdcValueMethodTypeæ˜¯ä¸€ä¸ªå–å€¼æ–¹å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/°´¾ø¶ÔÖµ }
+  {/æŒ‰ç»å¯¹å€¼ }
 
   const
     THOST_FTDC_VM_Absolute = '0';    
-  {/°´±ÈÂÊ }
+  {/æŒ‰æ¯”ç‡ }
     THOST_FTDC_VM_Ratio = '1';    
 
   type
     PTThostFtdcValueMethodType = ^TThostFtdcValueMethodType;
     TThostFtdcValueMethodType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcExecOrderPositionFlagTypeÊÇÒ»¸öÆÚÈ¨ĞĞÈ¨ºóÊÇ·ñ±£ÁôÆÚ»õÍ·´çµÄ±ê¼ÇÀàĞÍ }
+  {/TFtdcExecOrderPositionFlagTypeæ˜¯ä¸€ä¸ªæœŸæƒè¡Œæƒåæ˜¯å¦ä¿ç•™æœŸè´§å¤´å¯¸çš„æ ‡è®°ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/±£Áô }
+  {/ä¿ç•™ }
 
   const
     THOST_FTDC_EOPF_Reserve = '0';    
-  {/²»±£Áô }
+  {/ä¸ä¿ç•™ }
     THOST_FTDC_EOPF_UnReserve = '1';    
 
   type
     PTThostFtdcExecOrderPositionFlagType = ^TThostFtdcExecOrderPositionFlagType;
     TThostFtdcExecOrderPositionFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcExecOrderCloseFlagTypeÊÇÒ»¸öÆÚÈ¨ĞĞÈ¨ºóÉú³ÉµÄÍ·´çÊÇ·ñ×Ô¶¯Æ½²ÖÀàĞÍ }
+  {/TFtdcExecOrderCloseFlagTypeæ˜¯ä¸€ä¸ªæœŸæƒè¡Œæƒåç”Ÿæˆçš„å¤´å¯¸æ˜¯å¦è‡ªåŠ¨å¹³ä»“ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/×Ô¶¯Æ½²Ö }
+  {/è‡ªåŠ¨å¹³ä»“ }
 
   const
     THOST_FTDC_EOCF_AutoClose = '0';    
-  {/ÃâÓÚ×Ô¶¯Æ½²Ö }
+  {/å…äºè‡ªåŠ¨å¹³ä»“ }
     THOST_FTDC_EOCF_NotToClose = '1';    
 
   type
     PTThostFtdcExecOrderCloseFlagType = ^TThostFtdcExecOrderCloseFlagType;
     TThostFtdcExecOrderCloseFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcProductTypeTypeÊÇÒ»¸ö²úÆ·ÀàĞÍÀàĞÍ }
+  {/TFtdcProductTypeTypeæ˜¯ä¸€ä¸ªäº§å“ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÆÚ»õ }
+  {/æœŸè´§ }
 
   const
     THOST_FTDC_PTE_Futures = '1';    
-  {/ÆÚÈ¨ }
+  {/æœŸæƒ }
     THOST_FTDC_PTE_Options = '2';    
 
   type
     PTThostFtdcProductTypeType = ^TThostFtdcProductTypeType;
     TThostFtdcProductTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCZCEUploadFileNameTypeÊÇÒ»¸öÖ£ÉÌËù½áËãÎÄ¼şÃûÀàĞÍ }
+  {/TFtdcCZCEUploadFileNameTypeæ˜¯ä¸€ä¸ªéƒ‘å•†æ‰€ç»“ç®—æ–‡ä»¶åç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
   {/^\d8_zz_\d4 }
 
   const
     THOST_FTDC_CUFN_CUFN_O = 'O';    
-  {/^\d8³É½»±í }
+  {/^\d8æˆäº¤è¡¨ }
     THOST_FTDC_CUFN_CUFN_T = 'T';    
-  {/^\d8µ¥ÍÈ³Ö²Ö±ínew }
+  {/^\d8å•è…¿æŒä»“è¡¨new }
     THOST_FTDC_CUFN_CUFN_P = 'P';    
-  {/^\d8·ÇÆ½²ÖÁË½á±í }
+  {/^\d8éå¹³ä»“äº†ç»“è¡¨ }
     THOST_FTDC_CUFN_CUFN_N = 'N';    
-  {/^\d8Æ½²Ö±í }
+  {/^\d8å¹³ä»“è¡¨ }
     THOST_FTDC_CUFN_CUFN_L = 'L';    
-  {/^\d8×Ê½ğ±í }
+  {/^\d8èµ„é‡‘è¡¨ }
     THOST_FTDC_CUFN_CUFN_F = 'F';    
-  {/^\d8×éºÏ³Ö²Ö±í }
+  {/^\d8ç»„åˆæŒä»“è¡¨ }
     THOST_FTDC_CUFN_CUFN_C = 'C';    
-  {/^\d8±£Ö¤½ğ²ÎÊı±í }
+  {/^\d8ä¿è¯é‡‘å‚æ•°è¡¨ }
     THOST_FTDC_CUFN_CUFN_M = 'M';    
 
   type
     PTThostFtdcCZCEUploadFileNameType = ^TThostFtdcCZCEUploadFileNameType;
     TThostFtdcCZCEUploadFileNameType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcDCEUploadFileNameTypeÊÇÒ»¸ö´óÉÌËù½áËãÎÄ¼şÃûÀàĞÍ }
+  {/TFtdcDCEUploadFileNameTypeæ˜¯ä¸€ä¸ªå¤§å•†æ‰€ç»“ç®—æ–‡ä»¶åç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
   {/^\d8_dl_\d3 }
 
   const
     THOST_FTDC_DUFN_DUFN_O = 'O';    
-  {/^\d8_³É½»±í }
+  {/^\d8_æˆäº¤è¡¨ }
     THOST_FTDC_DUFN_DUFN_T = 'T';    
-  {/^\d8_³Ö²Ö±í }
+  {/^\d8_æŒä»“è¡¨ }
     THOST_FTDC_DUFN_DUFN_P = 'P';    
-  {/^\d8_×Ê½ğ½áËã±í }
+  {/^\d8_èµ„é‡‘ç»“ç®—è¡¨ }
     THOST_FTDC_DUFN_DUFN_F = 'F';    
-  {/^\d8_ÓÅ»İ×éºÏ³Ö²ÖÃ÷Ï¸±í }
+  {/^\d8_ä¼˜æƒ ç»„åˆæŒä»“æ˜ç»†è¡¨ }
     THOST_FTDC_DUFN_DUFN_C = 'C';    
-  {/^\d8_³Ö²ÖÃ÷Ï¸±í }
+  {/^\d8_æŒä»“æ˜ç»†è¡¨ }
     THOST_FTDC_DUFN_DUFN_D = 'D';    
-  {/^\d8_±£Ö¤½ğ²ÎÊı±í }
+  {/^\d8_ä¿è¯é‡‘å‚æ•°è¡¨ }
     THOST_FTDC_DUFN_DUFN_M = 'M';    
-  {/^\d8_ÆÚÈ¨Ö´ĞĞ±í }
+  {/^\d8_æœŸæƒæ‰§è¡Œè¡¨ }
     THOST_FTDC_DUFN_DUFN_S = 'S';    
 
   type
     PTThostFtdcDCEUploadFileNameType = ^TThostFtdcDCEUploadFileNameType;
     TThostFtdcDCEUploadFileNameType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSHFEUploadFileNameTypeÊÇÒ»¸öÉÏÆÚËù½áËãÎÄ¼şÃûÀàĞÍ }
+  {/TFtdcSHFEUploadFileNameTypeæ˜¯ä¸€ä¸ªä¸ŠæœŸæ‰€ç»“ç®—æ–‡ä»¶åç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
   {/^\d4_\d8_\d8_DailyFundChg }
 
@@ -7741,7 +7746,7 @@ interface
     PTThostFtdcSHFEUploadFileNameType = ^TThostFtdcSHFEUploadFileNameType;
     TThostFtdcSHFEUploadFileNameType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCFFEXUploadFileNameTypeÊÇÒ»¸öÖĞ½ğËù½áËãÎÄ¼şÃûÀàĞÍ }
+  {/TFtdcCFFEXUploadFileNameTypeæ˜¯ä¸€ä¸ªä¸­é‡‘æ‰€ç»“ç®—æ–‡ä»¶åç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
   {/^\d4_SG\d1_\d8_\d1_Trade }
 
@@ -7758,397 +7763,397 @@ interface
     PTThostFtdcCFFEXUploadFileNameType = ^TThostFtdcCFFEXUploadFileNameType;
     TThostFtdcCFFEXUploadFileNameType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCombDirectionTypeÊÇÒ»¸ö×éºÏÖ¸Áî·½ÏòÀàĞÍ }
+  {/TFtdcCombDirectionTypeæ˜¯ä¸€ä¸ªç»„åˆæŒ‡ä»¤æ–¹å‘ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÉêÇë×éºÏ }
+  {/ç”³è¯·ç»„åˆ }
 
   const
     THOST_FTDC_CMDR_Comb = '0';    
-  {/ÉêÇë²ğ·Ö }
+  {/ç”³è¯·æ‹†åˆ† }
     THOST_FTDC_CMDR_UnComb = '1';    
-  {/²Ù×÷Ô±É¾×éºÏµ¥ }
+  {/æ“ä½œå‘˜åˆ ç»„åˆå• }
     THOST_FTDC_CMDR_DelComb = '2';    
 
   type
     PTThostFtdcCombDirectionType = ^TThostFtdcCombDirectionType;
     TThostFtdcCombDirectionType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcStrikeOffsetTypeTypeÊÇÒ»¸öĞĞÈ¨Æ«ÒÆÀàĞÍÀàĞÍ }
+  {/TFtdcStrikeOffsetTypeTypeæ˜¯ä¸€ä¸ªè¡Œæƒåç§»ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÊµÖµ¶î }
+  {/å®å€¼é¢ }
 
   const
     THOST_FTDC_STOV_RealValue = '1';    
-  {/Ó¯Àû¶î }
+  {/ç›ˆåˆ©é¢ }
     THOST_FTDC_STOV_ProfitValue = '2';    
-  {/ÊµÖµ±ÈÀı }
+  {/å®å€¼æ¯”ä¾‹ }
     THOST_FTDC_STOV_RealRatio = '3';    
-  {/Ó¯Àû±ÈÀı }
+  {/ç›ˆåˆ©æ¯”ä¾‹ }
     THOST_FTDC_STOV_ProfitRatio = '4';    
 
   type
     PTThostFtdcStrikeOffsetTypeType = ^TThostFtdcStrikeOffsetTypeType;
     TThostFtdcStrikeOffsetTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcReserveOpenAccStasTypeÊÇÒ»¸öÔ¤Ô¼¿ª»§×´Ì¬ÀàĞÍ }
+  {/TFtdcReserveOpenAccStasTypeæ˜¯ä¸€ä¸ªé¢„çº¦å¼€æˆ·çŠ¶æ€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/µÈ´ı´¦ÀíÖĞ }
+  {/ç­‰å¾…å¤„ç†ä¸­ }
 
   const
     THOST_FTDC_ROAST_Processing = '0';    
-  {/ÒÑ³·Ïú }
+  {/å·²æ’¤é”€ }
     THOST_FTDC_ROAST_Cancelled = '1';    
-  {/ÒÑ¿ª»§ }
+  {/å·²å¼€æˆ· }
     THOST_FTDC_ROAST_Opened = '2';    
-  {/ÎŞĞ§ÇëÇó }
+  {/æ— æ•ˆè¯·æ±‚ }
     THOST_FTDC_ROAST_Invalid = '3';    
 
   type
     PTThostFtdcReserveOpenAccStasType = ^TThostFtdcReserveOpenAccStasType;
     TThostFtdcReserveOpenAccStasType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcLoginRemarkTypeÊÇÒ»¸öµÇÂ¼±¸×¢ÀàĞÍ }
+  {/TFtdcLoginRemarkTypeæ˜¯ä¸€ä¸ªç™»å½•å¤‡æ³¨ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcLoginRemarkType = ^TThostFtdcLoginRemarkType;
     TThostFtdcLoginRemarkType = array[0..35] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcInvestUnitIDTypeÊÇÒ»¸öÍ¶×Êµ¥Ôª´úÂëÀàĞÍ }
+  {/TFtdcInvestUnitIDTypeæ˜¯ä¸€ä¸ªæŠ•èµ„å•å…ƒä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcInvestUnitIDType = ^TThostFtdcInvestUnitIDType;
     TThostFtdcInvestUnitIDType = array[0..16] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBulletinIDTypeÊÇÒ»¸ö¹«¸æ±àºÅÀàĞÍ }
+  {/TFtdcBulletinIDTypeæ˜¯ä¸€ä¸ªå…¬å‘Šç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBulletinIDType = ^TThostFtdcBulletinIDType;
     TThostFtdcBulletinIDType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcNewsTypeTypeÊÇÒ»¸ö¹«¸æÀàĞÍÀàĞÍ }
+  {/TFtdcNewsTypeTypeæ˜¯ä¸€ä¸ªå…¬å‘Šç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcNewsTypeType = ^TThostFtdcNewsTypeType;
     TThostFtdcNewsTypeType = array[0..2] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcNewsUrgencyTypeÊÇÒ»¸ö½ô¼±³Ì¶ÈÀàĞÍ }
+  {/TFtdcNewsUrgencyTypeæ˜¯ä¸€ä¸ªç´§æ€¥ç¨‹åº¦ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcNewsUrgencyType = ^TThostFtdcNewsUrgencyType;
     TThostFtdcNewsUrgencyType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAbstractTypeÊÇÒ»¸öÏûÏ¢ÕªÒªÀàĞÍ }
+  {/TFtdcAbstractTypeæ˜¯ä¸€ä¸ªæ¶ˆæ¯æ‘˜è¦ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAbstractType = ^TThostFtdcAbstractType;
     TThostFtdcAbstractType = array[0..80] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcComeFromTypeÊÇÒ»¸öÏûÏ¢À´Ô´ÀàĞÍ }
+  {/TFtdcComeFromTypeæ˜¯ä¸€ä¸ªæ¶ˆæ¯æ¥æºç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcComeFromType = ^TThostFtdcComeFromType;
     TThostFtdcComeFromType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcURLLinkTypeÊÇÒ»¸öWEBµØÖ·ÀàĞÍ }
+  {/TFtdcURLLinkTypeæ˜¯ä¸€ä¸ªWEBåœ°å€ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcURLLinkType = ^TThostFtdcURLLinkType;
     TThostFtdcURLLinkType = array[0..200] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcLongIndividualNameTypeÊÇÒ»¸ö³¤¸öÈËĞÕÃûÀàĞÍ }
+  {/TFtdcLongIndividualNameTypeæ˜¯ä¸€ä¸ªé•¿ä¸ªäººå§“åç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcLongIndividualNameType = ^TThostFtdcLongIndividualNameType;
     TThostFtdcLongIndividualNameType = array[0..160] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcLongFBEBankAccountNameTypeÊÇÒ»¸ö³¤»»»ãÒøĞĞÕË»§ÃûÀàĞÍ }
+  {/TFtdcLongFBEBankAccountNameTypeæ˜¯ä¸€ä¸ªé•¿æ¢æ±‡é“¶è¡Œè´¦æˆ·åç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcLongFBEBankAccountNameType = ^TThostFtdcLongFBEBankAccountNameType;
     TThostFtdcLongFBEBankAccountNameType = array[0..160] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcDateTimeTypeÊÇÒ»¸öÈÕÆÚÊ±¼äÀàĞÍ }
+  {/TFtdcDateTimeTypeæ˜¯ä¸€ä¸ªæ—¥æœŸæ—¶é—´ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcDateTimeType = ^TThostFtdcDateTimeType;
     TThostFtdcDateTimeType = array[0..16] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcWeakPasswordSourceTypeÊÇÒ»¸öÈõÃÜÂëÀ´Ô´ÀàĞÍ }
+  {/TFtdcWeakPasswordSourceTypeæ˜¯ä¸€ä¸ªå¼±å¯†ç æ¥æºç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÈõÃÜÂë¿â }
+  {/å¼±å¯†ç åº“ }
 
   const
     THOST_FTDC_WPSR_Lib = '1';    
-  {/ÊÖ¹¤Â¼Èë }
+  {/æ‰‹å·¥å½•å…¥ }
     THOST_FTDC_WPSR_Manual = '2';    
 
   type
     PTThostFtdcWeakPasswordSourceType = ^TThostFtdcWeakPasswordSourceType;
     TThostFtdcWeakPasswordSourceType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcRandomStringTypeÊÇÒ»¸öËæ»ú´®ÀàĞÍ }
+  {/TFtdcRandomStringTypeæ˜¯ä¸€ä¸ªéšæœºä¸²ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcRandomStringType = ^TThostFtdcRandomStringType;
     TThostFtdcRandomStringType = array[0..16] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOptSelfCloseFlagTypeÊÇÒ»¸öÆÚÈ¨ĞĞÈ¨µÄÍ·´çÊÇ·ñ×Ô¶Ô³åÀàĞÍ }
+  {/TFtdcOptSelfCloseFlagTypeæ˜¯ä¸€ä¸ªæœŸæƒè¡Œæƒçš„å¤´å¯¸æ˜¯å¦è‡ªå¯¹å†²ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/×Ô¶Ô³åÆÚÈ¨²ÖÎ» }
+  {/è‡ªå¯¹å†²æœŸæƒä»“ä½ }
 
   const
     THOST_FTDC_OSCF_CloseSelfOptionPosition = '1';    
-  {/±£ÁôÆÚÈ¨²ÖÎ» }
+  {/ä¿ç•™æœŸæƒä»“ä½ }
     THOST_FTDC_OSCF_ReserveOptionPosition = '2';    
-  {/×Ô¶Ô³åÂô·½ÂÄÔ¼ºóµÄÆÚ»õ²ÖÎ» }
+  {/è‡ªå¯¹å†²å–æ–¹å±¥çº¦åçš„æœŸè´§ä»“ä½ }
     THOST_FTDC_OSCF_SellCloseSelfFuturePosition = '3';    
-  {/±£ÁôÂô·½ÂÄÔ¼ºóµÄÆÚ»õ²ÖÎ» }
+  {/ä¿ç•™å–æ–¹å±¥çº¦åçš„æœŸè´§ä»“ä½ }
     THOST_FTDC_OSCF_ReserveFuturePosition = '4';    
 
   type
     PTThostFtdcOptSelfCloseFlagType = ^TThostFtdcOptSelfCloseFlagType;
     TThostFtdcOptSelfCloseFlagType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBizTypeTypeÊÇÒ»¸öÒµÎñÀàĞÍÀàĞÍ }
+  {/TFtdcBizTypeTypeæ˜¯ä¸€ä¸ªä¸šåŠ¡ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ÆÚ»õ }
+  {/æœŸè´§ }
 
   const
     THOST_FTDC_BZTP_Future = '1';    
-  {/Ö¤È¯ }
+  {/è¯åˆ¸ }
     THOST_FTDC_BZTP_Stock = '2';    
 
   type
     PTThostFtdcBizTypeType = ^TThostFtdcBizTypeType;
     TThostFtdcBizTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAppTypeTypeÊÇÒ»¸öÓÃ»§AppÀàĞÍÀàĞÍ }
+  {/TFtdcAppTypeTypeæ˜¯ä¸€ä¸ªç”¨æˆ·Appç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/Ö±Á¬µÄÍ¶×ÊÕß }
+  {/ç›´è¿çš„æŠ•èµ„è€… }
 
   const
     THOST_FTDC_APP_TYPE_Investor = '1';    
-  {/ÎªÃ¿¸öÍ¶×ÊÕß¶¼´´½¨Á¬½ÓµÄÖĞ¼Ì }
+  {/ä¸ºæ¯ä¸ªæŠ•èµ„è€…éƒ½åˆ›å»ºè¿æ¥çš„ä¸­ç»§ }
     THOST_FTDC_APP_TYPE_InvestorRelay = '2';    
-  {/ËùÓĞÍ¶×ÊÕß¹²ÏíÒ»¸ö²Ù×÷Ô±Á¬½ÓµÄÖĞ¼Ì }
+  {/æ‰€æœ‰æŠ•èµ„è€…å…±äº«ä¸€ä¸ªæ“ä½œå‘˜è¿æ¥çš„ä¸­ç»§ }
     THOST_FTDC_APP_TYPE_OperatorRelay = '3';    
-  {/Î´Öª }
+  {/æœªçŸ¥ }
     THOST_FTDC_APP_TYPE_UnKnown = '4';    
 
   type
     PTThostFtdcAppTypeType = ^TThostFtdcAppTypeType;
     TThostFtdcAppTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAppIDTypeÊÇÒ»¸öApp´úÂëÀàĞÍ }
+  {/TFtdcAppIDTypeæ˜¯ä¸€ä¸ªAppä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAppIDType = ^TThostFtdcAppIDType;
     TThostFtdcAppIDType = array[0..32] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSystemInfoLenTypeÊÇÒ»¸öÏµÍ³ĞÅÏ¢³¤¶ÈÀàĞÍ }
+  {/TFtdcSystemInfoLenTypeæ˜¯ä¸€ä¸ªç³»ç»Ÿä¿¡æ¯é•¿åº¦ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcSystemInfoLenType = ^TThostFtdcSystemInfoLenType;
     TThostFtdcSystemInfoLenType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAdditionalInfoLenTypeÊÇÒ»¸ö²¹³äĞÅÏ¢³¤¶ÈÀàĞÍ }
+  {/TFtdcAdditionalInfoLenTypeæ˜¯ä¸€ä¸ªè¡¥å……ä¿¡æ¯é•¿åº¦ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAdditionalInfoLenType = ^TThostFtdcAdditionalInfoLenType;
     TThostFtdcAdditionalInfoLenType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcClientSystemInfoTypeÊÇÒ»¸ö½»Ò×ÖÕ¶ËÏµÍ³ĞÅÏ¢ÀàĞÍ }
+  {/TFtdcClientSystemInfoTypeæ˜¯ä¸€ä¸ªäº¤æ˜“ç»ˆç«¯ç³»ç»Ÿä¿¡æ¯ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcClientSystemInfoType = ^TThostFtdcClientSystemInfoType;
     TThostFtdcClientSystemInfoType = array[0..272] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAdditionalInfoTypeÊÇÒ»¸öÏµÍ³Íâ²¿ĞÅÏ¢ÀàĞÍ }
+  {/TFtdcAdditionalInfoTypeæ˜¯ä¸€ä¸ªç³»ç»Ÿå¤–éƒ¨ä¿¡æ¯ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcAdditionalInfoType = ^TThostFtdcAdditionalInfoType;
     TThostFtdcAdditionalInfoType = array[0..260] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBase64ClientSystemInfoTypeÊÇÒ»¸öbase64½»Ò×ÖÕ¶ËÏµÍ³ĞÅÏ¢ÀàĞÍ }
+  {/TFtdcBase64ClientSystemInfoTypeæ˜¯ä¸€ä¸ªbase64äº¤æ˜“ç»ˆç«¯ç³»ç»Ÿä¿¡æ¯ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBase64ClientSystemInfoType = ^TThostFtdcBase64ClientSystemInfoType;
     TThostFtdcBase64ClientSystemInfoType = array[0..364] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcBase64AdditionalInfoTypeÊÇÒ»¸öbase64ÏµÍ³Íâ²¿ĞÅÏ¢ÀàĞÍ }
+  {/TFtdcBase64AdditionalInfoTypeæ˜¯ä¸€ä¸ªbase64ç³»ç»Ÿå¤–éƒ¨ä¿¡æ¯ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcBase64AdditionalInfoType = ^TThostFtdcBase64AdditionalInfoType;
     TThostFtdcBase64AdditionalInfoType = array[0..348] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCurrentAuthMethodTypeÊÇÒ»¸öµ±Ç°¿ÉÓÃµÄÈÏÖ¤Ä£Ê½£¬0´ú±íÎŞĞèÈÏÖ¤Ä£Ê½ A´ÓµÍÎ»¿ªÊ¼×îºóÒ»Î»´ú±íÍ¼Æ¬ÑéÖ¤Âë£¬µ¹ÊıµÚ¶şÎ»´ú±í¶¯Ì¬¿ÚÁî£¬µ¹ÊıµÚÈıÎ»´ú±í¶ÌĞÅÑéÖ¤ÂëÀàĞÍ }
+  {/TFtdcCurrentAuthMethodTypeæ˜¯ä¸€ä¸ªå½“å‰å¯ç”¨çš„è®¤è¯æ¨¡å¼ï¼Œ0ä»£è¡¨æ— éœ€è®¤è¯æ¨¡å¼ Aä»ä½ä½å¼€å§‹æœ€åä¸€ä½ä»£è¡¨å›¾ç‰‡éªŒè¯ç ï¼Œå€’æ•°ç¬¬äºŒä½ä»£è¡¨åŠ¨æ€å£ä»¤ï¼Œå€’æ•°ç¬¬ä¸‰ä½ä»£è¡¨çŸ­ä¿¡éªŒè¯ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCurrentAuthMethodType = ^TThostFtdcCurrentAuthMethodType;
     TThostFtdcCurrentAuthMethodType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCaptchaInfoLenTypeÊÇÒ»¸öÍ¼Æ¬ÑéÖ¤ĞÅÏ¢³¤¶ÈÀàĞÍ }
+  {/TFtdcCaptchaInfoLenTypeæ˜¯ä¸€ä¸ªå›¾ç‰‡éªŒè¯ä¿¡æ¯é•¿åº¦ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCaptchaInfoLenType = ^TThostFtdcCaptchaInfoLenType;
     TThostFtdcCaptchaInfoLenType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCaptchaInfoTypeÊÇÒ»¸öÍ¼Æ¬ÑéÖ¤ĞÅÏ¢ÀàĞÍ }
+  {/TFtdcCaptchaInfoTypeæ˜¯ä¸€ä¸ªå›¾ç‰‡éªŒè¯ä¿¡æ¯ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCaptchaInfoType = ^TThostFtdcCaptchaInfoType;
     TThostFtdcCaptchaInfoType = array[0..2560] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcUserTextSeqTypeÊÇÒ»¸öÓÃ»§¶ÌĞÅÑéÖ¤ÂëµÄ±àºÅÀàĞÍ }
+  {/TFtdcUserTextSeqTypeæ˜¯ä¸€ä¸ªç”¨æˆ·çŸ­ä¿¡éªŒè¯ç çš„ç¼–å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcUserTextSeqType = ^TThostFtdcUserTextSeqType;
     TThostFtdcUserTextSeqType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcHandshakeDataTypeÊÇÒ»¸öÎÕÊÖÊı¾İÄÚÈİÀàĞÍ }
+  {/TFtdcHandshakeDataTypeæ˜¯ä¸€ä¸ªæ¡æ‰‹æ•°æ®å†…å®¹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcHandshakeDataType = ^TThostFtdcHandshakeDataType;
     TThostFtdcHandshakeDataType = array[0..300] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcHandshakeDataLenTypeÊÇÒ»¸öÎÕÊÖÊı¾İÄÚÈİ³¤¶ÈÀàĞÍ }
+  {/TFtdcHandshakeDataLenTypeæ˜¯ä¸€ä¸ªæ¡æ‰‹æ•°æ®å†…å®¹é•¿åº¦ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcHandshakeDataLenType = ^TThostFtdcHandshakeDataLenType;
     TThostFtdcHandshakeDataLenType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCryptoKeyVersionTypeÊÇÒ»¸öapiÓëfrontÍ¨ĞÅÃÜÔ¿°æ±¾ºÅÀàĞÍ }
+  {/TFtdcCryptoKeyVersionTypeæ˜¯ä¸€ä¸ªapiä¸fronté€šä¿¡å¯†é’¥ç‰ˆæœ¬å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCryptoKeyVersionType = ^TThostFtdcCryptoKeyVersionType;
     TThostFtdcCryptoKeyVersionType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcRsaKeyVersionTypeÊÇÒ»¸ö¹«Ô¿°æ±¾ºÅÀàĞÍ }
+  {/TFtdcRsaKeyVersionTypeæ˜¯ä¸€ä¸ªå…¬é’¥ç‰ˆæœ¬å·ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcRsaKeyVersionType = ^TThostFtdcRsaKeyVersionType;
     TThostFtdcRsaKeyVersionType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcSoftwareProviderIDTypeÊÇÒ»¸ö½»Ò×Èí¼şÉÌIDÀàĞÍ }
+  {/TFtdcSoftwareProviderIDTypeæ˜¯ä¸€ä¸ªäº¤æ˜“è½¯ä»¶å•†IDç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcSoftwareProviderIDType = ^TThostFtdcSoftwareProviderIDType;
     TThostFtdcSoftwareProviderIDType = array[0..21] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcCollectTimeTypeÊÇÒ»¸öĞÅÏ¢²É¼¯Ê±¼äÀàĞÍ }
+  {/TFtdcCollectTimeTypeæ˜¯ä¸€ä¸ªä¿¡æ¯é‡‡é›†æ—¶é—´ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcCollectTimeType = ^TThostFtdcCollectTimeType;
     TThostFtdcCollectTimeType = array[0..20] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcQueryFreqTypeÊÇÒ»¸ö²éÑ¯ÆµÂÊÀàĞÍ }
+  {/TFtdcQueryFreqTypeæ˜¯ä¸€ä¸ªæŸ¥è¯¢é¢‘ç‡ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcQueryFreqType = ^TThostFtdcQueryFreqType;
     TThostFtdcQueryFreqType = longint;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcResponseValueTypeÊÇÒ»¸öÓ¦´ğÀàĞÍÀàĞÍ }
+  {/TFtdcResponseValueTypeæ˜¯ä¸€ä¸ªåº”ç­”ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/¼ì²é³É¹¦ }
+  {/æ£€æŸ¥æˆåŠŸ }
 
   const
     THOST_FTDC_RV_Right = '0';    
-  {/¼ì²éÊ§°Ü }
+  {/æ£€æŸ¥å¤±è´¥ }
     THOST_FTDC_RV_Refuse = '1';    
 
   type
     PTThostFtdcResponseValueType = ^TThostFtdcResponseValueType;
     TThostFtdcResponseValueType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOTCTradeTypeTypeÊÇÒ»¸öOTC³É½»ÀàĞÍÀàĞÍ }
+  {/TFtdcOTCTradeTypeTypeæ˜¯ä¸€ä¸ªOTCæˆäº¤ç±»å‹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/´ó×Ú½»Ò× }
+  {/å¤§å®—äº¤æ˜“ }
 
   const
     THOST_FTDC_OTC_TRDT_Block = '0';    
-  {/ÆÚ×ªÏÖ }
+  {/æœŸè½¬ç° }
     THOST_FTDC_OTC_TRDT_EFP = '1';    
 
   type
     PTThostFtdcOTCTradeTypeType = ^TThostFtdcOTCTradeTypeType;
     TThostFtdcOTCTradeTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcMatchTypeTypeÊÇÒ»¸öÆÚÏÖ·çÏÕÆ¥Åä·½Ê½ÀàĞÍ }
+  {/TFtdcMatchTypeTypeæ˜¯ä¸€ä¸ªæœŸç°é£é™©åŒ¹é…æ–¹å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/»ùµã¼ÛÖµ }
+  {/åŸºç‚¹ä»·å€¼ }
 
   const
     THOST_FTDC_OTC_MT_DV01 = '1';    
-  {/ÃæÖµ }
+  {/é¢å€¼ }
     THOST_FTDC_OTC_MT_ParValue = '2';    
 
   type
     PTThostFtdcMatchTypeType = ^TThostFtdcMatchTypeType;
     TThostFtdcMatchTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcOTCTraderIDTypeÊÇÒ»¸öOTC½»Ò×Ô±´úÂëÀàĞÍ }
+  {/TFtdcOTCTraderIDTypeæ˜¯ä¸€ä¸ªOTCäº¤æ˜“å‘˜ä»£ç ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcOTCTraderIDType = ^TThostFtdcOTCTraderIDType;
     TThostFtdcOTCTraderIDType = array[0..30] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcRiskValueTypeÊÇÒ»¸öÆÚ»õ·çÏÕÖµÀàĞÍ }
+  {/TFtdcRiskValueTypeæ˜¯ä¸€ä¸ªæœŸè´§é£é™©å€¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcRiskValueType = ^TThostFtdcRiskValueType;
     TThostFtdcRiskValueType = double;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcIDBNameTypeÊÇÒ»¸öÎÕÊÖÊı¾İÄÚÈİÀàĞÍ }
+  {/TFtdcIDBNameTypeæ˜¯ä¸€ä¸ªæ¡æ‰‹æ•°æ®å†…å®¹ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcIDBNameType = ^TThostFtdcIDBNameType;
     TThostFtdcIDBNameType = array[0..99] of AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcDiscountRatioTypeÊÇÒ»¸öÕÛ¿ÛÂÊÀàĞÍ }
+  {/TFtdcDiscountRatioTypeæ˜¯ä¸€ä¸ªæŠ˜æ‰£ç‡ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
 
     PTThostFtdcDiscountRatioType = ^TThostFtdcDiscountRatioType;
     TThostFtdcDiscountRatioType = double;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcAuthTypeTypeÊÇÒ»¸öÓÃ»§ÖÕ¶ËÈÏÖ¤·½Ê½ÀàĞÍ }
+  {/TFtdcAuthTypeTypeæ˜¯ä¸€ä¸ªç”¨æˆ·ç»ˆç«¯è®¤è¯æ–¹å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/°×Ãûµ¥Ğ£Ñé }
+  {/ç™½åå•æ ¡éªŒ }
 
   const
     THOST_FTDC_AU_WHITE = '0';    
-  {/ºÚÃûµ¥Ğ£Ñé }
+  {/é»‘åå•æ ¡éªŒ }
     THOST_FTDC_AU_BLACK = '1';    
 
   type
     PTThostFtdcAuthTypeType = ^TThostFtdcAuthTypeType;
     TThostFtdcAuthTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcClassTypeTypeÊÇÒ»¸öºÏÔ¼·ÖÀà·½Ê½ÀàĞÍ }
+  {/TFtdcClassTypeTypeæ˜¯ä¸€ä¸ªåˆçº¦åˆ†ç±»æ–¹å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ËùÓĞºÏÔ¼ }
+  {/æ‰€æœ‰åˆçº¦ }
 
   const
     THOST_FTDC_INS_ALL = '0';    
-  {/ÆÚ»õ¡¢¼´ÆÚ¡¢ÆÚ×ªÏÖ¡¢Tas¡¢½ğÊôÖ¸ÊıºÏÔ¼ }
+  {/æœŸè´§ã€å³æœŸã€æœŸè½¬ç°ã€Tasã€é‡‘å±æŒ‡æ•°åˆçº¦ }
     THOST_FTDC_INS_FUTURE = '1';    
-  {/ÆÚ»õ¡¢ÏÖ»õÆÚÈ¨ºÏÔ¼ }
+  {/æœŸè´§ã€ç°è´§æœŸæƒåˆçº¦ }
     THOST_FTDC_INS_OPTION = '2';    
-  {/×éºÏºÏÔ¼ }
+  {/ç»„åˆåˆçº¦ }
     THOST_FTDC_INS_COMB = '3';    
 
   type
     PTThostFtdcClassTypeType = ^TThostFtdcClassTypeType;
     TThostFtdcClassTypeType = AnsiChar;
   {/////////////////////////////////////////////////////////////////////// }
-  {/TFtdcTradingTypeTypeÊÇÒ»¸öºÏÔ¼½»Ò××´Ì¬·ÖÀà·½Ê½ÀàĞÍ }
+  {/TFtdcTradingTypeTypeæ˜¯ä¸€ä¸ªåˆçº¦äº¤æ˜“çŠ¶æ€åˆ†ç±»æ–¹å¼ç±»å‹ }
   {/////////////////////////////////////////////////////////////////////// }
-  {/ËùÓĞ×´Ì¬ }
+  {/æ‰€æœ‰çŠ¶æ€ }
 
   const
     THOST_FTDC_TD_ALL = '0';    
-  {/½»Ò× }
+  {/äº¤æ˜“ }
     THOST_FTDC_TD_TRADE = '1';    
-  {/·Ç½»Ò× }
+  {/éäº¤æ˜“ }
     THOST_FTDC_TD_UNTRADE = '2';    
 
   type

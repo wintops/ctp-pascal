@@ -1,8 +1,17 @@
 unit uMyTrader;
 
+{$IFDEF FPC}
+  {$MODE Delphi}
+{$ENDIF}
+
 interface
 
-uses SysUtils,  AnsiStrings,
+uses
+{$IFnDEF FPC}
+  AnsiStrings,
+{$ELSE}
+{$ENDIF}
+  SysUtils,
   ThostFtdcUserApiDataType, ThostFtdcUserApiStruct;
 
 implementation
@@ -42,8 +51,7 @@ begin
   FillChar(OrderRef, SizeOf(OrderRef), #0);
   Inc(MaxOrderRef);
   sLine := Format('%13d', [MaxOrderRef]);
-  AnsiStrings.StrPLCopy(OrderRef, StringReplace(sLine, ' ', '0', [rfReplaceAll]
-    ), SizeOf(OrderRef));
+ // AnsiStrings.StrPLCopy(OrderRef, StringReplace(sLine, ' ', '0', [rfReplaceAll]    ), SizeOf(OrderRef));
 end;
 
 procedure SetBaseConfig(pRspUserLogin: pCThostFtdcRspUserLoginField);
@@ -72,151 +80,151 @@ procedure OnRspOrderInsert(pInputOrder: pCThostFtdcInputOrderField;
 begin
   if pRspInfo^.ErrorID = 0 then
   begin
-    Log('Î¯ÍĞ³É¹¦£º' + '¾­¼Í¹«Ë¾´úÂë:' + pInputOrder^.BrokerID + #13#10 + 'Í¶×ÊÕß´úÂë:' +
-      pInputOrder^.InvestorID + #13#10 + 'ºÏÔ¼´úÂë:' + pInputOrder^.InstrumentID +
-      #13#10 + '±¨µ¥ÒıÓÃ:' + pInputOrder^.OrderRef + #13#10 + 'ÓÃ»§´úÂë:' +
-      pInputOrder^.UserID + #13#10 + '±¨µ¥¼Û¸ñÌõ¼ş:' + pInputOrder^.OrderPriceType +
-      #13#10 + 'ÂòÂô·½Ïò:' + pInputOrder^.Direction + #13#10 + '×éºÏ¿ªÆ½±êÖ¾:' +
-      pInputOrder^.CombOffsetFlag + #13#10 + '×éºÏÍ¶»úÌ×±£±êÖ¾:' +
-      pInputOrder^.CombHedgeFlag + #13#10 + '¼Û¸ñ:' +
-      FloatToStr(pInputOrder^.LimitPrice) + #13#10 + 'ÊıÁ¿:' +
-      IntToStr(pInputOrder^.VolumeTotalOriginal) + #13#10 + 'ÓĞĞ§ÆÚÀàĞÍ:' +
-      pInputOrder^.TimeCondition + #13#10 + 'GTDÈÕÆÚ:' + pInputOrder^.GTDDate +
-      #13#10 + '³É½»Á¿ÀàĞÍ:' + pInputOrder^.VolumeCondition + #13#10 + '×îĞ¡³É½»Á¿:' +
-      IntToStr(pInputOrder^.MinVolume) + #13#10 + '´¥·¢Ìõ¼ş:' +
-      pInputOrder^.ContingentCondition + #13#10 + 'Ö¹Ëğ¼Û:' +
-      FloatToStr(pInputOrder^.StopPrice) + #13#10 + 'Ç¿Æ½Ô­Òò:' +
-      pInputOrder^.ForceCloseReason + #13#10 + '×Ô¶¯¹ÒÆğ±êÖ¾:' +
-      IntToStr(pInputOrder^.IsAutoSuspend) + #13#10 + 'ÒµÎñµ¥Ôª:' +
-      pInputOrder^.BusinessUnit + #13#10 + 'ÇëÇó±àºÅ:' +
-      IntToStr(pInputOrder^.RequestID) + #13#10 + 'ÓÃ»§Ç¿ÆÀ±êÖ¾:' +
+    Log('å§”æ‰˜æˆåŠŸï¼š' + 'ç»çºªå…¬å¸ä»£ç :' + pInputOrder^.BrokerID + #13#10 + 'æŠ•èµ„è€…ä»£ç :' +
+      pInputOrder^.InvestorID + #13#10 + 'åˆçº¦ä»£ç :' + pInputOrder^.InstrumentID +
+      #13#10 + 'æŠ¥å•å¼•ç”¨:' + pInputOrder^.OrderRef + #13#10 + 'ç”¨æˆ·ä»£ç :' +
+      pInputOrder^.UserID + #13#10 + 'æŠ¥å•ä»·æ ¼æ¡ä»¶:' + pInputOrder^.OrderPriceType +
+      #13#10 + 'ä¹°å–æ–¹å‘:' + pInputOrder^.Direction + #13#10 + 'ç»„åˆå¼€å¹³æ ‡å¿—:' +
+      pInputOrder^.CombOffsetFlag + #13#10 + 'ç»„åˆæŠ•æœºå¥—ä¿æ ‡å¿—:' +
+      pInputOrder^.CombHedgeFlag + #13#10 + 'ä»·æ ¼:' +
+      FloatToStr(pInputOrder^.LimitPrice) + #13#10 + 'æ•°é‡:' +
+      IntToStr(pInputOrder^.VolumeTotalOriginal) + #13#10 + 'æœ‰æ•ˆæœŸç±»å‹:' +
+      pInputOrder^.TimeCondition + #13#10 + 'GTDæ—¥æœŸ:' + pInputOrder^.GTDDate +
+      #13#10 + 'æˆäº¤é‡ç±»å‹:' + pInputOrder^.VolumeCondition + #13#10 + 'æœ€å°æˆäº¤é‡:' +
+      IntToStr(pInputOrder^.MinVolume) + #13#10 + 'è§¦å‘æ¡ä»¶:' +
+      pInputOrder^.ContingentCondition + #13#10 + 'æ­¢æŸä»·:' +
+      FloatToStr(pInputOrder^.StopPrice) + #13#10 + 'å¼ºå¹³åŸå› :' +
+      pInputOrder^.ForceCloseReason + #13#10 + 'è‡ªåŠ¨æŒ‚èµ·æ ‡å¿—:' +
+      IntToStr(pInputOrder^.IsAutoSuspend) + #13#10 + 'ä¸šåŠ¡å•å…ƒ:' +
+      pInputOrder^.BusinessUnit + #13#10 + 'è¯·æ±‚ç¼–å·:' +
+      IntToStr(pInputOrder^.RequestID) + #13#10 + 'ç”¨æˆ·å¼ºè¯„æ ‡å¿—:' +
       IntToStr(pInputOrder^.UserForceClose));
   end
   else
-    Log('Î¯ÍĞÊ§°Ü£º' + pRspInfo^.ErrorMsg);
+    Log('å§”æ‰˜å¤±è´¥ï¼š' + pRspInfo^.ErrorMsg);
 end;
 
-/// ±¨µ¥Í¨Öª
+/// æŠ¥å•é€šçŸ¥
 procedure OnRtnOrder(pOrder: pCThostFtdcOrderField); stdcall;
 begin
   {
-    ///¾­¼Í¹«Ë¾´úÂë
+    ///ç»çºªå…¬å¸ä»£ç 
     BrokerID : TThostFtdcBrokerIDType;
-    ///Í¶×ÊÕß´úÂë
+    ///æŠ•èµ„è€…ä»£ç 
     InvestorID : TThostFtdcInvestorIDType;
-    ///ºÏÔ¼´úÂë
+    ///åˆçº¦ä»£ç 
     InstrumentID : TThostFtdcInstrumentIDType;
-    ///±¨µ¥ÒıÓÃ
+    ///æŠ¥å•å¼•ç”¨
     OrderRef : TThostFtdcOrderRefType;
-    ///ÓÃ»§´úÂë
+    ///ç”¨æˆ·ä»£ç 
     UserID : TThostFtdcUserIDType;
-    ///±¨µ¥¼Û¸ñÌõ¼ş
+    ///æŠ¥å•ä»·æ ¼æ¡ä»¶
     OrderPriceType : TThostFtdcOrderPriceTypeType;
-    ///ÂòÂô·½Ïò
+    ///ä¹°å–æ–¹å‘
     Direction : TThostFtdcDirectionType;
-    ///×éºÏ¿ªÆ½±êÖ¾
+    ///ç»„åˆå¼€å¹³æ ‡å¿—
     CombOffsetFlag : TThostFtdcCombOffsetFlagType;
-    ///×éºÏÍ¶»úÌ×±£±êÖ¾
+    ///ç»„åˆæŠ•æœºå¥—ä¿æ ‡å¿—
     CombHedgeFlag : TThostFtdcCombHedgeFlagType;
-    ///¼Û¸ñ
+    ///ä»·æ ¼
     LimitPrice : TThostFtdcPriceType;
-    ///ÊıÁ¿
+    ///æ•°é‡
     VolumeTotalOriginal : TThostFtdcVolumeType;
-    ///ÓĞĞ§ÆÚÀàĞÍ
+    ///æœ‰æ•ˆæœŸç±»å‹
     TimeCondition : TThostFtdcTimeConditionType;
-    ///GTDÈÕÆÚ
+    ///GTDæ—¥æœŸ
     GTDDate : TThostFtdcDateType;
-    ///³É½»Á¿ÀàĞÍ
+    ///æˆäº¤é‡ç±»å‹
     VolumeCondition : TThostFtdcVolumeConditionType;
-    ///×îĞ¡³É½»Á¿
+    ///æœ€å°æˆäº¤é‡
     MinVolume : TThostFtdcVolumeType;
-    ///´¥·¢Ìõ¼ş
+    ///è§¦å‘æ¡ä»¶
     ContingentCondition : TThostFtdcContingentConditionType;
-    ///Ö¹Ëğ¼Û
+    ///æ­¢æŸä»·
     StopPrice : TThostFtdcPriceType;
-    ///Ç¿Æ½Ô­Òò
+    ///å¼ºå¹³åŸå› 
     ForceCloseReason : TThostFtdcForceCloseReasonType;
-    ///×Ô¶¯¹ÒÆğ±êÖ¾
+    ///è‡ªåŠ¨æŒ‚èµ·æ ‡å¿—
     IsAutoSuspend : TThostFtdcBoolType;
-    ///ÒµÎñµ¥Ôª
+    ///ä¸šåŠ¡å•å…ƒ
     BusinessUnit : TThostFtdcBusinessUnitType;
-    ///ÇëÇó±àºÅ
+    ///è¯·æ±‚ç¼–å·
     RequestID : TThostFtdcRequestIDType;
-    ///±¾µØ±¨µ¥±àºÅ
+    ///æœ¬åœ°æŠ¥å•ç¼–å·
     OrderLocalID : TThostFtdcOrderLocalIDType;
-    ///½»Ò×Ëù´úÂë
+    ///äº¤æ˜“æ‰€ä»£ç 
     ExchangeID : TThostFtdcExchangeIDType;
-    ///»áÔ±´úÂë
+    ///ä¼šå‘˜ä»£ç 
     ParticipantID : TThostFtdcParticipantIDType;
-    ///¿Í»§´úÂë
+    ///å®¢æˆ·ä»£ç 
     ClientID : TThostFtdcClientIDType;
-    ///ºÏÔ¼ÔÚ½»Ò×ËùµÄ´úÂë
+    ///åˆçº¦åœ¨äº¤æ˜“æ‰€çš„ä»£ç 
     ExchangeInstID : TThostFtdcExchangeInstIDType;
-    ///½»Ò×Ëù½»Ò×Ô±´úÂë
+    ///äº¤æ˜“æ‰€äº¤æ˜“å‘˜ä»£ç 
     TraderID : TThostFtdcTraderIDType;
-    ///°²×°±àºÅ
+    ///å®‰è£…ç¼–å·
     InstallID : TThostFtdcInstallIDType;
-    ///±¨µ¥Ìá½»×´Ì¬
+    ///æŠ¥å•æäº¤çŠ¶æ€
     OrderSubmitStatus : TThostFtdcOrderSubmitStatusType;
-    ///±¨µ¥ÌáÊ¾ĞòºÅ
+    ///æŠ¥å•æç¤ºåºå·
     NotifySequence : TThostFtdcSequenceNoType;
-    ///½»Ò×ÈÕ
+    ///äº¤æ˜“æ—¥
     TradingDay : TThostFtdcDateType;
-    ///½áËã±àºÅ
+    ///ç»“ç®—ç¼–å·
     SettlementID : TThostFtdcSettlementIDType;
-    ///±¨µ¥±àºÅ
+    ///æŠ¥å•ç¼–å·
     OrderSysID : TThostFtdcOrderSysIDType;
-    ///±¨µ¥À´Ô´
+    ///æŠ¥å•æ¥æº
     OrderSource : TThostFtdcOrderSourceType;
-    ///±¨µ¥×´Ì¬
+    ///æŠ¥å•çŠ¶æ€
     OrderStatus : TThostFtdcOrderStatusType;
-    ///±¨µ¥ÀàĞÍ
+    ///æŠ¥å•ç±»å‹
     OrderType : TThostFtdcOrderTypeType;
-    ///½ñ³É½»ÊıÁ¿
+    ///ä»Šæˆäº¤æ•°é‡
     VolumeTraded : TThostFtdcVolumeType;
-    ///Ê£ÓàÊıÁ¿
+    ///å‰©ä½™æ•°é‡
     VolumeTotal : TThostFtdcVolumeType;
-    ///±¨µ¥ÈÕÆÚ
+    ///æŠ¥å•æ—¥æœŸ
     InsertDate : TThostFtdcDateType;
-    ///Î¯ÍĞÊ±¼ä
+    ///å§”æ‰˜æ—¶é—´
     InsertTime : TThostFtdcTimeType;
-    ///¼¤»îÊ±¼ä
+    ///æ¿€æ´»æ—¶é—´
     ActiveTime : TThostFtdcTimeType;
-    ///¹ÒÆğÊ±¼ä
+    ///æŒ‚èµ·æ—¶é—´
     SuspendTime : TThostFtdcTimeType;
-    ///×îºóĞŞ¸ÄÊ±¼ä
+    ///æœ€åä¿®æ”¹æ—¶é—´
     UpdateTime : TThostFtdcTimeType;
-    ///³·ÏúÊ±¼ä
+    ///æ’¤é”€æ—¶é—´
     CancelTime : TThostFtdcTimeType;
-    ///×îºóĞŞ¸Ä½»Ò×Ëù½»Ò×Ô±´úÂë
+    ///æœ€åä¿®æ”¹äº¤æ˜“æ‰€äº¤æ˜“å‘˜ä»£ç 
     ActiveTraderID : TThostFtdcTraderIDType;
-    ///½áËã»áÔ±±àºÅ
+    ///ç»“ç®—ä¼šå‘˜ç¼–å·
     ClearingPartID : TThostFtdcParticipantIDType;
-    ///ĞòºÅ
+    ///åºå·
     SequenceNo : TThostFtdcSequenceNoType;
-    ///Ç°ÖÃ±àºÅ
+    ///å‰ç½®ç¼–å·
     FrontID : TThostFtdcFrontIDType;
-    ///»á»°±àºÅ
+    ///ä¼šè¯ç¼–å·
     SessionID : TThostFtdcSessionIDType;
-    ///ÓÃ»§¶Ë²úÆ·ĞÅÏ¢
+    ///ç”¨æˆ·ç«¯äº§å“ä¿¡æ¯
     UserProductInfo : TThostFtdcProductInfoType;
-    ///×´Ì¬ĞÅÏ¢
+    ///çŠ¶æ€ä¿¡æ¯
     StatusMsg : TThostFtdcErrorMsgType;
-    ///ÓÃ»§Ç¿ÆÀ±êÖ¾
+    ///ç”¨æˆ·å¼ºè¯„æ ‡å¿—
     UserForceClose : TThostFtdcBoolType;
-    ///²Ù×÷ÓÃ»§´úÂë
+    ///æ“ä½œç”¨æˆ·ä»£ç 
     ActiveUserID : TThostFtdcUserIDType;
-    ///¾­¼Í¹«Ë¾±¨µ¥±àºÅ
+    ///ç»çºªå…¬å¸æŠ¥å•ç¼–å·
     BrokerOrderSeq : TThostFtdcSequenceNoType;
-    ///Ïà¹Ø±¨µ¥
+    ///ç›¸å…³æŠ¥å•
     RelativeOrderSysID : TThostFtdcOrderSysIDType;
   }
   if pOrder = nil then
     Exit;
-  Log('ÊÕµ½Î¯ÍĞ»Ø±¨£¡');
+  Log('æ”¶åˆ°å§”æ‰˜å›æŠ¥ï¼');
 end;
 
-/// ±¨µ¥²Ù×÷´íÎó»Ø±¨
+/// æŠ¥å•æ“ä½œé”™è¯¯å›æŠ¥
 procedure OnErrRtnOrderAction(pOrderAction: pCThostFtdcOrderActionField;
   pRspInfo: pCThostFtdcRspInfoField); stdcall;
 begin
@@ -224,7 +232,7 @@ begin
     Log('OnErrRtnOrderAction');
 end;
 
-// ÇëÇó²éÑ¯±¨µ¥ÏìÓ¦
+// è¯·æ±‚æŸ¥è¯¢æŠ¥å•å“åº”
 procedure OnRspQryOrder(pOrder: pCThostFtdcOrderField;
   pRspInfo: pCThostFtdcRspInfoField; nRequestID: Integer;
   bIsLast: Boolean); stdcall;
@@ -232,48 +240,48 @@ begin
   if pOrder <> nil then
   begin
     SetOrderInfo(pOrder);
-    Log('¾­¼Í¹«Ë¾´úÂë :' + pOrder^.BrokerID + #13#10 + 'Í¶×ÊÕß´úÂë :' + pOrder^.InvestorID
-      + #13#10 + 'ºÏÔ¼´úÂë£º' + pOrder^.InstrumentID + #13#10 + '±¨µ¥ÒıÓÃ£º' +
-      pOrder^.OrderRef + #13#10 + 'ÓÃ»§´úÂë£º' + pOrder^.UserID + #13#10 + '±¨µ¥¼Û¸ñÌõ¼ş£º'
-      + pOrder^.OrderPriceType + #13#10 + 'ÂòÂô·½Ïò£º' + pOrder^.Direction + #13#10 +
-      '×éºÏ¿ªÆ½±êÖ¾£º' + pOrder^.CombOffsetFlag + #13#10 + '×éºÏÍ¶»úÌ×±£±êÖ¾£º' +
-      pOrder^.CombHedgeFlag + #13#10 + '¼Û¸ñ£º' + FloatToStr(pOrder^.LimitPrice) +
-      #13#10 + 'ÊıÁ¿£º' + IntToStr(pOrder^.VolumeTotalOriginal) + #13#10 + 'ÓĞĞ§ÆÚÀàĞÍ£º'
-      + pOrder^.TimeCondition + #13#10 + 'GTDÈÕÆÚ£º' + pOrder^.GTDDate + #13#10 +
-      '³É½»Á¿ÀàĞÍ£º' + pOrder^.VolumeCondition + #13#10 + '×îĞ¡³É½»Á¿£º' +
-      IntToStr(pOrder^.MinVolume) + #13#10 + '´¥·¢Ìõ¼ş£º' +
-      pOrder^.ContingentCondition + #13#10 + 'Ö¹Ëğ¼Û£º' +
-      CurrToStr(pOrder^.StopPrice) + #13#10 + 'Ç¿Æ½Ô­Òò£º' + pOrder^.ForceCloseReason
-      + #13#10 + '×Ô¶¯¹ÒÆğ±êÖ¾£º' + IntToStr(pOrder^.IsAutoSuspend) + #13#10 + 'ÒµÎñµ¥Ôª£º'
-      + pOrder^.BusinessUnit + #13#10 + 'ÇëÇó±àºÅ£º' + IntToStr(pOrder^.RequestID) +
-      #13#10 + '±¾µØ±¨µ¥±àºÅ£º' + pOrder^.OrderLocalID + #13#10 + '½»Ò×Ëù´úÂë£º' +
-      pOrder^.ExchangeID + #13#10 + '»áÔ±´úÂë£º' + pOrder^.ParticipantID + #13#10 +
-      '¿Í»§´úÂë£º' + pOrder^.ClientID + #13#10 + 'ºÏÔ¼ÔÚ½»Ò×ËùµÄ´úÂë£º' +
-      pOrder^.ExchangeInstID + #13#10 + '½»Ò×Ëù½»Ò×Ô±´úÂë£º' + pOrder^.TraderID + #13#10
-      + '°²×°±àºÅ£º' + IntToStr(pOrder^.InstallID) + #13#10 + '±¨µ¥Ìá½»×´Ì¬£º' +
-      pOrder^.OrderSubmitStatus + #13#10 + '±¨µ¥ÌáÊ¾ĞòºÅ£º' +
-      IntToStr(pOrder^.NotifySequence) + #13#10 + '½»Ò×ÈÕ£º' + pOrder^.TradingDay +
-      #13#10 + '½áËã±àºÅ£º' + IntToStr(pOrder^.SettlementID) + #13#10 + '±¨µ¥±àºÅ£º' +
-      pOrder^.OrderSysID + #13#10 + '±¨µ¥À´Ô´£º' + pOrder^.OrderSource + #13#10 +
-      '±¨µ¥×´Ì¬£º' + pOrder^.OrderStatus + #13#10 + '±¨µ¥ÀàĞÍ£º' + pOrder^.OrderType +
-      #13#10 + '½ñ³É½»ÊıÁ¿£º' + IntToStr(pOrder^.VolumeTraded) + #13#10 + 'Ê£ÓàÊıÁ¿£º' +
-      IntToStr(pOrder^.VolumeTotal) + #13#10 + '±¨µ¥ÈÕÆÚ£º' + pOrder^.InsertDate +
-      #13#10 + 'Î¯ÍĞÊ±¼ä£º' + pOrder^.InsertTime + #13#10 + '¼¤»îÊ±¼ä£º' +
-      pOrder^.ActiveTime + #13#10 + '¹ÒÆğÊ±¼ä£º' + pOrder^.SuspendTime + #13#10 +
-      '×îºóĞŞ¸ÄÊ±¼ä£º' + pOrder^.UpdateTime + #13#10 + '³·ÏúÊ±¼ä£º' + pOrder^.CancelTime +
-      #13#10 + '×îºóĞŞ¸Ä½»Ò×Ëù½»Ò×Ô±´úÂë£º' + pOrder^.ActiveTraderID + #13#10 + '½áËã»áÔ±±àºÅ£º' +
-      pOrder^.ClearingPartID + #13#10 + 'ĞòºÅ£º' + IntToStr(pOrder^.SequenceNo) +
-      #13#10 + 'Ç°ÖÃ±àºÅ£º' + IntToStr(pOrder^.FrontID) + #13#10 + '»á»°±àºÅ£º' +
-      IntToStr(pOrder^.SessionID) + #13#10 + 'ÓÃ»§¶Ë²úÆ·ĞÅÏ¢£º' +
-      pOrder^.UserProductInfo + #13#10 + '×´Ì¬ĞÅÏ¢£º' + pOrder^.StatusMsg + #13#10 +
-      'ÓÃ»§Ç¿ÆÀ±êÖ¾£º' + IntToStr(pOrder^.UserForceClose) + #13#10 + '²Ù×÷ÓÃ»§´úÂë£º' +
-      pOrder^.ActiveUserID + #13#10 + '¾­¼Í¹«Ë¾±¨µ¥±àºÅ£º' +
-      IntToStr(pOrder^.BrokerOrderSeq) + #13#10 + 'Ïà¹Ø±¨µ¥£º' +
+    Log('ç»çºªå…¬å¸ä»£ç  :' + pOrder^.BrokerID + #13#10 + 'æŠ•èµ„è€…ä»£ç  :' + pOrder^.InvestorID
+      + #13#10 + 'åˆçº¦ä»£ç ï¼š' + pOrder^.InstrumentID + #13#10 + 'æŠ¥å•å¼•ç”¨ï¼š' +
+      pOrder^.OrderRef + #13#10 + 'ç”¨æˆ·ä»£ç ï¼š' + pOrder^.UserID + #13#10 + 'æŠ¥å•ä»·æ ¼æ¡ä»¶ï¼š'
+      + pOrder^.OrderPriceType + #13#10 + 'ä¹°å–æ–¹å‘ï¼š' + pOrder^.Direction + #13#10 +
+      'ç»„åˆå¼€å¹³æ ‡å¿—ï¼š' + pOrder^.CombOffsetFlag + #13#10 + 'ç»„åˆæŠ•æœºå¥—ä¿æ ‡å¿—ï¼š' +
+      pOrder^.CombHedgeFlag + #13#10 + 'ä»·æ ¼ï¼š' + FloatToStr(pOrder^.LimitPrice) +
+      #13#10 + 'æ•°é‡ï¼š' + IntToStr(pOrder^.VolumeTotalOriginal) + #13#10 + 'æœ‰æ•ˆæœŸç±»å‹ï¼š'
+      + pOrder^.TimeCondition + #13#10 + 'GTDæ—¥æœŸï¼š' + pOrder^.GTDDate + #13#10 +
+      'æˆäº¤é‡ç±»å‹ï¼š' + pOrder^.VolumeCondition + #13#10 + 'æœ€å°æˆäº¤é‡ï¼š' +
+      IntToStr(pOrder^.MinVolume) + #13#10 + 'è§¦å‘æ¡ä»¶ï¼š' +
+      pOrder^.ContingentCondition + #13#10 + 'æ­¢æŸä»·ï¼š' +
+      CurrToStr(pOrder^.StopPrice) + #13#10 + 'å¼ºå¹³åŸå› ï¼š' + pOrder^.ForceCloseReason
+      + #13#10 + 'è‡ªåŠ¨æŒ‚èµ·æ ‡å¿—ï¼š' + IntToStr(pOrder^.IsAutoSuspend) + #13#10 + 'ä¸šåŠ¡å•å…ƒï¼š'
+      + pOrder^.BusinessUnit + #13#10 + 'è¯·æ±‚ç¼–å·ï¼š' + IntToStr(pOrder^.RequestID) +
+      #13#10 + 'æœ¬åœ°æŠ¥å•ç¼–å·ï¼š' + pOrder^.OrderLocalID + #13#10 + 'äº¤æ˜“æ‰€ä»£ç ï¼š' +
+      pOrder^.ExchangeID + #13#10 + 'ä¼šå‘˜ä»£ç ï¼š' + pOrder^.ParticipantID + #13#10 +
+      'å®¢æˆ·ä»£ç ï¼š' + pOrder^.ClientID + #13#10 + 'åˆçº¦åœ¨äº¤æ˜“æ‰€çš„ä»£ç ï¼š' +
+      pOrder^.ExchangeInstID + #13#10 + 'äº¤æ˜“æ‰€äº¤æ˜“å‘˜ä»£ç ï¼š' + pOrder^.TraderID + #13#10
+      + 'å®‰è£…ç¼–å·ï¼š' + IntToStr(pOrder^.InstallID) + #13#10 + 'æŠ¥å•æäº¤çŠ¶æ€ï¼š' +
+      pOrder^.OrderSubmitStatus + #13#10 + 'æŠ¥å•æç¤ºåºå·ï¼š' +
+      IntToStr(pOrder^.NotifySequence) + #13#10 + 'äº¤æ˜“æ—¥ï¼š' + pOrder^.TradingDay +
+      #13#10 + 'ç»“ç®—ç¼–å·ï¼š' + IntToStr(pOrder^.SettlementID) + #13#10 + 'æŠ¥å•ç¼–å·ï¼š' +
+      pOrder^.OrderSysID + #13#10 + 'æŠ¥å•æ¥æºï¼š' + pOrder^.OrderSource + #13#10 +
+      'æŠ¥å•çŠ¶æ€ï¼š' + pOrder^.OrderStatus + #13#10 + 'æŠ¥å•ç±»å‹ï¼š' + pOrder^.OrderType +
+      #13#10 + 'ä»Šæˆäº¤æ•°é‡ï¼š' + IntToStr(pOrder^.VolumeTraded) + #13#10 + 'å‰©ä½™æ•°é‡ï¼š' +
+      IntToStr(pOrder^.VolumeTotal) + #13#10 + 'æŠ¥å•æ—¥æœŸï¼š' + pOrder^.InsertDate +
+      #13#10 + 'å§”æ‰˜æ—¶é—´ï¼š' + pOrder^.InsertTime + #13#10 + 'æ¿€æ´»æ—¶é—´ï¼š' +
+      pOrder^.ActiveTime + #13#10 + 'æŒ‚èµ·æ—¶é—´ï¼š' + pOrder^.SuspendTime + #13#10 +
+      'æœ€åä¿®æ”¹æ—¶é—´ï¼š' + pOrder^.UpdateTime + #13#10 + 'æ’¤é”€æ—¶é—´ï¼š' + pOrder^.CancelTime +
+      #13#10 + 'æœ€åä¿®æ”¹äº¤æ˜“æ‰€äº¤æ˜“å‘˜ä»£ç ï¼š' + pOrder^.ActiveTraderID + #13#10 + 'ç»“ç®—ä¼šå‘˜ç¼–å·ï¼š' +
+      pOrder^.ClearingPartID + #13#10 + 'åºå·ï¼š' + IntToStr(pOrder^.SequenceNo) +
+      #13#10 + 'å‰ç½®ç¼–å·ï¼š' + IntToStr(pOrder^.FrontID) + #13#10 + 'ä¼šè¯ç¼–å·ï¼š' +
+      IntToStr(pOrder^.SessionID) + #13#10 + 'ç”¨æˆ·ç«¯äº§å“ä¿¡æ¯ï¼š' +
+      pOrder^.UserProductInfo + #13#10 + 'çŠ¶æ€ä¿¡æ¯ï¼š' + pOrder^.StatusMsg + #13#10 +
+      'ç”¨æˆ·å¼ºè¯„æ ‡å¿—ï¼š' + IntToStr(pOrder^.UserForceClose) + #13#10 + 'æ“ä½œç”¨æˆ·ä»£ç ï¼š' +
+      pOrder^.ActiveUserID + #13#10 + 'ç»çºªå…¬å¸æŠ¥å•ç¼–å·ï¼š' +
+      IntToStr(pOrder^.BrokerOrderSeq) + #13#10 + 'ç›¸å…³æŠ¥å•ï¼š' +
       pOrder^.RelativeOrderSysID);
   end;
 end;
 
-/// ±¨µ¥²Ù×÷ÇëÇóÏìÓ¦
+/// æŠ¥å•æ“ä½œè¯·æ±‚å“åº”
 procedure OnRspOrderAction(pInputOrderAction: pCThostFtdcInputOrderActionField;
   pRspInfo: pCThostFtdcRspInfoField; nRequestID: Integer;
   bIsLast: Boolean); stdcall;
@@ -296,26 +304,26 @@ begin
     CallBackOnRspUserLogin(@OnRspUserLogin);
     CallBackOnRspUserLogout(@OnRspUserLogout);
     CallBackOnRspError(@OnRspError);
-    // ±¨µ¥»Ø±¨
+    // æŠ¥å•å›æŠ¥
     CallBackOnRtnOrder(@OnRtnOrder);
-    /// ³É½»Í¨Öª
+    /// æˆäº¤é€šçŸ¥
     CallBackOnRtnTrade(@OnRtnTrade);
-    /// ±¨µ¥Â¼Èë´íÎó»Ø±¨
+    /// æŠ¥å•å½•å…¥é”™è¯¯å›æŠ¥
     CallBackOnErrRtnOrderInsert(@OnErrRtnOrderInsert);
-    /// ±¨µ¥²Ù×÷´íÎó»Ø±¨
+    /// æŠ¥å•æ“ä½œé”™è¯¯å›æŠ¥
     CallBackOnErrRtnOrderAction(@OnErrRtnOrderAction);
-    // ÇëÇó²éÑ¯±¨µ¥ÏìÓ¦
+    // è¯·æ±‚æŸ¥è¯¢æŠ¥å•å“åº”
     CallBackOnRspQryOrder(@OnRspQryOrder);
-    /// ±¨µ¥²Ù×÷ÇëÇóÏìÓ¦
+    /// æŠ¥å•æ“ä½œè¯·æ±‚å“åº”
     CallBackOnRspOrderAction(@OnRspOrderAction);
 
-    // ¶©ÔÄË½ÓĞÁ÷
+    // è®¢é˜…ç§æœ‰æµ
     SubscribePrivateTopic(THOST_TERT_QUICK);
-    // ¶©ÔÄ¹«¹²Á÷
+    // è®¢é˜…å…¬å…±æµ
     SubscribePublicTopic(THOST_TERT_QUICK);
-    // ×¢²á·şÎñÆ÷µØÖ·
+    // æ³¨å†ŒæœåŠ¡å™¨åœ°å€
     RegisterFront(pansichar(_ip));
-    // ½Ó¿Ú³õÊ¼»¯
+    // æ¥å£åˆå§‹åŒ–
     DllInit;
   }
 end;

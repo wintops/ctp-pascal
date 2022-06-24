@@ -1,8 +1,18 @@
-unit uMyMD;
+ï»¿unit uMyMD;
+
+{$IFDEF FPC}
+  {$MODE Delphi}
+{$ENDIF}
 
 interface
 
-uses Windows, SysUtils, AnsiStrings, IniFiles, Classes,
+uses
+{$IFnDEF FPC}
+  AnsiStrings, Windows,
+{$ELSE}
+  LCLIntf, LCLType, LMessages,
+{$ENDIF}
+  SysUtils, IniFiles, Classes,
   uCppTypes,
   uThostFtdcMdApi, uThostmduserapi,
   ThostFtdcUserApiDataType, ThostFtdcUserApiStruct; // ThostFtdcTraderApi;
@@ -58,11 +68,13 @@ type
 
 var
   MdApi: CThostFtdcMdApi;
+  MdSpi: TmyMdSpi;
   _BrokerID: TThostFtdcBrokerIDType;
   _InvestorID: TThostFtdcInvestorIDType;
   _UserID: TThostFtdcUserIDType;
   _password: TThostFtdcPasswordType;
   _ip: AnsiString;
+  _api_path:string;
 
   symbols: string;
   sLine: array [0 .. 10] of AnsiString; // =('','','');
@@ -82,8 +94,8 @@ implementation
 uses ufrmMain;
 
 var
-  FMDDLL: hModule;
-  MdSpi: TmyMdSpi;
+
+
 
   reqID: Integer;
 
@@ -93,13 +105,17 @@ begin
 end;
 
 procedure InitMdApi;
+var
+  s:string;
 begin
-  MdSpi := TmyMdSpi.Create;
-  // MdSpi :=
-  // CThostFtdcMdApi.CreateFtdcMdApi();
+
+  LoadMdDll(_api_path);
   MdApi := MdApi_Create('data/', true);
-  Log('TradingDay:' + MdApi_GetVersion);
+  Log('Version:' + MdApi_GetVersion);
+ // s:=MdApi.GetTradingDay();
   Log('TradingDay:' + MdApi.GetTradingDay());
+
+  MdSpi := TmyMdSpi.Create;
   MdApi.RegisterSpi(MdSpi);
   MdApi.RegisterFront(pansichar(_ip));
   MdApi.init;
@@ -112,19 +128,19 @@ var
   rt: Integer;
 begin
   FillChar(FData, SizeOf(FData), #0);
-  /// ¾­¼Í¹«Ë¾´úÂë
+  /// ç»çºªå…¬å¸ä»£ç 
   FData.BrokerID := _BrokerID;
-  /// ÓÃ»§´úÂë
+  /// ç”¨æˆ·ä»£ç 
   FData.UserID := _UserID;;
-  /// ÓÃ»§¶Ë²úÆ·ĞÅÏ¢
+  /// ç”¨æˆ·ç«¯äº§å“ä¿¡æ¯
   // FData.UserProductInfo := 'SFITTrader';
-  /// ÈÏÖ¤Âë
+  /// è®¤è¯ç 
   // FData.AuthCode :=_AuthCode;
 
   // FData.AppID:=_AppID;
 
   // rt:=ReqAuthenticate(@FData,  reqID);
-  Log('--->>>ĞĞÇé--ÈÏÖ¤£º' + IntToStr(rt));
+  Log('--->>>è¡Œæƒ…--è®¤è¯ï¼š' + IntToStr(rt));
 end;
 
 procedure Login;
@@ -134,35 +150,35 @@ var
 begin
 
   FillChar(FData, SizeOf(FData), #0);
-  /// ½»Ò×ÈÕ
+  /// äº¤æ˜“æ—¥
   FData.TradingDay := '';
-  /// ¾­¼Í¹«Ë¾´úÂë
+  /// ç»çºªå…¬å¸ä»£ç 
   FData.BrokerID := _BrokerID;
-  /// ÓÃ»§´úÂë
+  /// ç”¨æˆ·ä»£ç 
   FData.UserID := _UserID;
-  /// ÃÜÂë
+  /// å¯†ç 
   FData.Password := _password;
   {
-    ///ÓÃ»§¶Ë²úÆ·ĞÅÏ¢
+    ///ç”¨æˆ·ç«¯äº§å“ä¿¡æ¯
     FData.UserProductInfo := 'SFITTrader';
-    ///½Ó¿Ú¶Ë²úÆ·ĞÅÏ¢
+    ///æ¥å£ç«¯äº§å“ä¿¡æ¯
     FData.InterfaceProductInfo := '';
-    ///Ğ­ÒéĞÅÏ¢
+    ///åè®®ä¿¡æ¯
     FData.ProtocolInfo := '';
-    ///MacµØÖ·
+    ///Macåœ°å€
     FData.MacAddress := '00-50-56-C0-00-01';
-    ///¶¯Ì¬ÃÜÂë
+    ///åŠ¨æ€å¯†ç 
     FData.OneTimePassword := '';
-    ///ÖÕ¶ËIPµØÖ·
+    ///ç»ˆç«¯IPåœ°å€
     FData.ClientIPAddress := '127.0.0.1';
     ///
   }
   rt := MdApi.ReqUserLogin(@FData, reqID);
 
   if (rt = 0) then
-    Log('--->>>ĞĞÇé--·¢ËÍµÇÂ¼ÇëÇó³É¹¦')
+    Log('--->>>è¡Œæƒ…--å‘é€ç™»å½•è¯·æ±‚æˆåŠŸ')
   else
-    Log('--->>>ĞĞÇé--·¢ËÍµÇÂ¼ÇëÇóÊ§°Ü£¬´íÎóÂë£º' + IntToStr(rt));
+    Log('--->>>è¡Œæƒ…--å‘é€ç™»å½•è¯·æ±‚å¤±è´¥ï¼ŒErrorï¼š' + IntToStr(rt));
 end;
 
 procedure Subscribe;
@@ -187,15 +203,26 @@ begin
 
   ctp := fini.ReadString('user', 'ctpm', 'ctp');
 
-  s := fini.ReadString(ctp, 'broker', '');
-  AnsiStrings.StrPLCopy(_BrokerID, s, High(_BrokerID));
-  s := fini.ReadString(ctp, 'invetstor', '');
-  AnsiStrings.StrPLCopy(_InvestorID, s, High(_InvestorID));
-  s := fini.ReadString(ctp, 'user', '');
-  AnsiStrings.StrPLCopy(_UserID, s, High(_UserID));
-  s := fini.ReadString(ctp, 'p', '');
-  AnsiStrings.StrPLCopy(_password, s, High(_password));
+
+
+{$IFnDEF FPC}
+   AnsiStrings.StrPLCopy(_BrokerID, fini.ReadString(ctp, 'broker', ''), High(_BrokerID));
+   AnsiStrings.StrPLCopy(_InvestorID, fini.ReadString(ctp, 'invetstor', ''), High(_InvestorID));
+     AnsiStrings.StrPLCopy(_UserID, fini.ReadString(ctp, 'user', ''), High(_UserID));
+  AnsiStrings.StrPLCopy(_password, fini.ReadString(ctp, 'p', ''), High(_password));
+{$ELSE}
+  _BrokerID := fini.ReadString(ctp, 'broker', '');
+
+  _InvestorID := fini.ReadString(ctp, 'invetstor', '');
+
+  _UserID := fini.ReadString(ctp, 'user', '');
+
+ _password := fini.ReadString(ctp, 'p', '');
+{$ENDIF}
+
+
   _ip := fini.ReadString(ctp, 'ip', '');
+  _api_path := fini.ReadString(ctp, 'api_path', '');
   fini.Free;
 
   Log(ctp);
@@ -217,63 +244,60 @@ begin
   sl.Free;
 end;
 
-
-
-procedure FlashPrice(Ptr: pCThostFtdcDepthMarketDataField);
+procedure FlashPrice(Ptr: PCThostFtdcDepthMarketDataField);
 var
   i, j, t: Integer;
-   code:string;
+  code: string;
 begin
-code:=Trim(string(Ptr^.InstrumentID));
+  code := Trim(string(Ptr^.InstrumentID));
 
   try
-   // if (lv1 <> nil) then
+    // if (lv1 <> nil) then
 
-
-      with frmMain do
+    with frmMain do
       for i := 0 to lv1.Items.Count - 1 do
       begin
         if lv1.Items[i].Caption <> code then
           Continue;
-        // ×îĞÂ¼Û
+        // æœ€æ–°ä»·
         lv1.Items[i].SubItems.Strings[1] := FloatToStr(Ptr^.LastPrice);
-        // ÕÇµø
+        // æ¶¨è·Œ
         lv1.Items[i].SubItems.Strings[2] :=
           FloatToStr(Ptr^.LastPrice - Ptr^.PreSettlementPrice);
-        // Âò¼Û
+        // ä¹°ä»·
         lv1.Items[i].SubItems.Strings[3] := FloatToStr(Ptr^.BidPrice1);
-        // ÂòÁ¿
+        // ä¹°é‡
         lv1.Items[i].SubItems.Strings[4] := IntToStr(Ptr^.BidVolume1);
-        // Âô¼Û
+        // å–ä»·
         lv1.Items[i].SubItems.Strings[5] := FloatToStr(Ptr^.AskPrice1);
-        // ÂôÁ¿
+        // å–é‡
         lv1.Items[i].SubItems.Strings[6] := IntToStr(Ptr^.AskVolume1);
-        // ³É½»Á¿
+        // æˆäº¤é‡
         lv1.Items[i].SubItems.Strings[7] := IntToStr(Ptr^.Volume);
-        // ³Ö²ÖÁ¿
+        // æŒä»“é‡
         lv1.Items[i].SubItems.Strings[8] := FloatToStr(Ptr^.OpenInterest);
-        // ÕÇÍ£¼Û
+        // æ¶¨åœä»·
         lv1.Items[i].SubItems.Strings[9] := FloatToStr(Ptr^.UpperLimitPrice);
-        // µøÍ£¼Û
+        // è·Œåœä»·
         lv1.Items[i].SubItems.Strings[10] := FloatToStr(Ptr^.LowerLimitPrice);
-        // ½ñ¿ªÅÌ
+        // ä»Šå¼€ç›˜
         lv1.Items[i].SubItems.Strings[11] := FloatToStr(Ptr^.OpenPrice);
-        // ×ò½áËã
+        // æ˜¨ç»“ç®—
         lv1.Items[i].SubItems.Strings[12] :=
           FloatToStr(Ptr^.PreSettlementPrice);
-        // ×î¸ß¼Û
+        // æœ€é«˜ä»·
         lv1.Items[i].SubItems.Strings[13] := FloatToStr(Ptr^.HighestPrice);
-        // ×îµÍ¼Û
+        // æœ€ä½ä»·
         lv1.Items[i].SubItems.Strings[14] := FloatToStr(Ptr^.LowestPrice);
-        // ÕÇµø·ù
+        // æ¶¨è·Œå¹…
         lv1.Items[i].SubItems.Strings[15] :=
           Trim(Format('%8.2f', [((Ptr^.LastPrice - Ptr^.PreSettlementPrice) /
           Ptr^.PreSettlementPrice) * 100]) + '%');
-        // ×òÊÕÅÌ
+        // æ˜¨æ”¶ç›˜
         lv1.Items[i].SubItems.Strings[16] := FloatToStr(Ptr^.PreClosePrice);
-        // ³É½»¶î
+        // æˆäº¤é¢
         lv1.Items[i].SubItems.Strings[17] := FloatToStr(Ptr^.Turnover);
-        // ĞĞÇé¸üĞÂÊ±¼ä
+        // è¡Œæƒ…æ›´æ–°æ—¶é—´
         lv1.Items[i].SubItems.Strings[18] := string(Ptr^.UpdateTime);
 
         Break;
@@ -282,10 +306,11 @@ code:=Trim(string(Ptr^.InstrumentID));
 
   end;
 end;
+
 procedure TmyMdSpi.OnFrontConnected();
 begin
   Log('connected');
-  Log('Á¬½Ó·şÎñÆ÷³É¹¦£¡');
+  Log('è¿æ¥æœåŠ¡å™¨æˆåŠŸï¼');
   Login;
 
 end;
@@ -293,14 +318,14 @@ end;
 procedure TmyMdSpi.OnFrontDisconnected(nReason: Integer);
 begin
   Log('disconnected');
-  Log('·şÎñÆ÷Á¬½Ó¶Ï¿ª£¡£º' + IntToStr(nReason));
+  Log('æœåŠ¡å™¨è¿æ¥æ–­å¼€ï¼ï¼š' + IntToStr(nReason));
 end;
 
 procedure TmyMdSpi.OnHeartBeatWarning(nTimeLapse: Integer);
 begin
   Log('HeartBeat');
-  Log('=====ÍøÂçĞÄÌø³¬Ê±=====');
-  Log('¾àÉÏ´ÎÁ¬½ÓÊ±¼ä£º ' + IntToStr(nTimeLapse));
+  Log('=====ç½‘ç»œå¿ƒè·³è¶…æ—¶=====');
+  Log('è·ä¸Šæ¬¡è¿æ¥æ—¶é—´ï¼š ' + IntToStr(nTimeLapse));
 end;
 
 procedure TmyMdSpi.OnRspUserLogin(pRspUserLogin: PCThostFtdcRspUserLoginField;
@@ -311,28 +336,28 @@ begin
   begin
     // frmMain.UpdateMaxOrderRef(pRspUserLogin^.MaxOrderRef);
     // frmMain.SetBaseConfig(pRspUserLogin);
-    Log('µÇÂ¼³É¹¦');
-    Log('½»Ò×ÈÕ£º' + pRspUserLogin^.TradingDay);
+    Log('ç™»å½•æˆåŠŸ');
+    Log('äº¤æ˜“æ—¥ï¼š' + pRspUserLogin^.TradingDay);
 
-    Log('µÇÂ¼³É¹¦Ê±¼ä£º' + pRspUserLogin^.LoginTime);
-    Log('¾­¼Í¹«Ë¾´úÂë£º' + pRspUserLogin^.BrokerID);
-    Log('ÓÃ»§´úÂë£º' + pRspUserLogin^.UserID);
+    //Log('ç™»å½•æˆåŠŸæ—¶é—´ï¼š' + pRspUserLogin^.LoginTime);
+    //Log('ç»çºªå…¬å¸ä»£ç ï¼š' + pRspUserLogin^.BrokerID);
+    Log('ç”¨æˆ·ä»£ç ï¼š' + pRspUserLogin^.UserID);
     {
-      Log('½»Ò×ÏµÍ³Ãû³Æ£º' + pRspUserLogin^.SystemName);
-      Log('Ç°ÖÃ±àºÅ£º' + IntToStr(pRspUserLogin^.FrontID));
-      Log('»á»°±àºÅ£º' + IntToStr(pRspUserLogin^.SessionID));
-      Log('×î´ó±¨µ¥ÒıÓÃ£º' + pRspUserLogin^.MaxOrderRef);
-      Log('ÉÏÆÚËùÊ±¼ä£º' + pRspUserLogin^.SHFETime);
-      Log('´óÉÌËùÊ±¼ä£º' + pRspUserLogin^.DCETime);
-      Log('Ö£ÉÌËùÊ±¼ä£º' + pRspUserLogin^.CZCETime);
-      Log('ÖĞ½ğËùÊ±¼ä£º' + pRspUserLogin^.FFEXTime);
+      Log('äº¤æ˜“ç³»ç»Ÿåç§°ï¼š' + pRspUserLogin^.SystemName);
+      Log('å‰ç½®ç¼–å·ï¼š' + IntToStr(pRspUserLogin^.FrontID));
+      Log('ä¼šè¯ç¼–å·ï¼š' + IntToStr(pRspUserLogin^.SessionID));
+      Log('æœ€å¤§æŠ¥å•å¼•ç”¨ï¼š' + pRspUserLogin^.MaxOrderRef);
+      Log('ä¸ŠæœŸæ‰€æ—¶é—´ï¼š' + pRspUserLogin^.SHFETime);
+      Log('å¤§å•†æ‰€æ—¶é—´ï¼š' + pRspUserLogin^.DCETime);
+      Log('éƒ‘å•†æ‰€æ—¶é—´ï¼š' + pRspUserLogin^.CZCETime);
+      Log('ä¸­é‡‘æ‰€æ—¶é—´ï¼š' + pRspUserLogin^.FFEXTime);
     }
 
     Subscribe;
   end
   else
   begin
-    Log('µÇÂ¼Ê§°Ü£º' + pRspInfo^.ErrorMsg);
+    Log('ç™»å½•å¤±è´¥ï¼š' + pRspInfo^.ErrorMsg);
   end;
 end;
 
@@ -342,13 +367,13 @@ begin
   Log('Logout');
   if pRspInfo^.ErrorID = 0 then
   begin
-    Log('µÇ³ö³É¹¦');
-    Log('¾­¼Í¹«Ë¾´úÂë£º' + pUserLogout^.BrokerID);
-    Log('ÓÃ»§´úÂë£º' + pUserLogout^.UserID);
+    Log('ç™»å‡ºæˆåŠŸ');
+    Log('ç»çºªå…¬å¸ä»£ç ï¼š' + pUserLogout^.BrokerID);
+    Log('ç”¨æˆ·ä»£ç ï¼š' + pUserLogout^.UserID);
   end
   else
   begin
-    Log('µÇ³öÊ§°Ü£º' + pRspInfo^.ErrorMsg);
+    Log('ç™»å‡ºå¤±è´¥ï¼š' + pRspInfo^.ErrorMsg);
   end;
 
 end;
@@ -364,7 +389,7 @@ procedure TmyMdSpi.OnRspError(pRspInfo: PCThostFtdcRspInfoField;
   nRequestID: Integer; bIsLast: LongBool);
 begin
   Log('OnRspError');
-  Log('²Ù×÷Ê§°Ü£º' + pRspInfo^.ErrorMsg);
+  Log('æ“ä½œå¤±è´¥ï¼š' + pRspInfo^.ErrorMsg);
 end;
 
 procedure TmyMdSpi.OnRspSubMarketData(pSpecificInstrument
@@ -374,11 +399,11 @@ begin
   Log('OnRspSubMarketData');
   if pRspInfo^.ErrorID = 0 then
   begin
-    Log('¶©ÔÄĞĞÇé³É¹¦:' + String(pSpecificInstrument^.InstrumentID));
+    Log('è®¢é˜…è¡Œæƒ…æˆåŠŸ:' + String(pSpecificInstrument^.InstrumentID));
 
   end
   else
-    Log('¶©ÔÄĞĞÇéÊ§°Ü£º' + pRspInfo^.ErrorMsg);
+    Log('è®¢é˜…è¡Œæƒ…å¤±è´¥ï¼š' + pRspInfo^.ErrorMsg);
 end;
 
 procedure TmyMdSpi.OnRspUnSubMarketData(pSpecificInstrument
@@ -387,9 +412,9 @@ procedure TmyMdSpi.OnRspUnSubMarketData(pSpecificInstrument
 begin
   Log('OnRspUnSubMarketData');
   if pRspInfo^.ErrorID = 0 then
-    Log('È¡Ïû¶©ÔÄ³É¹¦:' + pSpecificInstrument^.InstrumentID)
+    Log('å–æ¶ˆè®¢é˜…æˆåŠŸ:' + pSpecificInstrument^.InstrumentID)
   else
-    Log('È¡Ïû¶©ÔÄ³É¹¦£º' + pRspInfo^.ErrorMsg);
+    Log('å–æ¶ˆè®¢é˜…æˆåŠŸï¼š' + pRspInfo^.ErrorMsg);
 end;
 
 procedure TmyMdSpi.OnRspSubForQuoteRsp(pSpecificInstrument
